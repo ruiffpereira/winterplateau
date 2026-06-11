@@ -4,13 +4,23 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('solid', window.scrollY > 40);
 }, { passive: true });
 
+// Mobile menu
+const burger = document.getElementById('nburger');
+const mmenu = document.getElementById('mmenu');
+if (burger && mmenu) {
+  const closeMenu = () => { burger.classList.remove('x'); mmenu.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); };
+  burger.addEventListener('click', () => {
+    const open = mmenu.classList.toggle('open');
+    burger.classList.toggle('x', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mmenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+}
+
 // Scroll reveal
 const obs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('on');
-      obs.unobserve(e.target);
-    }
+    if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); }
   });
 }, { threshold: 0.12 });
 document.querySelectorAll('[data-rv]').forEach(el => obs.observe(el));
@@ -49,3 +59,87 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+/* ════ 3D BLUEPRINT ENGINE ════ */
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Build extruded 3D metal profiles from each flat icon
+document.querySelectorAll('.mc-ico').forEach(ico => {
+  const src = ico.querySelector('svg');
+  if (!src) return;
+  const ext = document.createElement('div');
+  ext.className = 'ext';
+  const DEPTH = 11, STEP = 2.4;          // number of slices + spacing
+  for (let i = 0; i < DEPTH; i++) {
+    const c = src.cloneNode(true);
+    c.removeAttribute('width'); c.removeAttribute('height');
+    const z = (i - (DEPTH - 1)) * STEP;  // back slices first, front cap last
+    c.style.transform = `translateZ(${z}px)`;
+    if (i === DEPTH - 1) c.classList.add('cap');
+    ext.appendChild(c);
+  }
+  ico.replaceChild(ext, src);
+});
+
+// Scenes: entry assemble + idle breathing + scroll & pointer parallax
+const scenes = [];
+document.querySelectorAll('.scene').forEach(scene => {
+  const stage = scene.querySelector('.stage');
+  if (!stage) return;
+  const amp = parseFloat(scene.dataset.amp || '8');
+  scenes.push({ scene, stage, amp, px: 0, py: 0, tx: 0, ty: 0, inView: false });
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => {
+      const s = scenes.find(o => o.scene === e.target);
+      if (s) s.inView = e.isIntersecting;
+      if (e.isIntersecting) e.target.classList.add('in');
+    });
+  }, { threshold: 0.18 });
+  io.observe(scene);
+});
+
+// Pointer parallax — tilt toward cursor
+if (!reduce && window.matchMedia('(pointer:fine)').matches) {
+  window.addEventListener('pointermove', (ev) => {
+    scenes.forEach(s => {
+      const r = s.scene.getBoundingClientRect();
+      if (r.width === 0) return;
+      const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+      s.tx = Math.max(-1, Math.min(1, (ev.clientX - cx) / (r.width * 0.9)));
+      s.ty = Math.max(-1, Math.min(1, (ev.clientY - cy) / (r.height * 0.9)));
+    });
+  }, { passive: true });
+}
+
+// Fallback reveal — guard against any IntersectionObserver flakiness
+function revealInView() {
+  const vh = innerHeight || document.documentElement.clientHeight;
+  document.querySelectorAll('[data-rv]:not(.on), .scene:not(.in)').forEach(el => {
+    const r = el.getBoundingClientRect();
+    if (r.top < vh * 0.92 && r.bottom > 0) el.classList.add(el.matches('.scene') ? 'in' : 'on');
+  });
+}
+addEventListener('load', () => setTimeout(revealInView, 600));
+addEventListener('scroll', revealInView, { passive: true });
+
+if (!reduce) {
+  const t0 = performance.now();
+  const loop = (now) => {
+    const t = (now - t0) / 1000;
+    scenes.forEach(s => {
+      // ease pointer toward target
+      s.px += (s.tx - s.px) * 0.06;
+      s.py += (s.ty - s.py) * 0.06;
+      // continuous gentle breathing
+      const breatheY = Math.sin(t * 0.5) * s.amp;
+      const breatheX = Math.cos(t * 0.38) * (s.amp * 0.42);
+      const rotY = breatheY + s.px * (s.amp + 6);
+      const rotX = breatheX - s.py * (s.amp * 0.7) - 2;
+      s.stage.style.transform = `rotateX(${rotX.toFixed(2)}deg) rotateY(${rotY.toFixed(2)}deg)`;
+    });
+    requestAnimationFrame(loop);
+  };
+  requestAnimationFrame(loop);
+} else {
+  scenes.forEach(s => s.stage.style.transform = 'rotateX(-2deg) rotateY(4deg)');
+}

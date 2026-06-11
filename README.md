@@ -97,6 +97,25 @@ winterplateau-astro/
 
 ---
 
+## ✨ Animações 3D ("Plantas Vivas")
+
+Os desenhos a azul (blueprints) são separados em **planos de profundidade reais** e animados de forma subtil:
+
+- **Camadas 3D** — fundo (grelha), meio (edifício/janelas) e frente (molduras EPS que saltam da fachada)
+- **Respiração contínua** — inclinação suave e constante, indica movimento sem distrair
+- **Parallax ao cursor** — a cena inclina-se na direção do rato (apenas em ecrãs com cursor)
+- **Montagem na entrada** — as camadas surgem da profundidade + varredura "scanner" azul
+- **Perfis metálicos** — extrudidos em 3D (secções empilhadas como barras de metal sólidas)
+
+Toda a lógica vive em `src/scripts/main.js`. Os estilos em `src/styles/global.css` (secções `3D BLUEPRINT SCENES` e `METAL PROFILE EXTRUSIONS`).
+Respeita `prefers-reduced-motion`: quem desativa animações vê tudo estático e legível.
+
+### Responsividade
+- **≤1024px** — os blueprints 3D passam a aparecer empilhados (visíveis em mobile, não escondidos); menu hambúrguer (`#nburger` → `#mmenu`)
+- **≤560px** — grelhas em coluna única, tipografia do hero reduzida
+
+---
+
 ## 🌍 Deploy
 
 Este projeto é compatível com qualquer plataforma que suporte Node.js ou static output:

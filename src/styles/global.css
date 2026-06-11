@@ -202,13 +202,59 @@ button { background: none; border: none; cursor: pointer; font: inherit; }
 .fleg a { font-size: 11px; color: rgba(255,255,255,.14); transition: color 130ms; }
 .fleg a:hover { color: rgba(255,255,255,.38); }
 
+/* ── 3D BLUEPRINT SCENES ── */
+.scene { position: relative; width: 100%; height: 100%; perspective: 1500px; perspective-origin: 50% 45%; overflow: hidden; }
+.scene .stage { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform; }
+.scene .lyr { position: absolute; inset: 0; transform: translateZ(calc(var(--z, 0px) - 80px)); opacity: 0; transition: transform 1.05s cubic-bezier(.16,.84,.3,1), opacity .85s ease; transition-delay: var(--d, 0s); }
+.scene.in .lyr { transform: translateZ(var(--z, 0px)); opacity: 1; }
+.scene .lyr svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; overflow: visible; }
+.scene .front svg { filter: drop-shadow(0 3px 7px rgba(25,163,224,.22)); }
+.scene .scan { position: absolute; left: -6%; right: -6%; height: 64px; top: -80px; pointer-events: none; background: linear-gradient(180deg, transparent, rgba(25,163,224,.32), transparent); opacity: 0; }
+.scene .spark { position: absolute; width: 5px; height: 5px; border-radius: 50%; background: var(--bl); box-shadow: 0 0 9px 2px rgba(25,163,224,.55); left: var(--sx); top: var(--sy); opacity: 0; transform: translateZ(var(--sz, 30px)); }
+.scene.in .spark { opacity: .85; animation: sparkF var(--sdur, 6s) ease-in-out var(--sd, 0s) infinite; }
+.hero-r .scene { width: 100%; max-width: 560px; aspect-ratio: 1/1; max-height: 74vh; }
+@media (prefers-reduced-motion: no-preference) {
+  .scene.in .scan { animation: scanSweep 2.6s cubic-bezier(.45,0,.2,1) .2s 1 forwards; }
+}
+@keyframes scanSweep { 0% { top: -80px; opacity: 0; } 12% { opacity: 1; } 86% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
+@keyframes sparkF { 0%,100% { transform: translateZ(var(--sz,30px)) translateY(0); } 50% { transform: translateZ(var(--sz,30px)) translateY(-13px); } }
+
+/* ── METAL PROFILE EXTRUSIONS ── */
+.mc-ico { perspective: 520px; }
+.ext { position: relative; height: 50px; width: 90px; transform-style: preserve-3d; transform: rotateX(-16deg) rotateY(28deg); will-change: transform; }
+.ext svg { position: absolute; inset: 0; height: 50px; width: 90px; overflow: visible; }
+.ext svg:not(.cap) { opacity: .34; }
+.ext svg.cap { opacity: 1; }
+.mc:hover .ext { transform: rotateX(-14deg) rotateY(40deg); }
+.ext, .mc:hover .ext { transition: transform .9s cubic-bezier(.2,.7,.2,1); }
+
+/* ── MOBILE MENU ── */
+.nburger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 38px; height: 38px; flex-shrink: 0; margin-left: auto; }
+.nburger span { display: block; width: 20px; height: 1.5px; background: #fff; margin: 0 auto; transition: transform .3s, opacity .3s; }
+.nburger.x span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nburger.x span:nth-child(2) { opacity: 0; }
+.nburger.x span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.mmenu { position: fixed; inset: 62px 0 auto 0; z-index: 190; background: rgba(0,0,0,.97); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,.07); transform: translateY(-12px); opacity: 0; pointer-events: none; transition: transform .32s cubic-bezier(.2,.7,.2,1), opacity .28s; }
+.mmenu.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+.mmenu a { display: block; padding: 15px var(--g); font-size: 14px; color: rgba(255,255,255,.62); border-bottom: 1px solid rgba(255,255,255,.05); transition: color .14s; }
+.mmenu a:hover, .mmenu a:active { color: #fff; }
+.mmenu .mlang { display: flex; gap: 18px; padding: 15px var(--g); }
+.mmenu .mlang span { font-size: 12px; letter-spacing: .1em; color: rgba(255,255,255,.32); }
+.mmenu .mlang span.on { color: var(--bl); }
+@media (min-width: 1025px) { .mmenu { display: none; } }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .nlinks, .nlang { display: none; }
+  .nav-in { gap: 14px; }
+  .nburger { display: flex; }
   .hero-in, .ab-in, .con-in { grid-template-columns: 1fr; }
-  .hero-r { display: none; }
-  .spread, .spread.rev { grid-template-columns: 1fr; }
-  .sillo { display: none; }
+  .hero-in { padding-top: clamp(20px,6vw,40px); padding-bottom: 40px; min-height: auto; gap: 28px; }
+  .hero { min-height: auto; }
+  .hero-r { display: flex; justify-content: center; order: 2; }
+  .hero-r .scene { max-width: min(440px,86vw); max-height: none; margin: 4px auto 0; }
+  .spread, .spread.rev { grid-template-columns: 1fr; gap: 32px; }
+  .sillo { display: block; order: -1; max-width: 520px; width: 100%; margin: 0 auto; }
   .mgrid { grid-template-columns: 1fr 1fr; }
   .dlgrid { grid-template-columns: 1fr 1fr; }
   .sts-in { grid-template-columns: 1fr 1fr; }
@@ -217,4 +263,6 @@ button { background: none; border: none; cursor: pointer; font: inherit; }
 @media (max-width: 560px) {
   .mgrid, .dlgrid, .sts-in { grid-template-columns: 1fr; }
   .ftop { grid-template-columns: 1fr; }
+  .hbrand .hw, .hbrand .hp { font-size: clamp(58px,17vw,90px); }
+  .mc-ico { margin-bottom: 14px; }
 }
