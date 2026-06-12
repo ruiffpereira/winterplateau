@@ -1,0 +1,102 @@
+---
+---
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obras · Winterplateau</title>
+<meta name="description" content="Portefólio de obras Winterplateau — reabilitação de fachadas e construção nova com molduras em EPS. Veja o antes e o depois de cada projeto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/winter.css">
+<style is:global>
+.ob-hero{background:#000;padding:calc(62px + clamp(60px,9vw,110px)) var(--g) clamp(54px,7vw,88px);position:relative;overflow:hidden}
+.ob-hero-grid{position:absolute;inset:0;opacity:.5;background-image:radial-gradient(circle,rgba(25,163,224,.16) .6px,transparent .6px);background-size:24px 24px;-webkit-mask-image:linear-gradient(180deg,#000,transparent);mask-image:linear-gradient(180deg,#000,transparent)}
+.ob-hero-in{max-width:var(--mw);margin:0 auto;position:relative}
+.ob-eye{display:flex;align-items:center;gap:10px;font-size:10.5px;font-weight:400;letter-spacing:.14em;color:rgba(255,255,255,.32);text-transform:uppercase;margin-bottom:18px}
+.ob-eye::before{content:'';width:22px;height:1px;background:var(--bl)}
+.ob-h{font-family:var(--fd);font-weight:300;font-size:clamp(48px,8vw,108px);line-height:.92;color:#fff;letter-spacing:-.02em;margin-bottom:22px}
+.ob-h em{font-style:italic;color:var(--bl)}
+.ob-sub{font-size:clamp(14px,1.2vw,16px);font-weight:300;color:rgba(255,255,255,.46);line-height:1.8;max-width:560px}
+.ob-body{padding:clamp(48px,6vw,80px) var(--g) var(--sv);background:var(--off)}
+.ob-tools{max-width:var(--mw);margin:0 auto 30px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.ob-filters{display:flex;gap:8px;flex-wrap:wrap}
+.fbtn{padding:12px 19px;border:1px solid var(--bdr);background:#fff;border-radius:30px;font-size:12px;color:var(--ink2);transition:all .15s}
+.fbtn:hover{border-color:var(--bl);color:var(--bl)}
+.fbtn.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ob-count{font-size:12px;color:var(--ink3);letter-spacing:.02em}
+.ob-count b{color:var(--ink);font-weight:500}
+.pcard{animation:fadeUp .5s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+/* CTA */
+.ob-cta{background:var(--bl);padding:clamp(72px,9vw,118px) var(--g);text-align:center}
+.ob-cta h2{font-family:var(--fd);font-weight:300;font-size:clamp(34px,5vw,64px);color:#fff;line-height:1.04;margin-bottom:12px}
+.ob-cta p{font-size:14px;font-weight:300;color:rgba(255,255,255,.62);margin-bottom:28px}
+.ob-cta .btn-w{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;background:#fff;color:var(--bld);font-size:12.5px;font-weight:500;letter-spacing:.04em;border-radius:3px;transition:transform .15s}
+.ob-cta .btn-w:hover{transform:translateY(-2px)}
+@media(max-width:640px){.ob-tools{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+
+<div id="chrome"></div>
+
+<header class="ob-hero">
+  <div class="ob-hero-grid"></div>
+  <div class="ob-hero-in">
+    <div class="ob-eye">Portefólio</div>
+    <h1 class="ob-h">As nossas <em>obras</em></h1>
+    <p class="ob-sub">Reabilitação de fachadas e construção nova por todo o norte de Portugal. Em cada projeto, arraste a comparação para ver a transformação que as molduras e o isolamento Winterplateau trazem ao edifício.</p>
+  </div>
+</header>
+
+<section class="ob-body">
+  <div class="ob-tools">
+    <div class="ob-filters" id="filters">
+      <button class="fbtn on" data-f="all">Todas</button>
+      <button class="fbtn" data-f="Reabilitação">Reabilitação</button>
+      <button class="fbtn" data-f="Construção Nova">Construção Nova</button>
+    </div>
+    <div class="ob-count" id="count"></div>
+  </div>
+  <div class="obras-grid" id="obrasGrid"></div>
+</section>
+
+<section class="ob-cta">
+  <h2>Tem um projeto em mente?</h2>
+  <p>Fale com a nossa equipa técnica e descubra a solução certa para a sua obra.</p>
+  <a href="index.html#contact" class="btn-w">Solicitar Orçamento
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+  </a>
+</section>
+
+<div id="footerSlot"></div>
+
+<script is:inline src="/assets/projects.js"></script>
+<script is:inline>
+// chrome
+document.getElementById('chrome').innerHTML = navHTML('obras');
+document.getElementById('footerSlot').innerHTML = footerHTML();
+initChrome();
+
+// grid + filtering
+const grid = document.getElementById('obrasGrid');
+const count = document.getElementById('count');
+function render(filter){
+  const list = filter === 'all' ? PROJECTS : PROJECTS.filter(p => p.type === filter);
+  grid.innerHTML = list.map(p => cardHTML(p, false)).join('');
+  count.innerHTML = '<b>' + list.length + '</b> obra' + (list.length === 1 ? '' : 's');
+}
+document.querySelectorAll('#filters .fbtn').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('#filters .fbtn').forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    render(b.dataset.f);
+  });
+});
+render('all');
+</script>
+</body>
+</html>

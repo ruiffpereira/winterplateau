@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
+import Universe from '../components/Universe.astro';
 import Hero from '../components/Hero.astro';
 import Marquee from '../components/Marquee.astro';
 import Stats from '../components/Stats.astro';
@@ -8,6 +9,7 @@ import ProductEpsExterior from '../components/ProductEpsExterior.astro';
 import ProductEpsInterior from '../components/ProductEpsInterior.astro';
 import Statement from '../components/Statement.astro';
 import MetalProfiles from '../components/MetalProfiles.astro';
+import Obras from '../components/Obras.astro';
 import About from '../components/About.astro';
 import Downloads from '../components/Downloads.astro';
 import CtaBand from '../components/CtaBand.astro';
@@ -18,6 +20,7 @@ import '../styles/global.css';
 ---
 
 <BaseLayout>
+  <Universe />
   <Nav />
   <Hero />
   <Marquee />
@@ -26,9 +29,13 @@ import '../styles/global.css';
   <ProductEpsInterior />
   <Statement />
   <MetalProfiles />
+  <Obras />
   <About />
   <Downloads />
   <CtaBand />
   <Contact />
   <Footer />
+  <script is:inline src="/assets/projects.js"></script>
+  <script is:inline src="/scripts/home.js"></script>
+  <script is:inline src="/assets/universe.js"></script>
 </BaseLayout>

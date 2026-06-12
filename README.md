@@ -46,28 +46,35 @@ npm run preview
 ```
 winterplateau-astro/
 ├── public/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   ├── assets/
+│   │   ├── projects.js          ← DADOS das obras + geração de cards/fachadas/slider
+│   │   ├── winter.css           ← Estilos partilhados pelas subpáginas (nav, footer, cards)
+│   │   └── universe.js          ← Universo: constelação + régua de cotas ("alçado vivo")
+│   └── scripts/
+│       └── home.js              ← Motor da homepage (nav, reveal, contadores, 3D, obras)
 ├── src/
 │   ├── components/
 │   │   ├── Nav.astro               ← Navegação fixa
-│   │   ├── Hero.astro              ← Secção hero (acima da dobra)
+│   │   ├── Hero.astro              ← Secção hero (3D)
 │   │   ├── Marquee.astro           ← Faixa de texto animada
 │   │   ├── Stats.astro             ← Estatísticas da empresa
-│   │   ├── ProductEpsExterior.astro ← Produto 01
-│   │   ├── ProductEpsInterior.astro ← Produto 02
+│   │   ├── ProductEpsExterior.astro ← Produto 01 (3D)
+│   │   ├── ProductEpsInterior.astro ← Produto 02 (3D)
 │   │   ├── Statement.astro         ← Frase de destaque
-│   │   ├── MetalProfiles.astro     ← Perfis Metálicos
+│   │   ├── MetalProfiles.astro     ← Perfis Metálicos (3D)
+│   │   ├── Obras.astro             ← Secção de obras em destaque
 │   │   ├── About.astro             ← Quem Somos
 │   │   ├── Downloads.astro         ← Documentação técnica
 │   │   ├── CtaBand.astro           ← Call-to-action
 │   │   ├── Contact.astro           ← Contactos
 │   │   └── Footer.astro            ← Rodapé
 │   ├── layouts/
-│   │   └── BaseLayout.astro        ← Layout base (head, fontes, scripts)
+│   │   └── BaseLayout.astro        ← Layout base (head, fontes)
 │   ├── pages/
-│   │   └── index.astro             ← Página principal
-│   ├── scripts/
-│   │   └── main.js                 ← JS de comportamento (nav, scroll reveal, contadores)
+│   │   ├── index.astro             ← Página principal
+│   │   ├── Projetos.astro          ← Índice de obras (→ Projetos.html)
+│   │   └── Projeto.astro           ← Detalhe de obra (→ Projeto.html?obra=slug)
 │   └── styles/
 │       └── global.css              ← Todos os estilos globais e tokens CSS
 ├── astro.config.mjs
@@ -107,12 +114,52 @@ Os desenhos a azul (blueprints) são separados em **planos de profundidade reais
 - **Montagem na entrada** — as camadas surgem da profundidade + varredura "scanner" azul
 - **Perfis metálicos** — extrudidos em 3D (secções empilhadas como barras de metal sólidas)
 
-Toda a lógica vive em `src/scripts/main.js`. Os estilos em `src/styles/global.css` (secções `3D BLUEPRINT SCENES` e `METAL PROFILE EXTRUSIONS`).
+Toda a lógica vive em `public/scripts/home.js`. Os estilos em `src/styles/global.css` (secções `3D BLUEPRINT SCENES` e `METAL PROFILE EXTRUSIONS`).
 Respeita `prefers-reduced-motion`: quem desativa animações vê tudo estático e legível.
+
+- **Parallax de profundidade** — cada camada desloca-se de forma diferente conforme o cursor (frente mais que o fundo), criando profundidade real em vez de uma simples rotação.
+
+### Universo · "Alçado Vivo"
+- Fundo escuro contínuo com constelação técnica (canvas, liga-se ao cursor)
+- Régua de cotas fixa à direita: o scroll "desce" o edifício (+14.00 m → 0.00 m); em mobile vira barra de progresso com a cota no topo (`#mprog`)
+- Secções como folhas de desenho numeradas (`data-sheet="FL 0X · …"`)
+- Página de projeto com prumo central e etapas alternadas esquerda/direita
 
 ### Responsividade
 - **≤1024px** — os blueprints 3D passam a aparecer empilhados (visíveis em mobile, não escondidos); menu hambúrguer (`#nburger` → `#mmenu`)
 - **≤560px** — grelhas em coluna única, tipografia do hero reduzida
+
+---
+
+## 🏗️ Obras (conteúdo dinâmico / backoffice)
+
+Todas as obras são geridas num **único ficheiro**: `public/assets/projects.js`.
+
+O array `PROJECTS` é a fonte de verdade — em produção é alimentado pelo backoffice. A partir dele o site gera automaticamente:
+
+- a **secção de destaque** na homepage (`Obras.astro` → `#obrasHome`)
+- o **índice** de obras com filtros (`Projetos.astro`)
+- cada **página de detalhe** (`Projeto.astro?obra=slug`) com slider antes/depois, processo e materiais
+
+### Adicionar uma obra
+
+```js
+{
+  slug: 'nome-unico-da-obra',     // usado no URL: Projeto.html?obra=nome-unico-da-obra
+  title: 'Título da Obra',
+  location: 'Cidade', year: '2024',
+  type: 'Reabilitação',           // ou 'Construção Nova' (usado nos filtros)
+  cols: 3, floors: 4,             // geometria da ilustração de fachada
+  summary: 'Descrição da intervenção…',
+  products: ['Cornijas', 'Bandas', 'Peitoris'],
+  stats: [{ n: '420', u: 'm²', l: 'Fachada' }, …],
+  process: [{ ph: '01', t: 'Diagnóstico', d: '…' }, …],
+}
+```
+
+### Fotografias reais
+
+As ilustrações de fachada (antes/depois) funcionam como *fallback* elegante. Para usar **fotografias reais** da obra, basta substituir os `<svg>` gerados em `facadeSVG()` por `<img>`, ou preencher os `photoSlot()` da secção "Durante a obra" — os locais já estão marcados e dimensionados.
 
 ---
 
