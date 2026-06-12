@@ -163,6 +163,16 @@ As ilustrações de fachada (antes/depois) funcionam como *fallback* elegante. P
 
 ---
 
+## 📣 Marketing
+
+- **SEO** — meta tags otimizadas, canonical, JSON-LD LocalBusiness, `public/sitemap.xml` e `public/robots.txt`
+- **Open Graph** — imagem de partilha em `public/assets/og-image.png` (1200×630)
+- **Leads** — secção "Peça o seu orçamento" (`Orcamento.astro`); por defeito abre email para geral@winterplateau.pt. Para ligar a um backoffice/Formspree, preencher `formEndpoint` em `public/assets/marketing.js`
+- **WhatsApp** — botão flutuante em todas as páginas; substituir o número em `marketing.js` (`whatsapp`)
+- **Analytics** — preencher `gaId` em `marketing.js` (GA4) e carrega automaticamente
+- **Testemunhos** — `Testemunhos.astro` com 3 espaços reservados (tracejado) para citações reais
+- **Idiomas PT/EN/FR** — `public/assets/i18n.js` traduz todo o site em runtime; a escolha persiste. Em produção pode migrar-se para rotas estáticas `/en` `/fr` com hreflang
+
 ## 🌍 Deploy
 
 Este projeto é compatível com qualquer plataforma que suporte Node.js ou static output:

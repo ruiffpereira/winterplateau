@@ -5,8 +5,8 @@ export interface Props {
 }
 
 const {
-  title = 'Winterplateau — EPS e Perfis Metálicos para a Construção',
-  description = 'Soluções em EPS e Perfis Metálicos para construção nova e reabilitação de edifícios. Fabricação nacional, certificação europeia.',
+  title = 'Winterplateau — Molduras EPS, Capoto (ETICS) e Perfis Metálicos · Vila Verde, Braga',
+  description = 'Fabricante português de molduras decorativas em EPS — cornijas, bandas, peitoris e pilastras — sistemas de capoto (ETICS) e perfis metálicos para tetos falsos e divisórias. Reabilitação de fachadas e construção nova. Vila Verde, Braga. Peça orçamento grátis.',
 } = Astro.props;
 ---
 
@@ -16,8 +16,41 @@ const {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
+  <meta name="keywords" content="molduras EPS, cornijas EPS, capoto, ETICS, reabilitação de fachadas, perfis metálicos, tetos falsos, peitoris, Braga, Vila Verde" />
   <title>{title}</title>
+  <link rel="canonical" href="https://www.winterplateau.pt/" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Winterplateau" />
+  <meta property="og:title" content="Winterplateau — Molduras EPS, Capoto e Perfis Metálicos" />
+  <meta property="og:description" content="Reabilitação de fachadas e construção nova com molduras EPS, capoto (ETICS) e perfis metálicos. Fabrico nacional, certificação CE. Vila Verde, Braga." />
+  <meta property="og:url" content="https://www.winterplateau.pt/" />
+  <meta property="og:image" content="https://www.winterplateau.pt/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Winterplateau — Molduras EPS, Capoto e Perfis Metálicos" />
+  <meta name="twitter:description" content="Reabilitação de fachadas e construção nova. Fabrico nacional, certificação CE." />
+  <meta name="twitter:image" content="https://www.winterplateau.pt/assets/og-image.png" />
+  <script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Winterplateau",
+    "description": "Fabricante de molduras decorativas em EPS, sistemas de capoto (ETICS) e perfis metálicos para a construção e reabilitação.",
+    "url": "https://www.winterplateau.pt/",
+    "image": "https://www.winterplateau.pt/assets/og-image.png",
+    "telephone": "+351253193667",
+    "email": "geral@winterplateau.pt",
+    "foundingDate": "2016-01",
+    "address": {"@type": "PostalAddress", "streetAddress": "Avenida Principal, Nº 202", "addressLocality": "Atiães, Vila Verde", "addressRegion": "Braga", "postalCode": "4730-041", "addressCountry": "PT"},
+    "areaServed": ["PT", "ES", "FR"],
+    "sameAs": ["https://www.linkedin.com/company/winterplateau/", "https://www.facebook.com/winterplateau/", "https://www.instagram.com/winterplateau/"]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />

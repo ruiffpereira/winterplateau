@@ -1,0 +1,37 @@
+---
+---
+
+<section class="orcamento sheet" id="orcamento" data-sheet="FL 09 · Orçamento">
+  <div class="orc-in">
+    <div class="orc-pitch" data-rv="l">
+      <div class="orc-eye">Pedido de Orçamento</div>
+      <h2 class="orc-title">Peça o seu orçamento</h2>
+      <p class="orc-sub">Envie os detalhes da sua obra — respondemos com uma proposta personalizada em 1–2 dias úteis.</p>
+      <ul class="orc-points">
+        <li>Resposta até 48 horas</li>
+        <li>Aconselhamento técnico incluído</li>
+        <li>Sem compromisso</li>
+      </ul>
+    </div>
+    <form class="qform" id="quoteForm" data-rv="r">
+      <div class="qrow">
+        <div class="qf"><label for="qNome">Nome</label><input id="qNome" name="nome" type="text" placeholder="O seu nome" required></div>
+        <div class="qf"><label for="qEmail">Email</label><input id="qEmail" name="email" type="email" placeholder="email@exemplo.pt" required></div>
+      </div>
+      <div class="qrow">
+        <div class="qf"><label for="qTel">Telefone</label><input id="qTel" name="telefone" type="tel" placeholder="+351 ..."></div>
+        <div class="qf"><label for="qTipo">Tipo de obra</label><select id="qTipo" name="tipo">
+          <option>Reabilitação de fachada</option>
+          <option>Construção nova</option>
+          <option>EPS interior</option>
+          <option>Perfis metálicos</option>
+          <option>Outro</option>
+        </select></div>
+      </div>
+      <div class="qf"><label for="qMsg">Mensagem</label><textarea id="qMsg" name="mensagem" rows="4" placeholder="Descreva a sua obra…"></textarea></div>
+      <button type="submit" class="btn-bl qsend">Enviar pedido</button>
+      <p class="qnote">Os pedidos seguem diretamente para geral@winterplateau.pt</p>
+      <p class="qok" hidden>Obrigado! O seu pedido foi preparado no seu programa de email — basta enviar.</p>
+    </form>
+  </div>
+</section>

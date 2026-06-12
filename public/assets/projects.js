@@ -262,7 +262,7 @@ function navHTML(active) {
         <a class="nlnk" href="index.html#contact">Contactos</a>
       </div>
       <div class="nlang"><span class="on">PT</span><span>EN</span><span>FR</span></div>
-      <a href="index.html#contact" class="ncta">Solicitar Orçamento</a>
+      <a href="index.html#orcamento" class="ncta">Solicitar Orçamento</a>
       <button class="nburger" id="nburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
@@ -273,7 +273,7 @@ function navHTML(active) {
     <a href="Projetos.html">Obras</a>
     <a href="index.html#about">Empresa</a>
     <a href="index.html#contact">Contactos</a>
-    <a class="mcta" href="index.html#contact">Solicitar Orçamento</a>
+    <a class="mcta" href="index.html#orcamento">Solicitar Orçamento</a>
     <div class="mlang"><span class="on">PT</span><span>EN</span><span>FR</span></div>
   </div>`;
 }
@@ -294,7 +294,7 @@ function footerHTML() {
         <a href="tel:+351253193667">+351 253 193 667</a><a href="mailto:geral@winterplateau.pt">geral@winterplateau.pt</a><span style="font-size:12px;color:rgba(255,255,255,.26);font-weight:300">Vila Verde, Braga</span></div></div>
     </div>
     <div class="fbot">
-      <span class="fcopy">© 2024 Winterplateau. Todos os direitos reservados.</span>
+      <span class="fcopy">© 2026 Winterplateau. Todos os direitos reservados.</span>
       <div class="fleg"><a href="#">Política de Privacidade</a><a href="#">Termos e Condições</a></div>
     </div>
   </footer>`;
@@ -347,7 +347,7 @@ function projectDetailHTML(p) {
     <div class="pj-step${i % 2 ? ' flip' : ''}" data-rv>
       <div class="pj-step-txt"><h3>${s.t}</h3><p>${s.d}</p></div>
       <div class="pj-node"><span>${s.ph}</span></div>
-      <div class="pj-step-photo">${photoSlot('Fotografia · ' + s.t, '5/4')}</div>
+      <div class="pj-step-photo">${photoSlot('Fotografia da obra', '5/4')}</div>
     </div>`).join('');
   const mats = p.products.map(productLink).join('');
   const others = PROJECTS.filter(o => o.slug !== p.slug).slice(0, 3).map(o => cardHTML(o, false)).join('');

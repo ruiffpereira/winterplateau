@@ -270,16 +270,19 @@ button { background: none; border: none; cursor: pointer; font: inherit; }
 .pcard-feat .pcard-title { font-size: clamp(30px,3.6vw,48px); font-weight: 300; }
 
 /* ── BEFORE / AFTER COMPARISON ── */
-.cmp { position: relative; width: 100%; height: 100%; aspect-ratio: 4/3; overflow: hidden; background: #DAD7CF; user-select: none; touch-action: pan-y; }
-.pcard-feat .cmp { aspect-ratio: auto; }
+.cmp { position: relative; width: 100%; overflow: hidden; background: #DAD7CF; user-select: none; touch-action: pan-y; }
+.cmp::before { content: ''; display: block; padding-top: 75%; }
+.pcard-feat .cmp { height: 100%; min-height: 320px; }
+.pcard-feat .cmp::before { display: none; }
 .cmp-layer { position: absolute; inset: 0; }
 .cmp-layer svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .cmp-after { clip-path: inset(0 0 0 0); transition: clip-path .8s cubic-bezier(.4,0,.1,1); }
-.pcard:hover .cmp-after { clip-path: inset(0 0 0 64%); }
+@media (hover:hover) { .pcard:hover .cmp-after { clip-path: inset(0 0 0 64%); } }
 .cmp-tag { position: absolute; top: 11px; z-index: 2; font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: 4px 9px; border-radius: 30px; }
 .cmp-tag-b { left: 11px; background: rgba(20,20,20,.55); backdrop-filter: blur(4px); color: #fff; }
 .cmp-tag-a { right: 11px; background: var(--bl); color: #fff; }
-.cmp-drag { cursor: ew-resize; aspect-ratio: 16/10; border-radius: 12px; }
+.cmp-drag { cursor: ew-resize; border-radius: 12px; }
+.cmp-drag::before { padding-top: 62.5%; }
 .cmp-drag .cmp-after { clip-path: inset(0 0 0 50%); transition: none; }
 .cmp-handle { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #fff; box-shadow: 0 0 0 1px rgba(25,163,224,.4), 0 0 14px rgba(0,0,0,.25); transform: translateX(-1px); z-index: 4; cursor: ew-resize; }
 .cmp-grip { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 42px; height: 42px; border-radius: 50%; background: #fff; box-shadow: 0 4px 16px rgba(0,0,0,.25); display: flex; align-items: center; justify-content: center; gap: 4px; transition: transform .15s; }
@@ -303,7 +306,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; }
   .obras-grid { grid-template-columns: 1fr; gap: 14px; }
   .pcard-feat { grid-column: auto; flex-direction: column; min-height: 0; }
   .pcard-feat .pcard-media { min-height: 0; }
-  .pcard-feat .cmp { aspect-ratio: 16/10; }
+  .pcard-feat .cmp { height: auto; min-height: 0; }
+  .pcard-feat .cmp::before { display: block; padding-top: 62.5%; }
   .mgrid { grid-template-columns: 1fr 1fr; }
   .dlgrid { grid-template-columns: 1fr 1fr; }
   .sts-in { grid-template-columns: 1fr 1fr; }
@@ -384,3 +388,44 @@ section,footer,.mqwrap{position:relative;z-index:1}
   .pcard.on .cmp-after{animation:cmpPeek 3s cubic-bezier(.4,0,.2,1) .6s 1}
 }
 @keyframes cmpPeek{0%,100%{clip-path:inset(0 0 0 0)}45%,62%{clip-path:inset(0 0 0 62%)}}
+
+
+/* ── TESTEMUNHOS ── */
+.testi{padding:var(--sv) var(--g)}
+.testi-in{max-width:var(--mw);margin:0 auto}
+.testi-hdr{margin-bottom:34px}
+.t-eye{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--bl);margin-bottom:10px}
+.t-title{font-family:var(--fd);font-size:clamp(34px,4.4vw,60px);font-weight:300;color:#fff;line-height:1}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tcard{background:#0A1018;border:1px dashed rgba(25,163,224,.32);border-radius:11px;padding:26px 24px;display:flex;flex-direction:column;gap:12px;margin:0}
+.tq{font-family:var(--fd);font-size:54px;line-height:.6;color:var(--bl);opacity:.55}
+.tcard blockquote{font-family:var(--fd);font-style:italic;font-size:19px;line-height:1.5;color:rgba(255,255,255,.55);flex:1}
+.tcard figcaption b{display:block;font-size:13px;font-weight:500;color:#fff}
+.tcard figcaption span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+.testi-note{margin-top:16px;font-size:11px;color:rgba(25,163,224,.5);letter-spacing:.04em}
+
+/* ── ORÇAMENTO (lead form) ── */
+.orcamento{padding:var(--sv) var(--g)}
+.orc-in{max-width:var(--mw);margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(30px,5vw,80px);align-items:center}
+.orc-eye{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--bl);margin-bottom:11px}
+.orc-title{font-family:var(--fd);font-size:clamp(34px,4.4vw,60px);font-weight:300;color:#fff;line-height:1.02;margin-bottom:14px}
+.orc-sub{font-size:14px;font-weight:300;line-height:1.8;color:rgba(255,255,255,.52);max-width:420px;margin-bottom:22px}
+.orc-points li{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:13px;color:rgba(255,255,255,.66)}
+.orc-points li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--bl);flex-shrink:0}
+.qform{background:#0A1018;border:1px solid rgba(25,163,224,.22);border-radius:12px;padding:clamp(22px,3vw,36px);display:grid;gap:15px}
+.qrow{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.qf label{display:block;font-size:9.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:7px}
+.qf input,.qf select,.qf textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(25,163,224,.22);border-radius:5px;padding:12px 13px;font:inherit;font-size:13.5px;color:#fff;transition:border-color .15s;-webkit-appearance:none;appearance:none}
+.qf select{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="%2319A3E0" fill="none" stroke-width="1.5"/></svg>');background-repeat:no-repeat;background-position:right 13px center;padding-right:32px}
+.qf select option{background:#0A1018;color:#fff}
+.qf input:focus,.qf select:focus,.qf textarea:focus{outline:none;border-color:var(--bl)}
+.qf input::placeholder,.qf textarea::placeholder{color:rgba(255,255,255,.25)}
+.qf textarea{resize:vertical;min-height:96px}
+.qsend{justify-self:start;border:none;cursor:pointer;padding:13px 28px}
+.qnote{font-size:11px;color:rgba(255,255,255,.3)}
+.qok{font-size:13px;color:#7FD8A4}
+@media(max-width:900px){
+  .orc-in{grid-template-columns:1fr;gap:26px}
+  .testi-grid{grid-template-columns:1fr}
+  .qrow{grid-template-columns:1fr}
+}

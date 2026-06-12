@@ -5,7 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Obras · Winterplateau</title>
+<title>Obras e Projetos — Reabilitação de Fachadas e Construção Nova · Winterplateau</title>
+<link rel="canonical" href="https://www.winterplateau.pt/Projetos.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Winterplateau">
+<meta property="og:title" content="Obras Winterplateau — antes e depois de cada projeto">
+<meta property="og:description" content="Portefólio de reabilitação de fachadas e construção nova com molduras EPS e capoto (ETICS), no norte de Portugal.">
+<meta property="og:url" content="https://www.winterplateau.pt/Projetos.html">
+<meta property="og:image" content="https://www.winterplateau.pt/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="description" content="Portefólio de obras Winterplateau — reabilitação de fachadas e construção nova com molduras em EPS. Veja o antes e o depois de cada projeto.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,7 +75,7 @@
 <section class="ob-cta">
   <h2>Tem um projeto em mente?</h2>
   <p>Fale com a nossa equipa técnica e descubra a solução certa para a sua obra.</p>
-  <a href="index.html#contact" class="btn-w">Solicitar Orçamento
+  <a href="index.html#orcamento" class="btn-w">Solicitar Orçamento
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
   </a>
 </section>
@@ -88,6 +96,7 @@ function render(filter){
   const list = filter === 'all' ? PROJECTS : PROJECTS.filter(p => p.type === filter);
   grid.innerHTML = list.map(p => cardHTML(p, false)).join('');
   count.innerHTML = '<b>' + list.length + '</b> obra' + (list.length === 1 ? '' : 's');
+  if (window.applyI18n) applyI18n();
 }
 document.querySelectorAll('#filters .fbtn').forEach(b => {
   b.addEventListener('click', () => {
@@ -98,5 +107,7 @@ document.querySelectorAll('#filters .fbtn').forEach(b => {
 });
 render('all');
 </script>
+<script is:inline src="/assets/i18n.js"></script>
+<script is:inline src="/assets/marketing.js"></script>
 </body>
 </html>
