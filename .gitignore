@@ -20,3 +20,6 @@ pnpm-debug.log*
 
 # Astro
 .astro/
+
+# OpenAPI spec descarregado pelo Kubb (pré-fetch com header de bypass)
+spec*.json
