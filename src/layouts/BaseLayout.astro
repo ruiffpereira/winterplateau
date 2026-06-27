@@ -57,5 +57,39 @@ const {
 </head>
 <body>
   <slot />
+
+  <!-- Consentimento de cookies (RGPD) -->
+  <div id="cookie-consent" class="cc" hidden role="dialog" aria-label="Consentimento de cookies">
+    <p class="cc__txt">Utilizamos cookies essenciais e, com o seu consentimento, cookies para melhorar a experiência. Consulte a <a href="/privacidade">política de privacidade</a>.</p>
+    <div class="cc__actions">
+      <button type="button" data-cc="rejected" class="cc__btn cc__btn--ghost">Rejeitar</button>
+      <button type="button" data-cc="accepted" class="cc__btn">Aceitar</button>
+    </div>
+  </div>
+  <style>
+    .cc { position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 60; max-width: 42rem; margin: 0 auto; display: flex; flex-direction: column; gap: .75rem; padding: 1.1rem 1.25rem; background: #1a1a1a; color: #f3f3f3; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,.3); font-family: 'DM Sans', system-ui, sans-serif; }
+    @media (min-width: 640px) { .cc { flex-direction: row; align-items: center; } }
+    .cc__txt { margin: 0; flex: 1; font-size: .9rem; line-height: 1.5; color: #d8d8d8; }
+    .cc__txt a { color: #fff; text-decoration: underline; }
+    .cc__actions { display: flex; gap: .5rem; flex-shrink: 0; }
+    .cc__btn { padding: .55rem .9rem; border: 0; border-radius: 9px; font-size: .85rem; font-weight: 500; cursor: pointer; background: #fff; color: #1a1a1a; }
+    .cc__btn--ghost { background: transparent; color: #f3f3f3; border: 1px solid rgba(255,255,255,.25); }
+  </style>
+  <script is:inline>
+    (function () {
+      var KEY = 'cookie-consent';
+      try { if (localStorage.getItem(KEY)) return; } catch (e) { return; }
+      var el = document.getElementById('cookie-consent');
+      if (!el) return;
+      el.hidden = false;
+      el.addEventListener('click', function (e) {
+        var t = e.target;
+        if (t && t.dataset && t.dataset.cc) {
+          try { localStorage.setItem(KEY, t.dataset.cc); } catch (e2) {}
+          el.hidden = true;
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
