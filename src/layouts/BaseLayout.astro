@@ -58,22 +58,27 @@ const {
 <body>
   <slot />
 
-  <!-- Consentimento de cookies (RGPD) -->
-  <div id="cookie-consent" class="cc" hidden role="dialog" aria-label="Consentimento de cookies">
-    <p class="cc__txt">Utilizamos cookies essenciais e, com o seu consentimento, cookies para melhorar a experiência. Consulte a <a href="/privacidade">política de privacidade</a>.</p>
-    <div class="cc__actions">
-      <button type="button" data-cc="rejected" class="cc__btn cc__btn--ghost">Rejeitar</button>
-      <button type="button" data-cc="accepted" class="cc__btn">Aceitar</button>
+  <!-- Consentimento de cookies (RGPD) — overlay BLOQUEANTE (por cima de tudo, até decidir) -->
+  <div id="cookie-consent" class="cc-overlay" hidden role="dialog" aria-modal="true" aria-label="Consentimento de cookies">
+    <div class="cc-box">
+      <h2 class="cc-title">Cookies</h2>
+      <p class="cc-txt">Utilizamos cookies essenciais e, com o seu consentimento, cookies para melhorar a experiência. Escolha para continuar. <a href="/privacidade">Política de privacidade</a>.</p>
+      <div class="cc-actions">
+        <button type="button" data-cc="rejected" class="cc-btn cc-btn--ghost">Rejeitar</button>
+        <button type="button" data-cc="accepted" class="cc-btn">Aceitar</button>
+      </div>
     </div>
   </div>
   <style>
-    .cc { position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 60; max-width: 42rem; margin: 0 auto; display: flex; flex-direction: column; gap: .75rem; padding: 1.1rem 1.25rem; background: #1a1a1a; color: #f3f3f3; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,.3); font-family: 'DM Sans', system-ui, sans-serif; }
-    @media (min-width: 640px) { .cc { flex-direction: row; align-items: center; } }
-    .cc__txt { margin: 0; flex: 1; font-size: .9rem; line-height: 1.5; color: #d8d8d8; }
-    .cc__txt a { color: #fff; text-decoration: underline; }
-    .cc__actions { display: flex; gap: .5rem; flex-shrink: 0; }
-    .cc__btn { padding: .55rem .9rem; border: 0; border-radius: 9px; font-size: .85rem; font-weight: 500; cursor: pointer; background: #fff; color: #1a1a1a; }
-    .cc__btn--ghost { background: transparent; color: #f3f3f3; border: 1px solid rgba(255,255,255,.25); }
+    .cc-overlay { position: fixed; inset: 0; z-index: 9999; display: flex; align-items: center; justify-content: center; padding: 1rem; background: rgba(0,0,0,.7); backdrop-filter: blur(4px); font-family: 'DM Sans', system-ui, sans-serif; }
+    .cc-box { width: 100%; max-width: 28rem; background: #1a1a1a; color: #f3f3f3; border: 1px solid rgba(255,255,255,.1); border-radius: 16px; padding: 1.5rem; box-shadow: 0 20px 60px rgba(0,0,0,.45); }
+    .cc-title { margin: 0 0 .5rem; font-size: 1.125rem; font-weight: 600; }
+    .cc-txt { margin: 0; font-size: .9rem; line-height: 1.5; color: #d8d8d8; }
+    .cc-txt a { color: #fff; text-decoration: underline; }
+    .cc-actions { display: flex; gap: .5rem; justify-content: flex-end; margin-top: 1.25rem; }
+    .cc-btn { padding: .6rem 1rem; border: 0; border-radius: 9px; font-size: .85rem; font-weight: 500; cursor: pointer; background: #fff; color: #1a1a1a; }
+    .cc-btn--ghost { background: transparent; color: #f3f3f3; border: 1px solid rgba(255,255,255,.25); }
+    body.cc-locked { overflow: hidden; }
   </style>
   <script is:inline>
     (function () {
@@ -82,11 +87,13 @@ const {
       var el = document.getElementById('cookie-consent');
       if (!el) return;
       el.hidden = false;
+      document.body.classList.add('cc-locked');
       el.addEventListener('click', function (e) {
         var t = e.target;
         if (t && t.dataset && t.dataset.cc) {
           try { localStorage.setItem(KEY, t.dataset.cc); } catch (e2) {}
           el.hidden = true;
+          document.body.classList.remove('cc-locked');
         }
       });
     })();
