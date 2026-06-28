@@ -1,0 +1,888 @@
+key,locale,value,type,section,parent
+nav.home,pt,Início,text,Navegação,
+nav.home,en,Home,text,Navegação,
+nav.home,fr,Accueil,text,Navegação,
+nav.eps_exterior,pt,EPS Exterior,text,Navegação,
+nav.eps_exterior,en,EPS Exterior,text,Navegação,
+nav.eps_exterior,fr,EPS Exterior,text,Navegação,
+nav.eps_interior,pt,EPS Interior,text,Navegação,
+nav.eps_interior,en,EPS Interior,text,Navegação,
+nav.eps_interior,fr,EPS Interior,text,Navegação,
+nav.metal,pt,Perfis Metálicos,text,Navegação,
+nav.metal,en,Metal Profiles,text,Navegação,
+nav.metal,fr,Profilés métalliques,text,Navegação,
+nav.projects,pt,Obras,text,Navegação,
+nav.projects,en,Projects,text,Navegação,
+nav.projects,fr,Chantiers,text,Navegação,
+nav.company,pt,Empresa,text,Navegação,
+nav.company,en,Company,text,Navegação,
+nav.company,fr,Entreprise,text,Navegação,
+nav.downloads,pt,Downloads,text,Navegação,
+nav.downloads,en,Downloads,text,Navegação,
+nav.downloads,fr,Téléchargements,text,Navegação,
+nav.contacts,pt,Contactos,text,Navegação,
+nav.contacts,en,Contacts,text,Navegação,
+nav.contacts,fr,Contacts,text,Navegação,
+nav.cta,pt,Solicitar Orçamento,text,Navegação,
+nav.cta,en,Request a Quote,text,Navegação,
+nav.cta,fr,Demander un devis,text,Navegação,
+hero.tagline,pt,Vila Verde, Portugal · Desde 2016,text,Hero,Homepage
+hero.tagline,en,Vila Verde, Portugal · Since 2016,text,Hero,Homepage
+hero.tagline,fr,Vila Verde, Portugal · Depuis 2016,text,Hero,Homepage
+hero.description,pt,"Soluções em EPS e Perfis Metálicos para construção nova e reabilitação de edifícios. Fabricação nacional, certificação europeia.",text,Hero,Homepage
+hero.description,en,"EPS and metal profile solutions for new construction and building renovation. Made in Portugal, European certification.",text,Hero,Homepage
+hero.description,fr,"Solutions en EPS et profilés métalliques pour la construction neuve et la réhabilitation. Fabrication portugaise, certification européenne.",text,Hero,Homepage
+hero.cta_primary,pt,Ver Soluções,text,Hero,Homepage
+hero.cta_primary,en,View Solutions,text,Hero,Homepage
+hero.cta_primary,fr,Voir les solutions,text,Hero,Homepage
+hero.cta_secondary,pt,Catálogo PDF,text,Hero,Homepage
+hero.cta_secondary,en,PDF Catalogue,text,Hero,Homepage
+hero.cta_secondary,fr,Catalogue PDF,text,Hero,Homepage
+stats.1.value,pt,2016,number,Stats,Homepage
+stats.1.label,pt,Fundação,text,Stats,Homepage
+stats.1.label,en,Founded,text,Stats,Homepage
+stats.1.label,fr,Fondation,text,Stats,Homepage
+stats.1.sublabel,pt,Vila Verde, Braga,text,Stats,Homepage
+stats.1.sublabel,en,Vila Verde, Braga,text,Stats,Homepage
+stats.1.sublabel,fr,Vila Verde, Braga,text,Stats,Homepage
+stats.2.value,pt,18+,number,Stats,Homepage
+stats.2.label,pt,Produtos EPS,text,Stats,Homepage
+stats.2.label,en,EPS Products,text,Stats,Homepage
+stats.2.label,fr,Produits EPS,text,Stats,Homepage
+stats.2.sublabel,pt,Exterior & Interior,text,Stats,Homepage
+stats.2.sublabel,en,Exterior & Interior,text,Stats,Homepage
+stats.2.sublabel,fr,Extérieur & Intérieur,text,Stats,Homepage
+stats.3.value,pt,500+,number,Stats,Homepage
+stats.3.label,pt,Projetos,text,Stats,Homepage
+stats.3.label,en,Projects,text,Stats,Homepage
+stats.3.label,fr,Projets,text,Stats,Homepage
+stats.3.sublabel,pt,Portugal · Espanha · França,text,Stats,Homepage
+stats.3.sublabel,en,Portugal · Spain · France,text,Stats,Homepage
+stats.3.sublabel,fr,Portugal · Espagne · France,text,Stats,Homepage
+stats.4.value,pt,CE,text,Stats,Homepage
+stats.4.label,pt,Certificação,text,Stats,Homepage
+stats.4.label,en,Certification,text,Stats,Homepage
+stats.4.label,fr,Certification,text,Stats,Homepage
+stats.4.sublabel,pt,Declaração de Desempenho,text,Stats,Homepage
+stats.4.sublabel,en,Declaration of Performance,text,Stats,Homepage
+stats.4.sublabel,fr,Déclaration de performance,text,Stats,Homepage
+eps_exterior.eyebrow,pt,Linha de Produto,text,EPS Exterior,Homepage
+eps_exterior.eyebrow,en,Product Line,text,EPS Exterior,Homepage
+eps_exterior.eyebrow,fr,Gamme de produits,text,EPS Exterior,Homepage
+eps_exterior.title,pt,EPS Exterior,text,EPS Exterior,Homepage
+eps_exterior.title,en,EPS Exterior,text,EPS Exterior,Homepage
+eps_exterior.title,fr,EPS Exterior,text,EPS Exterior,Homepage
+eps_exterior.description,pt,"Fachadas inovadoras com molduras leves de poliestireno expandido. Fácil aplicação, elevada durabilidade e versatilidade decorativa para qualquer obra.",text,EPS Exterior,Homepage
+eps_exterior.description,en,"Innovative façades with lightweight expanded-polystyrene mouldings. Easy installation, high durability and decorative versatility for any project.",text,EPS Exterior,Homepage
+eps_exterior.description,fr,"Des façades innovantes avec des moulures légères en polystyrène expansé. Pose facile, grande durabilité et polyvalence décorative pour tout chantier.",text,EPS Exterior,Homepage
+eps_exterior.item.1,pt,Bandas decorativas,text,EPS Exterior,Homepage
+eps_exterior.item.1,en,Decorative bands,text,EPS Exterior,Homepage
+eps_exterior.item.1,fr,Bandeaux décoratifs,text,EPS Exterior,Homepage
+eps_exterior.item.2,pt,Cornijas e entablamentos,text,EPS Exterior,Homepage
+eps_exterior.item.2,en,Cornices and entablatures,text,EPS Exterior,Homepage
+eps_exterior.item.2,fr,Corniches et entablements,text,EPS Exterior,Homepage
+eps_exterior.item.3,pt,Colunas e pilastras,text,EPS Exterior,Homepage
+eps_exterior.item.3,en,Columns and pilasters,text,EPS Exterior,Homepage
+eps_exterior.item.3,fr,Colonnes et pilastres,text,EPS Exterior,Homepage
+eps_exterior.item.4,pt,Peitoris de janela,text,EPS Exterior,Homepage
+eps_exterior.item.4,en,Window sills,text,EPS Exterior,Homepage
+eps_exterior.item.4,fr,Appuis de fenêtre,text,EPS Exterior,Homepage
+eps_exterior.cta,pt,Ver todos os produtos,text,EPS Exterior,Homepage
+eps_exterior.cta,en,View all products,text,EPS Exterior,Homepage
+eps_exterior.cta,fr,Voir tous les produits,text,EPS Exterior,Homepage
+eps_interior.eyebrow,pt,Linha de Produto,text,EPS Interior,Homepage
+eps_interior.eyebrow,en,Product Line,text,EPS Interior,Homepage
+eps_interior.eyebrow,fr,Gamme de produits,text,EPS Interior,Homepage
+eps_interior.title,pt,EPS Interior,text,EPS Interior,Homepage
+eps_interior.title,en,EPS Interior,text,EPS Interior,Homepage
+eps_interior.title,fr,EPS Interior,text,EPS Interior,Homepage
+eps_interior.description,pt,"Molduras interiores que transformam espaços residenciais e comerciais com elegância. Instalação simples, acabamento refinado, sem obras disruptivas.",text,EPS Interior,Homepage
+eps_interior.description,en,"Interior mouldings that elegantly transform residential and commercial spaces. Simple installation, refined finish, no disruptive works.",text,EPS Interior,Homepage
+eps_interior.description,fr,"Des moulures intérieures qui transforment avec élégance les espaces résidentiels et commerciaux. Pose simple, finition raffinée, sans travaux lourds.",text,EPS Interior,Homepage
+eps_interior.item.1,pt,Rodatetos e molduras de teto,text,EPS Interior,Homepage
+eps_interior.item.1,en,Crown and ceiling mouldings,text,EPS Interior,Homepage
+eps_interior.item.1,fr,Corniches et moulures de plafond,text,EPS Interior,Homepage
+eps_interior.item.2,pt,Molduras de parede e painéis,text,EPS Interior,Homepage
+eps_interior.item.2,en,Wall mouldings and panels,text,EPS Interior,Homepage
+eps_interior.item.2,fr,Moulures murales et panneaux,text,EPS Interior,Homepage
+eps_interior.item.3,pt,Rodapés decorativos,text,EPS Interior,Homepage
+eps_interior.item.3,en,Decorative skirting,text,EPS Interior,Homepage
+eps_interior.item.3,fr,Plinthes décoratives,text,EPS Interior,Homepage
+eps_interior.item.4,pt,Perfis de canto e remate,text,EPS Interior,Homepage
+eps_interior.item.4,en,Corner and trim profiles,text,EPS Interior,Homepage
+eps_interior.item.4,fr,Profils d'angle et de finition,text,EPS Interior,Homepage
+eps_interior.cta,pt,Ver todos os produtos,text,EPS Interior,Homepage
+eps_interior.cta,en,View all products,text,EPS Interior,Homepage
+eps_interior.cta,fr,Voir tous les produits,text,EPS Interior,Homepage
+statement.sup,pt,Fabricação Nacional · Desde 2016,text,Statement,Homepage
+statement.sup,en,Made in Portugal · Since 2016,text,Statement,Homepage
+statement.sup,fr,Fabrication portugaise · Depuis 2016,text,Statement,Homepage
+statement.title,pt,Mais de 500 projetos construídos com,text,Statement,Homepage
+statement.title,en,Over 500 projects built with,text,Statement,Homepage
+statement.title,fr,Plus de 500 chantiers réalisés com,text,Statement,Homepage
+statement.title_em,pt,rigor e inovação.,text,Statement,Homepage
+statement.title_em,en,rigour and innovation.,text,Statement,Homepage
+statement.title_em,fr,rigueur et innovation.,text,Statement,Homepage
+statement.subtitle,pt,"Certificação CE · Declaração de Desempenho · Exportação para PT, ES e FR",text,Statement,Homepage
+statement.subtitle,en,CE Certification · Declaration of Performance · Exports to PT, ES & FR,text,Statement,Homepage
+statement.subtitle,fr,Certification CE · Déclaration de performance · Export PT, ES & FR,text,Statement,Homepage
+metal.eyebrow,pt,Linha de Produto,text,Perfis Metálicos,Homepage
+metal.eyebrow,en,Product Line,text,Perfis Metálicos,Homepage
+metal.eyebrow,fr,Gamme de produits,text,Perfis Metálicos,Homepage
+metal.title,pt,Perfis Metálicos,text,Perfis Metálicos,Homepage
+metal.title,en,Metal Profiles,text,Perfis Metálicos,Homepage
+metal.title,fr,Profilés métalliques,text,Perfis Metálicos,Homepage
+metal.cta,pt,Ver todos os perfis,text,Perfis Metálicos,Homepage
+metal.cta,en,View all profiles,text,Perfis Metálicos,Homepage
+metal.cta,fr,Voir tous les profilés,text,Perfis Metálicos,Homepage
+metal.1.name,pt,Tetos Falsos,text,Perfis Metálicos,Homepage
+metal.1.name,en,Suspended Ceilings,text,Perfis Metálicos,Homepage
+metal.1.name,fr,Faux plafonds,text,Perfis Metálicos,Homepage
+metal.1.description,pt,Sistema de suspensão para tetos rebaixados. Maior controlo acústico e térmico.,text,Perfis Metálicos,Homepage
+metal.1.description,en,Suspension system for lowered ceilings. Better acoustic and thermal control.,text,Perfis Metálicos,Homepage
+metal.1.description,fr,Système de suspension pour plafonds abaissés. Meilleur contrôle acoustique et thermique.,text,Perfis Metálicos,Homepage
+metal.1.tag.1,pt,Perfil TC,text,Perfis Metálicos,Homepage
+metal.1.tag.2,pt,Perfil U / Raia,text,Perfis Metálicos,Homepage
+metal.2.name,pt,Divisórias,text,Perfis Metálicos,Homepage
+metal.2.name,en,Partitions,text,Perfis Metálicos,Homepage
+metal.2.name,fr,Cloisons,text,Perfis Metálicos,Homepage
+metal.2.description,pt,Partições leves e versáteis para escritórios e espaços comerciais.,text,Perfis Metálicos,Homepage
+metal.2.description,en,Light, versatile partitions for offices and commercial spaces.,text,Perfis Metálicos,Homepage
+metal.2.description,fr,Cloisons légères et polyvalentes pour bureaux et espaces commerciaux.,text,Perfis Metálicos,Homepage
+metal.2.tag.1,pt,Montante Stud,text,Perfis Metálicos,Homepage
+metal.2.tag.2,pt,Canal Raia,text,Perfis Metálicos,Homepage
+metal.3.name,pt,Complementos,text,Perfis Metálicos,Homepage
+metal.3.name,en,Trims,text,Perfis Metálicos,Homepage
+metal.3.name,fr,Compléments,text,Perfis Metálicos,Homepage
+metal.3.description,pt,"Alhetas, cantoneiras e perfis de acabamento para soluções completas.",text,Perfis Metálicos,Homepage
+metal.3.description,en,"Shadow gaps, angles and finishing profiles for complete solutions.",text,Perfis Metálicos,Homepage
+metal.3.description,fr,"Joints creux, cornières et profils de finition pour des solutions complètes.",text,Perfis Metálicos,Homepage
+metal.3.tag.1,pt,Alheta Lacada,text,Perfis Metálicos,Homepage
+metal.3.tag.2,pt,Cantoneira L,text,Perfis Metálicos,Homepage
+metal.3.tag.3,pt,Cantoneira L Perf.,text,Perfis Metálicos,Homepage
+metal.4.name,pt,Acessórios,text,Perfis Metálicos,Homepage
+metal.4.name,en,Accessories,text,Perfis Metálicos,Homepage
+metal.4.name,fr,Accessoires,text,Perfis Metálicos,Homepage
+metal.4.description,pt,"Sistema completo de fixação, suspensão e conectividade para qualquer solução.",text,Perfis Metálicos,Homepage
+metal.4.description,en,"Complete fixing, suspension and connection system for any solution.",text,Perfis Metálicos,Homepage
+metal.4.description,fr,Système complet de fixation, suspension et connexion pour toute solution.,text,Perfis Metálicos,Homepage
+metal.4.tag.1,pt,Alçapão,text,Perfis Metálicos,Homepage
+metal.4.tag.2,pt,Cruzeta / Emenda,text,Perfis Metálicos,Homepage
+metal.4.tag.3,pt,Perfil Omega · Pivot,text,Perfis Metálicos,Homepage
+obras_home.eyebrow,pt,Portefólio · Obras,text,Obras,Homepage
+obras_home.eyebrow,en,Portfolio · Projects,text,Obras,Homepage
+obras_home.eyebrow,fr,Portfolio · Chantiers,text,Obras,Homepage
+obras_home.title,pt,Projetos que falam por nós,text,Obras,Homepage
+obras_home.title,en,Projects that speak for us,text,Obras,Homepage
+obras_home.title,fr,Des chantiers qui parlent pour nous,text,Obras,Homepage
+obras_home.description,pt,Cada obra mostra o antes e o depois — arraste para ver a transformação que as nossas soluções trazem à fachada.,text,Obras,Homepage
+obras_home.description,en,Each project shows the before and after — drag to see the transformation our solutions bring to the façade.,text,Obras,Homepage
+obras_home.description,fr,"Chaque chantier montre l'avant et l'après — faites glisser pour voir la transformation que nos solutions apportent à la façade.",text,Obras,Homepage
+obras_home.featured.1,pt,reabilitacao-fachada-braga,data,Obras,Homepage
+obras_home.featured.2,pt,moradia-ponte-de-lima,data,Obras,Homepage
+obras_home.featured.3,pt,edificio-comercial-guimaraes,data,Obras,Homepage
+obras_home.cta,pt,Ver todas as obras,text,Obras,Homepage
+obras_home.cta,en,View all projects,text,Obras,Homepage
+obras_home.cta,fr,Voir tous les chantiers,text,Obras,Homepage
+about.eyebrow,pt,Quem Somos,text,Empresa,Homepage
+about.eyebrow,en,About Us,text,Empresa,Homepage
+about.eyebrow,fr,Qui sommes-nous,text,Empresa,Homepage
+about.title,pt,"Criados para responder a uma <em>necessidade real</em> da construção moderna.",richtext,Empresa,Homepage
+about.title,en,"Created to answer a <em>real need</em> of modern construction.",richtext,Empresa,Homepage
+about.title,fr,"Créés pour répondre à un <em>besoin réel</em> de la construction moderne.",richtext,Empresa,Homepage
+about.body,pt,"A Winterplateau foi fundada em Janeiro de 2016 em Vila Verde, Braga, com o propósito de desenvolver e colmatar uma necessidade detectada no mercado da construção civil e reabilitação — produtos inovadores em EPS multifuncionais assentes nas melhores práticas e tecnologias. Uma busca incansável por qualidade que resulta em vantagens competitivas concretas para os nossos clientes.",text,Empresa,Homepage
+about.body,en,"Winterplateau was founded in January 2016 in Vila Verde, Braga, to develop and answer a need identified in the construction and renovation market — innovative, multifunctional EPS products built on best practices and technologies. A relentless pursuit of quality that delivers concrete competitive advantages to our clients.",text,Empresa,Homepage
+about.body,fr,"Winterplateau a été fondée en janvier 2016 à Vila Verde, Braga, pour développer et répondre à un besoin identifié sur le marché de la construction et de la réhabilitation — des produits EPS innovants et multifonctionnels fondés sur les meilleures pratiques et technologies. Une recherche incessante de qualité qui se traduit par des avantages compétitifs concrets pour nos clients.",text,Empresa,Homepage
+about.cert.1,pt,Certificação CE,text,Empresa,Homepage
+about.cert.1,en,CE Certification,text,Empresa,Homepage
+about.cert.1,fr,Certification CE,text,Empresa,Homepage
+about.cert.2,pt,Decl. de Desempenho,text,Empresa,Homepage
+about.cert.2,en,Decl. of Performance,text,Empresa,Homepage
+about.cert.2,fr,Décl. de performance,text,Empresa,Homepage
+about.cert.3,pt,Co-financiado UE,text,Empresa,Homepage
+about.cert.3,en,EU Co-funded,text,Empresa,Homepage
+about.cert.3,fr,Cofinancé UE,text,Empresa,Homepage
+about.founding_year,pt,2016,number,Empresa,Homepage
+testimonials.eyebrow,pt,A confiança de quem construiu,text,Testemunhos,Homepage
+testimonials.eyebrow,en,Trusted by those who built with us,text,Testemunhos,Homepage
+testimonials.eyebrow,fr,La confiance de ceux qui ont construit,text,Testemunhos,Homepage
+testimonials.title,pt,Testemunhos,text,Testemunhos,Homepage
+testimonials.title,en,Testimonials,text,Testemunhos,Homepage
+testimonials.title,fr,Témoignages,text,Testemunhos,Homepage
+testimonials.1.quote,pt,Espaço reservado para o testemunho real do cliente.,text,Testemunhos,Homepage
+testimonials.1.name,pt,Nome do Cliente,text,Testemunhos,Homepage
+testimonials.1.role,pt,Tipo de obra · Localidade,text,Testemunhos,Homepage
+testimonials.2.quote,pt,Espaço reservado para o testemunho real do cliente.,text,Testemunhos,Homepage
+testimonials.2.name,pt,Nome do Cliente,text,Testemunhos,Homepage
+testimonials.2.role,pt,Tipo de obra · Localidade,text,Testemunhos,Homepage
+testimonials.3.quote,pt,Espaço reservado para o testemunho real do cliente.,text,Testemunhos,Homepage
+testimonials.3.name,pt,Nome do Cliente,text,Testemunhos,Homepage
+testimonials.3.role,pt,Tipo de obra · Localidade,text,Testemunhos,Homepage
+downloads.eyebrow,pt,Documentação Técnica,text,Downloads,Homepage
+downloads.eyebrow,en,Technical Documentation,text,Downloads,Homepage
+downloads.eyebrow,fr,Documentation technique,text,Downloads,Homepage
+downloads.title,pt,Downloads,text,Downloads,Homepage
+downloads.title,en,Downloads,text,Downloads,Homepage
+downloads.title,fr,Téléchargements,text,Downloads,Homepage
+downloads.1.name,pt,Declaração de Desempenho,text,Downloads,Homepage
+downloads.1.name,en,Declaration of Performance,text,Downloads,Homepage
+downloads.1.name,fr,Déclaration de performance,text,Downloads,Homepage
+downloads.1.file,pt,http://www.winterplateau.pt/inc/uploads/2018/03/DECLARACAO_DESEMPENHO.pdf,file,Downloads,Homepage
+downloads.2.name,pt,Declaração de Conformidade,text,Downloads,Homepage
+downloads.2.name,en,Declaration of Conformity,text,Downloads,Homepage
+downloads.2.name,fr,Déclaration de conformité,text,Downloads,Homepage
+downloads.2.file,pt,http://www.winterplateau.pt/inc/uploads/2018/03/declaracao-conformidade.pdf,file,Downloads,Homepage
+downloads.3.name,pt,DOP — Declaration of Performance,text,Downloads,Homepage
+downloads.3.name,en,DOP — Declaration of Performance,text,Downloads,Homepage
+downloads.3.name,fr,DOP — Déclaration de performance,text,Downloads,Homepage
+downloads.3.file,pt,http://www.winterplateau.pt/inc/uploads/2018/03/dop.pdf,file,Downloads,Homepage
+downloads.4.name,pt,Modo de Aplicação Molduras,text,Downloads,Homepage
+downloads.4.name,en,Mouldings Application Guide,text,Downloads,Homepage
+downloads.4.name,fr,Guide d'application des moulures,text,Downloads,Homepage
+downloads.4.file,pt,http://www.winterplateau.pt/inc/uploads/2018/03/modo-de-aplicacao-molduras.pdf,file,Downloads,Homepage
+downloads.5.name,pt,Catálogo Winterplateau,text,Downloads,Homepage
+downloads.5.name,en,Winterplateau Catalogue,text,Downloads,Homepage
+downloads.5.name,fr,Catalogue Winterplateau,text,Downloads,Homepage
+downloads.5.file,pt,http://www.winterplateau.pt/file/2017/10/WINTERPLATEAU_Catalogo-XS_AF.pdf,file,Downloads,Homepage
+downloads.6.name,pt,Catálogo Rodatetos,text,Downloads,Homepage
+downloads.6.name,en,Crown Mouldings Catalogue,text,Downloads,Homepage
+downloads.6.name,fr,Catalogue Corniches intérieures,text,Downloads,Homepage
+downloads.6.file,pt,http://www.winterplateau.pt/inc/uploads/2018/03/catalogo-rodatetos-winterplateau_Versao-1.pdf,file,Downloads,Homepage
+cta.title,pt,Pronto para o,text,CTA,Homepage
+cta.title,en,Ready for your,text,CTA,Homepage
+cta.title,fr,Prêt pour votre,text,CTA,Homepage
+cta.title_em,pt,próximo projecto?,text,CTA,Homepage
+cta.title_em,en,next project?,text,CTA,Homepage
+cta.title_em,fr,prochain chantier ?,text,CTA,Homepage
+cta.description,pt,Peça um orçamento personalizado ou fale com a nossa equipa técnica.,text,CTA,Homepage
+cta.description,en,Request a tailored quote or talk to our technical team.,text,CTA,Homepage
+cta.description,fr,Demandez un devis personnalisé ou parlez à notre équipe technique.,text,CTA,Homepage
+cta.primary,pt,Solicitar Orçamento,text,CTA,Homepage
+cta.primary,en,Request a Quote,text,CTA,Homepage
+cta.primary,fr,Demander un devis,text,CTA,Homepage
+cta.secondary,pt,Descarregar Catálogo,text,CTA,Homepage
+cta.secondary,en,Download Catalogue,text,CTA,Homepage
+cta.secondary,fr,Télécharger le catalogue,text,CTA,Homepage
+orcamento.eyebrow,pt,Pedido de Orçamento,text,Orçamento,Homepage
+orcamento.eyebrow,en,Quote Request,text,Orçamento,Homepage
+orcamento.eyebrow,fr,Demande de devis,text,Orçamento,Homepage
+orcamento.title,pt,Peça o seu orçamento,text,Orçamento,Homepage
+orcamento.title,en,Request your quote,text,Orçamento,Homepage
+orcamento.title,fr,Demandez votre devis,text,Orçamento,Homepage
+orcamento.description,pt,Envie os detalhes da sua obra — respondemos com uma proposta personalizada em 1–2 dias úteis.,text,Orçamento,Homepage
+orcamento.description,en,Send us your project details — we reply with a tailored proposal within 1–2 working days.,text,Orçamento,Homepage
+orcamento.description,fr,"Envoyez-nous les détails de votre chantier — nous répondons avec une proposition personnalisée sous 1 à 2 jours ouvrés.",text,Orçamento,Homepage
+orcamento.point.1,pt,Resposta até 48 horas,text,Orçamento,Homepage
+orcamento.point.1,en,Reply within 48 hours,text,Orçamento,Homepage
+orcamento.point.1,fr,Réponse sous 48 heures,text,Orçamento,Homepage
+orcamento.point.2,pt,Aconselhamento técnico incluído,text,Orçamento,Homepage
+orcamento.point.2,en,Technical advice included,text,Orçamento,Homepage
+orcamento.point.2,fr,Conseil technique inclus,text,Orçamento,Homepage
+orcamento.point.3,pt,Sem compromisso,text,Orçamento,Homepage
+orcamento.point.3,en,No obligation,text,Orçamento,Homepage
+orcamento.point.3,fr,Sans engagement,text,Orçamento,Homepage
+orcamento.field.name,pt,Nome,text,Orçamento,Homepage
+orcamento.field.name,en,Name,text,Orçamento,Homepage
+orcamento.field.name,fr,Nom,text,Orçamento,Homepage
+orcamento.field.email,pt,Email,text,Orçamento,Homepage
+orcamento.field.email,en,Email,text,Orçamento,Homepage
+orcamento.field.email,fr,E-mail,text,Orçamento,Homepage
+orcamento.field.phone,pt,Telefone,text,Orçamento,Homepage
+orcamento.field.phone,en,Phone,text,Orçamento,Homepage
+orcamento.field.phone,fr,Téléphone,text,Orçamento,Homepage
+orcamento.field.type,pt,Tipo de obra,text,Orçamento,Homepage
+orcamento.field.type,en,Project type,text,Orçamento,Homepage
+orcamento.field.type,fr,Type de chantier,text,Orçamento,Homepage
+orcamento.field.message,pt,Mensagem,text,Orçamento,Homepage
+orcamento.field.message,en,Message,text,Orçamento,Homepage
+orcamento.field.message,fr,Message,text,Orçamento,Homepage
+orcamento.placeholder.name,pt,O seu nome,text,Orçamento,Homepage
+orcamento.placeholder.name,en,Your name,text,Orçamento,Homepage
+orcamento.placeholder.name,fr,Votre nom,text,Orçamento,Homepage
+orcamento.placeholder.message,pt,Descreva a sua obra…,text,Orçamento,Homepage
+orcamento.placeholder.message,en,Describe your project…,text,Orçamento,Homepage
+orcamento.placeholder.message,fr,Décrivez votre chantier…,text,Orçamento,Homepage
+orcamento.option.1,pt,Reabilitação de fachada,text,Orçamento,Homepage
+orcamento.option.1,en,Façade renovation,text,Orçamento,Homepage
+orcamento.option.1,fr,Réhabilitation de façade,text,Orçamento,Homepage
+orcamento.option.2,pt,Construção nova,text,Orçamento,Homepage
+orcamento.option.2,en,New build,text,Orçamento,Homepage
+orcamento.option.2,fr,Construction neuve,text,Orçamento,Homepage
+orcamento.option.3,pt,EPS interior,text,Orçamento,Homepage
+orcamento.option.3,en,Interior EPS,text,Orçamento,Homepage
+orcamento.option.3,fr,EPS intérieur,text,Orçamento,Homepage
+orcamento.option.4,pt,Perfis metálicos,text,Orçamento,Homepage
+orcamento.option.4,en,Metal profiles,text,Orçamento,Homepage
+orcamento.option.4,fr,Profilés métalliques,text,Orçamento,Homepage
+orcamento.option.5,pt,Outro,text,Orçamento,Homepage
+orcamento.option.5,en,Other,text,Orçamento,Homepage
+orcamento.option.5,fr,Autre,text,Orçamento,Homepage
+orcamento.submit,pt,Enviar pedido,text,Orçamento,Homepage
+orcamento.submit,en,Send request,text,Orçamento,Homepage
+orcamento.submit,fr,Envoyer la demande,text,Orçamento,Homepage
+orcamento.note,pt,Os pedidos seguem diretamente para geral@winterplateau.pt,text,Orçamento,Homepage
+orcamento.note,en,Requests go directly to geral@winterplateau.pt,text,Orçamento,Homepage
+orcamento.note,fr,Les demandes sont envoyées directement à geral@winterplateau.pt,text,Orçamento,Homepage
+orcamento.success,pt,Obrigado! O seu pedido foi preparado no seu programa de email — basta enviar.,text,Orçamento,Homepage
+orcamento.success,en,Thank you! Your request has been prepared in your email client — just press send.,text,Orçamento,Homepage
+orcamento.success,fr,"Merci ! Votre demande a été préparée dans votre logiciel de messagerie — il ne reste qu'à l'envoyer.",text,Orçamento,Homepage
+contact.eyebrow,pt,Contactos,text,Contactos,Homepage
+contact.eyebrow,en,Contacts,text,Contactos,Homepage
+contact.eyebrow,fr,Contacts,text,Contactos,Homepage
+contact.title,pt,Fale Connosco,text,Contactos,Homepage
+contact.title,en,Get in Touch,text,Contactos,Homepage
+contact.title,fr,Contactez-nous,text,Contactos,Homepage
+contact.address.label,pt,Morada,text,Contactos,Homepage
+contact.address.label,en,Address,text,Contactos,Homepage
+contact.address.label,fr,Adresse,text,Contactos,Homepage
+contact.address.line1,pt,Avenida Principal, Nº 202,text,Contactos,Homepage
+contact.address.line2,pt,"4730-041 Atiães, Vila Verde",text,Contactos,Homepage
+contact.address.line3,pt,"Braga, Portugal",text,Contactos,Homepage
+contact.phone.label,pt,Telefone,text,Contactos,Homepage
+contact.phone.label,en,Phone,text,Contactos,Homepage
+contact.phone.label,fr,Téléphone,text,Contactos,Homepage
+contact.phone.value,pt,+351 253 193 667,phone,Contactos,Homepage
+contact.email.label,pt,Email,text,Contactos,Homepage
+contact.email.value,pt,geral@winterplateau.pt,email,Contactos,Homepage
+contact.social.linkedin,pt,https://www.linkedin.com/company/winterplateau/,url,Contactos,Homepage
+contact.social.facebook,pt,https://www.facebook.com/winterplateau/,url,Contactos,Homepage
+contact.social.instagram,pt,https://www.instagram.com/winterplateau/,url,Contactos,Homepage
+footer.tagline,pt,"Soluções em EPS e Perfis Metálicos para construção e reabilitação. Fabricação nacional, qualidade europeia.",text,Footer,
+footer.tagline,en,"EPS and metal profile solutions for construction and renovation. Made in Portugal, European quality.",text,Footer,
+footer.tagline,fr,"Solutions en EPS et profilés métalliques pour la construction et la réhabilitation. Fabrication portugaise, qualité européenne.",text,Footer,
+footer.col.solutions,pt,Soluções,text,Footer,
+footer.col.solutions,en,Solutions,text,Footer,
+footer.col.solutions,fr,Solutions,text,Footer,
+footer.col.company,pt,Empresa,text,Footer,
+footer.col.company,en,Company,text,Footer,
+footer.col.company,fr,Entreprise,text,Footer,
+footer.col.contacts,pt,Contactos,text,Footer,
+footer.col.contacts,en,Contacts,text,Footer,
+footer.col.contacts,fr,Contacts,text,Footer,
+footer.copyright,pt,© 2026 Winterplateau. Todos os direitos reservados.,text,Footer,
+footer.copyright,en,© 2026 Winterplateau. All rights reserved.,text,Footer,
+footer.copyright,fr,© 2026 Winterplateau. Tous droits réservés.,text,Footer,
+footer.privacy,pt,Política de Privacidade,text,Footer,
+footer.privacy,en,Privacy Policy,text,Footer,
+footer.privacy,fr,Politique de confidentialité,text,Footer,
+footer.terms,pt,Termos e Condições,text,Footer,
+footer.terms,en,Terms & Conditions,text,Footer,
+footer.terms,fr,Conditions générales,text,Footer,
+projects_page.eyebrow,pt,As nossas Obras,text,Página Projetos,Projetos
+projects_page.eyebrow,en,Our Projects,text,Página Projetos,Projetos
+projects_page.eyebrow,fr,Nos Chantiers,text,Página Projetos,Projetos
+projects_page.description,pt,"Reabilitação de fachadas e construção nova por todo o norte de Portugal. Em cada projeto, arraste a comparação para ver a transformação que as molduras e o isolamento Winterplateau trazem ao edifício.",text,Página Projetos,Projetos
+projects_page.description,en,"Façade renovation and new construction across northern Portugal. On each project, drag the comparison to see the transformation Winterplateau mouldings and insulation bring to the building.",text,Página Projetos,Projetos
+projects_page.description,fr,"Réhabilitation de façades et construction neuve dans tout le nord du Portugal. Sur chaque chantier, faites glisser la comparaison pour voir la transformation apportée par les moulures et l'isolation Winterplateau.",text,Página Projetos,Projetos
+projects_page.filter.all,pt,Todas,text,Página Projetos,Projetos
+projects_page.filter.all,en,All,text,Página Projetos,Projetos
+projects_page.filter.all,fr,Tous,text,Página Projetos,Projetos
+projects_page.filter.renovation,pt,Reabilitação,text,Página Projetos,Projetos
+projects_page.filter.renovation,en,Renovation,text,Página Projetos,Projetos
+projects_page.filter.renovation,fr,Réhabilitation,text,Página Projetos,Projetos
+projects_page.filter.new_build,pt,Construção Nova,text,Página Projetos,Projetos
+projects_page.filter.new_build,en,New Build,text,Página Projetos,Projetos
+projects_page.filter.new_build,fr,Construction neuve,text,Página Projetos,Projetos
+projects_page.cta.title,pt,Tem um projeto em mente?,text,Página Projetos,Projetos
+projects_page.cta.title,en,Have a project in mind?,text,Página Projetos,Projetos
+projects_page.cta.title,fr,Un projet en tête ?,text,Página Projetos,Projetos
+projects_page.cta.description,pt,Fale com a nossa equipa técnica e descubra a solução certa para a sua obra.,text,Página Projetos,Projetos
+projects_page.cta.description,en,Talk to our technical team and find the right solution for your project.,text,Página Projetos,Projetos
+projects_page.cta.description,fr,Parlez à notre équipe technique et trouvez la solution adaptée à votre chantier.,text,Página Projetos,Projetos
+project_detail.before,pt,Antes,text,Detalhe Projeto,Projetos
+project_detail.before,en,Before,text,Detalhe Projeto,Projetos
+project_detail.before,fr,Avant,text,Detalhe Projeto,Projetos
+project_detail.after,pt,Depois,text,Detalhe Projeto,Projetos
+project_detail.after,en,After,text,Detalhe Projeto,Projetos
+project_detail.after,fr,Après,text,Detalhe Projeto,Projetos
+project_detail.compare_hint,pt,Arraste para comparar o antes e o depois,text,Detalhe Projeto,Projetos
+project_detail.compare_hint,en,Drag to compare before and after,text,Detalhe Projeto,Projetos
+project_detail.compare_hint,fr,"Glissez pour comparer l'avant et l'après",text,Detalhe Projeto,Projetos
+project_detail.process.eyebrow,pt,O Processo,text,Detalhe Projeto,Projetos
+project_detail.process.eyebrow,en,The Process,text,Detalhe Projeto,Projetos
+project_detail.process.eyebrow,fr,Le processus,text,Detalhe Projeto,Projetos
+project_detail.process.title,pt,Durante a obra,text,Detalhe Projeto,Projetos
+project_detail.process.title,en,During the works,text,Detalhe Projeto,Projetos
+project_detail.process.title,fr,Pendant les travaux,text,Detalhe Projeto,Projetos
+project_detail.solutions.eyebrow,pt,Soluções aplicadas,text,Detalhe Projeto,Projetos
+project_detail.solutions.eyebrow,en,Solutions applied,text,Detalhe Projeto,Projetos
+project_detail.solutions.eyebrow,fr,Solutions appliquées,text,Detalhe Projeto,Projetos
+project_detail.solutions.title,pt,Materiais Winterplateau nesta obra,text,Detalhe Projeto,Projetos
+project_detail.solutions.title,en,Winterplateau materials in this project,text,Detalhe Projeto,Projetos
+project_detail.solutions.title,fr,Matériaux Winterplateau sur ce chantier,text,Detalhe Projeto,Projetos
+project_detail.other.title,pt,Outras obras,text,Detalhe Projeto,Projetos
+project_detail.other.title,en,Other projects,text,Detalhe Projeto,Projetos
+project_detail.other.title,fr,Autres chantiers,text,Detalhe Projeto,Projetos
+project_detail.other.cta,pt,Ver todas,text,Detalhe Projeto,Projetos
+project_detail.other.cta,en,View all,text,Detalhe Projeto,Projetos
+project_detail.other.cta,fr,Voir tout,text,Detalhe Projeto,Projetos
+project_detail.view_project,pt,Ver obra,text,Detalhe Projeto,Projetos
+project_detail.view_project,en,View project,text,Detalhe Projeto,Projetos
+project_detail.view_project,fr,Voir le chantier,text,Detalhe Projeto,Projetos
+project_detail.photo_label,pt,Fotografia da obra,text,Detalhe Projeto,Projetos
+project_detail.photo_label,en,Site photograph,text,Detalhe Projeto,Projetos
+project_detail.photo_label,fr,Photo du chantier,text,Detalhe Projeto,Projetos
+project.reabilitacao-fachada-braga.slug,pt,reabilitacao-fachada-braga,data,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.title,pt,Reabilitação de Fachada,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.title,en,Façade Renovation,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.title,fr,Réhabilitation de façade,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.location,pt,Braga,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.year,pt,2023,number,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.type,pt,Reabilitação,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.type,en,Renovation,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.type,fr,Réhabilitation,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.cols,pt,3,number,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.floors,pt,4,number,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.hue,pt,206,number,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.summary,pt,"Recuperação integral da envolvente de um edifício de habitação dos anos 80. Aplicação de sistema ETICS (capoto) com molduras decorativas em EPS — cornijas, bandas e peitoris — devolvendo carácter e eficiência térmica ao imóvel.",text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.summary,en,"Full recovery of the envelope of a 1980s residential building. ETICS (external insulation) with decorative EPS mouldings — cornices, bands and sills — restoring character and thermal efficiency to the property.",text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.summary,fr,"Récupération intégrale de l'enveloppe d'un immeuble d'habitation des années 80. Système ITE avec moulures décoratives en EPS — corniches, bandeaux et appuis — redonnant caractère et efficacité thermique au bâtiment.",text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.product.1,pt,Capoto / ETICS,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.product.2,pt,Cornijas,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.product.3,pt,Bandas,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.product.4,pt,Peitoris,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.1.value,pt,420,number,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.1.unit,pt,m²,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.1.label,pt,Fachada,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.1.label,en,Façade,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.1.label,fr,Façade,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.2.value,pt,6,number,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.2.unit,pt,sem,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.2.unit,en,wks,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.2.unit,fr,sem.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.2.label,pt,Duração,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.2.label,en,Duration,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.2.label,fr,Durée,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.3.value,pt,B→A+,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.3.label,pt,Eficiência,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.3.label,en,Efficiency,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.stat.3.label,fr,Efficacité,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.1.phase,pt,01,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.1.title,pt,Diagnóstico,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.1.title,en,Diagnosis,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.1.title,fr,Diagnostic,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.1.description,pt,Levantamento de patologias, fissuras e pontes térmicas da fachada existente.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.1.description,en,Survey of defects, cracks and thermal bridges on the existing façade.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.1.description,fr,Relevé des pathologies, fissures et ponts thermiques de la façade existante.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.2.phase,pt,02,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.2.title,pt,Preparação,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.2.title,en,Preparation,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.2.title,fr,Préparation,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.2.description,pt,Limpeza, reparação do reboco e aplicação do sistema de isolamento ETICS.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.2.description,en,Cleaning, render repair and installation of the ETICS insulation system.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.2.description,fr,"Nettoyage, réparation de l'enduit et pose du système d'isolation ITE.",text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.3.phase,pt,03,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.3.title,pt,Molduras EPS,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.3.title,en,EPS Mouldings,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.3.title,fr,Moulures EPS,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.3.description,pt,Colagem e fixação das cornijas, bandas e peitoris Winterplateau.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.3.description,en,Bonding and fixing of Winterplateau cornices, bands and sills.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.3.description,fr,Collage et fixation des corniches, bandeaux et appuis Winterplateau.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.4.phase,pt,04,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.4.title,pt,Acabamento,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.4.title,en,Finishing,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.4.title,fr,Finitions,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.4.description,pt,"Barramento armado, primário e revestimento final na cor escolhida.",text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.4.description,en,Reinforced base coat, primer and final render in the chosen colour.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.process.4.description,fr,Sous-enduit armé, primaire et revêtement final dans la couleur choisie.,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.seo.title,pt,Reabilitação de Fachada em Braga | Winterplateau,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.seo.title,en,Façade Renovation in Braga | Winterplateau,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.seo.title,fr,Réhabilitation de façade à Braga | Winterplateau,text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.seo.description,pt,"Recuperação integral da fachada de um edifício dos anos 80 em Braga. Sistema ETICS com molduras decorativas em EPS — cornijas, bandas e peitoris.",text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.seo.description,en,"Full renovation of a 1980s building façade in Braga. ETICS system with decorative EPS mouldings — cornices, bands and sills.",text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.seo.description,fr,"Rénovation complète d'une façade des années 80 à Braga. Système ITE avec moulures décoratives EPS — corniches, bandeaux et appuis.",text,reabilitacao-fachada-braga,Projetos
+project.reabilitacao-fachada-braga.seo.og_image,pt,https://www.winterplateau.pt/assets/og-reabilitacao-fachada-braga.jpg,image,reabilitacao-fachada-braga,Projetos
+project.moradia-ponte-de-lima.slug,pt,moradia-ponte-de-lima,data,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.title,pt,Moradia Unifamiliar,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.title,en,Single-Family House,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.title,fr,Maison individuelle,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.location,pt,Ponte de Lima,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.year,pt,2022,number,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.type,pt,Construção Nova,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.type,en,New Build,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.type,fr,Construction neuve,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.cols,pt,2,number,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.floors,pt,2,number,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.hue,pt,199,number,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.summary,pt,"Construção de raiz de moradia contemporânea. As molduras de vão e a cornija de remate em EPS conferem profundidade à fachada sem o peso e o custo da pedra natural.",text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.summary,en,"New-build contemporary house. EPS opening surrounds and top cornice give the façade depth without the weight and cost of natural stone.",text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.summary,fr,"Construction neuve d'une maison contemporaine. Les encadrements et la corniche en EPS donnent de la profondeur à la façade sans le poids ni le coût de la pierre naturelle.",text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.product.1,pt,Molduras de Vão,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.product.2,pt,Cornija,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.product.3,pt,Pilastras,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.1.value,pt,260,number,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.1.unit,pt,m²,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.1.label,pt,Área,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.1.label,en,Area,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.1.label,fr,Surface,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.2.value,pt,4,number,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.2.unit,pt,sem,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.2.unit,en,wks,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.2.unit,fr,sem.,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.2.label,pt,Duração,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.2.label,en,Duration,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.2.label,fr,Durée,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.3.value,pt,12,number,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.3.unit,pt,vãos,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.3.unit,en,openings,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.3.unit,fr,baies,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.3.label,pt,Molduras,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.3.label,en,Mouldings,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.stat.3.label,fr,Moulures,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.1.phase,pt,01,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.1.title,pt,Projeto,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.1.title,en,Design,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.1.title,fr,Conception,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.1.description,pt,Definição do desenho de fachada e seleção dos perfis de moldura.,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.1.description,en,Façade design definition and selection of moulding profiles.,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.1.description,fr,Définition du dessin de façade et sélection des profils de moulures.,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.2.phase,pt,02,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.2.title,pt,Estrutura,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.2.title,en,Structure,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.2.title,fr,Structure,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.2.description,pt,Alvenaria concluída e fachada preparada para receber as molduras.,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.2.description,en,Masonry completed and façade prepared to receive the mouldings.,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.2.description,fr,Maçonnerie achevée et façade préparée pour recevoir les moulures.,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.3.phase,pt,03,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.3.title,pt,Aplicação,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.3.title,en,Installation,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.3.title,fr,Pose,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.3.description,pt,"Montagem das molduras de vão, pilastras e cornija de remate.",text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.3.description,en,"Installation of opening surrounds, pilasters and top cornice.",text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.3.description,fr,"Pose des encadrements, pilastres et corniche de couronnement.",text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.4.phase,pt,04,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.4.title,pt,Pintura,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.4.title,en,Painting,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.4.title,fr,Peinture,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.4.description,pt,Acabamento final e tratamento hidrófugo das superfícies.,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.4.description,en,Final finishing and water-repellent treatment of the surfaces.,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.process.4.description,fr,Finitions et traitement hydrofuge des surfaces.,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.seo.title,pt,Moradia Unifamiliar em Ponte de Lima | Winterplateau,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.seo.title,en,Single-Family House in Ponte de Lima | Winterplateau,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.seo.title,fr,Maison individuelle à Ponte de Lima | Winterplateau,text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.seo.description,pt,"Construção nova de moradia contemporânea em Ponte de Lima. Molduras de vão e cornija em EPS que conferem profundidade à fachada sem o custo da pedra natural.",text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.seo.description,en,"New-build contemporary house in Ponte de Lima. EPS opening surrounds and cornice giving façade depth without the cost of natural stone.",text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.seo.description,fr,"Construction neuve d'une maison contemporaine à Ponte de Lima. Encadrements et corniche en EPS apportant de la profondeur à la façade sans le coût de la pierre.",text,moradia-ponte-de-lima,Projetos
+project.moradia-ponte-de-lima.seo.og_image,pt,https://www.winterplateau.pt/assets/og-moradia-ponte-de-lima.jpg,image,moradia-ponte-de-lima,Projetos
+project.edificio-comercial-guimaraes.slug,pt,edificio-comercial-guimaraes,data,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.title,pt,Edifício Comercial,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.title,en,Commercial Building,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.title,fr,Immeuble commercial,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.location,pt,Guimarães,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.year,pt,2024,number,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.type,pt,Reabilitação,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.type,en,Renovation,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.type,fr,Réhabilitation,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.cols,pt,4,number,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.floors,pt,3,number,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.hue,pt,210,number,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.summary,pt,"Modernização da fachada de um edifício comercial no centro histórico. Bandas horizontais e pilastras verticais em EPS criam um ritmo elegante que valoriza as montras ao nível da rua.",text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.summary,en,"Façade modernisation of a commercial building in the historic centre. Horizontal EPS bands and vertical pilasters create an elegant rhythm that enhances the street-level shopfronts.",text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.summary,fr,"Modernisation de la façade d'un immeuble commercial du centre historique. Bandeaux horizontaux et pilastres en EPS créent un rythme élégant qui met en valeur les vitrines.",text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.product.1,pt,Bandas,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.product.2,pt,Pilastras,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.product.3,pt,Cornijas,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.product.4,pt,Capoto / ETICS,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.1.value,pt,680,number,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.1.unit,pt,m²,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.1.label,pt,Fachada,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.1.label,en,Façade,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.1.label,fr,Façade,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.2.value,pt,8,number,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.2.unit,pt,sem,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.2.unit,en,wks,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.2.unit,fr,sem.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.2.label,pt,Duração,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.2.label,en,Duration,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.2.label,fr,Durée,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.3.value,pt,3,number,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.3.unit,pt,pisos,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.3.unit,en,floors,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.3.unit,fr,étages,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.3.label,pt,Intervenção,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.3.label,en,Scope,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.stat.3.label,fr,Intervention,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.1.phase,pt,01,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.1.title,pt,Estudo,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.1.title,en,Study,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.1.title,fr,Étude,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.1.description,pt,Compatibilização com as regras do centro histórico e licenciamento.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.1.description,en,Compliance with historic-centre rules and permitting.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.1.description,fr,Mise en conformité avec les règles du centre historique et permis.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.2.phase,pt,02,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.2.title,pt,Isolamento,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.2.title,en,Insulation,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.2.title,fr,Isolation,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.2.description,pt,Aplicação de capoto em toda a envolvente exterior.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.2.description,en,ETICS applied to the entire external envelope.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.2.description,fr,"ITE appliquée sur toute l'enveloppe extérieure.",text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.3.phase,pt,03,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.3.title,pt,Composição,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.3.title,en,Composition,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.3.title,fr,Composition,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.3.description,pt,Montagem das bandas e pilastras segundo o desenho aprovado.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.3.description,en,Installation of bands and pilasters following the approved design.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.3.description,fr,Pose des bandeaux et pilastres selon le dessin approuvé.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.4.phase,pt,04,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.4.title,pt,Entrega,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.4.title,en,Handover,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.4.title,fr,Livraison,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.4.description,pt,"Acabamento, limpeza e entrega da obra ao cliente.",text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.4.description,en,Finishing, cleaning and handover to the client.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.process.4.description,fr,Finitions, nettoyage et livraison au client.,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.seo.title,pt,Edifício Comercial em Guimarães | Winterplateau,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.seo.title,en,Commercial Building in Guimarães | Winterplateau,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.seo.title,fr,Immeuble commercial à Guimarães | Winterplateau,text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.seo.description,pt,"Modernização da fachada de edifício comercial no centro histórico de Guimarães. Bandas e pilastras em EPS com sistema ETICS nos 3 pisos.",text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.seo.description,en,"Façade modernisation of a commercial building in the historic centre of Guimarães. EPS bands and pilasters with ETICS system across 3 floors.",text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.seo.description,fr,"Modernisation de la façade d'un immeuble commercial du centre historique de Guimarães. Bandeaux et pilastres EPS avec ITE sur 3 étages.",text,edificio-comercial-guimaraes,Projetos
+project.edificio-comercial-guimaraes.seo.og_image,pt,https://www.winterplateau.pt/assets/og-edificio-comercial-guimaraes.jpg,image,edificio-comercial-guimaraes,Projetos
+project.apartamentos-vila-verde.slug,pt,apartamentos-vila-verde,data,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.title,pt,Bloco de Apartamentos,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.title,en,Apartment Block,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.title,fr,Immeuble résidentiel,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.location,pt,Vila Verde,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.year,pt,2023,number,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.type,pt,Construção Nova,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.type,en,New Build,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.type,fr,Construction neuve,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.cols,pt,4,number,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.floors,pt,5,number,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.hue,pt,203,number,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.summary,pt,"Empreendimento de habitação coletiva com fachada ventilada e remates em EPS. Solução leve que acelera a obra e garante uniformidade em todos os pisos.",text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.summary,en,"Multi-family housing development with ventilated façade and EPS trims. A lightweight solution that speeds up construction and ensures uniformity across all floors.",text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.summary,fr,"Programme de logements collectifs avec façade ventilée et finitions en EPS. Une solution légère qui accélère le chantier et garantit l'uniformité à tous les étages.",text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.product.1,pt,Cornijas,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.product.2,pt,Bandas,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.product.3,pt,Peitoris,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.product.4,pt,Capoto / ETICS,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.1.value,pt,1.240,number,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.1.unit,pt,m²,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.1.label,pt,Fachada,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.1.label,en,Façade,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.1.label,fr,Façade,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.2.value,pt,14,number,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.2.unit,pt,sem,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.2.unit,en,wks,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.2.unit,fr,sem.,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.2.label,pt,Duração,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.2.label,en,Duration,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.2.label,fr,Durée,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.3.value,pt,20,number,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.3.unit,pt,frações,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.3.unit,en,units,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.3.unit,fr,logements,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.3.label,pt,Habitação,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.3.label,en,Housing,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.stat.3.label,fr,Logements,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.1.phase,pt,01,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.1.title,pt,Planeamento,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.1.title,en,Planning,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.1.title,fr,Planification,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.1.description,pt,Faseamento da obra por alçado e logística de estaleiro.,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.1.description,en,Phasing of works by elevation and site logistics.,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.1.description,fr,Phasage des travaux par façade et logistique de chantier.,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.2.phase,pt,02,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.2.title,pt,Isolamento,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.2.title,en,Insulation,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.2.title,fr,Isolation,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.2.description,pt,Sistema ETICS aplicado piso a piso.,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.2.description,en,ETICS system applied floor by floor.,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.2.description,fr,Système ITE appliqué étage par étage.,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.3.phase,pt,03,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.3.title,pt,Molduras,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.3.title,en,Mouldings,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.3.title,fr,Moulures,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.3.description,pt,"Bandas, cornijas e peitoris montados em série.",text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.3.description,en,"Bands, cornices and sills installed in series.",text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.3.description,fr,"Bandeaux, corniches et appuis posés en série.",text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.4.phase,pt,04,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.4.title,pt,Acabamento,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.4.title,en,Finishing,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.4.title,fr,Finitions,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.4.description,pt,Revestimento final e ensaios de desempenho térmico.,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.4.description,en,Final render and thermal performance testing.,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.process.4.description,fr,Revêtement final et essais de performance thermique.,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.seo.title,pt,Bloco de Apartamentos em Vila Verde | Winterplateau,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.seo.title,en,Apartment Block in Vila Verde | Winterplateau,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.seo.title,fr,Immeuble résidentiel à Vila Verde | Winterplateau,text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.seo.description,pt,"Construção nova de bloco de 20 apartamentos em Vila Verde. Fachada com cornijas, bandas e peitoris em EPS sobre sistema ETICS — 1.240 m².",text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.seo.description,en,"New-build block of 20 apartments in Vila Verde. Façade with EPS cornices, bands and sills on ETICS system — 1,240 m².",text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.seo.description,fr,"Construction neuve d'un immeuble de 20 logements à Vila Verde. Façade avec corniches, bandeaux et appuis EPS sur système ITE — 1 240 m².",text,apartamentos-vila-verde,Projetos
+project.apartamentos-vila-verde.seo.og_image,pt,https://www.winterplateau.pt/assets/og-apartamentos-vila-verde.jpg,image,apartamentos-vila-verde,Projetos
+project.restauro-solar-barcelos.slug,pt,restauro-solar-barcelos,data,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.title,pt,Restauro de Solar,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.title,en,Manor House Restoration,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.title,fr,Restauration d'un manoir,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.location,pt,Barcelos,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.year,pt,2021,number,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.type,pt,Reabilitação,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.type,en,Renovation,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.type,fr,Réhabilitation,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.cols,pt,3,number,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.floors,pt,2,number,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.hue,pt,196,number,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.summary,pt,"Recuperação de elementos decorativos de um solar do século XIX. Réplicas das molduras originais executadas em EPS de alta densidade, fiéis ao desenho histórico.",text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.summary,en,"Recovery of decorative elements of a 19th-century manor house. Replicas of the original mouldings made in high-density EPS, faithful to the historic design.",text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.summary,fr,"Restauration des éléments décoratifs d'un manoir du XIXe siècle. Répliques des moulures d'origine en EPS haute densité, fidèles au dessin historique.",text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.product.1,pt,Molduras à medida,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.product.2,pt,Cornijas,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.product.3,pt,Pilastras,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.1.value,pt,310,number,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.1.unit,pt,m²,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.1.label,pt,Fachada,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.1.label,en,Façade,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.1.label,fr,Façade,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.2.value,pt,10,number,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.2.unit,pt,sem,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.2.unit,en,wks,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.2.unit,fr,sem.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.2.label,pt,Duração,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.2.label,en,Duration,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.2.label,fr,Durée,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.3.value,pt,1850,number,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.3.label,pt,Época,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.3.label,en,Era,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.stat.3.label,fr,Époque,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.1.phase,pt,01,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.1.title,pt,Levantamento,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.1.title,en,Survey,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.1.title,fr,Relevé,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.1.description,pt,Medição e moldagem dos elementos decorativos originais.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.1.description,en,Measurement and moulding of the original decorative elements.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.1.description,fr,Relevé et moulage des éléments décoratifs d'origine.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.2.phase,pt,02,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.2.title,pt,Produção,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.2.title,en,Production,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.2.title,fr,Production,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.2.description,pt,Corte CNC das réplicas em EPS de alta densidade.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.2.description,en,CNC cutting of the replicas in high-density EPS.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.2.description,fr,Découpe CNC des répliques en EPS haute densité.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.3.phase,pt,03,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.3.title,pt,Montagem,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.3.title,en,Assembly,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.3.title,fr,Montage,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.3.description,pt,Aplicação cuidada respeitando a composição histórica.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.3.description,en,Careful installation respecting the historic composition.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.3.description,fr,Pose soignée dans le respect de la composition historique.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.4.phase,pt,04,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.4.title,pt,Patine,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.4.title,en,Patina,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.4.title,fr,Patine,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.4.description,pt,Acabamento texturado a imitar a pedra envelhecida.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.4.description,en,Textured finish imitating aged stone.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.process.4.description,fr,Finition texturée imitant la pierre vieillie.,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.seo.title,pt,Restauro de Solar do Séc. XIX em Barcelos | Winterplateau,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.seo.title,en,19th-Century Manor House Restoration in Barcelos | Winterplateau,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.seo.title,fr,Restauration d'un manoir du XIXe siècle à Barcelos | Winterplateau,text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.seo.description,pt,"Recuperação dos elementos decorativos de um solar do século XIX em Barcelos. Réplicas das molduras originais em EPS de alta densidade, cortadas a CNC.",text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.seo.description,en,"Recovery of decorative elements of a 19th-century manor house in Barcelos. Original moulding replicas in high-density EPS, CNC-cut to match the historic design.",text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.seo.description,fr,"Restauration des éléments décoratifs d'un manoir du XIXe siècle à Barcelos. Répliques des moulures d'origine en EPS haute densité, découpées au CNC.",text,restauro-solar-barcelos,Projetos
+project.restauro-solar-barcelos.seo.og_image,pt,https://www.winterplateau.pt/assets/og-restauro-solar-barcelos.jpg,image,restauro-solar-barcelos,Projetos
+project.clinica-famalicao.slug,pt,clinica-famalicao,data,clinica-famalicao,Projetos
+project.clinica-famalicao.title,pt,Clínica Privada,text,clinica-famalicao,Projetos
+project.clinica-famalicao.title,en,Private Clinic,text,clinica-famalicao,Projetos
+project.clinica-famalicao.title,fr,Clinique privée,text,clinica-famalicao,Projetos
+project.clinica-famalicao.location,pt,V. N. Famalicão,text,clinica-famalicao,Projetos
+project.clinica-famalicao.year,pt,2024,number,clinica-famalicao,Projetos
+project.clinica-famalicao.type,pt,Construção Nova,text,clinica-famalicao,Projetos
+project.clinica-famalicao.type,en,New Build,text,clinica-famalicao,Projetos
+project.clinica-famalicao.type,fr,Construction neuve,text,clinica-famalicao,Projetos
+project.clinica-famalicao.cols,pt,3,number,clinica-famalicao,Projetos
+project.clinica-famalicao.floors,pt,3,number,clinica-famalicao,Projetos
+project.clinica-famalicao.hue,pt,208,number,clinica-famalicao,Projetos
+project.clinica-famalicao.summary,pt,"Fachada limpa e contemporânea para um edifício de saúde. Linhas horizontais em banda de EPS marcam os pisos e integram a sinalética exterior.",text,clinica-famalicao,Projetos
+project.clinica-famalicao.summary,en,"A clean, contemporary façade for a healthcare building. Horizontal EPS bands mark the floors and integrate the exterior signage.",text,clinica-famalicao,Projetos
+project.clinica-famalicao.summary,fr,Façade épurée et contemporaine pour un bâtiment de santé. Des bandeaux horizontaux en EPS marquent les étages et intègrent la signalétique extérieure.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.product.1,pt,Bandas,text,clinica-famalicao,Projetos
+project.clinica-famalicao.product.2,pt,Cornija,text,clinica-famalicao,Projetos
+project.clinica-famalicao.product.3,pt,Capoto / ETICS,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.1.value,pt,540,number,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.1.unit,pt,m²,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.1.label,pt,Fachada,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.1.label,en,Façade,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.1.label,fr,Façade,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.2.value,pt,7,number,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.2.unit,pt,sem,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.2.unit,en,wks,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.2.unit,fr,sem.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.2.label,pt,Duração,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.2.label,en,Duration,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.2.label,fr,Durée,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.3.value,pt,A+,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.3.label,pt,Eficiência,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.3.label,en,Efficiency,text,clinica-famalicao,Projetos
+project.clinica-famalicao.stat.3.label,fr,Efficacité,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.1.phase,pt,01,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.1.title,pt,Conceito,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.1.title,en,Concept,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.1.title,fr,Concept,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.1.description,pt,Definição da linguagem de fachada com o gabinete de arquitetura.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.1.description,en,Façade language defined with the architecture studio.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.1.description,fr,"Langage de façade défini avec le cabinet d'architecture.",text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.2.phase,pt,02,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.2.title,pt,Isolamento,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.2.title,en,Insulation,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.2.title,fr,Isolation,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.2.description,pt,Capoto contínuo para máximo desempenho térmico.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.2.description,en,Continuous ETICS for maximum thermal performance.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.2.description,fr,ITE continue pour une performance thermique maximale.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.3.phase,pt,03,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.3.title,pt,Bandas,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.3.title,en,Bands,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.3.title,fr,Bandeaux,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.3.description,pt,Montagem das bandas horizontais que ritmam os pisos.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.3.description,en,Installation of the horizontal bands that rhythm the floors.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.3.description,fr,Pose des bandeaux horizontaux qui rythment les étages.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.4.phase,pt,04,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.4.title,pt,Entrega,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.4.title,en,Handover,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.4.title,fr,Livraison,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.4.description,pt,Acabamento branco e integração da sinalética.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.4.description,en,White finish and signage integration.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.process.4.description,fr,Finition blanche et intégration de la signalétique.,text,clinica-famalicao,Projetos
+project.clinica-famalicao.seo.title,pt,Clínica Privada em V. N. Famalicão | Winterplateau,text,clinica-famalicao,Projetos
+project.clinica-famalicao.seo.title,en,Private Clinic in V. N. Famalicão | Winterplateau,text,clinica-famalicao,Projetos
+project.clinica-famalicao.seo.title,fr,Clinique privée à V. N. Famalicão | Winterplateau,text,clinica-famalicao,Projetos
+project.clinica-famalicao.seo.description,pt,"Fachada contemporânea para clínica privada em Famalicão. Bandeaux horizontais em EPS com sistema ETICS — 540 m², eficiência A+.",text,clinica-famalicao,Projetos
+project.clinica-famalicao.seo.description,en,"Contemporary façade for a private clinic in Famalicão. Horizontal EPS bands with ETICS system — 540 m², A+ efficiency rating.",text,clinica-famalicao,Projetos
+project.clinica-famalicao.seo.description,fr,"Façade contemporaine pour une clinique privée à Famalicão. Bandeaux horizontaux EPS avec ITE — 540 m², performance A+.",text,clinica-famalicao,Projetos
+project.clinica-famalicao.seo.og_image,pt,https://www.winterplateau.pt/assets/og-clinica-famalicao.jpg,image,clinica-famalicao,Projetos
+seo.home.title,pt,Winterplateau — Soluções em EPS e Perfis Metálicos,text,SEO · Homepage,SEO
+seo.home.title,en,Winterplateau — EPS and Metal Profile Solutions,text,SEO · Homepage,SEO
+seo.home.title,fr,Winterplateau — Solutions EPS et Profilés métalliques,text,SEO · Homepage,SEO
+seo.home.description,pt,"Molduras em EPS e perfis metálicos para construção nova e reabilitação de fachadas. Fabricação nacional desde 2016, certificação CE. Vila Verde, Braga.",text,SEO · Homepage,SEO
+seo.home.description,en,"EPS mouldings and metal profiles for new construction and façade renovation. Made in Portugal since 2016, CE certified. Vila Verde, Braga.",text,SEO · Homepage,SEO
+seo.home.description,fr,"Moulures EPS et profilés métalliques pour la construction neuve et la réhabilitation de façades. Fabrication portugaise depuis 2016, certifié CE.",text,SEO · Homepage,SEO
+seo.home.og_title,pt,Winterplateau — Soluções em EPS e Perfis Metálicos,text,SEO · Homepage,SEO
+seo.home.og_title,en,Winterplateau — EPS and Metal Profile Solutions,text,SEO · Homepage,SEO
+seo.home.og_title,fr,Winterplateau — Solutions EPS et Profilés métalliques,text,SEO · Homepage,SEO
+seo.home.og_description,pt,"Molduras em EPS e perfis metálicos para construção nova e reabilitação. Fabricação nacional, certificação europeia.",text,SEO · Homepage,SEO
+seo.home.og_description,en,"EPS mouldings and metal profiles for new construction and renovation. Made in Portugal, European certification.",text,SEO · Homepage,SEO
+seo.home.og_description,fr,"Moulures EPS et profilés métalliques pour la construction et la réhabilitation. Fabrication portugaise, certification européenne.",text,SEO · Homepage,SEO
+seo.home.og_image,pt,https://www.winterplateau.pt/assets/og-home.jpg,image,SEO · Homepage,SEO
+seo.home.keywords,pt,"EPS, molduras EPS, perfis metálicos, capoto, ETICS, reabilitação de fachada, construção, Vila Verde, Braga",text,SEO · Homepage,SEO
+seo.home.keywords,en,"EPS mouldings, metal profiles, ETICS, façade renovation, construction, Portugal",text,SEO · Homepage,SEO
+seo.home.keywords,fr,"moulures EPS, profilés métalliques, ITE, réhabilitation façade, construction, Portugal",text,SEO · Homepage,SEO
+seo.projects.title,pt,Obras — Portefólio de Projetos | Winterplateau,text,SEO · Projetos,SEO
+seo.projects.title,en,Projects — Portfolio | Winterplateau,text,SEO · Projetos,SEO
+seo.projects.title,fr,Chantiers — Portfolio | Winterplateau,text,SEO · Projetos,SEO
+seo.projects.description,pt,"Portefólio de obras de reabilitação de fachadas e construção nova com molduras EPS e sistemas ETICS no norte de Portugal.",text,SEO · Projetos,SEO
+seo.projects.description,en,"Portfolio of façade renovation and new construction projects with EPS mouldings and ETICS systems in northern Portugal.",text,SEO · Projetos,SEO
+seo.projects.description,fr,"Portfolio de chantiers de réhabilitation de façades et de construction neuve avec moulures EPS et systèmes ITE dans le nord du Portugal.",text,SEO · Projetos,SEO
+seo.projects.og_title,pt,Portefólio de Obras | Winterplateau,text,SEO · Projetos,SEO
+seo.projects.og_title,en,Projects Portfolio | Winterplateau,text,SEO · Projetos,SEO
+seo.projects.og_title,fr,Portfolio Chantiers | Winterplateau,text,SEO · Projetos,SEO
+seo.projects.og_image,pt,https://www.winterplateau.pt/assets/og-projects.jpg,image,SEO · Projetos,SEO
+seo.projects.keywords,pt,"obras, reabilitação de fachada, construção nova, molduras EPS, norte de Portugal, portefólio",text,SEO · Projetos,SEO
+seo.projects.keywords,en,"projects, façade renovation, new construction, EPS mouldings, northern Portugal, portfolio",text,SEO · Projetos,SEO
+seo.projects.keywords,fr,"chantiers, réhabilitation façade, construction neuve, moulures EPS, nord Portugal, portfolio",text,SEO · Projetos,SEO
+seo.project_detail.title_suffix,pt,| Obras | Winterplateau,text,SEO · Detalhe,SEO
+seo.project_detail.title_suffix,en,| Projects | Winterplateau,text,SEO · Detalhe,SEO
+seo.project_detail.title_suffix,fr,| Chantiers | Winterplateau,text,SEO · Detalhe,SEO
+seo.project_detail.og_image_fallback,pt,https://www.winterplateau.pt/assets/og-projects.jpg,image,SEO · Detalhe,SEO
+seo.site.name,pt,Winterplateau,text,SEO · Detalhe,SEO
+seo.site.locale_default,pt,pt_PT,text,SEO · Detalhe,SEO
+seo.site.locale_en,pt,en_GB,text,SEO · Detalhe,SEO
+seo.site.locale_fr,pt,fr_FR,text,SEO · Detalhe,SEO
+seo.site.twitter_card,pt,summary_large_image,text,SEO · Detalhe,SEO

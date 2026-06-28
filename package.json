@@ -5,11 +5,20 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "kubb generate && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "kubb": "kubb generate"
   },
   "dependencies": {
     "astro": "^4.15.0"
+  },
+  "devDependencies": {
+    "@kubb/cli": "^3.0.0",
+    "@kubb/core": "^3.0.0",
+    "@kubb/plugin-client": "^3.0.0",
+    "@kubb/plugin-oas": "^3.0.0",
+    "@kubb/plugin-ts": "^3.0.0",
+    "typescript": "^5.7.2"
   }
 }
