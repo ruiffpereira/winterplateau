@@ -6,6 +6,12 @@
 (function () {
   const DICT = {
     en: {
+      /* cookie consent (RGPD) — banner em BaseLayout.astro, PT é a base */
+      'Cookies': 'Cookies',
+      'Utilizamos cookies essenciais e, com o seu consentimento, cookies para melhorar a experiência. Escolha para continuar.': 'We use essential cookies and, with your consent, cookies to improve your experience. Choose to continue.',
+      'Política de privacidade': 'Privacy policy',
+      'Aceitar': 'Accept',
+      'Rejeitar': 'Reject',
       /* nav + chrome */
       'Perfis Metálicos': 'Metal Profiles',
       'Obras': 'Projects',
@@ -169,6 +175,12 @@
       'Acabamento branco e integração da sinalética.': 'White finish and signage integration.',
     },
     fr: {
+      /* cookie consent (RGPD) — banner em BaseLayout.astro, PT é a base */
+      'Cookies': 'Cookies',
+      'Utilizamos cookies essenciais e, com o seu consentimento, cookies para melhorar a experiência. Escolha para continuar.': 'Nous utilisons des cookies essentiels et, avec votre consentement, des cookies pour améliorer votre expérience. Choisissez pour continuer.',
+      'Política de privacidade': 'Politique de confidentialité',
+      'Aceitar': 'Accepter',
+      'Rejeitar': 'Refuser',
       'Perfis Metálicos': 'Profilés métalliques',
       'Obras': 'Chantiers',
       'Empresa': 'Entreprise',

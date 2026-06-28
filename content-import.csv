@@ -886,3 +886,18 @@ seo.site.locale_default,pt,pt_PT,text,SEO · Detalhe,SEO
 seo.site.locale_en,pt,en_GB,text,SEO · Detalhe,SEO
 seo.site.locale_fr,pt,fr_FR,text,SEO · Detalhe,SEO
 seo.site.twitter_card,pt,summary_large_image,text,SEO · Detalhe,SEO
+cookies.title,pt,Cookies,text,Cookies,
+cookies.title,en,Cookies,text,Cookies,
+cookies.title,fr,Cookies,text,Cookies,
+cookies.text,pt,"Utilizamos cookies essenciais e, com o seu consentimento, cookies para melhorar a experiência. Escolha para continuar.",text,Cookies,
+cookies.text,en,"We use essential cookies and, with your consent, cookies to improve your experience. Choose to continue.",text,Cookies,
+cookies.text,fr,"Nous utilisons des cookies essentiels et, avec votre consentement, des cookies pour améliorer votre expérience. Choisissez pour continuer.",text,Cookies,
+cookies.privacy,pt,Política de privacidade,text,Cookies,
+cookies.privacy,en,Privacy policy,text,Cookies,
+cookies.privacy,fr,Politique de confidentialité,text,Cookies,
+cookies.accept,pt,Aceitar,text,Cookies,
+cookies.accept,en,Accept,text,Cookies,
+cookies.accept,fr,Accepter,text,Cookies,
+cookies.reject,pt,Rejeitar,text,Cookies,
+cookies.reject,en,Reject,text,Cookies,
+cookies.reject,fr,Refuser,text,Cookies,
