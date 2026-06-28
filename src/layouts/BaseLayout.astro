@@ -8,6 +8,12 @@ const {
   title = 'Winterplateau — Molduras EPS, Capoto (ETICS) e Perfis Metálicos · Vila Verde, Braga',
   description = 'Fabricante português de molduras decorativas em EPS — cornijas, bandas, peitoris e pilastras — sistemas de capoto (ETICS) e perfis metálicos para tetos falsos e divisórias. Reabilitação de fachadas e construção nova. Vila Verde, Braga. Peça orçamento grátis.',
 } = Astro.props;
+
+// Estatísticas (Plausible auto-hospedado, cookieless) — só com env definido.
+// Cookieless → não requer o banner de consentimento.
+const plausibleUrl = import.meta.env.PUBLIC_PLAUSIBLE_URL;
+const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
+const plausibleEnabled = Boolean(plausibleUrl && plausibleDomain);
 ---
 
 <!DOCTYPE html>
@@ -51,6 +57,9 @@ const {
     "sameAs": ["https://www.linkedin.com/company/winterplateau/", "https://www.facebook.com/winterplateau/", "https://www.instagram.com/winterplateau/"]
   }
   </script>
+  {plausibleEnabled && (
+    <script defer data-domain={plausibleDomain} src={`${(plausibleUrl ?? '').replace(/\/+$/, '')}/js/script.js`}></script>
+  )}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
