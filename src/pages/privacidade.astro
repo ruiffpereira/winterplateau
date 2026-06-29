@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+const negocio = 'Winterplateau';
+const email = 'geral@winterplateau.pt';
+const updated = 'junho de 2026';
+---
+
+<BaseLayout
+  title="Política de Privacidade — Winterplateau"
+  description="Como a Winterplateau trata os seus dados pessoais (RGPD): pedidos de orçamento, contactos e estatísticas anónimas do site."
+>
+  <Nav />
+
+  <main class="legal">
+    <article class="legal-wrap">
+      <h1>Política de Privacidade</h1>
+      <p class="legal-upd">Última atualização: {updated}</p>
+
+      <p>
+        A sua privacidade é importante para a {negocio}. Esta política explica
+        que dados pessoais recolhemos através deste site, para que os usamos e
+        quais os seus direitos ao abrigo do Regulamento Geral sobre a Proteção
+        de Dados (RGPD).
+      </p>
+
+      <h2>1. Responsável pelo tratamento</h2>
+      <p>
+        A {negocio} é a responsável pelo tratamento dos seus dados. Para
+        qualquer questão de privacidade, contacte-nos através de
+        <a href={`mailto:${email}`}>{email}</a>.
+      </p>
+
+      <h2>2. Que dados recolhemos</h2>
+      <ul>
+        <li>
+          <b>Pedidos de orçamento e contacto:</b> nome, email, telefone e a
+          mensagem/descrição que nos envia.
+        </li>
+        <li>
+          <b>Estatísticas de utilização:</b> dados agregados e anónimos sobre as
+          visitas ao site (ver secção Cookies).
+        </li>
+      </ul>
+
+      <h2>3. Para que usamos os dados</h2>
+      <ul>
+        <li>Responder a pedidos de orçamento e a mensagens de contacto;</li>
+        <li>Prestar apoio e dar seguimento comercial ao seu pedido;</li>
+        <li>Melhorar o site através de estatísticas agregadas.</li>
+      </ul>
+
+      <h2>4. Base legal</h2>
+      <p>
+        Tratamos os seus dados com base no seu <b>consentimento</b> e/ou em
+        diligências <b>pré-contratuais</b> a seu pedido (resposta a orçamentos),
+        e no nosso <b>interesse legítimo</b> em manter o site seguro e funcional.
+      </p>
+
+      <h2>5. Cookies e estatísticas</h2>
+      <p>
+        Usamos apenas cookies <b>essenciais</b> ao funcionamento do site. Para
+        estatísticas usamos uma ferramenta <b>sem cookies e anónima</b>
+        (Plausible, auto-hospedado), que <b>não</b> rastreia os visitantes entre
+        sites nem cria perfis individuais. Pode gerir as preferências no banner
+        de cookies.
+      </p>
+
+      <h2>6. Conservação dos dados</h2>
+      <p>
+        Conservamos os dados de contacto apenas durante o tempo necessário para
+        dar resposta ao seu pedido e cumprir obrigações legais aplicáveis.
+      </p>
+
+      <h2>7. Os seus direitos</h2>
+      <p>
+        Tem direito a aceder, retificar, eliminar e exportar (portabilidade) os
+        seus dados, bem como a opor-se ou limitar o seu tratamento. Para exercer
+        estes direitos, contacte-nos através de
+        <a href={`mailto:${email}`}>{email}</a>. Tem ainda o direito de
+        apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD).
+      </p>
+
+      <h2>8. Subcontratantes</h2>
+      <p>
+        Para prestar o serviço recorremos a fornecedores que tratam dados em
+        nosso nome (alojamento e envio de emails), sujeitos a obrigações de
+        confidencialidade e segurança. Os dados não são vendidos a terceiros.
+      </p>
+
+      <h2>9. Alterações a esta política</h2>
+      <p>
+        Podemos atualizar esta política. A data da última atualização é indicada
+        no topo desta página.
+      </p>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .legal {
+    background: #ffffff;
+    color: #1d2330;
+    padding: 120px 20px 80px;
+  }
+  .legal-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    line-height: 1.65;
+    font-size: 15px;
+  }
+  .legal-wrap h1 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 6px;
+    color: #0f1422;
+  }
+  .legal-upd {
+    color: #8a93a6;
+    font-size: 13px;
+    margin: 0 0 28px;
+  }
+  .legal-wrap h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f1422;
+    margin: 30px 0 8px;
+  }
+  .legal-wrap p {
+    margin: 0 0 12px;
+  }
+  .legal-wrap ul {
+    margin: 0 0 12px;
+    padding-left: 20px;
+  }
+  .legal-wrap li {
+    margin-bottom: 6px;
+  }
+  .legal-wrap a {
+    color: #b54a2b;
+    text-decoration: underline;
+  }
+</style>
