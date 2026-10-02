@@ -47,26 +47,33 @@ async function fetchSpec(url: string, outFile: string): Promise<string> {
   return outFile
 }
 
-const SPEC = await fetchSpec(
-  `${API_BASE}-docs/websites/booking.json${SWAGGER_KEY ? `?key=${SWAGGER_KEY}` : ''}`,
-  'spec.json',
-)
+const KEY_QS = SWAGGER_KEY ? `?key=${SWAGGER_KEY}` : ''
+const SPEC = await fetchSpec(`${API_BASE}-docs/websites/booking.json${KEY_QS}`, 'spec.json')
+// Estatísticas: o par {websiteId, src} do Umami deste tenant (lido no build).
+const SPEC_ANALYTICS = await fetchSpec(`${API_BASE}-docs/websites/analytics.json${KEY_QS}`, 'spec.analytics.json')
 
-export default defineConfig({
-  root: '.',
-  input: {
-    path: SPEC,
+const plugins = [
+  pluginOas(),
+  pluginTs(),
+  pluginClient({
+    baseURL: API_BASE,
+  }),
+]
+
+export default defineConfig([
+  {
+    root: '.',
+    input: { path: SPEC },
+    output: { path: './src/gen', extension: { '.ts': '.js' }, clean: true },
+    plugins,
   },
-  output: {
-    path: './src/gen',
-    extension: { '.ts': '.js' },
-    clean: true,
+  // Sem baseURL fixo: o código gerado vai para o git e o URL da API muda por
+  // ambiente — src/lib/umami.ts passa-o no pedido (VITE_API_BASE_URL do build).
+  // Cliente `fetch` nativo (este site não tem axios).
+  {
+    root: '.',
+    input: { path: SPEC_ANALYTICS },
+    output: { path: './src/gen-analytics', extension: { '.ts': '.js' }, clean: true },
+    plugins: [pluginOas(), pluginTs(), pluginClient({ importPath: '@kubb/plugin-client/clients/fetch' })],
   },
-  plugins: [
-    pluginOas(),
-    pluginTs(),
-    pluginClient({
-      baseURL: API_BASE,
-    }),
-  ],
-})
+])

@@ -1,0 +1,21 @@
+---
+// Estatísticas (Umami auto-hospedado, cookieless) — o par {websiteId, src} vem
+// da API no build (ver src/lib/umami.ts). null → sem script.
+import { getUmamiTracking } from '../lib/umami';
+
+const tracking = await getUmamiTracking();
+---
+
+{tracking && (
+  <script is:inline define:vars={{ src: tracking.src, websiteId: tracking.websiteId }}>
+    (function () {
+      var h = location.hostname;
+      if (!h || h === 'localhost' || h === '127.0.0.1') return; // dev → não rastreia
+      var s = document.createElement('script');
+      s.defer = true;
+      s.src = src;
+      s.setAttribute('data-website-id', websiteId);
+      document.head.appendChild(s);
+    })();
+  </script>
+)}
