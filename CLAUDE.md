@@ -10,14 +10,15 @@ Para o padrão geral de CSV de conteúdo e como importar para o backoffice, ver 
 
 - **Astro 4** — SSG puro (`output: 'static'`, sem adapter)
 - **Kubb v3** com `pluginClient` — cliente fetch tipado, gerado de `booking.json`; **não** usa `pluginReactQuery` porque o Astro não usa React em SSG
-- **Coolify** — deploy triggered pelo botão "Publicar" do backoffice (webhook)
+- **Coolify** — deploy pelo workflow `.github/workflows/deploy.yml` a cada push na `main` (o painel está na VPN; o webhook do GitHub não lhe chega)
 
 ---
 
 ## Fluxo de deploy
 
 ```
-Backoffice → "Publicar" → Coolify webhook → astro build → GET /api/websites/content → HTML estático
+push na main → GitHub Actions (WireGuard) → Coolify → astro build → HTML estático
+                                                       └ pede o id do Umami a GET /api/websites/analytics/tracking
 ```
 
 O `SITE_TOKEN` é passado como Bearer token em todas as chamadas ao endpoint público.
