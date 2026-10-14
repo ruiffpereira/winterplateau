@@ -1,0 +1,19 @@
+---
+// Uma página do site: topo + itens + rodapé. As duas rotas ([...path] e [lang]/[...path]) só diferem no getStaticPaths.
+import Base from '../layouts/Base.astro';
+import Grid from './Grid.astro';
+import Renderer from './Renderer.astro';
+import type { Ctx } from './types';
+
+export interface Props {
+  ctx: Ctx;
+}
+const { ctx } = Astro.props;
+const { rodape, topo } = ctx.site;
+---
+
+<Base ctx={ctx}>
+  {topo.comps.length > 0 && <header class="topo"><Grid comps={topo.comps} ctx={ctx} /></header>}
+  <main id="conteudo"><Renderer items={ctx.page.items} ctx={ctx} /></main>
+  {rodape.comps.length > 0 && <footer class="rodape" data-layout={rodape.layout ?? 3} data-bg={rodape.bg}><Grid comps={rodape.comps} ctx={ctx} /></footer>}
+</Base>

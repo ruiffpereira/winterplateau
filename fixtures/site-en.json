@@ -1,0 +1,744 @@
+{
+  "revision": 42,
+  "locale": "en",
+  "defaultLanguage": "pt",
+  "languages": [
+    "pt",
+    "en",
+    "fr"
+  ],
+  "topo": {
+    "comps": [
+      {
+        "type": "imagem",
+        "style": "normal",
+        "col": "all",
+        "image": "https://cdn.example.com/winterplateau/logo.webp",
+        "alt": "Winterplateau"
+      },
+      {
+        "type": "menu",
+        "style": "normal",
+        "col": "all",
+        "items": [
+          {
+            "label": "Projects",
+            "href": "/en/projects"
+          },
+          {
+            "label": "Request a quote",
+            "href": "/en/quote"
+          },
+          {
+            "label": "Rascunho",
+            "href": null
+          }
+        ]
+      },
+      {
+        "type": "botao",
+        "style": "cheio",
+        "col": "all",
+        "label": "Request a quote",
+        "href": "/en/quote"
+      },
+      {
+        "type": "linguas",
+        "style": "normal",
+        "col": "all"
+      }
+    ]
+  },
+  "rodape": {
+    "layout": 3,
+    "bg": "escuro",
+    "comps": [
+      {
+        "type": "texto",
+        "style": "normal",
+        "col": 1,
+        "body": "© 2026 Winterplateau"
+      },
+      {
+        "type": "menu",
+        "style": "normal",
+        "col": 2,
+        "items": [
+          {
+            "label": "Privacy",
+            "href": "/en/privacy"
+          }
+        ]
+      },
+      {
+        "type": "contacto",
+        "style": "normal",
+        "col": 3,
+        "email": "geral@example.com",
+        "phone": "+351253193667"
+      },
+      {
+        "type": "redes",
+        "style": "normal",
+        "col": "all",
+        "items": [
+          {
+            "network": "instagram",
+            "url": "https://www.instagram.com/winterplateau/"
+          },
+          {
+            "network": "facebook",
+            "url": "javascript:alert(1)"
+          }
+        ]
+      },
+      {
+        "type": "logotipos",
+        "style": "normal",
+        "col": "all",
+        "items": [
+          {
+            "image": "https://cdn.example.com/winterplateau/cert.webp",
+            "alt": "CE"
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "path": "/en",
+      "alternates": {
+        "pt": "/",
+        "en": "/en",
+        "fr": "/fr"
+      },
+      "title": "Home",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Home",
+        "description": "Facade rehabilitation projects with EPS mouldings.",
+        "image": "https://cdn.example.com/winterplateau/og-home.webp",
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Home",
+          "path": "/en"
+        }
+      ],
+      "items": [
+        {
+          "kind": "special",
+          "type": "edificio3d",
+          "fields": {
+            "eyebrow": "Vila Verde · Since 2016"
+          }
+        },
+        {
+          "kind": "block",
+          "anchor": "apresentacao",
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "etiqueta",
+              "style": "normal",
+              "col": "all",
+              "text": "Vila Verde · Since 2016"
+            },
+            {
+              "type": "titulo",
+              "style": "hero",
+              "col": 1,
+              "text": "*EPS* mouldings for facades",
+              "align": "left",
+              "level": "h1"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 2,
+              "body": "We make **cornices**, bands and sills. Learn more at [Winterplateau](https://www.winterplateau.pt)."
+            },
+            {
+              "type": "botao",
+              "style": "cheio",
+              "col": 1,
+              "label": "Request a quote",
+              "href": "/en/quote#orcamento"
+            },
+            {
+              "type": "botao",
+              "style": "contorno",
+              "col": 2,
+              "label": "Projects",
+              "href": null
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "numeros",
+          "layout": 3,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "120+",
+                  "label": "Projects done",
+                  "sub": "2016–2026"
+                },
+                {
+                  "value": "10",
+                  "label": "Years of experience"
+                }
+              ]
+            },
+            {
+              "type": "espaco",
+              "style": "m",
+              "col": "all"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "vantagens",
+          "layout": 3,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "iconetexto",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "icon": "factory",
+                  "title": "Made in Portugal",
+                  "text": "Made in Portugal."
+                },
+                {
+                  "icon": "badge",
+                  "title": "CE certified",
+                  "text": "CE certified."
+                },
+                {
+                  "icon": "truck",
+                  "title": "On-site delivery",
+                  "text": "On-site delivery."
+                }
+              ]
+            },
+            {
+              "type": "lista",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "text": "Made in Portugal"
+                },
+                {
+                  "text": "CE certified"
+                },
+                {
+                  "text": "On-site delivery"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "destaques",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "paginas",
+              "style": "normal",
+              "col": "all",
+              "pick": [
+                {
+                  "title": "Projects",
+                  "href": "/en/projects",
+                  "description": "Facade rehabilitation projects with EPS mouldings.",
+                  "image": "https://cdn.example.com/winterplateau/projects.webp"
+                },
+                {
+                  "title": "Request a quote",
+                  "href": "/en/quote",
+                  "description": "Request a quote",
+                  "image": "https://cdn.example.com/winterplateau/quote.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/en/projects",
+      "alternates": {
+        "pt": "/obras",
+        "en": "/en/projects",
+        "fr": "/fr/projets"
+      },
+      "title": "Projects",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Projects",
+        "description": "Facade rehabilitation projects with EPS mouldings.",
+        "image": "https://cdn.example.com/winterplateau/og-projects.webp",
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Home",
+          "path": "/en"
+        },
+        {
+          "title": "Projects",
+          "path": "/en/projects"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Projects",
+              "align": "center",
+              "level": "h1"
+            },
+            {
+              "type": "paginas",
+              "style": "normal",
+              "col": "all",
+              "pick": [
+                {
+                  "title": "Facade rehabilitation in Braga",
+                  "href": "/en/projects/facade-rehabilitation-braga",
+                  "description": "Facade rehabilitation projects with EPS mouldings.",
+                  "image": "https://cdn.example.com/winterplateau/facade.webp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "galeria",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "galeria",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "image": "https://cdn.example.com/winterplateau/g1.webp",
+                  "alt": "Rehabilitated facade",
+                  "caption": "Facade rehabilitation in Braga"
+                },
+                {
+                  "image": "https://cdn.example.com/winterplateau/g2.webp",
+                  "alt": "Rehabilitated facade"
+                }
+              ]
+            },
+            {
+              "type": "logotipos",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "image": "https://cdn.example.com/winterplateau/l1.webp",
+                  "alt": "Cliente 1",
+                  "href": "https://example.com"
+                },
+                {
+                  "image": "https://cdn.example.com/winterplateau/l2.webp",
+                  "alt": "Cliente 2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/en/projects/facade-rehabilitation-braga",
+      "alternates": {
+        "pt": "/obras/reabilitacao-fachada-braga",
+        "en": "/en/projects/facade-rehabilitation-braga",
+        "fr": "/fr/projets/rehabilitation-facade-braga"
+      },
+      "title": "Facade rehabilitation in Braga",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Facade rehabilitation in Braga",
+        "description": "Facade rehabilitation projects with EPS mouldings.",
+        "image": "https://cdn.example.com/winterplateau/og-facade.webp",
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Home",
+          "path": "/en"
+        },
+        {
+          "title": "Projects",
+          "path": "/en/projects"
+        },
+        {
+          "title": "Facade rehabilitation in Braga",
+          "path": "/en/projects/facade-rehabilitation-braga"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "normal",
+              "col": "all",
+              "text": "Facade rehabilitation in Braga",
+              "level": "h1"
+            },
+            {
+              "type": "imagem",
+              "style": "normal",
+              "col": 1,
+              "image": "https://cdn.example.com/winterplateau/braga.webp",
+              "alt": "Rehabilitated facade",
+              "caption": "Facade rehabilitation in Braga"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 2,
+              "body": "Texto com <script>alert(\"xss\")</script> e <img src=x onerror=alert(1)> e <b onclick=\"x()\">negrito html</b>.\n\n[clique](javascript:alert(1)) e [outra](JaVaScRiPt:alert(2)) e [segura](https://example.com/a?b=1&c=2) e [mail](mailto:geral@example.com).\n\n**negrito** e *itálico* normais."
+            },
+            {
+              "type": "titulo",
+              "style": "normal",
+              "col": "all",
+              "text": "Título com <script>alert(1)</script> e *itálico*",
+              "level": "h2"
+            },
+            {
+              "type": "video",
+              "style": "normal",
+              "col": 1,
+              "source": "youtube",
+              "youtube": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+              "title": "Facade rehabilitation in Braga"
+            },
+            {
+              "type": "video",
+              "style": "normal",
+              "col": 2,
+              "source": "ficheiro",
+              "file": "https://cdn.example.com/winterplateau/braga.mp4",
+              "poster": "https://cdn.example.com/winterplateau/braga.webp"
+            },
+            {
+              "type": "mapa",
+              "style": "normal",
+              "col": "all",
+              "address": "Avenida Principal 202, Vila Verde",
+              "zoom": "rua",
+              "title": "Facade rehabilitation in Braga"
+            },
+            {
+              "type": "documentos",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "name": "Data sheet",
+                  "file": "https://cdn.example.com/winterplateau/ficha.pdf"
+                }
+              ]
+            },
+            {
+              "type": "citacoes",
+              "style": "normal",
+              "col": 2,
+              "items": [
+                {
+                  "quote": "The facade looks brand new.",
+                  "name": "Ana Silva",
+                  "role": "Braga"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/en/quote",
+      "alternates": {
+        "pt": "/orcamento",
+        "en": "/en/quote",
+        "fr": "/fr/devis"
+      },
+      "title": "Request a quote",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Request a quote",
+        "description": "Facade rehabilitation projects with EPS mouldings.",
+        "image": "https://cdn.example.com/winterplateau/og-quote.webp",
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Home",
+          "path": "/en"
+        },
+        {
+          "title": "Request a quote",
+          "path": "/en/quote"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": "orcamento",
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Request a quote",
+              "level": "h1"
+            },
+            {
+              "type": "formulario",
+              "style": "normal",
+              "col": 1,
+              "types": [
+                {
+                  "name": "Projects"
+                },
+                {
+                  "name": "Privacy"
+                }
+              ]
+            },
+            {
+              "type": "contacto",
+              "style": "normal",
+              "col": 2,
+              "address": "Avenida Principal 202\n4730-041 Vila Verde",
+              "phone": "+351 253 193 667",
+              "email": "geral@example.com"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "negocio",
+              "style": "normal",
+              "col": 1,
+              "name": "Winterplateau",
+              "address": "Avenida Principal 202\n4730-041 Vila Verde",
+              "phone": "+351 253 193 667",
+              "email": "geral@example.com",
+              "hours": [
+                {
+                  "day": "Monday to Friday",
+                  "time": "9am–6pm"
+                }
+              ]
+            },
+            {
+              "type": "faq",
+              "style": "normal",
+              "col": 2,
+              "items": [
+                {
+                  "q": "Do you deliver to Spain?",
+                  "a": "Yes, **on request**.\n\n- Portugal\n- Spain"
+                }
+              ]
+            },
+            {
+              "type": "avaliacoes",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "stars": "5",
+                  "name": "Rui",
+                  "text": "Excellent work, on schedule."
+                },
+                {
+                  "stars": "4",
+                  "name": "Marie",
+                  "text": "Excellent work, on schedule."
+                }
+              ]
+            },
+            {
+              "type": "precos",
+              "style": "normal",
+              "col": 2,
+              "items": [
+                {
+                  "name": "Standard moulding",
+                  "price": "12 €",
+                  "period": "/m",
+                  "features": "- EPS\n- CE",
+                  "highlight": "sim",
+                  "cta": "Request a quote",
+                  "href": "/en/quote"
+                },
+                {
+                  "name": "Standard moulding 2",
+                  "price": "15 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/en/privacy",
+      "alternates": {
+        "pt": "/privacidade",
+        "en": "/en/privacy",
+        "fr": "/fr/confidentialite"
+      },
+      "title": "Privacy",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Privacy",
+        "description": "Facade rehabilitation projects with EPS mouldings.",
+        "image": "https://cdn.example.com/winterplateau/og-privacy.webp",
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Home",
+          "path": "/en"
+        },
+        {
+          "title": "Privacy",
+          "path": "/en/privacy"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "normal",
+              "col": "all",
+              "text": "Privacy",
+              "level": "h1"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": "all",
+              "body": "We make **cornices**, bands and sills. Learn more at [Winterplateau](https://www.winterplateau.pt)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/en/thank-you",
+      "alternates": {
+        "pt": "/obrigado",
+        "en": "/en/thank-you",
+        "fr": "/fr/merci"
+      },
+      "title": "Thank you",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Thank you",
+        "description": "Facade rehabilitation projects with EPS mouldings.",
+        "image": "https://cdn.example.com/winterplateau/og-thanks.webp",
+        "noindex": true,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Home",
+          "path": "/en"
+        },
+        {
+          "title": "Thank you",
+          "path": "/en/thank-you"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "normal",
+              "col": "all",
+              "text": "Thank you",
+              "level": "h1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "from": "/obra-braga",
+      "to": "/obras/reabilitacao-fachada-braga"
+    },
+    {
+      "from": "/en/old-projects",
+      "to": "/en/projects"
+    },
+    {
+      "from": "/fr/anciens-projets",
+      "to": "/fr/projets"
+    }
+  ]
+}

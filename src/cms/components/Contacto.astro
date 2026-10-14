@@ -1,0 +1,11 @@
+---
+import { md, plain, safeHref } from '../text';
+const { comp } = Astro.props;
+const tel = comp.phone ? safeHref(`tel:${String(comp.phone).replace(/[^\d+]/g, '')}`) : null;
+const mail = comp.email ? safeHref(`mailto:${String(comp.email).trim()}`) : null;
+---
+<div class={`c-contacto c-contacto--${comp.style}`}>
+  {comp.address && <address set:html={md(comp.address)} />}
+  {tel && <p><a href={tel}>{plain(comp.phone)}</a></p>}
+  {mail && <p><a href={mail}>{plain(comp.email)}</a></p>}
+</div>

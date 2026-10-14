@@ -1,0 +1,5 @@
+---
+import { md } from '../text';
+const { comp } = Astro.props;
+---
+<div class={`c-texto c-texto--${comp.style}`} set:html={md(comp.body)} />

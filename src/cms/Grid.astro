@@ -1,0 +1,15 @@
+---
+// Os componentes de um bloco / do topo / do rodapé, cada um na sua célula (`data-col`: all | 1 | 2 | 3).
+import Comp from './Comp.astro';
+import type { Comp as C, Ctx } from './types';
+
+export interface Props {
+  comps: C[];
+  ctx: Ctx;
+}
+const { comps, ctx } = Astro.props;
+---
+
+<div class="grid">
+  {comps.map((comp) => <div class="cell" data-col={String(comp.col ?? 'all')}><Comp comp={comp} ctx={ctx} /></div>)}
+</div>

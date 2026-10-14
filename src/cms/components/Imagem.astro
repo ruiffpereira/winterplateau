@@ -1,0 +1,11 @@
+---
+import { inline, plain, safeSrc } from '../text';
+const { comp } = Astro.props;
+const src = safeSrc(comp.image);
+---
+{src && (
+  <figure class={`c-imagem c-imagem--${comp.style}`}>
+    <img src={src} alt={plain(comp.alt)} loading="lazy" />
+    {comp.caption && <figcaption set:html={inline(comp.caption)} />}
+  </figure>
+)}

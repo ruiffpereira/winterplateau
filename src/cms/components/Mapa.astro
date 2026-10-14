@@ -1,0 +1,7 @@
+---
+import { plain } from '../text';
+const { comp } = Astro.props;
+const address = plain(comp.address);
+const src = `https://maps.google.com/maps?q=${encodeURIComponent(address)}&z=${comp.zoom === 'cidade' ? 12 : 17}&output=embed`;
+---
+{address && <div class={`c-mapa c-mapa--${comp.style}`}><iframe src={src} title={plain(comp.title) || address} loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>}

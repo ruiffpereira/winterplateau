@@ -1,0 +1,13 @@
+---
+import { inline, plain } from '../text';
+const { comp } = Astro.props;
+---
+<ul class={`c-numeros c-numeros--${comp.style}`}>
+  {(comp.items ?? []).map((i: { value?: string; label?: string; sub?: string }) => (
+    <li>
+      <strong>{plain(i.value)}</strong>
+      {i.label && <span set:html={inline(i.label)} />}
+      {i.sub && <small set:html={inline(i.sub)} />}
+    </li>
+  ))}
+</ul>

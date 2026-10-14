@@ -1,0 +1,17 @@
+---
+import { inline, md, plain, safeHref } from '../text';
+const { comp } = Astro.props;
+const tel = comp.phone ? safeHref(`tel:${String(comp.phone).replace(/[^\d+]/g, '')}`) : null;
+const mail = comp.email ? safeHref(`mailto:${String(comp.email).trim()}`) : null;
+---
+<div class={`c-negocio c-negocio--${comp.style}`}>
+  <p class="name"><strong>{plain(comp.name)}</strong></p>
+  <address set:html={md(comp.address)} />
+  {tel && <p><a href={tel}>{plain(comp.phone)}</a></p>}
+  {mail && <p><a href={mail}>{plain(comp.email)}</a></p>}
+  {comp.hours?.length > 0 && (
+    <dl>
+      {comp.hours.map((h: { day?: string; time?: string }) => <><dt set:html={inline(h.day)} /><dd>{plain(h.time)}</dd></>)}
+    </dl>
+  )}
+</div>

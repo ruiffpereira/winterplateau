@@ -1,0 +1,14 @@
+---
+// As outras línguas, com prefixo: `/en/`, `/en/projects/`, `/fr/projets/`, …
+import { loadSites } from '../../cms/client';
+import PageView from '../../cms/PageView.astro';
+import { pagesOf } from '../../cms/routes';
+
+export async function getStaticPaths() {
+  const [, ...others] = await loadSites();
+  return others.flatMap((site) => pagesOf(site).map(({ page, params }) => ({ params, props: { site, page } })));
+}
+const { site, page } = Astro.props;
+---
+
+<PageView ctx={{ site, page }} />

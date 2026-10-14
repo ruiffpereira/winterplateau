@@ -1,0 +1,7 @@
+---
+import { plain, safeSrc } from '../text';
+const { comp } = Astro.props;
+---
+<ul class={`c-documentos c-documentos--${comp.style}`}>
+  {(comp.items ?? []).map((i: { name?: string; file?: string }) => safeSrc(i.file) && <li><a href={safeSrc(i.file)!} download>{plain(i.name)}</a></li>)}
+</ul>

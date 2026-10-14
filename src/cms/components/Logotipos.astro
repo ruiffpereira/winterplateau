@@ -1,0 +1,11 @@
+---
+import { plain, safeHref, safeSrc } from '../text';
+const { comp } = Astro.props;
+---
+<ul class={`c-logotipos c-logotipos--${comp.style}`}>
+  {(comp.items ?? []).map((i: { image?: string; alt?: string; href?: string | null }) => {
+    const src = safeSrc(i.image);
+    const href = safeHref(i.href);
+    return src && <li>{href ? <a href={href}><img src={src} alt={plain(i.alt)} loading="lazy" /></a> : <img src={src} alt={plain(i.alt)} loading="lazy" />}</li>;
+  })}
+</ul>

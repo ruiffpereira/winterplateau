@@ -1,0 +1,16 @@
+---
+// Marcação do pedido de contacto. O envio (POST /websites/leads: name, email, phone?, message, source?) e o aspecto são do F18.
+import { plain } from '../text';
+const { comp } = Astro.props;
+const types: { name?: string }[] = comp.types ?? [];
+---
+<form class={`c-formulario c-formulario--${comp.style}`} method="post" data-endpoint="/websites/leads">
+  <p><label>Nome <input name="name" required minlength="2" autocomplete="name" /></label></p>
+  <p><label>Email <input name="email" type="email" required autocomplete="email" /></label></p>
+  <p><label>Telefone <input name="phone" type="tel" minlength="9" autocomplete="tel" /></label></p>
+  {types.length > 0 && (
+    <p><label>Tipo <select name="source">{types.map((t) => <option value={plain(t.name)}>{plain(t.name)}</option>)}</select></label></p>
+  )}
+  <p><label>Mensagem <textarea name="message" required maxlength="5000"></textarea></label></p>
+  <button type="submit">Enviar</button>
+</form>

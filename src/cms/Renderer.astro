@@ -1,0 +1,30 @@
+---
+// Percorre os `items` da página: `block` → grelha (layout, fundo, âncora) com os componentes; `special` → src/cms/specials/<type>.astro.
+// Tipo desconhecido: não desenha e avisa no build (nunca rebenta a página).
+import Grid from './Grid.astro';
+import type { Ctx, Item } from './types';
+
+export interface Props {
+  items: Item[];
+  ctx: Ctx;
+}
+const { items, ctx } = Astro.props;
+const specials = import.meta.glob('./specials/*.astro', { eager: true }) as Record<string, { default: any }>;
+---
+
+{items.map((item) => {
+  if (item.kind === 'special') {
+    const Special = specials[`./specials/${item.type}.astro`]?.default;
+    if (!Special) { console.warn(`[cms] especial desconhecido "${item.type}" em ${ctx.page.path} — não desenhado`); return null; }
+    return <section class={`especial especial--${item.type}`} data-special={item.type}><Special fields={item.fields} ctx={ctx} /></section>;
+  }
+  if (item.kind === 'block') {
+    return (
+      <section class="bloco" id={item.anchor ?? undefined} data-layout={item.layout} data-bg={item.bg}>
+        <Grid comps={item.comps} ctx={ctx} />
+      </section>
+    );
+  }
+  console.warn(`[cms] item desconhecido em ${ctx.page.path}: ${JSON.stringify((item as { kind?: unknown }).kind)}`);
+  return null;
+})}

@@ -1,0 +1,6 @@
+---
+import { inline } from '../text';
+const { comp } = Astro.props;
+const Tag = ['h1', 'h2', 'h3', 'h4'].includes(comp.level) ? comp.level : 'h2';
+---
+<Tag class={`c-titulo c-titulo--${comp.style}`} data-align={comp.align ?? 'left'} set:html={inline(comp.text)} />

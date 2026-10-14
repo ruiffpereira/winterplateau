@@ -45,6 +45,34 @@ npm run dev     # servidor de desenvolvimento
 
 ---
 
+## Construtor de páginas (branch `cms`, F17)
+
+O site é gerado a partir do objecto `GET /websites/site?locale=xx` (CONTRATO §7/§11 em
+`Backoffice/.design/page-builder/`): um pedido por língua, cliente tipado em `src/gen-site/` (Kubb, a partir do
+`spec.site.json` **committado** — gerado do código da API com `dumpSpec.ts site`, sem fetch). Código em `src/cms/`
+(`client.ts`, `Renderer.astro`, `components/<Type>.astro`, `specials/<tipo>.astro`, `seo.ts`, `routes.ts`,
+`text.ts`); layout `src/layouts/Base.astro`; rotas `[...path]` (língua base) e `[lang]/[...path]`.
+
+```bash
+# sem API — fixtures/site-pt.json é a língua base; as outras são os irmãos site-en.json, site-fr.json
+CMS_FIXTURE=fixtures/site-pt.json npm run build && npm run check   # check = scripts/check-build.mjs sobre o dist/
+# com a API local — VITE_API_BASE_URL + SITE_TOKEN (e CF_BYPASS_TOKEN atrás da Cloudflare) no .env
+npm run build
+```
+
+- **Falha alto.** Qualquer erro ao ler o site (rede, timeout 30 s, HTTP ≠ 200, JSON inválido, sem `pages`,
+  língua trocada, revisão que muda a meio) deita o build abaixo. Nunca se publica um site vazio — não copiar o
+  padrão de `src/lib/umami.ts`, que engole erros. Sem `CMS_FIXTURE` e sem API o build **não** corre.
+- **Sem HTML cru.** Todo o texto da API passa por `src/cms/text.ts` (`inline`/`md`/`plain`/`safeHref`/`safeSrc`/`json`);
+  nunca `set:html` com texto vindo da API sem isso. Ligações só `http(s):`, `mailto:`, `tel:`, relativas e `#`.
+- Os `redirects` da API entram pela integração `src/cms/integration.ts`; os endereços antigos (`/Projetos.html`,
+  `/Projeto.html?obra=`, `/privacidade.html`) em `src/cms/routes.ts` + `src/pages/Projeto.html.ts`.
+- `npm run kubb` precisa da API para o `spec.json`/`spec.analytics.json` (como sempre); com `KUBB_OFFLINE=1` reutiliza
+  os que já estão no disco. Regenerar o spec do site: `cd ../API-FullStack && pnpm exec ts-node --transpile-only
+  scripts/dumpSpec.ts site > ../winterplateau/spec.site.json`.
+
+---
+
 ## Conteúdo (CSV)
 
 O ficheiro `content-import.csv` tem todo o conteúdo do site — 6 colunas: `key, locale, value, type, section, parent`.

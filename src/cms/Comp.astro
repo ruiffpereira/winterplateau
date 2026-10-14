@@ -1,0 +1,16 @@
+---
+// Um componente do catálogo: src/cms/components/<Type>.astro (o `type` em minúsculas → ficheiro com a 1.ª maiúscula).
+import type { Comp, Ctx } from './types';
+
+export interface Props {
+  comp: Comp;
+  ctx: Ctx;
+}
+const { comp, ctx } = Astro.props;
+const modules = import.meta.glob('./components/*.astro', { eager: true }) as Record<string, { default: any }>;
+const key = typeof comp.type === 'string' ? `./components/${comp.type.charAt(0).toUpperCase()}${comp.type.slice(1)}.astro` : '';
+const Component = Object.prototype.hasOwnProperty.call(modules, key) ? modules[key].default : null;
+if (!Component) console.warn(`[cms] componente desconhecido "${String(comp.type)}" em ${ctx.page.path} — não desenhado`);
+---
+
+{Component && <Component comp={comp} ctx={ctx} />}

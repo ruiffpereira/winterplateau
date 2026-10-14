@@ -1,0 +1,13 @@
+---
+import { inline, md } from '../text';
+const { comp } = Astro.props;
+---
+<ul class={`c-iconetexto c-iconetexto--${comp.style}`}>
+  {(comp.items ?? []).map((i: { icon?: string; title?: string; text?: string }) => (
+    <li>
+      {i.icon && <span class="icon" data-icon={i.icon} aria-hidden="true"></span>}
+      <h3 set:html={inline(i.title)} />
+      {i.text && <div set:html={md(i.text)} />}
+    </li>
+  ))}
+</ul>

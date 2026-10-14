@@ -1,0 +1,5 @@
+---
+import { inline } from '../text';
+const { comp } = Astro.props;
+---
+<p class={`c-etiqueta c-etiqueta--${comp.style}`} set:html={inline(comp.text)} />

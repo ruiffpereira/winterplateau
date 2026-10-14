@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "kubb": "kubb generate"
+    "kubb": "kubb generate",
+    "check": "node scripts/check-build.mjs"
   },
   "dependencies": {
     "astro": "^4.15.0"

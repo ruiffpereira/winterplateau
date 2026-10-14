@@ -1,0 +1,7 @@
+---
+import { plain, safeHref } from '../text';
+const { comp } = Astro.props;
+const href = safeHref(comp.href);
+const cls = `c-botao c-botao--${comp.style}`;
+---
+{href ? <a class={cls} href={href}>{plain(comp.label)}</a> : <span class={cls}>{plain(comp.label)}</span>}

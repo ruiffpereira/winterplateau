@@ -1,0 +1,8 @@
+---
+// Especial de exemplo (manifest da Winterplateau). O visual real é do F18; aqui só prova o encanamento `kind:'special'`.
+import { inline } from '../text';
+const { fields } = Astro.props;
+---
+<div class="c-especial-edificio3d">
+  {fields.eyebrow && <p set:html={inline(fields.eyebrow)} />}
+</div>

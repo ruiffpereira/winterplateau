@@ -47,10 +47,25 @@ async function fetchSpec(url: string, outFile: string): Promise<string> {
   return outFile
 }
 
+// KUBB_OFFLINE=1 — reutiliza spec.json / spec.analytics.json já descarregados (gitignored) em vez de
+// ir buscá-los à API. Só para quando a API não está acessível; por omissão o comportamento é o de sempre.
+const OFFLINE = process.env.KUBB_OFFLINE === '1'
+async function specFrom(url: string, outFile: string): Promise<string> {
+  if (OFFLINE) {
+    if (!existsSync(outFile)) throw new Error(`KUBB_OFFLINE=1 mas falta ${outFile} — corre uma vez com a API acessível.`)
+    return outFile
+  }
+  return fetchSpec(url, outFile)
+}
+
 const KEY_QS = SWAGGER_KEY ? `?key=${SWAGGER_KEY}` : ''
-const SPEC = await fetchSpec(`${API_BASE}-docs/websites/booking.json${KEY_QS}`, 'spec.json')
+const SPEC = await specFrom(`${API_BASE}-docs/websites/booking.json${KEY_QS}`, 'spec.json')
 // Estatísticas: o par {websiteId, src} do Umami deste tenant (lido no build).
-const SPEC_ANALYTICS = await fetchSpec(`${API_BASE}-docs/websites/analytics.json${KEY_QS}`, 'spec.analytics.json')
+const SPEC_ANALYTICS = await specFrom(`${API_BASE}-docs/websites/analytics.json${KEY_QS}`, 'spec.analytics.json')
+// Construtor de páginas (/websites/site): spec COMMITADO, sem fetch — a rota ainda não está em produção.
+// Regenerar a partir da API: `pnpm exec ts-node --transpile-only scripts/dumpSpec.ts site > ../winterplateau/spec.site.json`
+// (ou, com a API em produção, descarregar `${API_BASE}-docs/websites/site.json`).
+const SPEC_SITE = 'spec.site.json'
 
 const plugins = [
   pluginOas(),
@@ -74,6 +89,13 @@ export default defineConfig([
     root: '.',
     input: { path: SPEC_ANALYTICS },
     output: { path: './src/gen-analytics', extension: { '.ts': '.js' }, clean: true },
+    plugins: [pluginOas(), pluginTs(), pluginClient({ importPath: '@kubb/plugin-client/clients/fetch' })],
+  },
+  // Construtor de páginas: /websites/site (+ /site/page). Mesmo molde do analytics (fetch nativo, baseURL em runtime).
+  {
+    root: '.',
+    input: { path: SPEC_SITE },
+    output: { path: './src/gen-site', extension: { '.ts': '.js' }, clean: true },
     plugins: [pluginOas(), pluginTs(), pluginClient({ importPath: '@kubb/plugin-client/clients/fetch' })],
   },
 ])

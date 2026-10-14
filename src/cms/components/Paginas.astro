@@ -1,0 +1,16 @@
+---
+import { plain, safeHref, safeSrc } from '../text';
+import type { PageCard } from '../types';
+const { comp } = Astro.props;
+---
+<ul class={`c-paginas c-paginas--${comp.style}`}>
+  {(comp.pick ?? []).map((c: PageCard) => safeHref(c.href) && (
+    <li>
+      <a href={safeHref(c.href)!}>
+        {safeSrc(c.image) && <img src={safeSrc(c.image)!} alt="" loading="lazy" />}
+        <h3>{plain(c.title)}</h3>
+        {c.description && <p>{plain(c.description)}</p>}
+      </a>
+    </li>
+  ))}
+</ul>

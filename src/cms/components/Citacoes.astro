@@ -1,0 +1,12 @@
+---
+import { inline, md } from '../text';
+const { comp } = Astro.props;
+---
+<div class={`c-citacoes c-citacoes--${comp.style}`}>
+  {(comp.items ?? []).map((i: { quote?: string; name?: string; role?: string }) => (
+    <figure>
+      <blockquote set:html={md(i.quote)} />
+      <figcaption><strong set:html={inline(i.name)} />{i.role && <span set:html={inline(i.role)} />}</figcaption>
+    </figure>
+  ))}
+</div>

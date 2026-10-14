@@ -1,0 +1,9 @@
+---
+import { plain, safeHref } from '../text';
+const { comp } = Astro.props;
+---
+<nav class={`c-menu c-menu--${comp.style}`}>
+  <ul>
+    {(comp.items ?? []).map((i: { label?: string; href?: string | null }) => <li>{safeHref(i.href) ? <a href={safeHref(i.href)!}>{plain(i.label)}</a> : <span>{plain(i.label)}</span>}</li>)}
+  </ul>
+</nav>

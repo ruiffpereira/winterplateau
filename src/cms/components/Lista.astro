@@ -1,0 +1,7 @@
+---
+import { inline } from '../text';
+const { comp } = Astro.props;
+---
+<ul class={`c-lista c-lista--${comp.style}`}>
+  {(comp.items ?? []).map((i: { text?: string }) => <li set:html={inline(i.text)} />)}
+</ul>

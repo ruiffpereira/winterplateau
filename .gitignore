@@ -23,3 +23,6 @@ pnpm-debug.log*
 
 # OpenAPI spec descarregado pelo Kubb (pré-fetch com header de bypass)
 spec*.json
+
+# o spec do construtor de páginas é gerado a partir do código da API e COMMITADO
+!spec.site.json

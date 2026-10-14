@@ -1,0 +1,12 @@
+---
+import { inline, md } from '../text';
+const { comp } = Astro.props;
+---
+<div class={`c-faq c-faq--${comp.style}`}>
+  {(comp.items ?? []).map((i: { q?: string; a?: string }) => (
+    <details>
+      <summary set:html={inline(i.q)} />
+      <div set:html={md(i.a)} />
+    </details>
+  ))}
+</div>

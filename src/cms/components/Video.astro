@@ -1,0 +1,18 @@
+---
+import { plain, safeSrc } from '../text';
+const { comp } = Astro.props;
+// Só o ID passa para o embed (nunca o URL do utilizador): youtube.com/watch?v=, youtu.be/, /embed/, /shorts/.
+const id = /(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:[^#]*&)?v=|embed\/|shorts\/))([\w-]{11})(?![\w-])/.exec(String(comp.youtube ?? ''))?.[1];
+const file = safeSrc(comp.file);
+const poster = safeSrc(comp.poster);
+const title = plain(comp.title);
+const ok = comp.source === 'youtube' ? !!id : !!file;
+if (!ok) console.warn(`[cms] vídeo sem fonte válida (${String(comp.source)}) — não desenhado`);
+const cls = `c-video c-video--${comp.style}`;
+---
+{ok && comp.source === 'youtube' && (
+  <div class={cls}><iframe src={`https://www.youtube-nocookie.com/embed/${id}`} title={title || 'Video'} loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+)}
+{ok && comp.source !== 'youtube' && (
+  <div class={cls}><video src={file!} poster={poster ?? undefined} controls preload="metadata" aria-label={title || undefined}></video></div>
+)}

@@ -1,0 +1,9 @@
+---
+import { plain } from '../text';
+const { comp } = Astro.props;
+// Só https: — redes sociais não têm outra coisa.
+const ok = (u: unknown): u is string => typeof u === 'string' && /^https:\/\/[^\s\x5c]+$/i.test(u);
+---
+<ul class={`c-redes c-redes--${comp.style}`}>
+  {(comp.items ?? []).map((i: { network?: string; url?: string }) => ok(i.url) && <li><a href={i.url} rel="me noopener noreferrer" data-network={plain(i.network)}>{plain(i.network)}</a></li>)}
+</ul>

@@ -1,0 +1,48 @@
+---
+// Layout do construtor de páginas: <head> inteiro (SEO automático, CONTRATO §9) a partir da página do objecto da API.
+// O layout antigo (BaseLayout.astro) fica até o F19 trocar o site.
+import UmamiScript from '../components/UmamiScript.astro';
+import { absUrl, hreflangs, jsonLd, ogLocale, SITE_NAME, titleOf } from '../cms/seo';
+import { json, plain, safeSrc } from '../cms/text';
+import type { Ctx } from '../cms/types';
+
+export interface Props {
+  ctx: Ctx;
+}
+const { ctx } = Astro.props;
+const { page, site } = ctx;
+const origin = Astro.site ?? 'https://www.winterplateau.pt';
+const title = titleOf(page);
+const description = plain(page.seo.description);
+const canonical = absUrl(page.seo.canonical ?? page.path, origin);
+const image = safeSrc(page.seo.image);
+const alternates = hreflangs(ctx, origin);
+---
+
+<!doctype html>
+<html lang={site.locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
+    {page.seo.noindex && <meta name="robots" content="noindex, nofollow" />}
+    {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={ogLocale(site.locale)} />
+    {site.languages.filter((l) => l !== site.locale).map((l) => <meta property="og:locale:alternate" content={ogLocale(l)} />)}
+    {image && <meta property="og:image" content={new URL(image, origin).toString()} />}
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    {jsonLd(ctx, origin).map((ld) => <script type="application/ld+json" set:html={json(ld)} />)}
+    <UmamiScript />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

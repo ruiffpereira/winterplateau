@@ -1,0 +1,744 @@
+{
+  "revision": 42,
+  "locale": "pt",
+  "defaultLanguage": "pt",
+  "languages": [
+    "pt",
+    "en",
+    "fr"
+  ],
+  "topo": {
+    "comps": [
+      {
+        "type": "imagem",
+        "style": "normal",
+        "col": "all",
+        "image": "https://cdn.example.com/winterplateau/logo.webp",
+        "alt": "Winterplateau"
+      },
+      {
+        "type": "menu",
+        "style": "normal",
+        "col": "all",
+        "items": [
+          {
+            "label": "Obras",
+            "href": "/obras"
+          },
+          {
+            "label": "Pedir orçamento",
+            "href": "/orcamento"
+          },
+          {
+            "label": "Rascunho",
+            "href": null
+          }
+        ]
+      },
+      {
+        "type": "botao",
+        "style": "cheio",
+        "col": "all",
+        "label": "Pedir orçamento",
+        "href": "/orcamento"
+      },
+      {
+        "type": "linguas",
+        "style": "normal",
+        "col": "all"
+      }
+    ]
+  },
+  "rodape": {
+    "layout": 3,
+    "bg": "escuro",
+    "comps": [
+      {
+        "type": "texto",
+        "style": "normal",
+        "col": 1,
+        "body": "© 2026 Winterplateau"
+      },
+      {
+        "type": "menu",
+        "style": "normal",
+        "col": 2,
+        "items": [
+          {
+            "label": "Privacidade",
+            "href": "/privacidade"
+          }
+        ]
+      },
+      {
+        "type": "contacto",
+        "style": "normal",
+        "col": 3,
+        "email": "geral@example.com",
+        "phone": "+351253193667"
+      },
+      {
+        "type": "redes",
+        "style": "normal",
+        "col": "all",
+        "items": [
+          {
+            "network": "instagram",
+            "url": "https://www.instagram.com/winterplateau/"
+          },
+          {
+            "network": "facebook",
+            "url": "javascript:alert(1)"
+          }
+        ]
+      },
+      {
+        "type": "logotipos",
+        "style": "normal",
+        "col": "all",
+        "items": [
+          {
+            "image": "https://cdn.example.com/winterplateau/cert.webp",
+            "alt": "CE"
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "path": "/",
+      "alternates": {
+        "pt": "/",
+        "en": "/en",
+        "fr": "/fr"
+      },
+      "title": "Início",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Início",
+        "description": "Obras de reabilitação de fachadas com molduras EPS.",
+        "image": "https://cdn.example.com/winterplateau/og-home.webp",
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Início",
+          "path": "/"
+        }
+      ],
+      "items": [
+        {
+          "kind": "special",
+          "type": "edificio3d",
+          "fields": {
+            "eyebrow": "Vila Verde · Desde 2016"
+          }
+        },
+        {
+          "kind": "block",
+          "anchor": "apresentacao",
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "etiqueta",
+              "style": "normal",
+              "col": "all",
+              "text": "Vila Verde · Desde 2016"
+            },
+            {
+              "type": "titulo",
+              "style": "hero",
+              "col": 1,
+              "text": "Molduras em *EPS* para fachadas",
+              "align": "left",
+              "level": "h1"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 2,
+              "body": "Fabricamos **cornijas**, bandas e peitoris. Saiba mais em [Winterplateau](https://www.winterplateau.pt)."
+            },
+            {
+              "type": "botao",
+              "style": "cheio",
+              "col": 1,
+              "label": "Pedir orçamento",
+              "href": "/orcamento#orcamento"
+            },
+            {
+              "type": "botao",
+              "style": "contorno",
+              "col": 2,
+              "label": "Obras",
+              "href": null
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "numeros",
+          "layout": 3,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "120+",
+                  "label": "Obras feitas",
+                  "sub": "2016–2026"
+                },
+                {
+                  "value": "10",
+                  "label": "Anos de experiência"
+                }
+              ]
+            },
+            {
+              "type": "espaco",
+              "style": "m",
+              "col": "all"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "vantagens",
+          "layout": 3,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "iconetexto",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "icon": "factory",
+                  "title": "Fabrico nacional",
+                  "text": "Fabrico nacional."
+                },
+                {
+                  "icon": "badge",
+                  "title": "Certificação CE",
+                  "text": "Certificação CE."
+                },
+                {
+                  "icon": "truck",
+                  "title": "Entrega em obra",
+                  "text": "Entrega em obra."
+                }
+              ]
+            },
+            {
+              "type": "lista",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "text": "Fabrico nacional"
+                },
+                {
+                  "text": "Certificação CE"
+                },
+                {
+                  "text": "Entrega em obra"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "destaques",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "paginas",
+              "style": "normal",
+              "col": "all",
+              "pick": [
+                {
+                  "title": "Obras",
+                  "href": "/obras",
+                  "description": "Obras de reabilitação de fachadas com molduras EPS.",
+                  "image": "https://cdn.example.com/winterplateau/projects.webp"
+                },
+                {
+                  "title": "Pedir orçamento",
+                  "href": "/orcamento",
+                  "description": "Pedir orçamento",
+                  "image": "https://cdn.example.com/winterplateau/quote.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/obras",
+      "alternates": {
+        "pt": "/obras",
+        "en": "/en/projects",
+        "fr": "/fr/projets"
+      },
+      "title": "Obras",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Obras",
+        "description": "Obras de reabilitação de fachadas com molduras EPS.",
+        "image": "https://cdn.example.com/winterplateau/og-projects.webp",
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Início",
+          "path": "/"
+        },
+        {
+          "title": "Obras",
+          "path": "/obras"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Obras",
+              "align": "center",
+              "level": "h1"
+            },
+            {
+              "type": "paginas",
+              "style": "normal",
+              "col": "all",
+              "pick": [
+                {
+                  "title": "Reabilitação de fachada em Braga",
+                  "href": "/obras/reabilitacao-fachada-braga",
+                  "description": "Obras de reabilitação de fachadas com molduras EPS.",
+                  "image": "https://cdn.example.com/winterplateau/facade.webp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "galeria",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "galeria",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "image": "https://cdn.example.com/winterplateau/g1.webp",
+                  "alt": "Fachada reabilitada",
+                  "caption": "Reabilitação de fachada em Braga"
+                },
+                {
+                  "image": "https://cdn.example.com/winterplateau/g2.webp",
+                  "alt": "Fachada reabilitada"
+                }
+              ]
+            },
+            {
+              "type": "logotipos",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "image": "https://cdn.example.com/winterplateau/l1.webp",
+                  "alt": "Cliente 1",
+                  "href": "https://example.com"
+                },
+                {
+                  "image": "https://cdn.example.com/winterplateau/l2.webp",
+                  "alt": "Cliente 2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/obras/reabilitacao-fachada-braga",
+      "alternates": {
+        "pt": "/obras/reabilitacao-fachada-braga",
+        "en": "/en/projects/facade-rehabilitation-braga",
+        "fr": "/fr/projets/rehabilitation-facade-braga"
+      },
+      "title": "Reabilitação de fachada em Braga",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Reabilitação de fachada em Braga",
+        "description": "Obras de reabilitação de fachadas com molduras EPS.",
+        "image": "https://cdn.example.com/winterplateau/og-facade.webp",
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Início",
+          "path": "/"
+        },
+        {
+          "title": "Obras",
+          "path": "/obras"
+        },
+        {
+          "title": "Reabilitação de fachada em Braga",
+          "path": "/obras/reabilitacao-fachada-braga"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "normal",
+              "col": "all",
+              "text": "Reabilitação de fachada em Braga",
+              "level": "h1"
+            },
+            {
+              "type": "imagem",
+              "style": "normal",
+              "col": 1,
+              "image": "https://cdn.example.com/winterplateau/braga.webp",
+              "alt": "Fachada reabilitada",
+              "caption": "Reabilitação de fachada em Braga"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 2,
+              "body": "Texto com <script>alert(\"xss\")</script> e <img src=x onerror=alert(1)> e <b onclick=\"x()\">negrito html</b>.\n\n[clique](javascript:alert(1)) e [outra](JaVaScRiPt:alert(2)) e [segura](https://example.com/a?b=1&c=2) e [mail](mailto:geral@example.com).\n\n**negrito** e *itálico* normais."
+            },
+            {
+              "type": "titulo",
+              "style": "normal",
+              "col": "all",
+              "text": "Título com <script>alert(1)</script> e *itálico*",
+              "level": "h2"
+            },
+            {
+              "type": "video",
+              "style": "normal",
+              "col": 1,
+              "source": "youtube",
+              "youtube": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+              "title": "Reabilitação de fachada em Braga"
+            },
+            {
+              "type": "video",
+              "style": "normal",
+              "col": 2,
+              "source": "ficheiro",
+              "file": "https://cdn.example.com/winterplateau/braga.mp4",
+              "poster": "https://cdn.example.com/winterplateau/braga.webp"
+            },
+            {
+              "type": "mapa",
+              "style": "normal",
+              "col": "all",
+              "address": "Avenida Principal 202, Vila Verde",
+              "zoom": "rua",
+              "title": "Reabilitação de fachada em Braga"
+            },
+            {
+              "type": "documentos",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "name": "Ficha técnica",
+                  "file": "https://cdn.example.com/winterplateau/ficha.pdf"
+                }
+              ]
+            },
+            {
+              "type": "citacoes",
+              "style": "normal",
+              "col": 2,
+              "items": [
+                {
+                  "quote": "A fachada ficou como nova.",
+                  "name": "Ana Silva",
+                  "role": "Braga"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/orcamento",
+      "alternates": {
+        "pt": "/orcamento",
+        "en": "/en/quote",
+        "fr": "/fr/devis"
+      },
+      "title": "Pedir orçamento",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Pedir orçamento",
+        "description": "Obras de reabilitação de fachadas com molduras EPS.",
+        "image": "https://cdn.example.com/winterplateau/og-quote.webp",
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Início",
+          "path": "/"
+        },
+        {
+          "title": "Pedir orçamento",
+          "path": "/orcamento"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": "orcamento",
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Pedir orçamento",
+              "level": "h1"
+            },
+            {
+              "type": "formulario",
+              "style": "normal",
+              "col": 1,
+              "types": [
+                {
+                  "name": "Obras"
+                },
+                {
+                  "name": "Privacidade"
+                }
+              ]
+            },
+            {
+              "type": "contacto",
+              "style": "normal",
+              "col": 2,
+              "address": "Avenida Principal 202\n4730-041 Vila Verde",
+              "phone": "+351 253 193 667",
+              "email": "geral@example.com"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "negocio",
+              "style": "normal",
+              "col": 1,
+              "name": "Winterplateau",
+              "address": "Avenida Principal 202\n4730-041 Vila Verde",
+              "phone": "+351 253 193 667",
+              "email": "geral@example.com",
+              "hours": [
+                {
+                  "day": "Segunda a sexta",
+                  "time": "9h–18h"
+                }
+              ]
+            },
+            {
+              "type": "faq",
+              "style": "normal",
+              "col": 2,
+              "items": [
+                {
+                  "q": "Fazem entregas em Espanha?",
+                  "a": "Sim, **sob consulta**.\n\n- Portugal\n- Espanha"
+                }
+              ]
+            },
+            {
+              "type": "avaliacoes",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "stars": "5",
+                  "name": "Rui",
+                  "text": "Excelente trabalho e prazos cumpridos."
+                },
+                {
+                  "stars": "4",
+                  "name": "Marie",
+                  "text": "Excelente trabalho e prazos cumpridos."
+                }
+              ]
+            },
+            {
+              "type": "precos",
+              "style": "normal",
+              "col": 2,
+              "items": [
+                {
+                  "name": "Moldura standard",
+                  "price": "12 €",
+                  "period": "/m",
+                  "features": "- EPS\n- CE",
+                  "highlight": "sim",
+                  "cta": "Pedir orçamento",
+                  "href": "/orcamento"
+                },
+                {
+                  "name": "Moldura standard 2",
+                  "price": "15 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/privacidade",
+      "alternates": {
+        "pt": "/privacidade",
+        "en": "/en/privacy",
+        "fr": "/fr/confidentialite"
+      },
+      "title": "Privacidade",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Privacidade",
+        "description": "Obras de reabilitação de fachadas com molduras EPS.",
+        "image": "https://cdn.example.com/winterplateau/og-privacy.webp",
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Início",
+          "path": "/"
+        },
+        {
+          "title": "Privacidade",
+          "path": "/privacidade"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "normal",
+              "col": "all",
+              "text": "Privacidade",
+              "level": "h1"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": "all",
+              "body": "Fabricamos **cornijas**, bandas e peitoris. Saiba mais em [Winterplateau](https://www.winterplateau.pt)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/obrigado",
+      "alternates": {
+        "pt": "/obrigado",
+        "en": "/en/thank-you",
+        "fr": "/fr/merci"
+      },
+      "title": "Obrigado",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Obrigado",
+        "description": "Obras de reabilitação de fachadas com molduras EPS.",
+        "image": "https://cdn.example.com/winterplateau/og-thanks.webp",
+        "noindex": true,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Início",
+          "path": "/"
+        },
+        {
+          "title": "Obrigado",
+          "path": "/obrigado"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "normal",
+              "col": "all",
+              "text": "Obrigado",
+              "level": "h1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "from": "/obra-braga",
+      "to": "/obras/reabilitacao-fachada-braga"
+    },
+    {
+      "from": "/en/old-projects",
+      "to": "/en/projects"
+    },
+    {
+      "from": "/fr/anciens-projets",
+      "to": "/fr/projets"
+    }
+  ]
+}

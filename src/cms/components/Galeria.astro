@@ -1,0 +1,14 @@
+---
+import { inline, plain, safeSrc } from '../text';
+const { comp } = Astro.props;
+---
+<ul class={`c-galeria c-galeria--${comp.style}`}>
+  {(comp.items ?? []).map((i: { image?: string; alt?: string; caption?: string }) => safeSrc(i.image) && (
+    <li>
+      <figure>
+        <img src={safeSrc(i.image)!} alt={plain(i.alt)} loading="lazy" />
+        {i.caption && <figcaption set:html={inline(i.caption)} />}
+      </figure>
+    </li>
+  ))}
+</ul>

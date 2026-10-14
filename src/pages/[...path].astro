@@ -1,0 +1,14 @@
+---
+// A língua base (sem prefixo): `/`, `/obras/`, … Uma rota por `pages[].path` do objecto da API.
+import { loadSites } from '../cms/client';
+import PageView from '../cms/PageView.astro';
+import { pagesOf } from '../cms/routes';
+
+export async function getStaticPaths() {
+  const [site] = await loadSites();
+  return pagesOf(site).map(({ page, params }) => ({ params, props: { site, page } }));
+}
+const { site, page } = Astro.props;
+---
+
+<PageView ctx={{ site, page }} />
