@@ -1,9 +1,17 @@
 ---
+import { NETWORKS } from '../icons';
 import { plain } from '../text';
 const { comp } = Astro.props;
 // Só https: — redes sociais não têm outra coisa.
 const ok = (u: unknown): u is string => typeof u === 'string' && /^https:\/\/[^\s\x5c]+$/i.test(u);
+const net = (n: unknown) => (typeof n === 'string' && Object.prototype.hasOwnProperty.call(NETWORKS, n) ? NETWORKS[n] : null);
 ---
 <ul class={`c-redes c-redes--${comp.style}`}>
-  {(comp.items ?? []).map((i: { network?: string; url?: string }) => ok(i.url) && <li><a href={i.url} rel="me noopener noreferrer" data-network={plain(i.network)}>{plain(i.network)}</a></li>)}
+  {(comp.items ?? []).map((i: { network?: string; url?: string }) => ok(i.url) && (
+    <li>
+      <a href={i.url} rel="me noopener noreferrer" target="_blank" data-network={plain(i.network)} aria-label={net(i.network)?.label ?? plain(i.network)}>
+        {net(i.network) ? <svg viewBox="0 0 24 24" aria-hidden="true">{net(i.network)!.d.map((d) => <path d={d} />)}</svg> : <span aria-hidden="true">{plain(i.network).slice(0, 2)}</span>}
+      </a>
+    </li>
+  ))}
 </ul>

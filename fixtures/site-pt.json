@@ -13,7 +13,7 @@
         "type": "imagem",
         "style": "normal",
         "col": "all",
-        "image": "https://cdn.example.com/winterplateau/logo.webp",
+        "image": "/favicon.svg",
         "alt": "Winterplateau"
       },
       {
@@ -98,7 +98,7 @@
         "col": "all",
         "items": [
           {
-            "image": "https://cdn.example.com/winterplateau/cert.webp",
+            "image": "/assets/og-image.png",
             "alt": "CE"
           }
         ]
@@ -137,6 +137,44 @@
           }
         },
         {
+          "kind": "special",
+          "type": "faixa",
+          "fields": {
+            "items": [
+              {
+                "name": "Bandas"
+              },
+              {
+                "name": "Cornijas"
+              },
+              {
+                "name": "Colunas"
+              },
+              {
+                "name": "Peitoris"
+              },
+              {
+                "name": "EPS Exterior"
+              },
+              {
+                "name": "EPS Interior"
+              },
+              {
+                "name": "Rodatetos"
+              },
+              {
+                "name": "Tetos Falsos"
+              },
+              {
+                "name": "Perfil TC"
+              },
+              {
+                "name": "Capoto"
+              }
+            ]
+          }
+        },
+        {
           "kind": "block",
           "anchor": "apresentacao",
           "layout": 2,
@@ -150,7 +188,7 @@
             },
             {
               "type": "titulo",
-              "style": "hero",
+              "style": "destaque",
               "col": 1,
               "text": "Molduras em *EPS* para fachadas",
               "align": "left",
@@ -219,17 +257,17 @@
               "col": "all",
               "items": [
                 {
-                  "icon": "factory",
+                  "icon": "escudo",
                   "title": "Fabrico nacional",
                   "text": "Fabrico nacional."
                 },
                 {
-                  "icon": "badge",
+                  "icon": "folha",
                   "title": "Certificação CE",
                   "text": "Certificação CE."
                 },
                 {
-                  "icon": "truck",
+                  "icon": "factory",
                   "title": "Entrega em obra",
                   "text": "Entrega em obra."
                 }
@@ -255,6 +293,28 @@
         },
         {
           "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "marca",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "frase",
+              "col": "all",
+              "text": "Mais de 500 projetos construídos com *rigor e inovação.*",
+              "align": "center",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": "all",
+              "body": "Certificação CE · Declaração de Desempenho · PT, ES, FR"
+            }
+          ]
+        },
+        {
+          "kind": "block",
           "anchor": "destaques",
           "layout": 1,
           "bg": "claro",
@@ -268,13 +328,13 @@
                   "title": "Obras",
                   "href": "/obras",
                   "description": "Obras de reabilitação de fachadas com molduras EPS.",
-                  "image": "https://cdn.example.com/winterplateau/projects.webp"
+                  "image": "/assets/og-image.png"
                 },
                 {
                   "title": "Pedir orçamento",
                   "href": "/orcamento",
                   "description": "Pedir orçamento",
-                  "image": "https://cdn.example.com/winterplateau/quote.webp"
+                  "image": "/assets/og-image.png"
                 }
               ]
             }
@@ -332,7 +392,7 @@
                   "title": "Reabilitação de fachada em Braga",
                   "href": "/obras/reabilitacao-fachada-braga",
                   "description": "Obras de reabilitação de fachadas com molduras EPS.",
-                  "image": "https://cdn.example.com/winterplateau/facade.webp"
+                  "image": "/assets/og-image.png"
                 }
               ]
             }
@@ -350,12 +410,12 @@
               "col": "all",
               "items": [
                 {
-                  "image": "https://cdn.example.com/winterplateau/g1.webp",
+                  "image": "/assets/og-image.png",
                   "alt": "Fachada reabilitada",
                   "caption": "Reabilitação de fachada em Braga"
                 },
                 {
-                  "image": "https://cdn.example.com/winterplateau/g2.webp",
+                  "image": "/assets/og-image.png",
                   "alt": "Fachada reabilitada"
                 }
               ]
@@ -366,12 +426,12 @@
               "col": "all",
               "items": [
                 {
-                  "image": "https://cdn.example.com/winterplateau/l1.webp",
+                  "image": "/assets/og-image.png",
                   "alt": "Cliente 1",
                   "href": "https://example.com"
                 },
                 {
-                  "image": "https://cdn.example.com/winterplateau/l2.webp",
+                  "image": "/assets/og-image.png",
                   "alt": "Cliente 2"
                 }
               ]
@@ -419,7 +479,7 @@
           "comps": [
             {
               "type": "titulo",
-              "style": "normal",
+              "style": "seccao",
               "col": "all",
               "text": "Reabilitação de fachada em Braga",
               "level": "h1"
@@ -428,7 +488,7 @@
               "type": "imagem",
               "style": "normal",
               "col": 1,
-              "image": "https://cdn.example.com/winterplateau/braga.webp",
+              "image": "/assets/og-image.png",
               "alt": "Fachada reabilitada",
               "caption": "Reabilitação de fachada em Braga"
             },
@@ -440,7 +500,7 @@
             },
             {
               "type": "titulo",
-              "style": "normal",
+              "style": "seccao",
               "col": "all",
               "text": "Título com <script>alert(1)</script> e *itálico*",
               "level": "h2"
@@ -459,7 +519,7 @@
               "col": 2,
               "source": "ficheiro",
               "file": "https://cdn.example.com/winterplateau/braga.mp4",
-              "poster": "https://cdn.example.com/winterplateau/braga.webp"
+              "poster": "/assets/og-image.png"
             },
             {
               "type": "mapa",
@@ -667,7 +727,7 @@
           "comps": [
             {
               "type": "titulo",
-              "style": "normal",
+              "style": "seccao",
               "col": "all",
               "text": "Privacidade",
               "level": "h1"
@@ -717,12 +777,1186 @@
           "comps": [
             {
               "type": "titulo",
-              "style": "normal",
+              "style": "seccao",
               "col": "all",
               "text": "Obrigado",
               "level": "h1"
             }
           ]
+        }
+      ]
+    },
+    {
+      "path": "/componentes",
+      "alternates": {
+        "pt": "/componentes",
+        "en": "/en/components",
+        "fr": "/fr/composants"
+      },
+      "title": "Componentes",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Componentes",
+        "description": "Página de demonstração dos componentes.",
+        "image": null,
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Início",
+          "path": "/"
+        },
+        {
+          "title": "Componentes",
+          "path": "/componentes"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "etiqueta",
+              "style": "normal",
+              "col": "all",
+              "text": "Estilos de título"
+            },
+            {
+              "type": "titulo",
+              "style": "destaque",
+              "col": "all",
+              "text": "Molduras em *EPS* para fachadas",
+              "align": "left",
+              "level": "h1"
+            },
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Como *trabalhamos* em obra",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "titulo",
+              "style": "frase",
+              "col": "all",
+              "text": "Mais de 500 projetos com *rigor e inovação.*",
+              "align": "center",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "grande",
+              "col": "all",
+              "body": "Fabricamos **cornijas**, bandas e peitoris em EPS para reabilitação de fachadas, com certificação *CE* e entrega em obra.\n\nCada peça é cortada à medida e revestida em obra."
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": "all",
+              "body": "Fabricamos **cornijas**, bandas e peitoris em EPS para reabilitação de fachadas, com certificação *CE* e entrega em obra.\n\nCada peça é cortada à medida e revestida em obra."
+            },
+            {
+              "type": "texto",
+              "style": "pequeno",
+              "col": "all",
+              "body": "Nota: preços sem IVA. Ligação de [exemplo](https://example.com)."
+            },
+            {
+              "type": "botao",
+              "style": "cheio",
+              "col": "all",
+              "label": "Pedir orçamento",
+              "href": "/orcamento"
+            },
+            {
+              "type": "botao",
+              "style": "contorno",
+              "col": "all",
+              "label": "Ver obras",
+              "href": "/obras"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "claro",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Fundo *claro*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "titulo",
+              "style": "destaque",
+              "col": "all",
+              "text": "Destaque em *fundo claro*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "grande",
+              "col": "all",
+              "body": "Fabricamos **cornijas**, bandas e peitoris em EPS para reabilitação de fachadas, com certificação *CE* e entrega em obra.\n\nCada peça é cortada à medida e revestida em obra."
+            },
+            {
+              "type": "botao",
+              "style": "cheio",
+              "col": "all",
+              "label": "Pedir orçamento",
+              "href": "/orcamento"
+            },
+            {
+              "type": "botao",
+              "style": "contorno",
+              "col": "all",
+              "label": "Ver obras",
+              "href": "/obras"
+            },
+            {
+              "type": "espaco",
+              "style": "p",
+              "col": "all"
+            },
+            {
+              "type": "lista",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "text": "Fabrico nacional"
+                },
+                {
+                  "text": "Certificação CE"
+                },
+                {
+                  "text": "Entrega em obra"
+                }
+              ]
+            },
+            {
+              "type": "espaco",
+              "style": "m",
+              "col": "all"
+            },
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "2016",
+                  "label": "Fundação",
+                  "sub": "Vila Verde, Braga"
+                },
+                {
+                  "value": "18+",
+                  "label": "Produtos EPS",
+                  "sub": "Exterior e interior"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projetos",
+                  "sub": "PT · ES · FR"
+                },
+                {
+                  "value": "CE",
+                  "label": "Certificação",
+                  "sub": "Declaração de Desempenho"
+                }
+              ]
+            },
+            {
+              "type": "espaco",
+              "style": "g",
+              "col": "all"
+            },
+            {
+              "type": "imagem",
+              "style": "normal",
+              "col": "all",
+              "image": "/assets/og-image.png",
+              "alt": "Fachada reabilitada",
+              "caption": "Imagem normal"
+            },
+            {
+              "type": "imagem",
+              "style": "redonda",
+              "col": "all",
+              "image": "/assets/og-image.png",
+              "alt": "",
+              "caption": "Cantos redondos"
+            },
+            {
+              "type": "imagem",
+              "style": "total",
+              "col": "all",
+              "image": "/assets/og-image.png",
+              "alt": "Largura total",
+              "caption": "Largura total"
+            },
+            {
+              "type": "galeria",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "image": "/assets/og-image.png",
+                  "alt": "1",
+                  "caption": "Legenda"
+                },
+                {
+                  "image": "/assets/og-image.png",
+                  "alt": "2"
+                },
+                {
+                  "image": "/assets/og-image.png",
+                  "alt": "3"
+                },
+                {
+                  "image": "/assets/og-image.png",
+                  "alt": "4"
+                }
+              ]
+            },
+            {
+              "type": "logotipos",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "image": "/favicon.svg",
+                  "alt": "Logo 1",
+                  "href": "https://example.com"
+                },
+                {
+                  "image": "/favicon.svg",
+                  "alt": "Logo 2",
+                  "href": null
+                },
+                {
+                  "image": "/favicon.svg",
+                  "alt": "Logo 3",
+                  "href": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "marca",
+          "layout": 1,
+          "bg": "marca",
+          "comps": [
+            {
+              "type": "etiqueta",
+              "style": "normal",
+              "col": "all",
+              "text": "Fundo azul da marca"
+            },
+            {
+              "type": "titulo",
+              "style": "frase",
+              "col": "all",
+              "text": "Pronto para o *próximo projeto?*",
+              "align": "center",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": "all",
+              "body": "Peça um orçamento personalizado ou fale com a nossa equipa técnica."
+            },
+            {
+              "type": "lista",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "text": "Resposta até 48 horas"
+                },
+                {
+                  "text": "Aconselhamento técnico incluído"
+                },
+                {
+                  "text": "Sem compromisso"
+                }
+              ]
+            },
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "2016",
+                  "label": "Fundação",
+                  "sub": "Vila Verde, Braga"
+                },
+                {
+                  "value": "18+",
+                  "label": "Produtos EPS",
+                  "sub": "Exterior e interior"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projetos",
+                  "sub": "PT · ES · FR"
+                }
+              ]
+            },
+            {
+              "type": "botao",
+              "style": "cheio",
+              "col": "all",
+              "label": "Pedir orçamento",
+              "href": "/orcamento"
+            },
+            {
+              "type": "botao",
+              "style": "contorno",
+              "col": "all",
+              "label": "Ver obras",
+              "href": "/obras"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "imagem",
+              "style": "redonda",
+              "col": 1,
+              "image": "/assets/og-image.png",
+              "alt": "Fachada"
+            },
+            {
+              "type": "etiqueta",
+              "style": "normal",
+              "col": 2,
+              "text": "EPS Exterior"
+            },
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": 2,
+              "text": "Molduras para *fachadas*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 2,
+              "body": "Fabricamos **cornijas**, bandas e peitoris em EPS para reabilitação de fachadas, com certificação *CE* e entrega em obra.\n\nCada peça é cortada à medida e revestida em obra."
+            },
+            {
+              "type": "botao",
+              "style": "cheio",
+              "col": 2,
+              "label": "Pedir orçamento",
+              "href": "/orcamento"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "imagem",
+              "style": "normal",
+              "col": 1,
+              "image": "/assets/og-image.png",
+              "alt": "Fachada"
+            },
+            {
+              "type": "etiqueta",
+              "style": "normal",
+              "col": 2,
+              "text": "Reabilitação"
+            },
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": 2,
+              "text": "Reabilitação com *rigor*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 2,
+              "body": "Fabricamos **cornijas**, bandas e peitoris em EPS para reabilitação de fachadas, com certificação *CE* e entrega em obra.\n\nCada peça é cortada à medida e revestida em obra."
+            },
+            {
+              "type": "botao",
+              "style": "contorno",
+              "col": 2,
+              "label": "Ver obras",
+              "href": "/obras"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 3,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "iconetexto",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "icon": "escudo",
+                  "title": "Certificação CE",
+                  "text": "Declaração de desempenho em todos os produtos."
+                },
+                {
+                  "icon": "folha",
+                  "title": "Fabrico nacional",
+                  "text": "Produção em Vila Verde."
+                },
+                {
+                  "icon": "camiao",
+                  "title": "Entrega em obra",
+                  "text": "Um ícone que o manifest não conhece."
+                }
+              ]
+            },
+            {
+              "type": "citacoes",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "quote": "A fachada ficou como nova.",
+                  "name": "Ana Silva",
+                  "role": "Braga"
+                }
+              ]
+            },
+            {
+              "type": "avaliacoes",
+              "style": "normal",
+              "col": 2,
+              "items": [
+                {
+                  "stars": "5",
+                  "name": "Rui",
+                  "text": "Excelente trabalho e prazos cumpridos."
+                }
+              ]
+            },
+            {
+              "type": "precos",
+              "style": "normal",
+              "col": 3,
+              "items": [
+                {
+                  "name": "Moldura standard",
+                  "price": "12 €",
+                  "period": "/m",
+                  "features": "- EPS\n- CE",
+                  "highlight": "sim",
+                  "cta": "Pedir orçamento",
+                  "href": "/orcamento"
+                },
+                {
+                  "name": "Moldura larga",
+                  "price": "15 €",
+                  "period": "/m",
+                  "features": "- EPS\n- CE\n- Cola incluída",
+                  "highlight": "nao"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "faq",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "q": "Fazem entregas em Espanha?",
+                  "a": "Sim, **sob consulta**.\n\n- Portugal\n- Espanha"
+                },
+                {
+                  "q": "Quanto demora um orçamento?",
+                  "a": "Até 48 horas."
+                }
+              ]
+            },
+            {
+              "type": "negocio",
+              "style": "normal",
+              "col": 2,
+              "name": "Winterplateau",
+              "address": "Avenida Principal 202\n4730-041 Vila Verde",
+              "phone": "+351 253 193 667",
+              "email": "geral@example.com",
+              "hours": [
+                {
+                  "day": "Segunda a sexta",
+                  "time": "9h–18h"
+                }
+              ]
+            },
+            {
+              "type": "contacto",
+              "style": "normal",
+              "col": 2,
+              "address": "Avenida Principal 202\n4730-041 Vila Verde",
+              "phone": "+351 253 193 667",
+              "email": "geral@example.com"
+            },
+            {
+              "type": "menu",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "label": "Obras",
+                  "href": "/obras"
+                },
+                {
+                  "label": "Rascunho",
+                  "href": null
+                }
+              ]
+            },
+            {
+              "type": "redes",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "network": "instagram",
+                  "url": "https://example.com/instagram"
+                },
+                {
+                  "network": "facebook",
+                  "url": "https://example.com/facebook"
+                },
+                {
+                  "network": "linkedin",
+                  "url": "https://example.com/linkedin"
+                },
+                {
+                  "network": "youtube",
+                  "url": "https://example.com/youtube"
+                },
+                {
+                  "network": "tiktok",
+                  "url": "https://example.com/tiktok"
+                },
+                {
+                  "network": "x",
+                  "url": "https://example.com/x"
+                }
+              ]
+            },
+            {
+              "type": "linguas",
+              "style": "normal",
+              "col": 1
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Multimédia e documentos",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "video",
+              "style": "normal",
+              "col": "all",
+              "source": "youtube",
+              "youtube": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+              "title": "Video"
+            },
+            {
+              "type": "mapa",
+              "style": "normal",
+              "col": "all",
+              "address": "Avenida Principal 202, Vila Verde",
+              "zoom": "rua",
+              "title": "Onde estamos"
+            },
+            {
+              "type": "documentos",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "name": "Ficha técnica",
+                  "file": "https://example.com/ficha.pdf"
+                },
+                {
+                  "name": "Catálogo",
+                  "file": "https://example.com/catalogo.pdf"
+                }
+              ]
+            },
+            {
+              "type": "paginas",
+              "style": "normal",
+              "col": "all",
+              "pick": [
+                {
+                  "title": "Obras",
+                  "href": "/obras",
+                  "description": "Obras de reabilitação de fachadas.",
+                  "image": "/assets/og-image.png"
+                },
+                {
+                  "title": "Pedir orçamento",
+                  "href": "/orcamento",
+                  "description": "",
+                  "image": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "pedido",
+          "layout": 2,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": 1,
+              "text": "Pedir *orçamento*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "formulario",
+              "style": "normal",
+              "col": 2,
+              "types": [
+                {
+                  "name": "Reabilitação de fachada"
+                },
+                {
+                  "name": "Construção nova"
+                },
+                {
+                  "name": "Outro"
+                }
+              ]
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 1,
+              "body": "Fabricamos **cornijas**, bandas e peitoris em EPS para reabilitação de fachadas, com certificação *CE* e entrega em obra.\n\nCada peça é cortada à medida e revestida em obra."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/repetidos",
+      "alternates": {
+        "pt": "/repetidos",
+        "en": "/en/repeated",
+        "fr": "/fr/repetes"
+      },
+      "title": "Blocos repetidos",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Blocos repetidos",
+        "description": "Página de demonstração dos componentes.",
+        "image": null,
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Início",
+          "path": "/"
+        },
+        {
+          "title": "Blocos repetidos",
+          "path": "/repetidos"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Blocos *repetidos*",
+              "align": "left",
+              "level": "h1"
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "edificio3d",
+          "fields": {
+            "eyebrow": "Vila Verde · Desde 2016"
+          }
+        },
+        {
+          "kind": "block",
+          "anchor": "repetido",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Bloco *repetido*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "2016",
+                  "label": "Fundação",
+                  "sub": "Vila Verde, Braga"
+                },
+                {
+                  "value": "18+",
+                  "label": "Produtos EPS",
+                  "sub": "Exterior e interior"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projetos",
+                  "sub": "PT · ES · FR"
+                },
+                {
+                  "value": "CE",
+                  "label": "Certificação",
+                  "sub": "Declaração de Desempenho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "repetido",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Bloco *repetido*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "2016",
+                  "label": "Fundação",
+                  "sub": "Vila Verde, Braga"
+                },
+                {
+                  "value": "18+",
+                  "label": "Produtos EPS",
+                  "sub": "Exterior e interior"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projetos",
+                  "sub": "PT · ES · FR"
+                },
+                {
+                  "value": "CE",
+                  "label": "Certificação",
+                  "sub": "Declaração de Desempenho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "edificio3d",
+          "fields": {
+            "eyebrow": "Segundo edifício"
+          }
+        },
+        {
+          "kind": "block",
+          "anchor": "f1",
+          "layout": 1,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "formulario",
+              "style": "normal",
+              "col": "all",
+              "types": [
+                {
+                  "name": "Reabilitação de fachada"
+                },
+                {
+                  "name": "Construção nova"
+                },
+                {
+                  "name": "Outro"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "f2",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "formulario",
+              "style": "normal",
+              "col": "all",
+              "types": [
+                {
+                  "name": "Reabilitação de fachada"
+                },
+                {
+                  "name": "Construção nova"
+                },
+                {
+                  "name": "Outro"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "faixa",
+          "fields": {
+            "items": [
+              {
+                "name": "Bandas"
+              },
+              {
+                "name": "Cornijas"
+              },
+              {
+                "name": "Colunas"
+              },
+              {
+                "name": "Peitoris"
+              },
+              {
+                "name": "EPS Exterior"
+              },
+              {
+                "name": "EPS Interior"
+              },
+              {
+                "name": "Rodatetos"
+              },
+              {
+                "name": "Tetos Falsos"
+              },
+              {
+                "name": "Perfil TC"
+              },
+              {
+                "name": "Capoto"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "special",
+          "type": "faixa",
+          "fields": {
+            "items": [
+              {
+                "name": "Bandas"
+              },
+              {
+                "name": "Cornijas"
+              },
+              {
+                "name": "Colunas"
+              },
+              {
+                "name": "Peitoris"
+              },
+              {
+                "name": "EPS Exterior"
+              },
+              {
+                "name": "EPS Interior"
+              },
+              {
+                "name": "Rodatetos"
+              },
+              {
+                "name": "Tetos Falsos"
+              },
+              {
+                "name": "Perfil TC"
+              },
+              {
+                "name": "Capoto"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "path": "/ordem-trocada",
+      "alternates": {
+        "pt": "/ordem-trocada",
+        "en": "/en/reversed",
+        "fr": "/fr/inverse"
+      },
+      "title": "Ordem trocada",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Ordem trocada",
+        "description": "Página de demonstração dos componentes.",
+        "image": null,
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Início",
+          "path": "/"
+        },
+        {
+          "title": "Ordem trocada",
+          "path": "/ordem-trocada"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "marca",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "frase",
+              "col": "all",
+              "text": "A página *começa* pelo fim",
+              "align": "center",
+              "level": "h1"
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "faixa",
+          "fields": {
+            "items": [
+              {
+                "name": "Bandas"
+              },
+              {
+                "name": "Cornijas"
+              },
+              {
+                "name": "Colunas"
+              },
+              {
+                "name": "Peitoris"
+              },
+              {
+                "name": "EPS Exterior"
+              },
+              {
+                "name": "EPS Interior"
+              },
+              {
+                "name": "Rodatetos"
+              },
+              {
+                "name": "Tetos Falsos"
+              },
+              {
+                "name": "Perfil TC"
+              },
+              {
+                "name": "Capoto"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": 1,
+              "text": "Texto e imagem",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 1,
+              "body": "Fabricamos **cornijas**, bandas e peitoris em EPS para reabilitação de fachadas, com certificação *CE* e entrega em obra.\n\nCada peça é cortada à medida e revestida em obra."
+            },
+            {
+              "type": "imagem",
+              "style": "normal",
+              "col": 2,
+              "image": "/assets/og-image.png",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "edificio3d",
+          "fields": {
+            "eyebrow": "Vila Verde · Desde 2016"
+          }
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "2016",
+                  "label": "Fundação",
+                  "sub": "Vila Verde, Braga"
+                },
+                {
+                  "value": "18+",
+                  "label": "Produtos EPS",
+                  "sub": "Exterior e interior"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projetos",
+                  "sub": "PT · ES · FR"
+                },
+                {
+                  "value": "CE",
+                  "label": "Certificação",
+                  "sub": "Declaração de Desempenho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "faixa",
+          "fields": {
+            "items": [
+              {
+                "name": "Bandas"
+              },
+              {
+                "name": "Cornijas"
+              },
+              {
+                "name": "Colunas"
+              },
+              {
+                "name": "Peitoris"
+              },
+              {
+                "name": "EPS Exterior"
+              },
+              {
+                "name": "EPS Interior"
+              },
+              {
+                "name": "Rodatetos"
+              },
+              {
+                "name": "Tetos Falsos"
+              },
+              {
+                "name": "Perfil TC"
+              },
+              {
+                "name": "Capoto"
+              }
+            ]
+          }
         }
       ]
     }

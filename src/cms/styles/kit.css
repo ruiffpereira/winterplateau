@@ -1,0 +1,166 @@
+/* ════ Kit do construtor de páginas · base ════
+   Consolidado a partir do antigo global.css (main): tokens, reset, fundos dos blocos, grelha, topo, rodapé.
+   Os componentes estão em components.css e os especiais em specials.css.
+   O fundo do bloco define variáveis (--fg, --ac, …) e os componentes só as usam: um componente, uma definição. */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; overflow-x: clip; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--night);
+  color: #fff;
+  font-family: var(--fb);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  overflow-x: clip;
+}
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { background: none; border: none; cursor: pointer; font: inherit; color: inherit; }
+img, video, iframe { max-width: 100%; }
+:focus-visible { outline: 2px solid var(--ac, var(--bl)); outline-offset: 3px; border-radius: 2px; }
+.skip { position: fixed; left: 12px; top: -60px; z-index: 400; background: #fff; color: #000; padding: 10px 16px; border-radius: 4px; }
+.skip:focus { top: 12px; }
+
+:root {
+  --bl: #19a3e0;
+  --night: rgb(5, 9, 14);
+  --mw: 1280px;
+  --g: clamp(20px, 4vw, 72px);
+  --sv: clamp(64px, 8vw, 112px);
+  --nav: 62px;
+  --fd: "Cormorant Garamond", Georgia, serif;
+  --fb: "DM Sans", system-ui, sans-serif;
+  /* botão cheio: azul um pouco mais fundo que a marca para o texto branco passar 4.5:1 (a marca dá 2.9:1) */
+  --btn: #0e79a6;
+  --btn-h: #0b6387;
+}
+
+/* ── Fundos (D-D): claro · escuro · marca. Qualquer id desconhecido cai em "claro". ── */
+.bloco, .rodape {
+  --bg: #fff; --fg: #0c0c0b; --fg2: #3e3d3a; --fg3: #6b6861; --line: #e1dfd9; --surface: #f7f6f3;
+  --ac: #0e79a6; --title: #0c0c0b; --em: var(--bl); --card-b: #e1dfd9;
+  --ol-b: rgba(12, 12, 11, 0.45); --ol-c: #0c0c0b; --ol-bh: #0c0c0b;
+  --btn-bg: var(--btn); --btn-c: #fff; --btn-bgh: var(--btn-h);
+  background: var(--bg); color: var(--fg);
+}
+/* escuro: transparente sobre o corpo (rgb(5,9,14)) — deixa ver a constelação de fundo */
+.bloco[data-bg="escuro"], .rodape:not([data-bg="claro"]):not([data-bg="marca"]), .topo, .especial {
+  --bg: transparent; --fg: rgba(255, 255, 255, 0.88); --fg2: rgba(255, 255, 255, 0.68); --fg3: rgba(255, 255, 255, 0.54);
+  --line: rgba(255, 255, 255, 0.13); --surface: #0a1018; --ac: var(--bl); --title: #fff; --em: var(--bl); --card-b: rgba(25, 163, 224, 0.3);
+  --ol-b: rgba(255, 255, 255, 0.42); --ol-c: rgba(255, 255, 255, 0.88); --ol-bh: #fff;
+  --btn-bg: var(--btn); --btn-c: #fff; --btn-bgh: var(--btn-h);
+  background: var(--bg); color: var(--fg);
+}
+/* marca: texto escuro (o branco sobre o azul da marca não chega a 3:1); só os títulos grandes ficam brancos */
+.bloco[data-bg="marca"], .rodape[data-bg="marca"] {
+  --bg: var(--bl); --fg: var(--night); --fg2: rgba(5, 9, 14, 0.86); --fg3: rgba(5, 9, 14, 0.78); --line: rgba(5, 9, 14, 0.28);
+  --surface: rgba(255, 255, 255, 0.22); --ac: var(--night); --title: var(--night); --em: var(--night); --card-b: rgba(5, 9, 14, 0.28);
+  --ol-b: var(--night); --ol-c: var(--night); --ol-bh: #000;
+  --btn-bg: var(--night); --btn-c: #fff; --btn-bgh: #000;
+}
+
+/* ── Blocos ── */
+.bloco[data-bg="marca"] .c-titulo { color: #fff; }
+.bloco { position: relative; z-index: 1; padding: var(--sv) var(--g); }
+.bloco[data-sheet]::before {
+  content: attr(data-sheet);
+  position: absolute; top: 20px; left: var(--g);
+  font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ac); border: 1px solid var(--line); padding: 3px 9px; border-radius: 2px;
+}
+.bloco + .bloco[data-bg="escuro"], .bloco[data-bg="escuro"] + .bloco { border-top: 1px solid rgba(25, 163, 224, 0.1); }
+.grid { max-width: var(--mw); margin: 0 auto; display: flex; flex-direction: column; gap: clamp(20px, 2.4vw, 32px); }
+.row { min-width: 0; }
+.cols { display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); gap: clamp(28px, 5vw, 88px); align-items: start; min-width: 0; }
+.bloco[data-media] .cols { align-items: center; }
+.col { display: flex; flex-direction: column; gap: clamp(14px, 1.6vw, 22px); min-width: 0; }
+.col > * { min-width: 0; }
+/* zig-zag: nos blocos de 2 colunas com média, a ordem alterna (calculado pela posição na página) */
+@media (min-width: 861px) { .bloco[data-zig] .col:first-child { order: 2; } }
+@media (max-width: 1024px) { .cols[data-n="3"] { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 860px) { .cols { grid-template-columns: minmax(0, 1fr) !important; gap: 28px; } }
+
+/* entrada ao rolar: só depois de o script marcar o <html> (sem JS ou com falha, tudo fica visível) */
+html.js [data-rv] { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
+html.js [data-rv="l"] { transform: translateX(-28px); }
+html.js [data-rv="r"] { transform: translateX(28px); }
+html.js [data-rv].on { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { html.js [data-rv] { opacity: 1; transform: none; transition: none; } }
+
+/* ── Topo (fixo; sempre sólido — sobre o escuro é igual ao antigo "transparente → sólido") ── */
+.topo {
+  position: fixed; inset: 0 0 auto 0; height: var(--nav); z-index: 200;
+  background: rgba(5, 9, 14, 0.94); backdrop-filter: blur(18px);
+  border-bottom: 1px solid transparent; transition: border-color 0.22s;
+}
+.topo.solid { border-bottom-color: var(--line); }
+.topo .bar { max-width: var(--mw); height: 100%; margin: 0 auto; padding: 0 var(--g); display: flex; align-items: center; gap: 28px; }
+.topo .logo { display: block; flex-shrink: 0; }
+.topo .logo img { display: block; height: 30px; width: auto; max-width: 180px; object-fit: contain; border-radius: 0; }
+.topo .c-botao { padding: 9px 20px; min-height: 0; font-size: 11.5px; }
+.topo .panel { flex: 1; display: flex; align-items: center; gap: 24px; min-width: 0; }
+.topo .cell[data-type="menu"] { flex: 1; display: flex; justify-content: center; }
+.topo .burger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; margin-left: auto; flex-shrink: 0; }
+.topo .burger span { display: block; width: 22px; height: 1.5px; background: #fff; margin: 0 auto; transition: transform 0.3s, opacity 0.3s; }
+.topo.open .burger span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.topo.open .burger span:nth-child(2) { opacity: 0; }
+.topo.open .burger span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+@media (max-width: 1024px) {
+  .topo .burger { display: flex; }
+  .topo .panel {
+    position: fixed; top: var(--nav); inset-inline: 0; flex: none; flex-direction: column; align-items: stretch; gap: 0;
+    padding: 6px var(--g) 22px; background: rgba(0, 0, 0, 0.97); backdrop-filter: blur(18px); border-bottom: 1px solid var(--line);
+    max-height: calc(100dvh - var(--nav)); overflow-y: auto;
+    opacity: 0; visibility: hidden; transform: translateY(-10px); transition: opacity 0.25s, transform 0.3s, visibility 0.3s;
+  }
+  .topo.open .panel { opacity: 1; visibility: visible; transform: none; }
+  .topo .cell { padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .topo .cell:last-child { border-bottom: none; }
+  .topo .cell[data-type="menu"] { display: block; }
+  .topo .cell[data-type="botao"] .c-botao { width: 100%; justify-content: center; padding: 13px 20px; min-height: 44px; font-size: 12.5px; }
+}
+@media (prefers-reduced-motion: reduce) { .topo .panel, .topo .burger span { transition: none; } }
+main { position: relative; z-index: 1; }
+main[data-topo] { padding-top: var(--nav); }
+
+/* ── Rodapé ── */
+.rodape { position: relative; z-index: 1; padding: 48px var(--g) 30px; border-top: 1px solid var(--line); }
+.rodape .grid { gap: 24px; }
+.rodape .c-texto, .rodape .c-texto p { font-size: 12.5px; color: var(--fg3); }
+.rodape .cols { align-items: start; }
+
+/* ── Fundo vivo (constelação) e régua de cotas — criados pelo script, só se houver blocos escuros ── */
+#uvx { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+.eruler { position: fixed; right: 30px; top: 50%; transform: translateY(-50%); height: 58vh; z-index: 150; }
+.er-track { position: relative; width: 1px; height: 100%; background: rgba(25, 163, 224, 0.28); }
+.er-fill { position: absolute; top: 0; left: 0; width: 1px; height: 0; background: var(--bl); }
+.er-marker { position: absolute; left: -7px; width: 15px; height: 1px; background: var(--bl); }
+.er-cota { position: absolute; right: 20px; top: -6px; font-size: 10px; color: var(--bl); letter-spacing: 0.06em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.er-stop { position: absolute; left: 0.5px; transform: translate(-50%, -50%); width: 20px; height: 20px; display: grid; place-items: center; }
+.er-stop i { width: 7px; height: 7px; border: 1px solid rgba(25, 163, 224, 0.7); border-radius: 50%; background: var(--night); transition: background 0.2s; display: block; }
+.er-stop span { position: absolute; right: 24px; top: 50%; transform: translateY(-50%); font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255, 255, 255, 0.7); background: rgba(5, 9, 14, 0.8); padding: 2px 6px; border-radius: 2px; opacity: 0; transition: opacity 0.2s; white-space: nowrap; pointer-events: none; }
+.er-stop:hover span, .er-stop:focus-visible span, .er-stop.on span { opacity: 1; }
+.er-stop.on i { background: var(--bl); border-color: var(--bl); }
+.mprog { display: none; }
+@media (max-width: 1200px) {
+  .eruler { display: none; }
+  .mprog { display: block; position: fixed; top: var(--nav); left: 0; right: 0; height: 2px; background: rgba(25, 163, 224, 0.14); z-index: 150; }
+  .mprog i { display: block; height: 100%; width: 0; background: var(--bl); }
+  .mprog span { position: absolute; right: 10px; top: 7px; font-size: 9.5px; letter-spacing: 0.08em; color: var(--bl); font-variant-numeric: tabular-nums; background: rgba(5, 9, 14, 0.75); padding: 2px 7px; border-radius: 3px; border: 1px solid rgba(25, 163, 224, 0.3); }
+}
+
+/* ── Botão flutuante do WhatsApp (número do primeiro contacto da página) ── */
+.wa-float { position: fixed; right: 22px; bottom: 22px; z-index: 300; width: 54px; height: 54px; border-radius: 50%; background: #1fa855; display: grid; place-items: center; box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35); transition: transform 0.18s; }
+.wa-float:hover { transform: scale(1.08); }
+.wa-float svg { width: 28px; height: 28px; fill: #fff; }
+@media (max-width: 640px) { .wa-float { right: 14px; bottom: 14px; width: 50px; height: 50px; } }
+
+/* botões seguidos: lado a lado (como o .hacts / .cta-acts do site antigo) */
+.botoes { display: flex; flex-wrap: wrap; gap: 11px; }
+
+/* um bloco com um título "frase" é uma declaração (como o antigo .stmt e .ctaband): tudo centrado */
+.bloco:has(.c-titulo--frase) .row { text-align: center; }
+.bloco:has(.c-titulo--frase) .c-texto, .bloco:has(.c-titulo--frase) .c-lista { margin-inline: auto; text-align: left; }
+.bloco:has(.c-titulo--frase) .c-texto { text-align: center; }
+.bloco:has(.c-titulo--frase) .botoes, .bloco:has(.c-titulo--frase) .c-etiqueta { justify-content: center; }

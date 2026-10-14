@@ -26,3 +26,6 @@ spec*.json
 
 # o spec do construtor de páginas é gerado a partir do código da API e COMMITADO
 !spec.site.json
+
+# capturas de ecrã das fixtures (F18) — locais, para rever o aspecto
+.capturas-f18/

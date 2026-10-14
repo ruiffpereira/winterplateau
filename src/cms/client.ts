@@ -1,5 +1,7 @@
 /**
- * Cliente do construtor de páginas — corre SÓ no build (o SITE_TOKEN nunca chega ao browser).
+ * Cliente do construtor de páginas — corre SÓ no build. A leitura do site (e o CF_BYPASS_TOKEN) nunca vão para o browser;
+ * o site token só vai, de propósito, no formulário de pedido (`publicApi()`): é o identificador público do tenant, o mesmo
+ * que os outros sites levam no bundle, e a rota `POST /websites/leads` não aceita mais nada.
  *
  * FALHA ALTO: qualquer erro (rede, timeout, HTTP ≠ 200, JSON inválido, objecto sem `pages`, língua
  * trocada) lança e deita o build abaixo. É de propósito: publicar um site vazio é pior do que não publicar.
@@ -25,6 +27,11 @@ function env(name: string): string {
     .split(/\r?\n/)
     .find((l) => l.trim().startsWith(`${name}=`));
   return line ? line.slice(line.indexOf('=') + 1).trim().replace(/^["']|["']$/g, '') : '';
+}
+
+/** O que o formulário de pedido precisa no browser: URL da API e site token. Vazios quando o build não tem API (fixture). */
+export function publicApi(): { baseURL: string; token: string } {
+  return { baseURL: env('VITE_API_BASE_URL').replace(/\/+$/, ''), token: env('SITE_TOKEN') };
 }
 
 /** Valida o mínimo de que o kit depende; o resto confia-se no contrato (a API já o validou). */

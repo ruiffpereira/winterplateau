@@ -1,0 +1,30 @@
+---
+// Topo fixo: o logótipo (imagem) à esquerda, o resto num painel que em ecrãs estreitos abre pelo botão do menu.
+// O script (scripts/topo.ts) só liga o botão; sem ele o painel continua visível em ecrã largo.
+import Comp from './Comp.astro';
+import { ui } from './ui';
+import type { Ctx } from './types';
+
+export interface Props {
+  ctx: Ctx;
+}
+const { ctx } = Astro.props;
+const comps = ctx.site.topo.comps;
+const logos = comps.filter((c) => c.type === 'imagem');
+const rest = comps.filter((c) => c.type !== 'imagem');
+const home = ctx.site.pages[0]?.path ?? '/';
+---
+
+<header class="topo">
+  <div class="bar">
+    {logos.map((comp) => <a class="logo" href={home}><Comp comp={comp} ctx={ctx} /></a>)}
+    {rest.length > 0 && (
+      <button class="burger" type="button" aria-expanded="false" aria-controls="topo-panel" aria-label={ui(ctx.site.locale).menu}><span></span><span></span><span></span></button>
+    )}
+    {rest.length > 0 && (
+      <div class="panel" id="topo-panel">
+        {rest.map((comp) => <div class="cell" data-type={comp.type}><Comp comp={comp} ctx={ctx} /></div>)}
+      </div>
+    )}
+  </div>
+</header>

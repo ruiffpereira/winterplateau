@@ -1,0 +1,39 @@
+/* ════ Especiais (manifest da Winterplateau): edifício 3D e faixa a passar ════ */
+.especial { position: relative; z-index: 1; }
+
+/* ── Edifício 3D (o antigo Hero: cena em camadas com profundidade e parallax; o JS só move as camadas) ── */
+.especial--edificio3d { background: var(--bg); overflow: hidden; min-height: min(calc(100svh - var(--nav)), 880px); display: flex; align-items: center; justify-content: center; padding: clamp(28px, 5vw, 56px) var(--g); }
+.e3d { width: 100%; max-width: var(--mw); display: flex; flex-direction: column; align-items: center; gap: clamp(14px, 2vw, 24px); }
+.e3d-eye { display: flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg3); }
+.e3d-eye::before { content: ""; width: 22px; height: 1px; background: var(--bl); flex-shrink: 0; }
+.e3d-eye em { font-style: normal; color: var(--bl); }
+.scene { position: relative; width: 100%; max-width: min(640px, 88vw, 78svh); aspect-ratio: 1 / 1; perspective: 1500px; perspective-origin: 50% 45%; }
+.scene .stage { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform; }
+.scene .lyr { position: absolute; inset: 0; transform: translateZ(var(--z, 0px)) translate3d(calc(var(--mx, 0px) * var(--pf, 0)), calc(var(--my, 0px) * var(--pf, 0)), 0); transition: transform 1.05s cubic-bezier(0.16, 0.84, 0.3, 1), opacity 0.85s ease; transition-delay: var(--d, 0s); }
+html.js .scene:not(.in) .lyr { transform: translateZ(calc(var(--z, 0px) - 80px)); opacity: 0; }
+.scene.ready .lyr { transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.scene .lyr svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; overflow: visible; }
+.scene .front svg { filter: drop-shadow(0 3px 7px rgba(25, 163, 224, 0.22)); }
+.scene .scan { position: absolute; left: -6%; right: -6%; height: 64px; top: -80px; pointer-events: none; background: linear-gradient(180deg, transparent, rgba(25, 163, 224, 0.32), transparent); opacity: 0; }
+.scene .spark { position: absolute; width: 5px; height: 5px; border-radius: 50%; background: var(--bl); box-shadow: 0 0 9px 2px rgba(25, 163, 224, 0.55); left: var(--sx); top: var(--sy); transform: translateZ(var(--sz, 30px)); }
+html.js .scene:not(.in) .spark { opacity: 0; }
+.scene .spark { opacity: 0.85; animation: sparkF var(--sdur, 6s) ease-in-out var(--sd, 0s) infinite; }
+@media (prefers-reduced-motion: no-preference) { .scene.in .scan { animation: scanSweep 2.6s cubic-bezier(0.45, 0, 0.2, 1) 0.2s 1 forwards; } }
+@media (prefers-reduced-motion: reduce) { .scene .lyr { transition: none; } .scene .spark { animation: none; } }
+@keyframes scanSweep { 0% { top: -80px; opacity: 0; } 12%, 86% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
+@keyframes sparkF { 0%, 100% { transform: translateZ(var(--sz, 30px)) translateY(0); } 50% { transform: translateZ(var(--sz, 30px)) translateY(-13px); } }
+
+/* ── Faixa a passar (o antigo Marquee) — texto escuro sobre o azul da marca (o branco dava 2.4:1) ── */
+.especial--faixa { background: var(--bl); padding: 13px 0; overflow: hidden; z-index: 2; color: var(--night); }
+.faixa-in { display: flex; width: max-content; animation: mq 40s linear infinite; }
+.faixa-set { display: flex; flex-shrink: 0; }
+.faixa-set span { white-space: nowrap; padding: 0 24px; font-size: 11.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; }
+.faixa-set span::after { content: "\00B7"; margin-left: 24px; opacity: 0.55; }
+.especial--faixa:not(:has(*)) { display: none; }
+.especial--faixa:hover .faixa-in { animation-play-state: paused; }
+@keyframes mq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .faixa-in { animation: none; width: auto; flex-wrap: wrap; justify-content: center; }
+  .faixa-set { flex-wrap: wrap; justify-content: center; }
+  .faixa-set[aria-hidden="true"] { display: none; }
+}

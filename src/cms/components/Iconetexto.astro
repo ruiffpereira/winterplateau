@@ -1,11 +1,13 @@
 ---
+import { ICON_FALLBACK, ICONS } from '../icons';
 import { inline, md } from '../text';
 const { comp } = Astro.props;
+const iconOf = (id: unknown) => (typeof id === 'string' && Object.prototype.hasOwnProperty.call(ICONS, id) ? ICONS[id] : ICON_FALLBACK);
 ---
 <ul class={`c-iconetexto c-iconetexto--${comp.style}`}>
   {(comp.items ?? []).map((i: { icon?: string; title?: string; text?: string }) => (
     <li>
-      {i.icon && <span class="icon" data-icon={i.icon} aria-hidden="true"></span>}
+      {i.icon && <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24">{iconOf(i.icon).map((d) => <path d={d} />)}</svg></span>}
       <h3 set:html={inline(i.title)} />
       {i.text && <div set:html={md(i.text)} />}
     </li>

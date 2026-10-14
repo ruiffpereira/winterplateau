@@ -71,6 +71,22 @@ npm run build
   os que já estão no disco. Regenerar o spec do site: `cd ../API-FullStack && pnpm exec ts-node --transpile-only
   scripts/dumpSpec.ts site > ../winterplateau/spec.site.json`.
 
+
+### Aspecto e scripts do kit (F18)
+
+- **CSS** em `src/cms/styles/` (`kit.css` base, fundos, grelha, topo, rodapé · `components.css` · `specials.css`). Classes `c-<tipo>` +
+  `c-<tipo>--<estilo>`; o fundo do bloco (`data-bg`: claro · escuro · marca) só define variáveis (`--fg`, `--ac`, `--btn-bg`, …),
+  por isso cada componente tem uma só definição. Estilo, fundo ou ícone que o kit não conhece cai no aspecto base — nunca rebenta.
+- **Scripts** em `src/cms/scripts/`, módulos empacotados pelo Astro (importados em `Base.astro`; `assetsInlineLimit: 0` mantém-nos fora do
+  HTML). Cada um trabalha por instância e tolera blocos em falta, repetidos ou em qualquer ordem. A numeração `FL 01…`, o zig-zag e as
+  paragens da régua saem do `Renderer.astro`, a partir da posição real dos itens. `i18n.js` saiu (as línguas são rotas); o texto do
+  próprio kit (formulário, nomes acessíveis) está em `src/cms/ui.ts`.
+- **`formulario`** envia do browser `POST {VITE_API_BASE_URL}/websites/leads` com o site token (`publicApi()` em `client.ts`; é o
+  identificador público do tenant, como nos outros sites). Só um **201** conta como sucesso. Sem API no build o `data-endpoint` fica vazio e
+  o formulário diz "indisponível".
+- **Fixtures:** `fixtures/site-*.json` (todos os componentes, estilos e fundos; bloco repetido; ordem trocada) e `fixtures/minimo/`
+  (sem topo nem rodapé, uma língua) — `CMS_FIXTURE=fixtures/minimo/site-pt.json npm run build && npm run check`. Orçamento do kit: 3 000 linhas.
+
 ---
 
 ## Conteúdo (CSV)

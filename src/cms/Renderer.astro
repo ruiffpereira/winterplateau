@@ -1,8 +1,12 @@
 ---
 // Percorre os `items` da página: `block` → grelha (layout, fundo, âncora) com os componentes; `special` → src/cms/specials/<type>.astro.
 // Tipo desconhecido: não desenha e avisa no build (nunca rebenta a página).
+// Aqui se calcula, a partir da posição real dos itens, o que antes estava escrito à mão: a numeração "FL 01…",
+// o zig-zag dos blocos de duas colunas com média e as paragens da régua lateral (`data-stop`).
 import Grid from './Grid.astro';
-import type { Ctx, Item } from './types';
+import { plain } from './text';
+import { ui } from './ui';
+import type { Block, Ctx, Item } from './types';
 
 export interface Props {
   items: Item[];
@@ -10,18 +14,42 @@ export interface Props {
 }
 const { items, ctx } = Astro.props;
 const specials = import.meta.glob('./specials/*.astro', { eager: true }) as Record<string, { default: any }>;
+
+const MEDIA = new Set(['imagem', 'video', 'mapa', 'galeria']);
+const pad = (n: number) => String(n).padStart(2, '0');
+const labelOf = (b: Block) => plain(b.comps.find((c) => c.type === 'titulo' || c.type === 'etiqueta')?.text).slice(0, 26);
+
+// Numeração, zig-zag e rótulos
+let sheet = 0;
+let zigs = 0;
+const meta = items.map((item) => {
+  if (item.kind !== 'block') return { sheet: '', zig: false, media: false, label: ui(ctx.site.locale).top };
+  sheet++;
+  const zig = item.layout === 2 && item.comps.some((c) => MEDIA.has(c.type)) ? zigs++ % 2 === 1 : false;
+  return { sheet: `FL ${pad(sheet)}`, zig, media: item.layout > 1 && item.comps.some((c) => MEDIA.has(c.type)), label: labelOf(item) || `FL ${pad(sheet)}` };
+});
+
+// Régua: no máximo 9 paragens repartidas pelos itens (o 1.º item conta sempre)
+const MAX_STOPS = 9;
+const stoppable = items.map((_, i) => i).filter((i) => items[i].kind === 'block' || i === 0);
+const step = Math.ceil(stoppable.length / MAX_STOPS);
+const stops = new Set(stoppable.filter((_, k) => k % step === 0));
+
+// Uma âncora só vale uma vez por página (um bloco repetido não duplica o id)
+const seen = new Set<string>();
+const idOf = (anchor: string | null) => (anchor && !seen.has(anchor) ? (seen.add(anchor), anchor) : undefined);
 ---
 
-{items.map((item) => {
+{items.map((item, i) => {
   if (item.kind === 'special') {
     const Special = specials[`./specials/${item.type}.astro`]?.default;
     if (!Special) { console.warn(`[cms] especial desconhecido "${item.type}" em ${ctx.page.path} — não desenhado`); return null; }
-    return <section class={`especial especial--${item.type}`} data-special={item.type}><Special fields={item.fields} ctx={ctx} /></section>;
+    return <section class={`especial especial--${item.type}`} data-special={item.type} data-stop={stops.has(i) ? meta[i].label : undefined}><Special fields={item.fields ?? {}} ctx={ctx} index={i} /></section>;
   }
   if (item.kind === 'block') {
     return (
-      <section class="bloco" id={item.anchor ?? undefined} data-layout={item.layout} data-bg={item.bg}>
-        <Grid comps={item.comps} ctx={ctx} />
+      <section class="bloco" id={idOf(item.anchor)} data-layout={item.layout} data-bg={item.bg} data-sheet={meta[i].sheet} data-zig={meta[i].zig ? '1' : undefined} data-media={meta[i].media ? '1' : undefined} data-stop={stops.has(i) ? meta[i].label : undefined}>
+        <Grid comps={item.comps} layout={item.layout} zig={meta[i].zig} ctx={ctx} />
       </section>
     );
   }

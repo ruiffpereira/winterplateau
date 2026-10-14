@@ -1,6 +1,9 @@
 ---
 // Layout do construtor de páginas: <head> inteiro (SEO automático, CONTRATO §9) a partir da página do objecto da API.
 // O layout antigo (BaseLayout.astro) fica até o F19 trocar o site.
+import '../cms/styles/kit.css';
+import '../cms/styles/components.css';
+import '../cms/styles/specials.css';
 import UmamiScript from '../components/UmamiScript.astro';
 import { absUrl, hreflangs, jsonLd, ogLocale, SITE_NAME, titleOf } from '../cms/seo';
 import { json, plain, safeSrc } from '../cms/text';
@@ -40,9 +43,15 @@ const alternates = hreflangs(ctx, origin);
     {image && <meta property="og:image" content={new URL(image, origin).toString()} />}
     <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
     {jsonLd(ctx, origin).map((ld) => <script type="application/ld+json" set:html={json(ld)} />)}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
     <UmamiScript />
   </head>
   <body>
     <slot />
+    <script>
+      import '../cms/scripts/index';
+    </script>
   </body>
 </html>

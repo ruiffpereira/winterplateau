@@ -8,7 +8,7 @@ const { comp } = Astro.props;
       <h3 set:html={inline(i.name)} />
       <p class="price"><strong>{plain(i.price)}</strong>{i.period && <span set:html={inline(i.period)} />}</p>
       {i.features && <div set:html={md(i.features)} />}
-      {i.cta && (safeHref(i.href) ? <a href={safeHref(i.href)!}>{plain(i.cta)}</a> : <span>{plain(i.cta)}</span>)}
+      {i.cta && (safeHref(i.href) ? <a class={`c-botao c-botao--${i.highlight === 'sim' ? 'cheio' : 'contorno'}`} href={safeHref(i.href)!}>{plain(i.cta)}</a> : <span>{plain(i.cta)}</span>)}
     </li>
   ))}
 </ul>

@@ -1,0 +1,14 @@
+---
+// Especial do manifest da Winterplateau: nomes a passar em contínuo (era o Marquee). Campo: `items[].name`.
+// O conjunto repete-se até encher o ecrã e é duplicado para o ciclo ser contínuo (a cópia fica escondida das leitoras de ecrã).
+import { plain } from '../text';
+const { fields } = Astro.props;
+const names: string[] = (Array.isArray(fields.items) ? fields.items : []).map((i: { name?: string }) => plain(i?.name)).filter(Boolean);
+const set = names.length ? Array.from({ length: Math.ceil(8 / names.length) }, () => names).flat() : [];
+---
+{set.length > 0 && (
+  <div class="faixa-in">
+    <div class="faixa-set">{set.map((name) => <span>{name}</span>)}</div>
+    <div class="faixa-set" aria-hidden="true">{set.map((name) => <span>{name}</span>)}</div>
+  </div>
+)}

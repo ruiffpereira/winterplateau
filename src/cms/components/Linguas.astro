@@ -1,10 +1,11 @@
 ---
 // Selector de línguas: a mesma página nas outras línguas (`alternates`); sem alternativa → a home dessa língua.
 import { plain } from '../text';
+import { ui } from '../ui';
 const { comp, ctx } = Astro.props;
 const { page, site } = ctx;
 ---
-<nav class={`c-linguas c-linguas--${comp.style}`} aria-label="Language">
+<nav class={`c-linguas c-linguas--${comp.style}`} aria-label={ui(site.locale).lang}>
   <ul>
     {site.languages.map((l: string) => (
       <li>

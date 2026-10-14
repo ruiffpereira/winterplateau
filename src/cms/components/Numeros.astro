@@ -1,13 +1,19 @@
 ---
 import { inline, plain } from '../text';
 const { comp } = Astro.props;
+const items: { value?: string; label?: string; sub?: string }[] = comp.items ?? [];
+// "120+" / "500" animam ao aparecer (o HTML já traz o valor final); "CE" ou "2016–2026" ficam como estão
+const count = (v: unknown) => /^(\d{1,6})(\+?)$/.exec(String(v ?? '').trim());
 ---
-<ul class={`c-numeros c-numeros--${comp.style}`}>
-  {(comp.items ?? []).map((i: { value?: string; label?: string; sub?: string }) => (
-    <li>
-      <strong>{plain(i.value)}</strong>
-      {i.label && <span set:html={inline(i.label)} />}
-      {i.sub && <small set:html={inline(i.sub)} />}
-    </li>
-  ))}
+<ul class={`c-numeros c-numeros--${comp.style}`} style={`--n:${Math.min(Math.max(items.length, 1), 4)}`}>
+  {items.map((i) => {
+    const m = count(i.value);
+    return (
+      <li>
+        <strong data-count={m?.[1]} data-suffix={m?.[2] || undefined}>{plain(i.value)}</strong>
+        {i.label && <span set:html={inline(i.label)} />}
+        {i.sub && <small set:html={inline(i.sub)} />}
+      </li>
+    );
+  })}
 </ul>

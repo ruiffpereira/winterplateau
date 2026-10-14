@@ -1,16 +1,36 @@
 ---
-// Marcação do pedido de contacto. O envio (POST /websites/leads: name, email, phone?, message, source?) e o aspecto são do F18.
+// Pedido de contacto → POST /websites/leads {name, email, phone?, message, source?}. O envio e a resposta (sucesso,
+// erro de validação, erro do servidor, sem rede) são de scripts/formulario.ts; sem JS o formulário não envia nada.
+import { publicApi } from '../client';
 import { plain } from '../text';
-const { comp } = Astro.props;
-const types: { name?: string }[] = comp.types ?? [];
+import { ui } from '../ui';
+const { comp, ctx } = Astro.props;
+const t = ui(ctx.site.locale);
+const { baseURL, token } = publicApi();
+const endpoint = baseURL && token ? `${baseURL}/websites/leads` : '';
+const types: string[] = (comp.types ?? []).map((x: { name?: string }) => plain(x.name)).filter(Boolean);
 ---
-<form class={`c-formulario c-formulario--${comp.style}`} method="post" data-endpoint="/websites/leads">
-  <p><label>Nome <input name="name" required minlength="2" autocomplete="name" /></label></p>
-  <p><label>Email <input name="email" type="email" required autocomplete="email" /></label></p>
-  <p><label>Telefone <input name="phone" type="tel" minlength="9" autocomplete="tel" /></label></p>
+<form
+  class={`c-formulario c-formulario--${comp.style}`}
+  method="post"
+  novalidate
+  data-endpoint={endpoint}
+  data-token={token}
+  data-page={ctx.page.path}
+  data-sending={t.sending}
+  data-ok={t.ok}
+  data-invalid={t.invalid}
+  data-server={t.server}
+  data-network={t.network}
+  data-off={t.off}
+>
+  <label class="f"><span>{t.name}</span><input name="name" required minlength="2" maxlength="120" autocomplete="name" /></label>
+  <label class="f"><span>{t.email}</span><input name="email" type="email" required maxlength="200" autocomplete="email" /></label>
+  <label class="f"><span>{t.phone}</span><input name="phone" type="tel" minlength="9" maxlength="30" autocomplete="tel" /></label>
   {types.length > 0 && (
-    <p><label>Tipo <select name="source">{types.map((t) => <option value={plain(t.name)}>{plain(t.name)}</option>)}</select></label></p>
+    <label class="f"><span>{t.type}</span><select name="type">{types.map((name) => <option value={name}>{name}</option>)}</select></label>
   )}
-  <p><label>Mensagem <textarea name="message" required maxlength="5000"></textarea></label></p>
-  <button type="submit">Enviar</button>
+  <label class="f"><span>{t.message}</span><textarea name="message" required maxlength="5000" rows="4"></textarea></label>
+  <button class="c-botao c-botao--cheio send" type="submit">{t.send}</button>
+  <p class="msg" role="status" aria-live="polite"></p>
 </form>

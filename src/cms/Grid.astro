@@ -1,15 +1,65 @@
 ---
-// Os componentes de um bloco / do topo / do rodapé, cada um na sua célula (`data-col`: all | 1 | 2 | 3).
+// Os componentes de um bloco ou do rodapé. Os de `col: all` ocupam a linha toda; os de coluna 1/2/3 consecutivos
+// formam uma linha de colunas, cada uma a empilhar os seus. Botões seguidos ficam lado a lado.
 import Comp from './Comp.astro';
 import type { Comp as C, Ctx } from './types';
 
 export interface Props {
   comps: C[];
   ctx: Ctx;
+  layout?: number;
+  zig?: boolean;
 }
-const { comps, ctx } = Astro.props;
+const { comps, ctx, layout: rawLayout = 1, zig = false } = Astro.props;
+const layout = [1, 2, 3].includes(Number(rawLayout)) ? Number(rawLayout) : 1;
+
+/** Agrupa botões consecutivos num só grupo (um grupo de 1 desenha-se como um componente qualquer). */
+const runs = (list: C[]): (C | C[])[] => {
+  const out: (C | C[])[] = [];
+  for (const c of list) {
+    const last = out[out.length - 1];
+    if (c.type !== 'botao') out.push(c);
+    else if (Array.isArray(last)) last.push(c);
+    else out.push([c]);
+  }
+  return out;
+};
+
+type Row = { all: C[] } | { cols: C[][] };
+const rows: Row[] = [];
+for (const comp of comps) {
+  const col = Number(comp.col);
+  if (layout === 1 || !(col >= 1)) {
+    rows.push({ all: [comp] });
+    continue;
+  }
+  let last = rows[rows.length - 1];
+  if (!last || !('cols' in last)) rows.push((last = { cols: Array.from({ length: layout }, () => [] as C[]) }));
+  last.cols[Math.min(col, layout) - 1].push(comp);
+}
+// as linhas "todas as colunas" seguidas com botões juntam-se numa só
+const merged: Row[] = [];
+for (const row of rows) {
+  const prev = merged[merged.length - 1];
+  if ('all' in row && prev && 'all' in prev && row.all[0].type === 'botao' && prev.all[prev.all.length - 1].type === 'botao') prev.all.push(row.all[0]);
+  else merged.push(row);
+}
 ---
 
 <div class="grid">
-  {comps.map((comp) => <div class="cell" data-col={String(comp.col ?? 'all')}><Comp comp={comp} ctx={ctx} /></div>)}
+  {merged.map((row) =>
+    'all' in row ? (
+      <div class="row" data-rv>
+        {runs(row.all).map((item) => Array.isArray(item) ? <div class="botoes">{item.map((comp) => <Comp comp={comp} ctx={ctx} />)}</div> : <Comp comp={item} ctx={ctx} />)}
+      </div>
+    ) : (
+      <div class="row cols" data-n={layout} style={`--n:${layout}`}>
+        {row.cols.filter((c) => c.length > 0).map((col, i, shown) => (
+          <div class="col" data-rv={layout === 2 && shown.length === 2 ? ((i === 0) !== zig ? 'l' : 'r') : undefined}>
+            {runs(col).map((item) => Array.isArray(item) ? <div class="botoes">{item.map((comp) => <Comp comp={comp} ctx={ctx} />)}</div> : <Comp comp={item} ctx={ctx} />)}
+          </div>
+        ))}
+      </div>
+    ),
+  )}
 </div>

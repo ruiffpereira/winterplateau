@@ -13,7 +13,7 @@
         "type": "imagem",
         "style": "normal",
         "col": "all",
-        "image": "https://cdn.example.com/winterplateau/logo.webp",
+        "image": "/favicon.svg",
         "alt": "Winterplateau"
       },
       {
@@ -98,7 +98,7 @@
         "col": "all",
         "items": [
           {
-            "image": "https://cdn.example.com/winterplateau/cert.webp",
+            "image": "/assets/og-image.png",
             "alt": "CE"
           }
         ]
@@ -137,6 +137,44 @@
           }
         },
         {
+          "kind": "special",
+          "type": "faixa",
+          "fields": {
+            "items": [
+              {
+                "name": "Bandas"
+              },
+              {
+                "name": "Cornijas"
+              },
+              {
+                "name": "Colunas"
+              },
+              {
+                "name": "Peitoris"
+              },
+              {
+                "name": "EPS Exterior"
+              },
+              {
+                "name": "EPS Interior"
+              },
+              {
+                "name": "Rodatetos"
+              },
+              {
+                "name": "Tetos Falsos"
+              },
+              {
+                "name": "Perfil TC"
+              },
+              {
+                "name": "Capoto"
+              }
+            ]
+          }
+        },
+        {
           "kind": "block",
           "anchor": "apresentacao",
           "layout": 2,
@@ -150,7 +188,7 @@
             },
             {
               "type": "titulo",
-              "style": "hero",
+              "style": "destaque",
               "col": 1,
               "text": "*EPS* mouldings for facades",
               "align": "left",
@@ -219,17 +257,17 @@
               "col": "all",
               "items": [
                 {
-                  "icon": "factory",
+                  "icon": "escudo",
                   "title": "Made in Portugal",
                   "text": "Made in Portugal."
                 },
                 {
-                  "icon": "badge",
+                  "icon": "folha",
                   "title": "CE certified",
                   "text": "CE certified."
                 },
                 {
-                  "icon": "truck",
+                  "icon": "factory",
                   "title": "On-site delivery",
                   "text": "On-site delivery."
                 }
@@ -255,6 +293,28 @@
         },
         {
           "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "marca",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "frase",
+              "col": "all",
+              "text": "Over 500 projects built with *rigour and innovation.*",
+              "align": "center",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": "all",
+              "body": "Certificação CE · Declaração de Desempenho · PT, ES, FR"
+            }
+          ]
+        },
+        {
+          "kind": "block",
           "anchor": "destaques",
           "layout": 1,
           "bg": "claro",
@@ -268,13 +328,13 @@
                   "title": "Projects",
                   "href": "/en/projects",
                   "description": "Facade rehabilitation projects with EPS mouldings.",
-                  "image": "https://cdn.example.com/winterplateau/projects.webp"
+                  "image": "/assets/og-image.png"
                 },
                 {
                   "title": "Request a quote",
                   "href": "/en/quote",
                   "description": "Request a quote",
-                  "image": "https://cdn.example.com/winterplateau/quote.webp"
+                  "image": "/assets/og-image.png"
                 }
               ]
             }
@@ -332,7 +392,7 @@
                   "title": "Facade rehabilitation in Braga",
                   "href": "/en/projects/facade-rehabilitation-braga",
                   "description": "Facade rehabilitation projects with EPS mouldings.",
-                  "image": "https://cdn.example.com/winterplateau/facade.webp"
+                  "image": "/assets/og-image.png"
                 }
               ]
             }
@@ -350,12 +410,12 @@
               "col": "all",
               "items": [
                 {
-                  "image": "https://cdn.example.com/winterplateau/g1.webp",
+                  "image": "/assets/og-image.png",
                   "alt": "Rehabilitated facade",
                   "caption": "Facade rehabilitation in Braga"
                 },
                 {
-                  "image": "https://cdn.example.com/winterplateau/g2.webp",
+                  "image": "/assets/og-image.png",
                   "alt": "Rehabilitated facade"
                 }
               ]
@@ -366,12 +426,12 @@
               "col": "all",
               "items": [
                 {
-                  "image": "https://cdn.example.com/winterplateau/l1.webp",
+                  "image": "/assets/og-image.png",
                   "alt": "Cliente 1",
                   "href": "https://example.com"
                 },
                 {
-                  "image": "https://cdn.example.com/winterplateau/l2.webp",
+                  "image": "/assets/og-image.png",
                   "alt": "Cliente 2"
                 }
               ]
@@ -419,7 +479,7 @@
           "comps": [
             {
               "type": "titulo",
-              "style": "normal",
+              "style": "seccao",
               "col": "all",
               "text": "Facade rehabilitation in Braga",
               "level": "h1"
@@ -428,7 +488,7 @@
               "type": "imagem",
               "style": "normal",
               "col": 1,
-              "image": "https://cdn.example.com/winterplateau/braga.webp",
+              "image": "/assets/og-image.png",
               "alt": "Rehabilitated facade",
               "caption": "Facade rehabilitation in Braga"
             },
@@ -440,7 +500,7 @@
             },
             {
               "type": "titulo",
-              "style": "normal",
+              "style": "seccao",
               "col": "all",
               "text": "Título com <script>alert(1)</script> e *itálico*",
               "level": "h2"
@@ -459,7 +519,7 @@
               "col": 2,
               "source": "ficheiro",
               "file": "https://cdn.example.com/winterplateau/braga.mp4",
-              "poster": "https://cdn.example.com/winterplateau/braga.webp"
+              "poster": "/assets/og-image.png"
             },
             {
               "type": "mapa",
@@ -667,7 +727,7 @@
           "comps": [
             {
               "type": "titulo",
-              "style": "normal",
+              "style": "seccao",
               "col": "all",
               "text": "Privacy",
               "level": "h1"
@@ -717,12 +777,1186 @@
           "comps": [
             {
               "type": "titulo",
-              "style": "normal",
+              "style": "seccao",
               "col": "all",
               "text": "Thank you",
               "level": "h1"
             }
           ]
+        }
+      ]
+    },
+    {
+      "path": "/en/components",
+      "alternates": {
+        "pt": "/componentes",
+        "en": "/en/components",
+        "fr": "/fr/composants"
+      },
+      "title": "Components",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Components",
+        "description": "Component demo page.",
+        "image": null,
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Home",
+          "path": "/en"
+        },
+        {
+          "title": "Components",
+          "path": "/en/components"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "etiqueta",
+              "style": "normal",
+              "col": "all",
+              "text": "Title styles"
+            },
+            {
+              "type": "titulo",
+              "style": "destaque",
+              "col": "all",
+              "text": "Mouldings in *EPS* for facades",
+              "align": "left",
+              "level": "h1"
+            },
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "How we *work* on site",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "titulo",
+              "style": "frase",
+              "col": "all",
+              "text": "Over 500 projects built with *rigour and innovation.*",
+              "align": "center",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "grande",
+              "col": "all",
+              "body": "We make **cornices**, bands and sills in EPS for facade rehabilitation, with *CE* certification and delivery on site.\n\nEvery piece is cut to size and finished on site."
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": "all",
+              "body": "We make **cornices**, bands and sills in EPS for facade rehabilitation, with *CE* certification and delivery on site.\n\nEvery piece is cut to size and finished on site."
+            },
+            {
+              "type": "texto",
+              "style": "pequeno",
+              "col": "all",
+              "body": "Note: prices exclude VAT. Link to [example](https://example.com)."
+            },
+            {
+              "type": "botao",
+              "style": "cheio",
+              "col": "all",
+              "label": "Request a quote",
+              "href": "/en/quote"
+            },
+            {
+              "type": "botao",
+              "style": "contorno",
+              "col": "all",
+              "label": "See projects",
+              "href": "/en/projects"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "claro",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Light *background*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "titulo",
+              "style": "destaque",
+              "col": "all",
+              "text": "Highlight on a *light background*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "grande",
+              "col": "all",
+              "body": "We make **cornices**, bands and sills in EPS for facade rehabilitation, with *CE* certification and delivery on site.\n\nEvery piece is cut to size and finished on site."
+            },
+            {
+              "type": "botao",
+              "style": "cheio",
+              "col": "all",
+              "label": "Request a quote",
+              "href": "/en/quote"
+            },
+            {
+              "type": "botao",
+              "style": "contorno",
+              "col": "all",
+              "label": "See projects",
+              "href": "/en/projects"
+            },
+            {
+              "type": "espaco",
+              "style": "p",
+              "col": "all"
+            },
+            {
+              "type": "lista",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "text": "Fabrico nacional"
+                },
+                {
+                  "text": "Certificação CE"
+                },
+                {
+                  "text": "Entrega em obra"
+                }
+              ]
+            },
+            {
+              "type": "espaco",
+              "style": "m",
+              "col": "all"
+            },
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "2016",
+                  "label": "Founded",
+                  "sub": "Vila Verde, Braga"
+                },
+                {
+                  "value": "18+",
+                  "label": "EPS products",
+                  "sub": "Exterior and interior"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projects",
+                  "sub": "PT · ES · FR"
+                },
+                {
+                  "value": "CE",
+                  "label": "Certification",
+                  "sub": "Declaration of Performance"
+                }
+              ]
+            },
+            {
+              "type": "espaco",
+              "style": "g",
+              "col": "all"
+            },
+            {
+              "type": "imagem",
+              "style": "normal",
+              "col": "all",
+              "image": "/assets/og-image.png",
+              "alt": "Rehabilitated facade",
+              "caption": "Normal image"
+            },
+            {
+              "type": "imagem",
+              "style": "redonda",
+              "col": "all",
+              "image": "/assets/og-image.png",
+              "alt": "",
+              "caption": "Rounded corners"
+            },
+            {
+              "type": "imagem",
+              "style": "total",
+              "col": "all",
+              "image": "/assets/og-image.png",
+              "alt": "Full width",
+              "caption": "Full width"
+            },
+            {
+              "type": "galeria",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "image": "/assets/og-image.png",
+                  "alt": "1",
+                  "caption": "Caption"
+                },
+                {
+                  "image": "/assets/og-image.png",
+                  "alt": "2"
+                },
+                {
+                  "image": "/assets/og-image.png",
+                  "alt": "3"
+                },
+                {
+                  "image": "/assets/og-image.png",
+                  "alt": "4"
+                }
+              ]
+            },
+            {
+              "type": "logotipos",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "image": "/favicon.svg",
+                  "alt": "Logo 1",
+                  "href": "https://example.com"
+                },
+                {
+                  "image": "/favicon.svg",
+                  "alt": "Logo 2",
+                  "href": null
+                },
+                {
+                  "image": "/favicon.svg",
+                  "alt": "Logo 3",
+                  "href": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "marca",
+          "layout": 1,
+          "bg": "marca",
+          "comps": [
+            {
+              "type": "etiqueta",
+              "style": "normal",
+              "col": "all",
+              "text": "Brand blue background"
+            },
+            {
+              "type": "titulo",
+              "style": "frase",
+              "col": "all",
+              "text": "Ready for your *next project?*",
+              "align": "center",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": "all",
+              "body": "Ask for a tailored quote or talk to our technical team."
+            },
+            {
+              "type": "lista",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "text": "Resposta até 48 horas"
+                },
+                {
+                  "text": "Aconselhamento técnico incluído"
+                },
+                {
+                  "text": "Sem compromisso"
+                }
+              ]
+            },
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "2016",
+                  "label": "Founded",
+                  "sub": "Vila Verde, Braga"
+                },
+                {
+                  "value": "18+",
+                  "label": "EPS products",
+                  "sub": "Exterior and interior"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projects",
+                  "sub": "PT · ES · FR"
+                }
+              ]
+            },
+            {
+              "type": "botao",
+              "style": "cheio",
+              "col": "all",
+              "label": "Request a quote",
+              "href": "/en/quote"
+            },
+            {
+              "type": "botao",
+              "style": "contorno",
+              "col": "all",
+              "label": "See projects",
+              "href": "/en/projects"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "imagem",
+              "style": "redonda",
+              "col": 1,
+              "image": "/assets/og-image.png",
+              "alt": "Facade"
+            },
+            {
+              "type": "etiqueta",
+              "style": "normal",
+              "col": 2,
+              "text": "EPS Exterior"
+            },
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": 2,
+              "text": "Mouldings for *facades*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 2,
+              "body": "We make **cornices**, bands and sills in EPS for facade rehabilitation, with *CE* certification and delivery on site.\n\nEvery piece is cut to size and finished on site."
+            },
+            {
+              "type": "botao",
+              "style": "cheio",
+              "col": 2,
+              "label": "Request a quote",
+              "href": "/en/quote"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "imagem",
+              "style": "normal",
+              "col": 1,
+              "image": "/assets/og-image.png",
+              "alt": "Facade"
+            },
+            {
+              "type": "etiqueta",
+              "style": "normal",
+              "col": 2,
+              "text": "Rehabilitation"
+            },
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": 2,
+              "text": "Rehabilitation with *rigour*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 2,
+              "body": "We make **cornices**, bands and sills in EPS for facade rehabilitation, with *CE* certification and delivery on site.\n\nEvery piece is cut to size and finished on site."
+            },
+            {
+              "type": "botao",
+              "style": "contorno",
+              "col": 2,
+              "label": "See projects",
+              "href": "/en/projects"
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 3,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "iconetexto",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "icon": "escudo",
+                  "title": "CE certification",
+                  "text": "Declaration of performance on every product."
+                },
+                {
+                  "icon": "folha",
+                  "title": "Made in Portugal",
+                  "text": "Produced in Vila Verde."
+                },
+                {
+                  "icon": "camiao",
+                  "title": "Delivery on site",
+                  "text": "An icon the manifest does not know."
+                }
+              ]
+            },
+            {
+              "type": "citacoes",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "quote": "The facade looks brand new.",
+                  "name": "Ana Silva",
+                  "role": "Braga"
+                }
+              ]
+            },
+            {
+              "type": "avaliacoes",
+              "style": "normal",
+              "col": 2,
+              "items": [
+                {
+                  "stars": "5",
+                  "name": "Rui",
+                  "text": "Great work, deadlines met."
+                }
+              ]
+            },
+            {
+              "type": "precos",
+              "style": "normal",
+              "col": 3,
+              "items": [
+                {
+                  "name": "Standard moulding",
+                  "price": "12 €",
+                  "period": "/m",
+                  "features": "- EPS\n- CE",
+                  "highlight": "sim",
+                  "cta": "Request a quote",
+                  "href": "/en/quote"
+                },
+                {
+                  "name": "Wide moulding",
+                  "price": "15 €",
+                  "period": "/m",
+                  "features": "- EPS\n- CE\n- Glue included",
+                  "highlight": "nao"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "faq",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "q": "Do you deliver to Spain?",
+                  "a": "Yes, **on request**.\n\n- Portugal\n- Spain"
+                },
+                {
+                  "q": "How long does a quote take?",
+                  "a": "Up to 48 hours."
+                }
+              ]
+            },
+            {
+              "type": "negocio",
+              "style": "normal",
+              "col": 2,
+              "name": "Winterplateau",
+              "address": "Avenida Principal 202\n4730-041 Vila Verde",
+              "phone": "+351 253 193 667",
+              "email": "geral@example.com",
+              "hours": [
+                {
+                  "day": "Monday to Friday",
+                  "time": "9h–18h"
+                }
+              ]
+            },
+            {
+              "type": "contacto",
+              "style": "normal",
+              "col": 2,
+              "address": "Avenida Principal 202\n4730-041 Vila Verde",
+              "phone": "+351 253 193 667",
+              "email": "geral@example.com"
+            },
+            {
+              "type": "menu",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "label": "Projects",
+                  "href": "/en/projects"
+                },
+                {
+                  "label": "Draft",
+                  "href": null
+                }
+              ]
+            },
+            {
+              "type": "redes",
+              "style": "normal",
+              "col": 1,
+              "items": [
+                {
+                  "network": "instagram",
+                  "url": "https://example.com/instagram"
+                },
+                {
+                  "network": "facebook",
+                  "url": "https://example.com/facebook"
+                },
+                {
+                  "network": "linkedin",
+                  "url": "https://example.com/linkedin"
+                },
+                {
+                  "network": "youtube",
+                  "url": "https://example.com/youtube"
+                },
+                {
+                  "network": "tiktok",
+                  "url": "https://example.com/tiktok"
+                },
+                {
+                  "network": "x",
+                  "url": "https://example.com/x"
+                }
+              ]
+            },
+            {
+              "type": "linguas",
+              "style": "normal",
+              "col": 1
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Media and documents",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "video",
+              "style": "normal",
+              "col": "all",
+              "source": "youtube",
+              "youtube": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+              "title": "Video"
+            },
+            {
+              "type": "mapa",
+              "style": "normal",
+              "col": "all",
+              "address": "Avenida Principal 202, Vila Verde",
+              "zoom": "rua",
+              "title": "Where we are"
+            },
+            {
+              "type": "documentos",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "name": "Data sheet",
+                  "file": "https://example.com/ficha.pdf"
+                },
+                {
+                  "name": "Catalogue",
+                  "file": "https://example.com/catalogo.pdf"
+                }
+              ]
+            },
+            {
+              "type": "paginas",
+              "style": "normal",
+              "col": "all",
+              "pick": [
+                {
+                  "title": "Projects",
+                  "href": "/en/projects",
+                  "description": "Facade rehabilitation projects.",
+                  "image": "/assets/og-image.png"
+                },
+                {
+                  "title": "Request a quote",
+                  "href": "/en/quote",
+                  "description": "",
+                  "image": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "pedido",
+          "layout": 2,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": 1,
+              "text": "Request a *quote*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "formulario",
+              "style": "normal",
+              "col": 2,
+              "types": [
+                {
+                  "name": "Facade rehabilitation"
+                },
+                {
+                  "name": "New build"
+                },
+                {
+                  "name": "Other"
+                }
+              ]
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 1,
+              "body": "We make **cornices**, bands and sills in EPS for facade rehabilitation, with *CE* certification and delivery on site.\n\nEvery piece is cut to size and finished on site."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/en/repeated",
+      "alternates": {
+        "pt": "/repetidos",
+        "en": "/en/repeated",
+        "fr": "/fr/repetes"
+      },
+      "title": "Repeated blocks",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Repeated blocks",
+        "description": "Component demo page.",
+        "image": null,
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Home",
+          "path": "/en"
+        },
+        {
+          "title": "Repeated blocks",
+          "path": "/en/repeated"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Repeated *blocks*",
+              "align": "left",
+              "level": "h1"
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "edificio3d",
+          "fields": {
+            "eyebrow": "Vila Verde · Since 2016"
+          }
+        },
+        {
+          "kind": "block",
+          "anchor": "repetido",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Repeated *block*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "2016",
+                  "label": "Founded",
+                  "sub": "Vila Verde, Braga"
+                },
+                {
+                  "value": "18+",
+                  "label": "EPS products",
+                  "sub": "Exterior and interior"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projects",
+                  "sub": "PT · ES · FR"
+                },
+                {
+                  "value": "CE",
+                  "label": "Certification",
+                  "sub": "Declaration of Performance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "repetido",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": "all",
+              "text": "Repeated *block*",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "2016",
+                  "label": "Founded",
+                  "sub": "Vila Verde, Braga"
+                },
+                {
+                  "value": "18+",
+                  "label": "EPS products",
+                  "sub": "Exterior and interior"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projects",
+                  "sub": "PT · ES · FR"
+                },
+                {
+                  "value": "CE",
+                  "label": "Certification",
+                  "sub": "Declaration of Performance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "edificio3d",
+          "fields": {
+            "eyebrow": "Second building"
+          }
+        },
+        {
+          "kind": "block",
+          "anchor": "f1",
+          "layout": 1,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "formulario",
+              "style": "normal",
+              "col": "all",
+              "types": [
+                {
+                  "name": "Facade rehabilitation"
+                },
+                {
+                  "name": "New build"
+                },
+                {
+                  "name": "Other"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "block",
+          "anchor": "f2",
+          "layout": 1,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "formulario",
+              "style": "normal",
+              "col": "all",
+              "types": [
+                {
+                  "name": "Facade rehabilitation"
+                },
+                {
+                  "name": "New build"
+                },
+                {
+                  "name": "Other"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "faixa",
+          "fields": {
+            "items": [
+              {
+                "name": "Bandas"
+              },
+              {
+                "name": "Cornijas"
+              },
+              {
+                "name": "Colunas"
+              },
+              {
+                "name": "Peitoris"
+              },
+              {
+                "name": "EPS Exterior"
+              },
+              {
+                "name": "EPS Interior"
+              },
+              {
+                "name": "Rodatetos"
+              },
+              {
+                "name": "Tetos Falsos"
+              },
+              {
+                "name": "Perfil TC"
+              },
+              {
+                "name": "Capoto"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "special",
+          "type": "faixa",
+          "fields": {
+            "items": [
+              {
+                "name": "Bandas"
+              },
+              {
+                "name": "Cornijas"
+              },
+              {
+                "name": "Colunas"
+              },
+              {
+                "name": "Peitoris"
+              },
+              {
+                "name": "EPS Exterior"
+              },
+              {
+                "name": "EPS Interior"
+              },
+              {
+                "name": "Rodatetos"
+              },
+              {
+                "name": "Tetos Falsos"
+              },
+              {
+                "name": "Perfil TC"
+              },
+              {
+                "name": "Capoto"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "path": "/en/reversed",
+      "alternates": {
+        "pt": "/ordem-trocada",
+        "en": "/en/reversed",
+        "fr": "/fr/inverse"
+      },
+      "title": "Reversed order",
+      "updatedAt": "2026-10-14T09:30:00.000Z",
+      "seo": {
+        "title": "Reversed order",
+        "description": "Component demo page.",
+        "image": null,
+        "noindex": false,
+        "canonical": null
+      },
+      "breadcrumb": [
+        {
+          "title": "Home",
+          "path": "/en"
+        },
+        {
+          "title": "Reversed order",
+          "path": "/en/reversed"
+        }
+      ],
+      "items": [
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "marca",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "frase",
+              "col": "all",
+              "text": "The page *starts* at the end",
+              "align": "center",
+              "level": "h1"
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "faixa",
+          "fields": {
+            "items": [
+              {
+                "name": "Bandas"
+              },
+              {
+                "name": "Cornijas"
+              },
+              {
+                "name": "Colunas"
+              },
+              {
+                "name": "Peitoris"
+              },
+              {
+                "name": "EPS Exterior"
+              },
+              {
+                "name": "EPS Interior"
+              },
+              {
+                "name": "Rodatetos"
+              },
+              {
+                "name": "Tetos Falsos"
+              },
+              {
+                "name": "Perfil TC"
+              },
+              {
+                "name": "Capoto"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 2,
+          "bg": "claro",
+          "comps": [
+            {
+              "type": "titulo",
+              "style": "seccao",
+              "col": 1,
+              "text": "Text and image",
+              "align": "left",
+              "level": "h2"
+            },
+            {
+              "type": "texto",
+              "style": "normal",
+              "col": 1,
+              "body": "We make **cornices**, bands and sills in EPS for facade rehabilitation, with *CE* certification and delivery on site.\n\nEvery piece is cut to size and finished on site."
+            },
+            {
+              "type": "imagem",
+              "style": "normal",
+              "col": 2,
+              "image": "/assets/og-image.png",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "edificio3d",
+          "fields": {
+            "eyebrow": "Vila Verde · Since 2016"
+          }
+        },
+        {
+          "kind": "block",
+          "anchor": null,
+          "layout": 1,
+          "bg": "escuro",
+          "comps": [
+            {
+              "type": "numeros",
+              "style": "normal",
+              "col": "all",
+              "items": [
+                {
+                  "value": "2016",
+                  "label": "Founded",
+                  "sub": "Vila Verde, Braga"
+                },
+                {
+                  "value": "18+",
+                  "label": "EPS products",
+                  "sub": "Exterior and interior"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projects",
+                  "sub": "PT · ES · FR"
+                },
+                {
+                  "value": "CE",
+                  "label": "Certification",
+                  "sub": "Declaration of Performance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "special",
+          "type": "faixa",
+          "fields": {
+            "items": [
+              {
+                "name": "Bandas"
+              },
+              {
+                "name": "Cornijas"
+              },
+              {
+                "name": "Colunas"
+              },
+              {
+                "name": "Peitoris"
+              },
+              {
+                "name": "EPS Exterior"
+              },
+              {
+                "name": "EPS Interior"
+              },
+              {
+                "name": "Rodatetos"
+              },
+              {
+                "name": "Tetos Falsos"
+              },
+              {
+                "name": "Perfil TC"
+              },
+              {
+                "name": "Capoto"
+              }
+            ]
+          }
         }
       ]
     }
