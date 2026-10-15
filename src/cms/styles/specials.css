@@ -24,11 +24,11 @@ html.js .scene:not(.in) .spark { opacity: 0; }
 @keyframes sparkF { 0%, 100% { transform: translateZ(var(--sz, 30px)) translateY(0); } 50% { transform: translateZ(var(--sz, 30px)) translateY(-13px); } }
 
 /* ── Faixa a passar (o antigo Marquee) — texto escuro sobre o azul da marca (o branco dava 2.4:1) ── */
-.especial--faixa { background: var(--bl); padding: 13px 0; overflow: hidden; z-index: 2; color: var(--night); }
+.especial--faixa { background: var(--bl); padding: 13px 0; overflow: hidden; z-index: 2; color: rgba(255, 255, 255, 0.82); }
 .faixa-in { display: flex; width: max-content; animation: mq 40s linear infinite; }
 .faixa-set { display: flex; flex-shrink: 0; }
 .faixa-set span { white-space: nowrap; padding: 0 24px; font-size: 11.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; }
-.faixa-set span::after { content: "\00B7"; margin-left: 24px; opacity: 0.55; }
+.faixa-set span::after { content: "\00B7"; margin-left: 24px; color: rgba(255, 255, 255, 0.38); }
 .especial--faixa:not(:has(*)) { display: none; }
 .especial--faixa:hover .faixa-in { animation-play-state: paused; }
 @keyframes mq { from { transform: translateX(0); } to { transform: translateX(-50%); } }

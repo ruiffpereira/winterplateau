@@ -31,15 +31,16 @@ img, video, iframe { max-width: 100%; }
   --nav: 62px;
   --fd: "Cormorant Garamond", Georgia, serif;
   --fb: "DM Sans", system-ui, sans-serif;
-  /* botão cheio: azul um pouco mais fundo que a marca para o texto branco passar 4.5:1 (a marca dá 2.9:1) */
-  --btn: #0e79a6;
-  --btn-h: #0b6387;
+  /* botão cheio: o azul da marca, como no site original (decisão do dono, 2026-10-15 — mantém o aspecto
+     actual mesmo com o branco sobre a marca abaixo de 4.5:1; o tom AA era #0e79a6) */
+  --btn: var(--bl);
+  --btn-h: #1280b0;
 }
 
 /* ── Fundos (D-D): claro · escuro · marca. Qualquer id desconhecido cai em "claro". ── */
 .bloco, .rodape {
   --bg: #fff; --fg: #0c0c0b; --fg2: #3e3d3a; --fg3: #6b6861; --line: #e1dfd9; --surface: #f7f6f3;
-  --ac: #0e79a6; --title: #0c0c0b; --em: var(--bl); --card-b: #e1dfd9;
+  --ac: var(--bl); --title: #0c0c0b; --em: var(--bl); --card-b: #e1dfd9;
   --ol-b: rgba(12, 12, 11, 0.45); --ol-c: #0c0c0b; --ol-bh: #0c0c0b;
   --btn-bg: var(--btn); --btn-c: #fff; --btn-bgh: var(--btn-h);
   background: var(--bg); color: var(--fg);
@@ -52,11 +53,12 @@ img, video, iframe { max-width: 100%; }
   --btn-bg: var(--btn); --btn-c: #fff; --btn-bgh: var(--btn-h);
   background: var(--bg); color: var(--fg);
 }
-/* marca: texto escuro (o branco sobre o azul da marca não chega a 3:1); só os títulos grandes ficam brancos */
+/* marca: texto branco como o .stmt do site original (decisão do dono, 2026-10-15); o botão cheio fica escuro,
+   senão seria azul sobre azul */
 .bloco[data-bg="marca"], .rodape[data-bg="marca"] {
-  --bg: var(--bl); --fg: var(--night); --fg2: rgba(5, 9, 14, 0.86); --fg3: rgba(5, 9, 14, 0.78); --line: rgba(5, 9, 14, 0.28);
-  --surface: rgba(255, 255, 255, 0.22); --ac: var(--night); --title: var(--night); --em: var(--night); --card-b: rgba(5, 9, 14, 0.28);
-  --ol-b: var(--night); --ol-c: var(--night); --ol-bh: #000;
+  --bg: var(--bl); --fg: #fff; --fg2: rgba(255, 255, 255, 0.56); --fg3: rgba(255, 255, 255, 0.46); --line: rgba(255, 255, 255, 0.28);
+  --surface: rgba(255, 255, 255, 0.12); --ac: #fff; --title: #fff; --em: #fff; --card-b: rgba(255, 255, 255, 0.28);
+  --ol-b: rgba(255, 255, 255, 0.6); --ol-c: #fff; --ol-bh: #fff;
   --btn-bg: var(--night); --btn-c: #fff; --btn-bgh: #000;
 }
 
