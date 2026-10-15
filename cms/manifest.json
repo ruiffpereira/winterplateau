@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "styles": {
+    "titulo": [
+      { "id": "seccao", "label": "Secção" },
+      { "id": "destaque", "label": "Destaque" },
+      { "id": "frase", "label": "Frase grande" }
+    ],
+    "texto": [
+      { "id": "normal", "label": "Normal" },
+      { "id": "grande", "label": "Introdução" },
+      { "id": "pequeno", "label": "Nota" }
+    ],
+    "botao": [
+      { "id": "cheio", "label": "Cheio" },
+      { "id": "contorno", "label": "Contorno" }
+    ],
+    "imagem": [
+      { "id": "normal", "label": "Normal" },
+      { "id": "redonda", "label": "Cantos redondos" },
+      { "id": "total", "label": "Largura total" }
+    ],
+    "espaco": [
+      { "id": "p", "label": "Pequeno" },
+      { "id": "m", "label": "Médio" },
+      { "id": "g", "label": "Grande" }
+    ]
+  },
+  "backgrounds": [
+    { "id": "claro", "label": "Claro" },
+    { "id": "escuro", "label": "Escuro" },
+    { "id": "marca", "label": "Azul da marca" }
+  ],
+  "icons": [
+    { "id": "escudo", "label": "Escudo" },
+    { "id": "folha", "label": "Folha" }
+  ],
+  "parts": {
+    "topo": ["imagem", "menu", "botao", "linguas"],
+    "rodape": ["texto", "menu", "contacto", "redes", "imagem", "logotipos"]
+  },
+  "specials": {
+    "edificio3d": {
+      "label": "Edifício 3D",
+      "desc": "A ilustração animada do topo da página inicial",
+      "fields": {
+        "eyebrow": { "type": "text", "i18n": true, "max": 80 }
+      }
+    },
+    "faixa": {
+      "label": "Faixa a passar",
+      "desc": "Nomes de produtos a passar em contínuo",
+      "fields": {
+        "items": {
+          "type": "list",
+          "min": 1,
+          "max": 30,
+          "of": { "name": { "type": "text", "i18n": true, "required": true, "max": 40 } }
+        }
+      }
+    }
+  }
+}

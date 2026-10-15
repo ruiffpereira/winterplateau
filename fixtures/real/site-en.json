@@ -1,0 +1,2450 @@
+{
+ "revision": 1,
+ "siteName": "Winterplateau",
+ "locale": "en",
+ "defaultLanguage": "pt",
+ "languages": [
+  "pt",
+  "en",
+  "fr"
+ ],
+ "topo": {
+  "comps": [
+   {
+    "type": "imagem",
+    "style": "normal",
+    "col": "all",
+    "image": "/favicon.svg",
+    "alt": "Winterplateau"
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": "all",
+    "items": [
+     {
+      "label": "EPS Exterior",
+      "href": "/en#eps"
+     },
+     {
+      "label": "EPS Interior",
+      "href": "/en#interior"
+     },
+     {
+      "label": "Metal Profiles",
+      "href": "/en#metal"
+     },
+     {
+      "label": "Projects",
+      "href": "/en/obras"
+     },
+     {
+      "label": "Company",
+      "href": "/en#about"
+     },
+     {
+      "label": "Downloads",
+      "href": "/en#downloads"
+     },
+     {
+      "label": "Contacts",
+      "href": "/en#contact"
+     }
+    ]
+   },
+   {
+    "type": "botao",
+    "style": "cheio",
+    "col": "all",
+    "label": "Request a Quote",
+    "href": "/en#orcamento"
+   },
+   {
+    "type": "linguas",
+    "style": "normal",
+    "col": "all"
+   }
+  ]
+ },
+ "rodape": {
+  "layout": 3,
+  "bg": "escuro",
+  "comps": [
+   {
+    "type": "texto",
+    "style": "normal",
+    "col": 1,
+    "body": "\"EPS and metal profile solutions for construction and renovation. Made in Portugal, European quality.\""
+   },
+   {
+    "type": "redes",
+    "style": "normal",
+    "col": 1,
+    "items": [
+     {
+      "network": "linkedin",
+      "url": "https://www.linkedin.com/company/winterplateau/"
+     },
+     {
+      "network": "facebook",
+      "url": "https://www.facebook.com/winterplateau/"
+     },
+     {
+      "network": "instagram",
+      "url": "https://www.instagram.com/winterplateau/"
+     }
+    ]
+   },
+   {
+    "type": "texto",
+    "style": "normal",
+    "col": 2,
+    "body": "**Solutions**"
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": 2,
+    "items": [
+     {
+      "label": "EPS Exterior",
+      "href": "/en#eps"
+     },
+     {
+      "label": "EPS Interior",
+      "href": "/en#interior"
+     },
+     {
+      "label": "Metal Profiles",
+      "href": "/en#metal"
+     }
+    ]
+   },
+   {
+    "type": "texto",
+    "style": "normal",
+    "col": 3,
+    "body": "**Company**"
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": 3,
+    "items": [
+     {
+      "label": "About Us",
+      "href": "/en#about"
+     },
+     {
+      "label": "Portfolio",
+      "href": "/en/obras"
+     },
+     {
+      "label": "Downloads",
+      "href": "/en#downloads"
+     },
+     {
+      "label": "Contacts",
+      "href": "/en#contact"
+     }
+    ]
+   },
+   {
+    "type": "texto",
+    "style": "pequeno",
+    "col": "all",
+    "body": "© 2026 Winterplateau. All rights reserved."
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": "all",
+    "items": [
+     {
+      "label": "Privacy Policy",
+      "href": "/en/privacidade"
+     }
+    ]
+   }
+  ]
+ },
+ "pages": [
+  {
+   "path": "/en",
+   "alternates": {
+    "pt": "/",
+    "en": "/en",
+    "fr": "/fr"
+   },
+   "title": "Home",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "EPS and Metal Profile Solutions",
+    "description": "\"EPS mouldings and metal profiles for new construction and façade renovation. Made in Portugal since 2016, CE certified. Vila Verde, Braga.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Home",
+     "path": "/en"
+    }
+   ],
+   "items": [
+    {
+     "kind": "special",
+     "type": "edificio3d",
+     "fields": {
+      "eyebrow": "Vila Verde, Portugal · Since 2016"
+     }
+    },
+    {
+     "kind": "special",
+     "type": "faixa",
+     "fields": {
+      "items": [
+       {
+        "name": "Bands"
+       },
+       {
+        "name": "Cornices"
+       },
+       {
+        "name": "Columns"
+       },
+       {
+        "name": "Window Sills"
+       },
+       {
+        "name": "EPS Exterior"
+       },
+       {
+        "name": "EPS Interior"
+       },
+       {
+        "name": "Crown Mouldings"
+       },
+       {
+        "name": "Suspended Ceilings"
+       },
+       {
+        "name": "Partitions"
+       },
+       {
+        "name": "Perfil TC"
+       },
+       {
+        "name": "Montante Stud"
+       },
+       {
+        "name": "Canal Raia"
+       },
+       {
+        "name": "Infill Blocks"
+       },
+       {
+        "name": "ETICS"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Winter*plateau*",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"EPS and metal profile solutions for new construction and building renovation. Made in Portugal, European certification.\""
+      },
+      {
+       "type": "botao",
+       "style": "cheio",
+       "col": "all",
+       "label": "View Solutions",
+       "href": "#eps"
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "PDF Catalogue",
+       "href": "#downloads"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "2016",
+         "label": "Founded",
+         "sub": "Vila Verde, Braga"
+        },
+        {
+         "value": "18+",
+         "label": "EPS Products",
+         "sub": "Exterior & Interior"
+        },
+        {
+         "value": "500+",
+         "label": "Projects",
+         "sub": "Portugal · Spain · France"
+        },
+        {
+         "value": "CE",
+         "label": "Certification",
+         "sub": "Declaration of Performance"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "eps",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Product Line"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "EPS Exterior",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 1,
+       "body": "\"Innovative façades with lightweight expanded-polystyrene mouldings. Easy installation, high durability and decorative versatility for any project.\""
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 2,
+       "items": [
+        {
+         "text": "Decorative bands"
+        },
+        {
+         "text": "Cornices and entablatures"
+        },
+        {
+         "text": "Columns and pilasters"
+        },
+        {
+         "text": "Window sills"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "interior",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Product Line"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "EPS Interior",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 1,
+       "body": "\"Interior mouldings that elegantly transform residential and commercial spaces. Simple installation, refined finish, no disruptive works.\""
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 2,
+       "items": [
+        {
+         "text": "Crown and ceiling mouldings"
+        },
+        {
+         "text": "Wall mouldings and panels"
+        },
+        {
+         "text": "Decorative skirting"
+        },
+        {
+         "text": "Corner and trim profiles"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "marca",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Made in Portugal · Since 2016"
+      },
+      {
+       "type": "titulo",
+       "style": "frase",
+       "col": "all",
+       "text": "Over 500 projects built with *rigour and innovation.*",
+       "align": "center",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "CE Certification · Declaration of Performance · Exports to PT, ES & FR"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "metal",
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Product Line"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Metal Profiles",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "Suspended Ceilings",
+         "text": "Suspension system for lowered ceilings. Better acoustic and thermal control.\n\n- Perfil TC\n- Perfil U / Raia"
+        },
+        {
+         "title": "Partitions",
+         "text": "Light, versatile partitions for offices and commercial spaces.\n\n- Montante Stud\n- Canal Raia"
+        },
+        {
+         "title": "Trims",
+         "text": "\"Shadow gaps, angles and finishing profiles for complete solutions.\"\n\n- Alheta Lacada\n- Cantoneira L\n- Cantoneira L Perf."
+        },
+        {
+         "title": "Accessories",
+         "text": "\"Complete fixing, suspension and connection system for any solution.\"\n\n- Alçapão\n- Cruzeta / Emenda\n- Perfil Omega · Pivot"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "obras",
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Portfolio · Projects"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Projects that speak for us",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Each project shows the before and after — drag to see the transformation our solutions bring to the façade."
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Façade Renovation",
+         "href": "/en/obras/reabilitacao-fachada-braga",
+         "description": "\"Full renovation of a 1980s building façade in Braga. ETICS system with decorative EPS mouldings — cornices, bands and sills.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Single-Family House",
+         "href": "/en/obras/moradia-ponte-de-lima",
+         "description": "\"New-build contemporary house in Ponte de Lima. EPS opening surrounds and cornice giving façade depth without the cost of natural stone.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Commercial Building",
+         "href": "/en/obras/edificio-comercial-guimaraes",
+         "description": "\"Façade modernisation of a commercial building in the historic centre of Guimarães. EPS bands and pilasters with ETICS system across 3 floors.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "View all projects",
+       "href": "/en/obras"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "about",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": 1,
+       "text": "2016",
+       "align": "left",
+       "level": "h3"
+      },
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 2,
+       "text": "About Us"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 2,
+       "text": "\"Created to answer a *real need* of modern construction.\"",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 2,
+       "body": "\"Winterplateau was founded in January 2016 in Vila Verde, Braga, to develop and answer a need identified in the construction and renovation market — innovative, multifunctional EPS products built on best practices and technologies. A relentless pursuit of quality that delivers concrete competitive advantages to our clients.\""
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 2,
+       "items": [
+        {
+         "text": "CE Certification"
+        },
+        {
+         "text": "Decl. of Performance"
+        },
+        {
+         "text": "EU Co-funded"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "downloads",
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Technical Documentation"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Downloads",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "documentos",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "name": "Declaration of Performance",
+         "file": "/downloads/DECLARACAO_DESEMPENHO.pdf"
+        },
+        {
+         "name": "Declaration of Conformity",
+         "file": "/downloads/declaracao-conformidade.pdf"
+        },
+        {
+         "name": "DOP — Declaration of Performance",
+         "file": "/downloads/dop.pdf"
+        },
+        {
+         "name": "Mouldings Application Guide",
+         "file": "/downloads/modo-de-aplicacao-molduras.pdf"
+        },
+        {
+         "name": "Winterplateau Catalogue",
+         "file": "/downloads/WINTERPLATEAU_Catalogo-XS_AF.pdf"
+        },
+        {
+         "name": "Crown Mouldings Catalogue",
+         "file": "/downloads/catalogo-rodatetos-winterplateau_Versao-1.pdf"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "marca",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "frase",
+       "col": "all",
+       "text": "Ready for your *next project?*",
+       "align": "center",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Request a tailored quote or talk to our technical team."
+      },
+      {
+       "type": "botao",
+       "style": "cheio",
+       "col": "all",
+       "label": "Request a Quote",
+       "href": "#orcamento"
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Download Catalogue",
+       "href": "#downloads"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "orcamento",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Quote Request"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "Request your quote",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 1,
+       "body": "Send us your project details — we reply with a tailored proposal within 1–2 working days."
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 1,
+       "items": [
+        {
+         "text": "Reply within 48 hours"
+        },
+        {
+         "text": "Technical advice included"
+        },
+        {
+         "text": "No obligation"
+        }
+       ]
+      },
+      {
+       "type": "formulario",
+       "style": "normal",
+       "col": 2,
+       "types": [
+        {
+         "name": "Façade renovation"
+        },
+        {
+         "name": "New build"
+        },
+        {
+         "name": "Interior EPS"
+        },
+        {
+         "name": "Metal profiles"
+        },
+        {
+         "name": "Other"
+        }
+       ]
+      },
+      {
+       "type": "texto",
+       "style": "pequeno",
+       "col": 2,
+       "body": "Requests go directly to geral@winterplateau.pt"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "contact",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Contacts"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "Get in Touch",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "contacto",
+       "style": "normal",
+       "col": 1,
+       "address": "Avenida Principal, Nº 202\n\"4730-041 Atiães, Vila Verde\"\n\"Braga, Portugal\"",
+       "phone": "+351 253 193 667",
+       "email": "geral@winterplateau.pt"
+      },
+      {
+       "type": "redes",
+       "style": "normal",
+       "col": 1,
+       "items": [
+        {
+         "network": "linkedin",
+         "url": "https://www.linkedin.com/company/winterplateau/"
+        },
+        {
+         "network": "facebook",
+         "url": "https://www.facebook.com/winterplateau/"
+        },
+        {
+         "network": "instagram",
+         "url": "https://www.instagram.com/winterplateau/"
+        }
+       ]
+      },
+      {
+       "type": "mapa",
+       "style": "normal",
+       "col": 2,
+       "address": "Avenida Principal 202, 4730-041 Atiães, Vila Verde, Braga, Portugal",
+       "zoom": "rua",
+       "title": "Winterplateau"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/en/obras",
+   "alternates": {
+    "pt": "/obras",
+    "en": "/en/obras",
+    "fr": "/fr/obras"
+   },
+   "title": "Projects",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Projects — Portfolio",
+    "description": "\"Portfolio of façade renovation and new construction projects with EPS mouldings and ETICS systems in northern Portugal.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Home",
+     "path": "/en"
+    },
+    {
+     "title": "Projects",
+     "path": "/en/obras"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Our Projects",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Façade renovation and new construction across northern Portugal. On each project, drag the comparison to see the transformation Winterplateau mouldings and insulation bring to the building.\""
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Façade Renovation",
+         "href": "/en/obras/reabilitacao-fachada-braga",
+         "description": "\"Full renovation of a 1980s building façade in Braga. ETICS system with decorative EPS mouldings — cornices, bands and sills.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Single-Family House",
+         "href": "/en/obras/moradia-ponte-de-lima",
+         "description": "\"New-build contemporary house in Ponte de Lima. EPS opening surrounds and cornice giving façade depth without the cost of natural stone.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Commercial Building",
+         "href": "/en/obras/edificio-comercial-guimaraes",
+         "description": "\"Façade modernisation of a commercial building in the historic centre of Guimarães. EPS bands and pilasters with ETICS system across 3 floors.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Apartment Block",
+         "href": "/en/obras/apartamentos-vila-verde",
+         "description": "\"New-build block of 20 apartments in Vila Verde. Façade with EPS cornices, bands and sills on ETICS system — 1,240 m².\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Manor House Restoration",
+         "href": "/en/obras/restauro-solar-barcelos",
+         "description": "\"Recovery of decorative elements of a 19th-century manor house in Barcelos. Original moulding replicas in high-density EPS, CNC-cut to match the historic design.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Private Clinic",
+         "href": "/en/obras/clinica-famalicao",
+         "description": "\"Contemporary façade for a private clinic in Famalicão. Horizontal EPS bands with ETICS system — 540 m², A+ efficiency rating.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "marca",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "frase",
+       "col": "all",
+       "text": "Have a project in mind?",
+       "align": "center",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Talk to our technical team and find the right solution for your project."
+      },
+      {
+       "type": "botao",
+       "style": "cheio",
+       "col": "all",
+       "label": "Request a Quote",
+       "href": "/en#orcamento"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/en/obras/reabilitacao-fachada-braga",
+   "alternates": {
+    "pt": "/obras/reabilitacao-fachada-braga",
+    "en": "/en/obras/reabilitacao-fachada-braga",
+    "fr": "/fr/obras/reabilitacao-fachada-braga"
+   },
+   "title": "Façade Renovation",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Façade Renovation in Braga",
+    "description": "\"Full renovation of a 1980s building façade in Braga. ETICS system with decorative EPS mouldings — cornices, bands and sills.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Home",
+     "path": "/en"
+    },
+    {
+     "title": "Projects",
+     "path": "/en/obras"
+    },
+    {
+     "title": "Façade Renovation",
+     "path": "/en/obras/reabilitacao-fachada-braga"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Renovation · Braga · 2023"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Façade Renovation",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Full recovery of the envelope of a 1980s residential building. ETICS (external insulation) with decorative EPS mouldings — cornices, bands and sills — restoring character and thermal efficiency to the property.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "420",
+         "label": "Façade",
+         "sub": "m²"
+        },
+        {
+         "value": "6",
+         "label": "Duration",
+         "sub": "wks"
+        },
+        {
+         "value": "B→A+",
+         "label": "Efficiency"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "The Process"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "During the works",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Diagnosis",
+         "text": "Survey of defects, cracks and thermal bridges on the existing façade."
+        },
+        {
+         "title": "02 · Preparation",
+         "text": "Cleaning, render repair and installation of the ETICS insulation system."
+        },
+        {
+         "title": "03 · EPS Mouldings",
+         "text": "Bonding and fixing of Winterplateau cornices, bands and sills."
+        },
+        {
+         "title": "04 · Finishing",
+         "text": "Reinforced base coat, primer and final render in the chosen colour."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions applied"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Winterplateau materials in this project",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "ETICS / External Insulation"
+        },
+        {
+         "text": "Cornices"
+        },
+        {
+         "text": "Bands"
+        },
+        {
+         "text": "Window Sills"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Other projects",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Single-Family House",
+         "href": "/en/obras/moradia-ponte-de-lima",
+         "description": "\"New-build contemporary house in Ponte de Lima. EPS opening surrounds and cornice giving façade depth without the cost of natural stone.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Commercial Building",
+         "href": "/en/obras/edificio-comercial-guimaraes",
+         "description": "\"Façade modernisation of a commercial building in the historic centre of Guimarães. EPS bands and pilasters with ETICS system across 3 floors.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Apartment Block",
+         "href": "/en/obras/apartamentos-vila-verde",
+         "description": "\"New-build block of 20 apartments in Vila Verde. Façade with EPS cornices, bands and sills on ETICS system — 1,240 m².\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "View all",
+       "href": "/en/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/en/obras/moradia-ponte-de-lima",
+   "alternates": {
+    "pt": "/obras/moradia-ponte-de-lima",
+    "en": "/en/obras/moradia-ponte-de-lima",
+    "fr": "/fr/obras/moradia-ponte-de-lima"
+   },
+   "title": "Single-Family House",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Single-Family House in Ponte de Lima",
+    "description": "\"New-build contemporary house in Ponte de Lima. EPS opening surrounds and cornice giving façade depth without the cost of natural stone.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Home",
+     "path": "/en"
+    },
+    {
+     "title": "Projects",
+     "path": "/en/obras"
+    },
+    {
+     "title": "Single-Family House",
+     "path": "/en/obras/moradia-ponte-de-lima"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "New Build · Ponte de Lima · 2022"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Single-Family House",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"New-build contemporary house. EPS opening surrounds and top cornice give the façade depth without the weight and cost of natural stone.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "260",
+         "label": "Area",
+         "sub": "m²"
+        },
+        {
+         "value": "4",
+         "label": "Duration",
+         "sub": "wks"
+        },
+        {
+         "value": "12",
+         "label": "Mouldings",
+         "sub": "openings"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "The Process"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "During the works",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Design",
+         "text": "Façade design definition and selection of moulding profiles."
+        },
+        {
+         "title": "02 · Structure",
+         "text": "Masonry completed and façade prepared to receive the mouldings."
+        },
+        {
+         "title": "03 · Installation",
+         "text": "\"Installation of opening surrounds, pilasters and top cornice.\""
+        },
+        {
+         "title": "04 · Painting",
+         "text": "Final finishing and water-repellent treatment of the surfaces."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions applied"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Winterplateau materials in this project",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Opening Surrounds"
+        },
+        {
+         "text": "Cornice"
+        },
+        {
+         "text": "Pilasters"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Other projects",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Façade Renovation",
+         "href": "/en/obras/reabilitacao-fachada-braga",
+         "description": "\"Full renovation of a 1980s building façade in Braga. ETICS system with decorative EPS mouldings — cornices, bands and sills.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Commercial Building",
+         "href": "/en/obras/edificio-comercial-guimaraes",
+         "description": "\"Façade modernisation of a commercial building in the historic centre of Guimarães. EPS bands and pilasters with ETICS system across 3 floors.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Apartment Block",
+         "href": "/en/obras/apartamentos-vila-verde",
+         "description": "\"New-build block of 20 apartments in Vila Verde. Façade with EPS cornices, bands and sills on ETICS system — 1,240 m².\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "View all",
+       "href": "/en/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/en/obras/edificio-comercial-guimaraes",
+   "alternates": {
+    "pt": "/obras/edificio-comercial-guimaraes",
+    "en": "/en/obras/edificio-comercial-guimaraes",
+    "fr": "/fr/obras/edificio-comercial-guimaraes"
+   },
+   "title": "Commercial Building",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Commercial Building in Guimarães",
+    "description": "\"Façade modernisation of a commercial building in the historic centre of Guimarães. EPS bands and pilasters with ETICS system across 3 floors.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Home",
+     "path": "/en"
+    },
+    {
+     "title": "Projects",
+     "path": "/en/obras"
+    },
+    {
+     "title": "Commercial Building",
+     "path": "/en/obras/edificio-comercial-guimaraes"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Renovation · Guimarães · 2024"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Commercial Building",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Façade modernisation of a commercial building in the historic centre. Horizontal EPS bands and vertical pilasters create an elegant rhythm that enhances the street-level shopfronts.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "680",
+         "label": "Façade",
+         "sub": "m²"
+        },
+        {
+         "value": "8",
+         "label": "Duration",
+         "sub": "wks"
+        },
+        {
+         "value": "3",
+         "label": "Scope",
+         "sub": "floors"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "The Process"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "During the works",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Study",
+         "text": "Compliance with historic-centre rules and permitting."
+        },
+        {
+         "title": "02 · Insulation",
+         "text": "ETICS applied to the entire external envelope."
+        },
+        {
+         "title": "03 · Composition",
+         "text": "Installation of bands and pilasters following the approved design."
+        },
+        {
+         "title": "04 · Handover",
+         "text": "Finishing, cleaning and handover to the client."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions applied"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Winterplateau materials in this project",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Bands"
+        },
+        {
+         "text": "Pilasters"
+        },
+        {
+         "text": "Cornices"
+        },
+        {
+         "text": "ETICS / External Insulation"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Other projects",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Façade Renovation",
+         "href": "/en/obras/reabilitacao-fachada-braga",
+         "description": "\"Full renovation of a 1980s building façade in Braga. ETICS system with decorative EPS mouldings — cornices, bands and sills.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Single-Family House",
+         "href": "/en/obras/moradia-ponte-de-lima",
+         "description": "\"New-build contemporary house in Ponte de Lima. EPS opening surrounds and cornice giving façade depth without the cost of natural stone.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Apartment Block",
+         "href": "/en/obras/apartamentos-vila-verde",
+         "description": "\"New-build block of 20 apartments in Vila Verde. Façade with EPS cornices, bands and sills on ETICS system — 1,240 m².\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "View all",
+       "href": "/en/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/en/obras/apartamentos-vila-verde",
+   "alternates": {
+    "pt": "/obras/apartamentos-vila-verde",
+    "en": "/en/obras/apartamentos-vila-verde",
+    "fr": "/fr/obras/apartamentos-vila-verde"
+   },
+   "title": "Apartment Block",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Apartment Block in Vila Verde",
+    "description": "\"New-build block of 20 apartments in Vila Verde. Façade with EPS cornices, bands and sills on ETICS system — 1,240 m².\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Home",
+     "path": "/en"
+    },
+    {
+     "title": "Projects",
+     "path": "/en/obras"
+    },
+    {
+     "title": "Apartment Block",
+     "path": "/en/obras/apartamentos-vila-verde"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "New Build · Vila Verde · 2023"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Apartment Block",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Multi-family housing development with ventilated façade and EPS trims. A lightweight solution that speeds up construction and ensures uniformity across all floors.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "1.240",
+         "label": "Façade",
+         "sub": "m²"
+        },
+        {
+         "value": "14",
+         "label": "Duration",
+         "sub": "wks"
+        },
+        {
+         "value": "20",
+         "label": "Housing",
+         "sub": "units"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "The Process"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "During the works",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Planning",
+         "text": "Phasing of works by elevation and site logistics."
+        },
+        {
+         "title": "02 · Insulation",
+         "text": "ETICS system applied floor by floor."
+        },
+        {
+         "title": "03 · Mouldings",
+         "text": "\"Bands, cornices and sills installed in series.\""
+        },
+        {
+         "title": "04 · Finishing",
+         "text": "Final render and thermal performance testing."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions applied"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Winterplateau materials in this project",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Cornices"
+        },
+        {
+         "text": "Bands"
+        },
+        {
+         "text": "Window Sills"
+        },
+        {
+         "text": "ETICS / External Insulation"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Other projects",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Façade Renovation",
+         "href": "/en/obras/reabilitacao-fachada-braga",
+         "description": "\"Full renovation of a 1980s building façade in Braga. ETICS system with decorative EPS mouldings — cornices, bands and sills.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Single-Family House",
+         "href": "/en/obras/moradia-ponte-de-lima",
+         "description": "\"New-build contemporary house in Ponte de Lima. EPS opening surrounds and cornice giving façade depth without the cost of natural stone.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Commercial Building",
+         "href": "/en/obras/edificio-comercial-guimaraes",
+         "description": "\"Façade modernisation of a commercial building in the historic centre of Guimarães. EPS bands and pilasters with ETICS system across 3 floors.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "View all",
+       "href": "/en/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/en/obras/restauro-solar-barcelos",
+   "alternates": {
+    "pt": "/obras/restauro-solar-barcelos",
+    "en": "/en/obras/restauro-solar-barcelos",
+    "fr": "/fr/obras/restauro-solar-barcelos"
+   },
+   "title": "Manor House Restoration",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "19th-Century Manor House Restoration in Barcelos",
+    "description": "\"Recovery of decorative elements of a 19th-century manor house in Barcelos. Original moulding replicas in high-density EPS, CNC-cut to match the historic design.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Home",
+     "path": "/en"
+    },
+    {
+     "title": "Projects",
+     "path": "/en/obras"
+    },
+    {
+     "title": "Manor House Restoration",
+     "path": "/en/obras/restauro-solar-barcelos"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Renovation · Barcelos · 2021"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Manor House Restoration",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Recovery of decorative elements of a 19th-century manor house. Replicas of the original mouldings made in high-density EPS, faithful to the historic design.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "310",
+         "label": "Façade",
+         "sub": "m²"
+        },
+        {
+         "value": "10",
+         "label": "Duration",
+         "sub": "wks"
+        },
+        {
+         "value": "1850",
+         "label": "Era"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "The Process"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "During the works",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Survey",
+         "text": "Measurement and moulding of the original decorative elements."
+        },
+        {
+         "title": "02 · Production",
+         "text": "CNC cutting of the replicas in high-density EPS."
+        },
+        {
+         "title": "03 · Assembly",
+         "text": "Careful installation respecting the historic composition."
+        },
+        {
+         "title": "04 · Patina",
+         "text": "Textured finish imitating aged stone."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions applied"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Winterplateau materials in this project",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Custom mouldings"
+        },
+        {
+         "text": "Cornices"
+        },
+        {
+         "text": "Pilasters"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Other projects",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Façade Renovation",
+         "href": "/en/obras/reabilitacao-fachada-braga",
+         "description": "\"Full renovation of a 1980s building façade in Braga. ETICS system with decorative EPS mouldings — cornices, bands and sills.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Single-Family House",
+         "href": "/en/obras/moradia-ponte-de-lima",
+         "description": "\"New-build contemporary house in Ponte de Lima. EPS opening surrounds and cornice giving façade depth without the cost of natural stone.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Commercial Building",
+         "href": "/en/obras/edificio-comercial-guimaraes",
+         "description": "\"Façade modernisation of a commercial building in the historic centre of Guimarães. EPS bands and pilasters with ETICS system across 3 floors.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "View all",
+       "href": "/en/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/en/obras/clinica-famalicao",
+   "alternates": {
+    "pt": "/obras/clinica-famalicao",
+    "en": "/en/obras/clinica-famalicao",
+    "fr": "/fr/obras/clinica-famalicao"
+   },
+   "title": "Private Clinic",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Private Clinic in V. N. Famalicão",
+    "description": "\"Contemporary façade for a private clinic in Famalicão. Horizontal EPS bands with ETICS system — 540 m², A+ efficiency rating.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Home",
+     "path": "/en"
+    },
+    {
+     "title": "Projects",
+     "path": "/en/obras"
+    },
+    {
+     "title": "Private Clinic",
+     "path": "/en/obras/clinica-famalicao"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "New Build · V. N. Famalicão · 2024"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Private Clinic",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"A clean, contemporary façade for a healthcare building. Horizontal EPS bands mark the floors and integrate the exterior signage.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "540",
+         "label": "Façade",
+         "sub": "m²"
+        },
+        {
+         "value": "7",
+         "label": "Duration",
+         "sub": "wks"
+        },
+        {
+         "value": "A+",
+         "label": "Efficiency"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "The Process"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "During the works",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Concept",
+         "text": "Façade language defined with the architecture studio."
+        },
+        {
+         "title": "02 · Insulation",
+         "text": "Continuous ETICS for maximum thermal performance."
+        },
+        {
+         "title": "03 · Bands",
+         "text": "Installation of the horizontal bands that rhythm the floors."
+        },
+        {
+         "title": "04 · Handover",
+         "text": "White finish and signage integration."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions applied"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Winterplateau materials in this project",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Bands"
+        },
+        {
+         "text": "Cornice"
+        },
+        {
+         "text": "ETICS / External Insulation"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Other projects",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Façade Renovation",
+         "href": "/en/obras/reabilitacao-fachada-braga",
+         "description": "\"Full renovation of a 1980s building façade in Braga. ETICS system with decorative EPS mouldings — cornices, bands and sills.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Single-Family House",
+         "href": "/en/obras/moradia-ponte-de-lima",
+         "description": "\"New-build contemporary house in Ponte de Lima. EPS opening surrounds and cornice giving façade depth without the cost of natural stone.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Commercial Building",
+         "href": "/en/obras/edificio-comercial-guimaraes",
+         "description": "\"Façade modernisation of a commercial building in the historic centre of Guimarães. EPS bands and pilasters with ETICS system across 3 floors.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "View all",
+       "href": "/en/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/en/privacidade",
+   "alternates": {
+    "pt": "/privacidade",
+    "en": "/en/privacidade",
+    "fr": "/fr/privacidade"
+   },
+   "title": "Privacy Policy",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Privacy Policy",
+    "description": "",
+    "image": null,
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Home",
+     "path": "/en"
+    },
+    {
+     "title": "Privacy Policy",
+     "path": "/en/privacidade"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Privacy Policy",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "pequeno",
+       "col": "all",
+       "body": "Última atualização: junho de 2026"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "A sua privacidade é importante para a Winterplateau. Esta política explica que dados pessoais recolhemos através deste site, para que os usamos e quais os seus direitos ao abrigo do Regulamento Geral sobre a Proteção de Dados (RGPD)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**1. Responsável pelo tratamento**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "A Winterplateau é a responsável pelo tratamento dos seus dados. Para qualquer questão de privacidade, contacte-nos através de [geral@winterplateau.pt](mailto:geral@winterplateau.pt)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**2. Que dados recolhemos**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "- **Pedidos de orçamento e contacto:** nome, email, telefone e a mensagem/descrição que nos envia.\n- **Estatísticas de utilização:** dados agregados e anónimos sobre as visitas ao site (ver secção Cookies)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**3. Para que usamos os dados**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "- Responder a pedidos de orçamento e a mensagens de contacto;\n- Prestar apoio e dar seguimento comercial ao seu pedido;\n- Melhorar o site através de estatísticas agregadas."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**4. Base legal**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Tratamos os seus dados com base no seu **consentimento** e/ou em diligências **pré-contratuais** a seu pedido (resposta a orçamentos), e no nosso **interesse legítimo** em manter o site seguro e funcional."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**5. Cookies e estatísticas**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Usamos apenas cookies **essenciais** ao funcionamento do site. Para estatísticas usamos uma ferramenta **sem cookies e anónima** (Umami, auto-hospedado), que **não** rastreia os visitantes entre sites nem cria perfis individuais."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**6. Conservação dos dados**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Conservamos os dados de contacto apenas durante o tempo necessário para dar resposta ao seu pedido e cumprir obrigações legais aplicáveis."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**7. Os seus direitos**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Tem direito a aceder, retificar, eliminar e exportar (portabilidade) os seus dados, bem como a opor-se ou limitar o seu tratamento. Para exercer estes direitos, contacte-nos através de [geral@winterplateau.pt](mailto:geral@winterplateau.pt). Tem ainda o direito de apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**8. Subcontratantes**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Para prestar o serviço recorremos a fornecedores que tratam dados em nosso nome (alojamento e envio de emails), sujeitos a obrigações de confidencialidade e segurança. Os dados não são vendidos a terceiros."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**9. Alterações a esta política**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Podemos atualizar esta política. A data da última atualização é indicada no topo desta página."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "redirects": []
+}

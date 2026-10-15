@@ -87,6 +87,12 @@ npm run build
 - **Fixtures:** `fixtures/site-*.json` (todos os componentes, estilos e fundos; bloco repetido; ordem trocada) e `fixtures/minimo/`
   (sem topo nem rodapé, uma língua) — `CMS_FIXTURE=fixtures/minimo/site-pt.json npm run build && npm run check`. Orçamento do kit: 3 000 linhas.
 
+### Go-live (F19): manifest e conteúdo no construtor
+
+- `cms/manifest.json` — o manifest final (estilos do D-D, fundos, ícones, especiais `edificio3d`/`faixa`, partes); o dono carrega-o no Admin. Cópia em `API-FullStack/tests/fixtures/winterplateau-manifest.json` (um teste da API garante que passam no `parseManifest` e que são iguais).
+- `cms/import.json` — o site de antes (commit `0772465` da `main`) como corpo do `save`, **gerado** por `node cms/build-import.mjs` (não editar à mão) a partir do CSV, do `i18n.js` antigo e do código da `main`. Depois de o gerar, copiá-lo para `API-FullStack/scripts/data/winterplateau-import.json` (é essa cópia que vai na imagem da API e que o dono importa; um teste da API exige que sejam iguais). Importa-se com `API-FullStack/scripts/importSitePages.ts` (ver o `CLAUDE.md` da API).
+- `fixtures/real/site-{pt,en,fr}.json` — o objecto público desse import, para `CMS_FIXTURE=fixtures/real/site-pt.json npm run build && npm run check`.
+
 ---
 
 ## Conteúdo (CSV)

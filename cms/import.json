@@ -1,0 +1,4182 @@
+{
+  "_comentario": "Gerado por cms/build-import.mjs — não editar à mão. Formato: corpo do POST /cms/site-builder/save sem baseRevision.",
+  "folders": {
+    "upsert": [
+      {
+        "id": "@folder:inicio",
+        "name": "Página inicial"
+      },
+      {
+        "id": "@folder:obras",
+        "name": "Obras"
+      },
+      {
+        "id": "@folder:legal",
+        "name": "Páginas legais"
+      }
+    ]
+  },
+  "pages": {
+    "upsert": [
+      {
+        "id": "@page:home",
+        "parentId": null,
+        "slug": "",
+        "isHome": true,
+        "title": {
+          "pt": "Início",
+          "en": "Home",
+          "fr": "Accueil"
+        },
+        "status": "published",
+        "seo": {
+          "title": {
+            "pt": "Soluções em EPS e Perfis Metálicos",
+            "en": "EPS and Metal Profile Solutions",
+            "fr": "Solutions EPS et Profilés métalliques"
+          },
+          "description": {
+            "pt": "\"Molduras em EPS e perfis metálicos para construção nova e reabilitação de fachadas. Fabricação nacional desde 2016, certificação CE. Vila Verde, Braga.\"",
+            "en": "\"EPS mouldings and metal profiles for new construction and façade renovation. Made in Portugal since 2016, CE certified. Vila Verde, Braga.\"",
+            "fr": "\"Moulures EPS et profilés métalliques pour la construction neuve et la réhabilitation de façades. Fabrication portugaise depuis 2016, certifié CE.\""
+          },
+          "keywords": {
+            "pt": "\"EPS, molduras EPS, perfis metálicos, capoto, ETICS, reabilitação de fachada, construção, Vila Verde, Braga\"",
+            "en": "\"EPS mouldings, metal profiles, ETICS, façade renovation, construction, Portugal\"",
+            "fr": "\"moulures EPS, profilés métalliques, ITE, réhabilitation façade, construction, Portugal\""
+          },
+          "image": {
+            "same": true,
+            "values": {
+              "pt": "@media:og-image.png"
+            }
+          }
+        }
+      },
+      {
+        "id": "@page:obras",
+        "parentId": null,
+        "slug": "obras",
+        "title": {
+          "pt": "Obras",
+          "en": "Projects",
+          "fr": "Chantiers"
+        },
+        "status": "published",
+        "seo": {
+          "title": {
+            "pt": "Obras — Portefólio de Projetos",
+            "en": "Projects — Portfolio",
+            "fr": "Chantiers — Portfolio"
+          },
+          "description": {
+            "pt": "\"Portefólio de obras de reabilitação de fachadas e construção nova com molduras EPS e sistemas ETICS no norte de Portugal.\"",
+            "en": "\"Portfolio of façade renovation and new construction projects with EPS mouldings and ETICS systems in northern Portugal.\"",
+            "fr": "\"Portfolio de chantiers de réhabilitation de façades et de construction neuve avec moulures EPS et systèmes ITE dans le nord du Portugal.\""
+          },
+          "keywords": {
+            "pt": "\"obras, reabilitação de fachada, construção nova, molduras EPS, norte de Portugal, portefólio\"",
+            "en": "\"projects, façade renovation, new construction, EPS mouldings, northern Portugal, portfolio\"",
+            "fr": "\"chantiers, réhabilitation façade, construction neuve, moulures EPS, nord Portugal, portfolio\""
+          },
+          "image": {
+            "same": true,
+            "values": {
+              "pt": "@media:og-image.png"
+            }
+          }
+        }
+      },
+      {
+        "id": "@page:reabilitacao-fachada-braga",
+        "parentId": "@page:obras",
+        "slug": "reabilitacao-fachada-braga",
+        "title": {
+          "pt": "Reabilitação de Fachada",
+          "en": "Façade Renovation",
+          "fr": "Réhabilitation de façade"
+        },
+        "status": "published",
+        "seo": {
+          "title": {
+            "pt": "Reabilitação de Fachada em Braga",
+            "en": "Façade Renovation in Braga",
+            "fr": "Réhabilitation de façade à Braga"
+          },
+          "description": {
+            "pt": "\"Recuperação integral da fachada de um edifício dos anos 80 em Braga. Sistema ETICS com molduras decorativas em EPS — cornijas, bandas e peitoris.\"",
+            "en": "\"Full renovation of a 1980s building façade in Braga. ETICS system with decorative EPS mouldings — cornices, bands and sills.\"",
+            "fr": "\"Rénovation complète d'une façade des années 80 à Braga. Système ITE avec moulures décoratives EPS — corniches, bandeaux et appuis.\""
+          },
+          "image": {
+            "same": true,
+            "values": {
+              "pt": "@media:og-image.png"
+            }
+          }
+        }
+      },
+      {
+        "id": "@page:moradia-ponte-de-lima",
+        "parentId": "@page:obras",
+        "slug": "moradia-ponte-de-lima",
+        "title": {
+          "pt": "Moradia Unifamiliar",
+          "en": "Single-Family House",
+          "fr": "Maison individuelle"
+        },
+        "status": "published",
+        "seo": {
+          "title": {
+            "pt": "Moradia Unifamiliar em Ponte de Lima",
+            "en": "Single-Family House in Ponte de Lima",
+            "fr": "Maison individuelle à Ponte de Lima"
+          },
+          "description": {
+            "pt": "\"Construção nova de moradia contemporânea em Ponte de Lima. Molduras de vão e cornija em EPS que conferem profundidade à fachada sem o custo da pedra natural.\"",
+            "en": "\"New-build contemporary house in Ponte de Lima. EPS opening surrounds and cornice giving façade depth without the cost of natural stone.\"",
+            "fr": "\"Construction neuve d'une maison contemporaine à Ponte de Lima. Encadrements et corniche en EPS apportant de la profondeur à la façade sans le coût de la pierre.\""
+          },
+          "image": {
+            "same": true,
+            "values": {
+              "pt": "@media:og-image.png"
+            }
+          }
+        }
+      },
+      {
+        "id": "@page:edificio-comercial-guimaraes",
+        "parentId": "@page:obras",
+        "slug": "edificio-comercial-guimaraes",
+        "title": {
+          "pt": "Edifício Comercial",
+          "en": "Commercial Building",
+          "fr": "Immeuble commercial"
+        },
+        "status": "published",
+        "seo": {
+          "title": {
+            "pt": "Edifício Comercial em Guimarães",
+            "en": "Commercial Building in Guimarães",
+            "fr": "Immeuble commercial à Guimarães"
+          },
+          "description": {
+            "pt": "\"Modernização da fachada de edifício comercial no centro histórico de Guimarães. Bandas e pilastras em EPS com sistema ETICS nos 3 pisos.\"",
+            "en": "\"Façade modernisation of a commercial building in the historic centre of Guimarães. EPS bands and pilasters with ETICS system across 3 floors.\"",
+            "fr": "\"Modernisation de la façade d'un immeuble commercial du centre historique de Guimarães. Bandeaux et pilastres EPS avec ITE sur 3 étages.\""
+          },
+          "image": {
+            "same": true,
+            "values": {
+              "pt": "@media:og-image.png"
+            }
+          }
+        }
+      },
+      {
+        "id": "@page:apartamentos-vila-verde",
+        "parentId": "@page:obras",
+        "slug": "apartamentos-vila-verde",
+        "title": {
+          "pt": "Bloco de Apartamentos",
+          "en": "Apartment Block",
+          "fr": "Immeuble résidentiel"
+        },
+        "status": "published",
+        "seo": {
+          "title": {
+            "pt": "Bloco de Apartamentos em Vila Verde",
+            "en": "Apartment Block in Vila Verde",
+            "fr": "Immeuble résidentiel à Vila Verde"
+          },
+          "description": {
+            "pt": "\"Construção nova de bloco de 20 apartamentos em Vila Verde. Fachada com cornijas, bandas e peitoris em EPS sobre sistema ETICS — 1.240 m².\"",
+            "en": "\"New-build block of 20 apartments in Vila Verde. Façade with EPS cornices, bands and sills on ETICS system — 1,240 m².\"",
+            "fr": "\"Construction neuve d'un immeuble de 20 logements à Vila Verde. Façade avec corniches, bandeaux et appuis EPS sur système ITE — 1 240 m².\""
+          },
+          "image": {
+            "same": true,
+            "values": {
+              "pt": "@media:og-image.png"
+            }
+          }
+        }
+      },
+      {
+        "id": "@page:restauro-solar-barcelos",
+        "parentId": "@page:obras",
+        "slug": "restauro-solar-barcelos",
+        "title": {
+          "pt": "Restauro de Solar",
+          "en": "Manor House Restoration",
+          "fr": "Restauration d'un manoir"
+        },
+        "status": "published",
+        "seo": {
+          "title": {
+            "pt": "Restauro de Solar do Séc. XIX em Barcelos",
+            "en": "19th-Century Manor House Restoration in Barcelos",
+            "fr": "Restauration d'un manoir du XIXe siècle à Barcelos"
+          },
+          "description": {
+            "pt": "\"Recuperação dos elementos decorativos de um solar do século XIX em Barcelos. Réplicas das molduras originais em EPS de alta densidade, cortadas a CNC.\"",
+            "en": "\"Recovery of decorative elements of a 19th-century manor house in Barcelos. Original moulding replicas in high-density EPS, CNC-cut to match the historic design.\"",
+            "fr": "\"Restauration des éléments décoratifs d'un manoir du XIXe siècle à Barcelos. Répliques des moulures d'origine en EPS haute densité, découpées au CNC.\""
+          },
+          "image": {
+            "same": true,
+            "values": {
+              "pt": "@media:og-image.png"
+            }
+          }
+        }
+      },
+      {
+        "id": "@page:clinica-famalicao",
+        "parentId": "@page:obras",
+        "slug": "clinica-famalicao",
+        "title": {
+          "pt": "Clínica Privada",
+          "en": "Private Clinic",
+          "fr": "Clinique privée"
+        },
+        "status": "published",
+        "seo": {
+          "title": {
+            "pt": "Clínica Privada em V. N. Famalicão",
+            "en": "Private Clinic in V. N. Famalicão",
+            "fr": "Clinique privée à V. N. Famalicão"
+          },
+          "description": {
+            "pt": "\"Fachada contemporânea para clínica privada em Famalicão. Bandeaux horizontais em EPS com sistema ETICS — 540 m², eficiência A+.\"",
+            "en": "\"Contemporary façade for a private clinic in Famalicão. Horizontal EPS bands with ETICS system — 540 m², A+ efficiency rating.\"",
+            "fr": "\"Façade contemporaine pour une clinique privée à Famalicão. Bandeaux horizontaux EPS avec ITE — 540 m², performance A+.\""
+          },
+          "image": {
+            "same": true,
+            "values": {
+              "pt": "@media:og-image.png"
+            }
+          }
+        }
+      },
+      {
+        "id": "@page:privacidade",
+        "parentId": null,
+        "slug": "privacidade",
+        "title": {
+          "pt": "Política de Privacidade",
+          "en": "Privacy Policy",
+          "fr": "Politique de confidentialité"
+        },
+        "status": "published"
+      }
+    ]
+  },
+  "blocks": {
+    "upsert": [
+      {
+        "id": "@block:apresentacao",
+        "name": "Início · Apresentação",
+        "folderId": "@folder:inicio",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "destaque",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Winter*plateau*",
+                "en": "Winter*plateau*",
+                "fr": "Winter*plateau*"
+              },
+              "align": "left",
+              "level": "h1"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "\"Soluções em EPS e Perfis Metálicos para construção nova e reabilitação de edifícios. Fabricação nacional, certificação europeia.\"",
+                "en": "\"EPS and metal profile solutions for new construction and building renovation. Made in Portugal, European certification.\"",
+                "fr": "\"Solutions en EPS et profilés métalliques pour la construction neuve et la réhabilitation. Fabrication portugaise, certification européenne.\""
+              }
+            }
+          },
+          {
+            "type": "botao",
+            "style": "cheio",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Ver Soluções",
+                "en": "View Solutions",
+                "fr": "Voir les solutions"
+              },
+              "dest": {
+                "kind": "anchor",
+                "blockId": "@block:eps"
+              }
+            }
+          },
+          {
+            "type": "botao",
+            "style": "contorno",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Catálogo PDF",
+                "en": "PDF Catalogue",
+                "fr": "Catalogue PDF"
+              },
+              "dest": {
+                "kind": "anchor",
+                "blockId": "@block:downloads"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:numeros",
+        "name": "Início · Números",
+        "folderId": "@folder:inicio",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "numeros",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "value": "2016",
+                  "label": {
+                    "pt": "Fundação",
+                    "en": "Founded",
+                    "fr": "Fondation"
+                  },
+                  "sub": {
+                    "pt": "Vila Verde, Braga",
+                    "en": "Vila Verde, Braga",
+                    "fr": "Vila Verde, Braga"
+                  }
+                },
+                {
+                  "value": "18+",
+                  "label": {
+                    "pt": "Produtos EPS",
+                    "en": "EPS Products",
+                    "fr": "Produits EPS"
+                  },
+                  "sub": {
+                    "pt": "Exterior & Interior",
+                    "en": "Exterior & Interior",
+                    "fr": "Extérieur & Intérieur"
+                  }
+                },
+                {
+                  "value": "500+",
+                  "label": {
+                    "pt": "Projetos",
+                    "en": "Projects",
+                    "fr": "Projets"
+                  },
+                  "sub": {
+                    "pt": "Portugal · Espanha · França",
+                    "en": "Portugal · Spain · France",
+                    "fr": "Portugal · Espagne · France"
+                  }
+                },
+                {
+                  "value": "CE",
+                  "label": {
+                    "pt": "Certificação",
+                    "en": "Certification",
+                    "fr": "Certification"
+                  },
+                  "sub": {
+                    "pt": "Declaração de Desempenho",
+                    "en": "Declaration of Performance",
+                    "fr": "Déclaration de performance"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:eps",
+        "name": "Início · EPS Exterior",
+        "folderId": "@folder:inicio",
+        "layout": 2,
+        "bg": "claro",
+        "anchor": "#eps",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": 1,
+            "v": {
+              "text": {
+                "pt": "Linha de Produto",
+                "en": "Product Line",
+                "fr": "Gamme de produits"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": 1,
+            "v": {
+              "text": {
+                "pt": "EPS Exterior",
+                "en": "EPS Exterior",
+                "fr": "EPS Exterior"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": 1,
+            "v": {
+              "body": {
+                "pt": "\"Fachadas inovadoras com molduras leves de poliestireno expandido. Fácil aplicação, elevada durabilidade e versatilidade decorativa para qualquer obra.\"",
+                "en": "\"Innovative façades with lightweight expanded-polystyrene mouldings. Easy installation, high durability and decorative versatility for any project.\"",
+                "fr": "\"Des façades innovantes avec des moulures légères en polystyrène expansé. Pose facile, grande durabilité et polyvalence décorative pour tout chantier.\""
+              }
+            }
+          },
+          {
+            "type": "lista",
+            "style": "normal",
+            "col": 2,
+            "v": {
+              "items": [
+                {
+                  "text": {
+                    "pt": "Bandas decorativas",
+                    "en": "Decorative bands",
+                    "fr": "Bandeaux décoratifs"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Cornijas e entablamentos",
+                    "en": "Cornices and entablatures",
+                    "fr": "Corniches et entablements"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Colunas e pilastras",
+                    "en": "Columns and pilasters",
+                    "fr": "Colonnes et pilastres"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Peitoris de janela",
+                    "en": "Window sills",
+                    "fr": "Appuis de fenêtre"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:interior",
+        "name": "Início · EPS Interior",
+        "folderId": "@folder:inicio",
+        "layout": 2,
+        "bg": "claro",
+        "anchor": "#interior",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": 1,
+            "v": {
+              "text": {
+                "pt": "Linha de Produto",
+                "en": "Product Line",
+                "fr": "Gamme de produits"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": 1,
+            "v": {
+              "text": {
+                "pt": "EPS Interior",
+                "en": "EPS Interior",
+                "fr": "EPS Interior"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": 1,
+            "v": {
+              "body": {
+                "pt": "\"Molduras interiores que transformam espaços residenciais e comerciais com elegância. Instalação simples, acabamento refinado, sem obras disruptivas.\"",
+                "en": "\"Interior mouldings that elegantly transform residential and commercial spaces. Simple installation, refined finish, no disruptive works.\"",
+                "fr": "\"Des moulures intérieures qui transforment avec élégance les espaces résidentiels et commerciaux. Pose simple, finition raffinée, sans travaux lourds.\""
+              }
+            }
+          },
+          {
+            "type": "lista",
+            "style": "normal",
+            "col": 2,
+            "v": {
+              "items": [
+                {
+                  "text": {
+                    "pt": "Rodatetos e molduras de teto",
+                    "en": "Crown and ceiling mouldings",
+                    "fr": "Corniches et moulures de plafond"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Molduras de parede e painéis",
+                    "en": "Wall mouldings and panels",
+                    "fr": "Moulures murales et panneaux"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Rodapés decorativos",
+                    "en": "Decorative skirting",
+                    "fr": "Plinthes décoratives"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Perfis de canto e remate",
+                    "en": "Corner and trim profiles",
+                    "fr": "Profils d'angle et de finition"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:statement",
+        "name": "Início · Frase de marca",
+        "folderId": "@folder:inicio",
+        "layout": 1,
+        "bg": "marca",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Fabricação Nacional · Desde 2016",
+                "en": "Made in Portugal · Since 2016",
+                "fr": "Fabrication portugaise · Depuis 2016"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "frase",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Mais de 500 projetos construídos com *rigor e inovação.*",
+                "en": "Over 500 projects built with *rigour and innovation.*",
+                "fr": "Plus de 500 chantiers réalisés avec *rigueur et innovation.*"
+              },
+              "align": "center",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "\"Certificação CE · Declaração de Desempenho · Exportação para PT, ES e FR\"",
+                "en": "CE Certification · Declaration of Performance · Exports to PT, ES & FR",
+                "fr": "Certification CE · Déclaration de performance · Export PT, ES & FR"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:metal",
+        "name": "Início · Perfis metálicos",
+        "folderId": "@folder:inicio",
+        "layout": 1,
+        "bg": "claro",
+        "anchor": "#metal",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Linha de Produto",
+                "en": "Product Line",
+                "fr": "Gamme de produits"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Perfis Metálicos",
+                "en": "Metal Profiles",
+                "fr": "Profilés métalliques"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "iconetexto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "title": {
+                    "pt": "Tetos Falsos",
+                    "en": "Suspended Ceilings",
+                    "fr": "Faux plafonds"
+                  },
+                  "text": {
+                    "pt": "Sistema de suspensão para tetos rebaixados. Maior controlo acústico e térmico.\n\n- Perfil TC\n- Perfil U / Raia",
+                    "en": "Suspension system for lowered ceilings. Better acoustic and thermal control.\n\n- Perfil TC\n- Perfil U / Raia",
+                    "fr": "Système de suspension pour plafonds abaissés. Meilleur contrôle acoustique et thermique.\n\n- Perfil TC\n- Perfil U / Raia"
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "Divisórias",
+                    "en": "Partitions",
+                    "fr": "Cloisons"
+                  },
+                  "text": {
+                    "pt": "Partições leves e versáteis para escritórios e espaços comerciais.\n\n- Montante Stud\n- Canal Raia",
+                    "en": "Light, versatile partitions for offices and commercial spaces.\n\n- Montante Stud\n- Canal Raia",
+                    "fr": "Cloisons légères et polyvalentes pour bureaux et espaces commerciaux.\n\n- Montante Stud\n- Canal Raia"
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "Complementos",
+                    "en": "Trims",
+                    "fr": "Compléments"
+                  },
+                  "text": {
+                    "pt": "\"Alhetas, cantoneiras e perfis de acabamento para soluções completas.\"\n\n- Alheta Lacada\n- Cantoneira L\n- Cantoneira L Perf.",
+                    "en": "\"Shadow gaps, angles and finishing profiles for complete solutions.\"\n\n- Alheta Lacada\n- Cantoneira L\n- Cantoneira L Perf.",
+                    "fr": "\"Joints creux, cornières et profils de finition pour des solutions complètes.\"\n\n- Alheta Lacada\n- Cantoneira L\n- Cantoneira L Perf."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "Acessórios",
+                    "en": "Accessories",
+                    "fr": "Accessoires"
+                  },
+                  "text": {
+                    "pt": "\"Sistema completo de fixação, suspensão e conectividade para qualquer solução.\"\n\n- Alçapão\n- Cruzeta / Emenda\n- Perfil Omega · Pivot",
+                    "en": "\"Complete fixing, suspension and connection system for any solution.\"\n\n- Alçapão\n- Cruzeta / Emenda\n- Perfil Omega · Pivot",
+                    "fr": "Système complet de fixation, suspension et connexion pour toute solution.\n\n- Alçapão\n- Cruzeta / Emenda\n- Perfil Omega · Pivot"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:obras-home",
+        "name": "Início · Obras em destaque",
+        "folderId": "@folder:inicio",
+        "layout": 1,
+        "bg": "claro",
+        "anchor": "#obras",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Portefólio · Obras",
+                "en": "Portfolio · Projects",
+                "fr": "Portfolio · Chantiers"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Projetos que falam por nós",
+                "en": "Projects that speak for us",
+                "fr": "Des chantiers qui parlent pour nous"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "Cada obra mostra o antes e o depois — arraste para ver a transformação que as nossas soluções trazem à fachada.",
+                "en": "Each project shows the before and after — drag to see the transformation our solutions bring to the façade.",
+                "fr": "Chaque chantier montre l'avant et l'après — faites glisser pour voir la transformation que nos solutions apportent à la façade."
+              }
+            }
+          },
+          {
+            "type": "paginas",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "pick": [
+                "@page:reabilitacao-fachada-braga",
+                "@page:moradia-ponte-de-lima",
+                "@page:edificio-comercial-guimaraes"
+              ]
+            }
+          },
+          {
+            "type": "botao",
+            "style": "contorno",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Ver todas as obras",
+                "en": "View all projects",
+                "fr": "Voir tous les chantiers"
+              },
+              "dest": {
+                "kind": "page",
+                "pageId": "@page:obras"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:empresa",
+        "name": "Início · Empresa",
+        "folderId": "@folder:inicio",
+        "layout": 2,
+        "bg": "claro",
+        "anchor": "#about",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "destaque",
+            "col": 1,
+            "v": {
+              "text": {
+                "pt": "2016",
+                "en": "2016",
+                "fr": "2016"
+              },
+              "align": "left",
+              "level": "h3"
+            }
+          },
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": 2,
+            "v": {
+              "text": {
+                "pt": "Quem Somos",
+                "en": "About Us",
+                "fr": "Qui sommes-nous"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": 2,
+            "v": {
+              "text": {
+                "pt": "\"Criados para responder a uma *necessidade real* da construção moderna.\"",
+                "en": "\"Created to answer a *real need* of modern construction.\"",
+                "fr": "\"Créés pour répondre à un *besoin réel* de la construction moderne.\""
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": 2,
+            "v": {
+              "body": {
+                "pt": "\"A Winterplateau foi fundada em Janeiro de 2016 em Vila Verde, Braga, com o propósito de desenvolver e colmatar uma necessidade detectada no mercado da construção civil e reabilitação — produtos inovadores em EPS multifuncionais assentes nas melhores práticas e tecnologias. Uma busca incansável por qualidade que resulta em vantagens competitivas concretas para os nossos clientes.\"",
+                "en": "\"Winterplateau was founded in January 2016 in Vila Verde, Braga, to develop and answer a need identified in the construction and renovation market — innovative, multifunctional EPS products built on best practices and technologies. A relentless pursuit of quality that delivers concrete competitive advantages to our clients.\"",
+                "fr": "\"Winterplateau a été fondée en janvier 2016 à Vila Verde, Braga, pour développer et répondre à un besoin identifié sur le marché de la construction et de la réhabilitation — des produits EPS innovants et multifonctionnels fondés sur les meilleures pratiques et technologies. Une recherche incessante de qualité qui se traduit par des avantages compétitifs concrets pour nos clients.\""
+              }
+            }
+          },
+          {
+            "type": "lista",
+            "style": "normal",
+            "col": 2,
+            "v": {
+              "items": [
+                {
+                  "text": {
+                    "pt": "Certificação CE",
+                    "en": "CE Certification",
+                    "fr": "Certification CE"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Decl. de Desempenho",
+                    "en": "Decl. of Performance",
+                    "fr": "Décl. de performance"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Co-financiado UE",
+                    "en": "EU Co-funded",
+                    "fr": "Cofinancé UE"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:downloads",
+        "name": "Início · Downloads",
+        "folderId": "@folder:inicio",
+        "layout": 1,
+        "bg": "claro",
+        "anchor": "#downloads",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Documentação Técnica",
+                "en": "Technical Documentation",
+                "fr": "Documentation technique"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Downloads",
+                "en": "Downloads",
+                "fr": "Téléchargements"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "documentos",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "name": {
+                    "pt": "Declaração de Desempenho",
+                    "en": "Declaration of Performance",
+                    "fr": "Déclaration de performance"
+                  },
+                  "file": {
+                    "same": true,
+                    "values": {
+                      "pt": "@media:DECLARACAO_DESEMPENHO.pdf"
+                    }
+                  }
+                },
+                {
+                  "name": {
+                    "pt": "Declaração de Conformidade",
+                    "en": "Declaration of Conformity",
+                    "fr": "Déclaration de conformité"
+                  },
+                  "file": {
+                    "same": true,
+                    "values": {
+                      "pt": "@media:declaracao-conformidade.pdf"
+                    }
+                  }
+                },
+                {
+                  "name": {
+                    "pt": "DOP — Declaration of Performance",
+                    "en": "DOP — Declaration of Performance",
+                    "fr": "DOP — Déclaration de performance"
+                  },
+                  "file": {
+                    "same": true,
+                    "values": {
+                      "pt": "@media:dop.pdf"
+                    }
+                  }
+                },
+                {
+                  "name": {
+                    "pt": "Modo de Aplicação Molduras",
+                    "en": "Mouldings Application Guide",
+                    "fr": "Guide d'application des moulures"
+                  },
+                  "file": {
+                    "same": true,
+                    "values": {
+                      "pt": "@media:modo-de-aplicacao-molduras.pdf"
+                    }
+                  }
+                },
+                {
+                  "name": {
+                    "pt": "Catálogo Winterplateau",
+                    "en": "Winterplateau Catalogue",
+                    "fr": "Catalogue Winterplateau"
+                  },
+                  "file": {
+                    "same": true,
+                    "values": {
+                      "pt": "@media:WINTERPLATEAU_Catalogo-XS_AF.pdf"
+                    }
+                  }
+                },
+                {
+                  "name": {
+                    "pt": "Catálogo Rodatetos",
+                    "en": "Crown Mouldings Catalogue",
+                    "fr": "Catalogue Corniches intérieures"
+                  },
+                  "file": {
+                    "same": true,
+                    "values": {
+                      "pt": "@media:catalogo-rodatetos-winterplateau_Versao-1.pdf"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:cta",
+        "name": "Início · Chamada para orçamento",
+        "folderId": "@folder:inicio",
+        "layout": 1,
+        "bg": "marca",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "frase",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Pronto para o *próximo projecto?*",
+                "en": "Ready for your *next project?*",
+                "fr": "Prêt pour votre *prochain chantier ?*"
+              },
+              "align": "center",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "Peça um orçamento personalizado ou fale com a nossa equipa técnica.",
+                "en": "Request a tailored quote or talk to our technical team.",
+                "fr": "Demandez un devis personnalisé ou parlez à notre équipe technique."
+              }
+            }
+          },
+          {
+            "type": "botao",
+            "style": "cheio",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Solicitar Orçamento",
+                "en": "Request a Quote",
+                "fr": "Demander un devis"
+              },
+              "dest": {
+                "kind": "anchor",
+                "blockId": "@block:orcamento"
+              }
+            }
+          },
+          {
+            "type": "botao",
+            "style": "contorno",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Descarregar Catálogo",
+                "en": "Download Catalogue",
+                "fr": "Télécharger le catalogue"
+              },
+              "dest": {
+                "kind": "anchor",
+                "blockId": "@block:downloads"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:orcamento",
+        "name": "Início · Pedido de orçamento",
+        "folderId": "@folder:inicio",
+        "layout": 2,
+        "bg": "claro",
+        "anchor": "#orcamento",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": 1,
+            "v": {
+              "text": {
+                "pt": "Pedido de Orçamento",
+                "en": "Quote Request",
+                "fr": "Demande de devis"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": 1,
+            "v": {
+              "text": {
+                "pt": "Peça o seu orçamento",
+                "en": "Request your quote",
+                "fr": "Demandez votre devis"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": 1,
+            "v": {
+              "body": {
+                "pt": "Envie os detalhes da sua obra — respondemos com uma proposta personalizada em 1–2 dias úteis.",
+                "en": "Send us your project details — we reply with a tailored proposal within 1–2 working days.",
+                "fr": "Envoyez-nous les détails de votre chantier — nous répondons avec une proposition personnalisée sous 1 à 2 jours ouvrés."
+              }
+            }
+          },
+          {
+            "type": "lista",
+            "style": "normal",
+            "col": 1,
+            "v": {
+              "items": [
+                {
+                  "text": {
+                    "pt": "Resposta até 48 horas",
+                    "en": "Reply within 48 hours",
+                    "fr": "Réponse sous 48 heures"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Aconselhamento técnico incluído",
+                    "en": "Technical advice included",
+                    "fr": "Conseil technique inclus"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Sem compromisso",
+                    "en": "No obligation",
+                    "fr": "Sans engagement"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "formulario",
+            "style": "normal",
+            "col": 2,
+            "v": {
+              "types": [
+                {
+                  "name": {
+                    "pt": "Reabilitação de fachada",
+                    "en": "Façade renovation",
+                    "fr": "Réhabilitation de façade"
+                  }
+                },
+                {
+                  "name": {
+                    "pt": "Construção nova",
+                    "en": "New build",
+                    "fr": "Construction neuve"
+                  }
+                },
+                {
+                  "name": {
+                    "pt": "EPS interior",
+                    "en": "Interior EPS",
+                    "fr": "EPS intérieur"
+                  }
+                },
+                {
+                  "name": {
+                    "pt": "Perfis metálicos",
+                    "en": "Metal profiles",
+                    "fr": "Profilés métalliques"
+                  }
+                },
+                {
+                  "name": {
+                    "pt": "Outro",
+                    "en": "Other",
+                    "fr": "Autre"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "texto",
+            "style": "pequeno",
+            "col": 2,
+            "v": {
+              "body": {
+                "pt": "Os pedidos seguem diretamente para geral@winterplateau.pt",
+                "en": "Requests go directly to geral@winterplateau.pt",
+                "fr": "Les demandes sont envoyées directement à geral@winterplateau.pt"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:contactos",
+        "name": "Início · Contactos",
+        "folderId": "@folder:inicio",
+        "layout": 2,
+        "bg": "claro",
+        "anchor": "#contact",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": 1,
+            "v": {
+              "text": {
+                "pt": "Contactos",
+                "en": "Contacts",
+                "fr": "Contacts"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": 1,
+            "v": {
+              "text": {
+                "pt": "Fale Connosco",
+                "en": "Get in Touch",
+                "fr": "Contactez-nous"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "contacto",
+            "style": "normal",
+            "col": 1,
+            "v": {
+              "address": "Avenida Principal, Nº 202\n\"4730-041 Atiães, Vila Verde\"\n\"Braga, Portugal\"",
+              "phone": "+351 253 193 667",
+              "email": "geral@winterplateau.pt"
+            }
+          },
+          {
+            "type": "redes",
+            "style": "normal",
+            "col": 1,
+            "v": {
+              "items": [
+                {
+                  "network": "linkedin",
+                  "url": "https://www.linkedin.com/company/winterplateau/"
+                },
+                {
+                  "network": "facebook",
+                  "url": "https://www.facebook.com/winterplateau/"
+                },
+                {
+                  "network": "instagram",
+                  "url": "https://www.instagram.com/winterplateau/"
+                }
+              ]
+            }
+          },
+          {
+            "type": "mapa",
+            "style": "normal",
+            "col": 2,
+            "v": {
+              "address": "Avenida Principal 202, 4730-041 Atiães, Vila Verde, Braga, Portugal",
+              "zoom": "rua",
+              "title": {
+                "pt": "Winterplateau",
+                "en": "Winterplateau",
+                "fr": "Winterplateau"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:obras-intro",
+        "name": "Obras · Introdução",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "destaque",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "As nossas Obras",
+                "en": "Our Projects",
+                "fr": "Nos Chantiers"
+              },
+              "align": "left",
+              "level": "h1"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "\"Reabilitação de fachadas e construção nova por todo o norte de Portugal. Em cada projeto, arraste a comparação para ver a transformação que as molduras e o isolamento Winterplateau trazem ao edifício.\"",
+                "en": "\"Façade renovation and new construction across northern Portugal. On each project, drag the comparison to see the transformation Winterplateau mouldings and insulation bring to the building.\"",
+                "fr": "\"Réhabilitation de façades et construction neuve dans tout le nord du Portugal. Sur chaque chantier, faites glisser la comparaison pour voir la transformation apportée par les moulures et l'isolation Winterplateau.\""
+              }
+            }
+          },
+          {
+            "type": "paginas",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "pick": [
+                "@page:reabilitacao-fachada-braga",
+                "@page:moradia-ponte-de-lima",
+                "@page:edificio-comercial-guimaraes",
+                "@page:apartamentos-vila-verde",
+                "@page:restauro-solar-barcelos",
+                "@page:clinica-famalicao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:obras-cta",
+        "name": "Obras · Chamada para orçamento",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "marca",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "frase",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Tem um projeto em mente?",
+                "en": "Have a project in mind?",
+                "fr": "Un projet en tête ?"
+              },
+              "align": "center",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "Fale com a nossa equipa técnica e descubra a solução certa para a sua obra.",
+                "en": "Talk to our technical team and find the right solution for your project.",
+                "fr": "Parlez à notre équipe technique et trouvez la solution adaptée à votre chantier."
+              }
+            }
+          },
+          {
+            "type": "botao",
+            "style": "cheio",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Solicitar Orçamento",
+                "en": "Request a Quote",
+                "fr": "Demander un devis"
+              },
+              "dest": {
+                "kind": "anchor",
+                "blockId": "@block:orcamento"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:reabilitacao-fachada-braga-cabecalho",
+        "name": "Reabilitação de Fachada · Cabeçalho",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Reabilitação · Braga · 2023",
+                "en": "Renovation · Braga · 2023",
+                "fr": "Réhabilitation · Braga · 2023"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "destaque",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Reabilitação de Fachada",
+                "en": "Façade Renovation",
+                "fr": "Réhabilitation de façade"
+              },
+              "align": "left",
+              "level": "h1"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "\"Recuperação integral da envolvente de um edifício de habitação dos anos 80. Aplicação de sistema ETICS (capoto) com molduras decorativas em EPS — cornijas, bandas e peitoris — devolvendo carácter e eficiência térmica ao imóvel.\"",
+                "en": "\"Full recovery of the envelope of a 1980s residential building. ETICS (external insulation) with decorative EPS mouldings — cornices, bands and sills — restoring character and thermal efficiency to the property.\"",
+                "fr": "\"Récupération intégrale de l'enveloppe d'un immeuble d'habitation des années 80. Système ITE avec moulures décoratives en EPS — corniches, bandeaux et appuis — redonnant caractère et efficacité thermique au bâtiment.\""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:reabilitacao-fachada-braga-numeros",
+        "name": "Reabilitação de Fachada · Números",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "numeros",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "value": "420",
+                  "label": {
+                    "pt": "Fachada",
+                    "en": "Façade",
+                    "fr": "Façade"
+                  },
+                  "sub": {
+                    "pt": "m²",
+                    "en": "m²",
+                    "fr": "m²"
+                  }
+                },
+                {
+                  "value": "6",
+                  "label": {
+                    "pt": "Duração",
+                    "en": "Duration",
+                    "fr": "Durée"
+                  },
+                  "sub": {
+                    "pt": "sem",
+                    "en": "wks",
+                    "fr": "sem."
+                  }
+                },
+                {
+                  "value": "B→A+",
+                  "label": {
+                    "pt": "Eficiência",
+                    "en": "Efficiency",
+                    "fr": "Efficacité"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:reabilitacao-fachada-braga-processo",
+        "name": "Reabilitação de Fachada · Processo",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "O Processo",
+                "en": "The Process",
+                "fr": "Le processus"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Durante a obra",
+                "en": "During the works",
+                "fr": "Pendant les travaux"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "iconetexto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "title": {
+                    "pt": "01 · Diagnóstico",
+                    "en": "01 · Diagnosis",
+                    "fr": "01 · Diagnostic"
+                  },
+                  "text": {
+                    "pt": "Levantamento de patologias, fissuras e pontes térmicas da fachada existente.",
+                    "en": "Survey of defects, cracks and thermal bridges on the existing façade.",
+                    "fr": "Relevé des pathologies, fissures et ponts thermiques de la façade existante."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "02 · Preparação",
+                    "en": "02 · Preparation",
+                    "fr": "02 · Préparation"
+                  },
+                  "text": {
+                    "pt": "Limpeza, reparação do reboco e aplicação do sistema de isolamento ETICS.",
+                    "en": "Cleaning, render repair and installation of the ETICS insulation system.",
+                    "fr": "Nettoyage, réparation de l'enduit et pose du système d'isolation ITE."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "03 · Molduras EPS",
+                    "en": "03 · EPS Mouldings",
+                    "fr": "03 · Moulures EPS"
+                  },
+                  "text": {
+                    "pt": "Colagem e fixação das cornijas, bandas e peitoris Winterplateau.",
+                    "en": "Bonding and fixing of Winterplateau cornices, bands and sills.",
+                    "fr": "Collage et fixation des corniches, bandeaux et appuis Winterplateau."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "04 · Acabamento",
+                    "en": "04 · Finishing",
+                    "fr": "04 · Finitions"
+                  },
+                  "text": {
+                    "pt": "\"Barramento armado, primário e revestimento final na cor escolhida.\"",
+                    "en": "Reinforced base coat, primer and final render in the chosen colour.",
+                    "fr": "Sous-enduit armé, primaire et revêtement final dans la couleur choisie."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:reabilitacao-fachada-braga-materiais",
+        "name": "Reabilitação de Fachada · Materiais",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Soluções aplicadas",
+                "en": "Solutions applied",
+                "fr": "Solutions appliquées"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Materiais Winterplateau nesta obra",
+                "en": "Winterplateau materials in this project",
+                "fr": "Matériaux Winterplateau sur ce chantier"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "lista",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "text": {
+                    "pt": "Capoto / ETICS",
+                    "en": "ETICS / External Insulation",
+                    "fr": "ITE (Capoto)"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Cornijas",
+                    "en": "Cornices",
+                    "fr": "Corniches"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Bandas",
+                    "en": "Bands",
+                    "fr": "Bandeaux"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Peitoris",
+                    "en": "Window Sills",
+                    "fr": "Appuis de fenêtre"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:reabilitacao-fachada-braga-outras",
+        "name": "Reabilitação de Fachada · Outras obras",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Outras obras",
+                "en": "Other projects",
+                "fr": "Autres chantiers"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "paginas",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "pick": [
+                "@page:moradia-ponte-de-lima",
+                "@page:edificio-comercial-guimaraes",
+                "@page:apartamentos-vila-verde"
+              ]
+            }
+          },
+          {
+            "type": "botao",
+            "style": "contorno",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Ver todas",
+                "en": "View all",
+                "fr": "Voir tout"
+              },
+              "dest": {
+                "kind": "page",
+                "pageId": "@page:obras"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:moradia-ponte-de-lima-cabecalho",
+        "name": "Moradia Unifamiliar · Cabeçalho",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Construção Nova · Ponte de Lima · 2022",
+                "en": "New Build · Ponte de Lima · 2022",
+                "fr": "Construction neuve · Ponte de Lima · 2022"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "destaque",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Moradia Unifamiliar",
+                "en": "Single-Family House",
+                "fr": "Maison individuelle"
+              },
+              "align": "left",
+              "level": "h1"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "\"Construção de raiz de moradia contemporânea. As molduras de vão e a cornija de remate em EPS conferem profundidade à fachada sem o peso e o custo da pedra natural.\"",
+                "en": "\"New-build contemporary house. EPS opening surrounds and top cornice give the façade depth without the weight and cost of natural stone.\"",
+                "fr": "\"Construction neuve d'une maison contemporaine. Les encadrements et la corniche en EPS donnent de la profondeur à la façade sans le poids ni le coût de la pierre naturelle.\""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:moradia-ponte-de-lima-numeros",
+        "name": "Moradia Unifamiliar · Números",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "numeros",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "value": "260",
+                  "label": {
+                    "pt": "Área",
+                    "en": "Area",
+                    "fr": "Surface"
+                  },
+                  "sub": {
+                    "pt": "m²",
+                    "en": "m²",
+                    "fr": "m²"
+                  }
+                },
+                {
+                  "value": "4",
+                  "label": {
+                    "pt": "Duração",
+                    "en": "Duration",
+                    "fr": "Durée"
+                  },
+                  "sub": {
+                    "pt": "sem",
+                    "en": "wks",
+                    "fr": "sem."
+                  }
+                },
+                {
+                  "value": "12",
+                  "label": {
+                    "pt": "Molduras",
+                    "en": "Mouldings",
+                    "fr": "Moulures"
+                  },
+                  "sub": {
+                    "pt": "vãos",
+                    "en": "openings",
+                    "fr": "baies"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:moradia-ponte-de-lima-processo",
+        "name": "Moradia Unifamiliar · Processo",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "O Processo",
+                "en": "The Process",
+                "fr": "Le processus"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Durante a obra",
+                "en": "During the works",
+                "fr": "Pendant les travaux"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "iconetexto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "title": {
+                    "pt": "01 · Projeto",
+                    "en": "01 · Design",
+                    "fr": "01 · Conception"
+                  },
+                  "text": {
+                    "pt": "Definição do desenho de fachada e seleção dos perfis de moldura.",
+                    "en": "Façade design definition and selection of moulding profiles.",
+                    "fr": "Définition du dessin de façade et sélection des profils de moulures."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "02 · Estrutura",
+                    "en": "02 · Structure",
+                    "fr": "02 · Structure"
+                  },
+                  "text": {
+                    "pt": "Alvenaria concluída e fachada preparada para receber as molduras.",
+                    "en": "Masonry completed and façade prepared to receive the mouldings.",
+                    "fr": "Maçonnerie achevée et façade préparée pour recevoir les moulures."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "03 · Aplicação",
+                    "en": "03 · Installation",
+                    "fr": "03 · Pose"
+                  },
+                  "text": {
+                    "pt": "\"Montagem das molduras de vão, pilastras e cornija de remate.\"",
+                    "en": "\"Installation of opening surrounds, pilasters and top cornice.\"",
+                    "fr": "\"Pose des encadrements, pilastres et corniche de couronnement.\""
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "04 · Pintura",
+                    "en": "04 · Painting",
+                    "fr": "04 · Peinture"
+                  },
+                  "text": {
+                    "pt": "Acabamento final e tratamento hidrófugo das superfícies.",
+                    "en": "Final finishing and water-repellent treatment of the surfaces.",
+                    "fr": "Finitions et traitement hydrofuge des surfaces."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:moradia-ponte-de-lima-materiais",
+        "name": "Moradia Unifamiliar · Materiais",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Soluções aplicadas",
+                "en": "Solutions applied",
+                "fr": "Solutions appliquées"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Materiais Winterplateau nesta obra",
+                "en": "Winterplateau materials in this project",
+                "fr": "Matériaux Winterplateau sur ce chantier"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "lista",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "text": {
+                    "pt": "Molduras de Vão",
+                    "en": "Opening Surrounds",
+                    "fr": "Encadrements de baies"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Cornija",
+                    "en": "Cornice",
+                    "fr": "Corniche"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Pilastras",
+                    "en": "Pilasters",
+                    "fr": "Pilastres"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:moradia-ponte-de-lima-outras",
+        "name": "Moradia Unifamiliar · Outras obras",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Outras obras",
+                "en": "Other projects",
+                "fr": "Autres chantiers"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "paginas",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "pick": [
+                "@page:reabilitacao-fachada-braga",
+                "@page:edificio-comercial-guimaraes",
+                "@page:apartamentos-vila-verde"
+              ]
+            }
+          },
+          {
+            "type": "botao",
+            "style": "contorno",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Ver todas",
+                "en": "View all",
+                "fr": "Voir tout"
+              },
+              "dest": {
+                "kind": "page",
+                "pageId": "@page:obras"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:edificio-comercial-guimaraes-cabecalho",
+        "name": "Edifício Comercial · Cabeçalho",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Reabilitação · Guimarães · 2024",
+                "en": "Renovation · Guimarães · 2024",
+                "fr": "Réhabilitation · Guimarães · 2024"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "destaque",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Edifício Comercial",
+                "en": "Commercial Building",
+                "fr": "Immeuble commercial"
+              },
+              "align": "left",
+              "level": "h1"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "\"Modernização da fachada de um edifício comercial no centro histórico. Bandas horizontais e pilastras verticais em EPS criam um ritmo elegante que valoriza as montras ao nível da rua.\"",
+                "en": "\"Façade modernisation of a commercial building in the historic centre. Horizontal EPS bands and vertical pilasters create an elegant rhythm that enhances the street-level shopfronts.\"",
+                "fr": "\"Modernisation de la façade d'un immeuble commercial du centre historique. Bandeaux horizontaux et pilastres en EPS créent un rythme élégant qui met en valeur les vitrines.\""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:edificio-comercial-guimaraes-numeros",
+        "name": "Edifício Comercial · Números",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "numeros",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "value": "680",
+                  "label": {
+                    "pt": "Fachada",
+                    "en": "Façade",
+                    "fr": "Façade"
+                  },
+                  "sub": {
+                    "pt": "m²",
+                    "en": "m²",
+                    "fr": "m²"
+                  }
+                },
+                {
+                  "value": "8",
+                  "label": {
+                    "pt": "Duração",
+                    "en": "Duration",
+                    "fr": "Durée"
+                  },
+                  "sub": {
+                    "pt": "sem",
+                    "en": "wks",
+                    "fr": "sem."
+                  }
+                },
+                {
+                  "value": "3",
+                  "label": {
+                    "pt": "Intervenção",
+                    "en": "Scope",
+                    "fr": "Intervention"
+                  },
+                  "sub": {
+                    "pt": "pisos",
+                    "en": "floors",
+                    "fr": "étages"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:edificio-comercial-guimaraes-processo",
+        "name": "Edifício Comercial · Processo",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "O Processo",
+                "en": "The Process",
+                "fr": "Le processus"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Durante a obra",
+                "en": "During the works",
+                "fr": "Pendant les travaux"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "iconetexto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "title": {
+                    "pt": "01 · Estudo",
+                    "en": "01 · Study",
+                    "fr": "01 · Étude"
+                  },
+                  "text": {
+                    "pt": "Compatibilização com as regras do centro histórico e licenciamento.",
+                    "en": "Compliance with historic-centre rules and permitting.",
+                    "fr": "Mise en conformité avec les règles du centre historique et permis."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "02 · Isolamento",
+                    "en": "02 · Insulation",
+                    "fr": "02 · Isolation"
+                  },
+                  "text": {
+                    "pt": "Aplicação de capoto em toda a envolvente exterior.",
+                    "en": "ETICS applied to the entire external envelope.",
+                    "fr": "ITE appliquée sur toute l'enveloppe extérieure."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "03 · Composição",
+                    "en": "03 · Composition",
+                    "fr": "03 · Composition"
+                  },
+                  "text": {
+                    "pt": "Montagem das bandas e pilastras segundo o desenho aprovado.",
+                    "en": "Installation of bands and pilasters following the approved design.",
+                    "fr": "Pose des bandeaux et pilastres selon le dessin approuvé."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "04 · Entrega",
+                    "en": "04 · Handover",
+                    "fr": "04 · Livraison"
+                  },
+                  "text": {
+                    "pt": "\"Acabamento, limpeza e entrega da obra ao cliente.\"",
+                    "en": "Finishing, cleaning and handover to the client.",
+                    "fr": "Finitions, nettoyage et livraison au client."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:edificio-comercial-guimaraes-materiais",
+        "name": "Edifício Comercial · Materiais",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Soluções aplicadas",
+                "en": "Solutions applied",
+                "fr": "Solutions appliquées"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Materiais Winterplateau nesta obra",
+                "en": "Winterplateau materials in this project",
+                "fr": "Matériaux Winterplateau sur ce chantier"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "lista",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "text": {
+                    "pt": "Bandas",
+                    "en": "Bands",
+                    "fr": "Bandeaux"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Pilastras",
+                    "en": "Pilasters",
+                    "fr": "Pilastres"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Cornijas",
+                    "en": "Cornices",
+                    "fr": "Corniches"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Capoto / ETICS",
+                    "en": "ETICS / External Insulation",
+                    "fr": "ITE (Capoto)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:edificio-comercial-guimaraes-outras",
+        "name": "Edifício Comercial · Outras obras",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Outras obras",
+                "en": "Other projects",
+                "fr": "Autres chantiers"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "paginas",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "pick": [
+                "@page:reabilitacao-fachada-braga",
+                "@page:moradia-ponte-de-lima",
+                "@page:apartamentos-vila-verde"
+              ]
+            }
+          },
+          {
+            "type": "botao",
+            "style": "contorno",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Ver todas",
+                "en": "View all",
+                "fr": "Voir tout"
+              },
+              "dest": {
+                "kind": "page",
+                "pageId": "@page:obras"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:apartamentos-vila-verde-cabecalho",
+        "name": "Bloco de Apartamentos · Cabeçalho",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Construção Nova · Vila Verde · 2023",
+                "en": "New Build · Vila Verde · 2023",
+                "fr": "Construction neuve · Vila Verde · 2023"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "destaque",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Bloco de Apartamentos",
+                "en": "Apartment Block",
+                "fr": "Immeuble résidentiel"
+              },
+              "align": "left",
+              "level": "h1"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "\"Empreendimento de habitação coletiva com fachada ventilada e remates em EPS. Solução leve que acelera a obra e garante uniformidade em todos os pisos.\"",
+                "en": "\"Multi-family housing development with ventilated façade and EPS trims. A lightweight solution that speeds up construction and ensures uniformity across all floors.\"",
+                "fr": "\"Programme de logements collectifs avec façade ventilée et finitions en EPS. Une solution légère qui accélère le chantier et garantit l'uniformité à tous les étages.\""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:apartamentos-vila-verde-numeros",
+        "name": "Bloco de Apartamentos · Números",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "numeros",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "value": "1.240",
+                  "label": {
+                    "pt": "Fachada",
+                    "en": "Façade",
+                    "fr": "Façade"
+                  },
+                  "sub": {
+                    "pt": "m²",
+                    "en": "m²",
+                    "fr": "m²"
+                  }
+                },
+                {
+                  "value": "14",
+                  "label": {
+                    "pt": "Duração",
+                    "en": "Duration",
+                    "fr": "Durée"
+                  },
+                  "sub": {
+                    "pt": "sem",
+                    "en": "wks",
+                    "fr": "sem."
+                  }
+                },
+                {
+                  "value": "20",
+                  "label": {
+                    "pt": "Habitação",
+                    "en": "Housing",
+                    "fr": "Logements"
+                  },
+                  "sub": {
+                    "pt": "frações",
+                    "en": "units",
+                    "fr": "logements"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:apartamentos-vila-verde-processo",
+        "name": "Bloco de Apartamentos · Processo",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "O Processo",
+                "en": "The Process",
+                "fr": "Le processus"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Durante a obra",
+                "en": "During the works",
+                "fr": "Pendant les travaux"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "iconetexto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "title": {
+                    "pt": "01 · Planeamento",
+                    "en": "01 · Planning",
+                    "fr": "01 · Planification"
+                  },
+                  "text": {
+                    "pt": "Faseamento da obra por alçado e logística de estaleiro.",
+                    "en": "Phasing of works by elevation and site logistics.",
+                    "fr": "Phasage des travaux par façade et logistique de chantier."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "02 · Isolamento",
+                    "en": "02 · Insulation",
+                    "fr": "02 · Isolation"
+                  },
+                  "text": {
+                    "pt": "Sistema ETICS aplicado piso a piso.",
+                    "en": "ETICS system applied floor by floor.",
+                    "fr": "Système ITE appliqué étage par étage."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "03 · Molduras",
+                    "en": "03 · Mouldings",
+                    "fr": "03 · Moulures"
+                  },
+                  "text": {
+                    "pt": "\"Bandas, cornijas e peitoris montados em série.\"",
+                    "en": "\"Bands, cornices and sills installed in series.\"",
+                    "fr": "\"Bandeaux, corniches et appuis posés en série.\""
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "04 · Acabamento",
+                    "en": "04 · Finishing",
+                    "fr": "04 · Finitions"
+                  },
+                  "text": {
+                    "pt": "Revestimento final e ensaios de desempenho térmico.",
+                    "en": "Final render and thermal performance testing.",
+                    "fr": "Revêtement final et essais de performance thermique."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:apartamentos-vila-verde-materiais",
+        "name": "Bloco de Apartamentos · Materiais",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Soluções aplicadas",
+                "en": "Solutions applied",
+                "fr": "Solutions appliquées"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Materiais Winterplateau nesta obra",
+                "en": "Winterplateau materials in this project",
+                "fr": "Matériaux Winterplateau sur ce chantier"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "lista",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "text": {
+                    "pt": "Cornijas",
+                    "en": "Cornices",
+                    "fr": "Corniches"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Bandas",
+                    "en": "Bands",
+                    "fr": "Bandeaux"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Peitoris",
+                    "en": "Window Sills",
+                    "fr": "Appuis de fenêtre"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Capoto / ETICS",
+                    "en": "ETICS / External Insulation",
+                    "fr": "ITE (Capoto)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:apartamentos-vila-verde-outras",
+        "name": "Bloco de Apartamentos · Outras obras",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Outras obras",
+                "en": "Other projects",
+                "fr": "Autres chantiers"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "paginas",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "pick": [
+                "@page:reabilitacao-fachada-braga",
+                "@page:moradia-ponte-de-lima",
+                "@page:edificio-comercial-guimaraes"
+              ]
+            }
+          },
+          {
+            "type": "botao",
+            "style": "contorno",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Ver todas",
+                "en": "View all",
+                "fr": "Voir tout"
+              },
+              "dest": {
+                "kind": "page",
+                "pageId": "@page:obras"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:restauro-solar-barcelos-cabecalho",
+        "name": "Restauro de Solar · Cabeçalho",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Reabilitação · Barcelos · 2021",
+                "en": "Renovation · Barcelos · 2021",
+                "fr": "Réhabilitation · Barcelos · 2021"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "destaque",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Restauro de Solar",
+                "en": "Manor House Restoration",
+                "fr": "Restauration d'un manoir"
+              },
+              "align": "left",
+              "level": "h1"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "\"Recuperação de elementos decorativos de um solar do século XIX. Réplicas das molduras originais executadas em EPS de alta densidade, fiéis ao desenho histórico.\"",
+                "en": "\"Recovery of decorative elements of a 19th-century manor house. Replicas of the original mouldings made in high-density EPS, faithful to the historic design.\"",
+                "fr": "\"Restauration des éléments décoratifs d'un manoir du XIXe siècle. Répliques des moulures d'origine en EPS haute densité, fidèles au dessin historique.\""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:restauro-solar-barcelos-numeros",
+        "name": "Restauro de Solar · Números",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "numeros",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "value": "310",
+                  "label": {
+                    "pt": "Fachada",
+                    "en": "Façade",
+                    "fr": "Façade"
+                  },
+                  "sub": {
+                    "pt": "m²",
+                    "en": "m²",
+                    "fr": "m²"
+                  }
+                },
+                {
+                  "value": "10",
+                  "label": {
+                    "pt": "Duração",
+                    "en": "Duration",
+                    "fr": "Durée"
+                  },
+                  "sub": {
+                    "pt": "sem",
+                    "en": "wks",
+                    "fr": "sem."
+                  }
+                },
+                {
+                  "value": "1850",
+                  "label": {
+                    "pt": "Época",
+                    "en": "Era",
+                    "fr": "Époque"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:restauro-solar-barcelos-processo",
+        "name": "Restauro de Solar · Processo",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "O Processo",
+                "en": "The Process",
+                "fr": "Le processus"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Durante a obra",
+                "en": "During the works",
+                "fr": "Pendant les travaux"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "iconetexto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "title": {
+                    "pt": "01 · Levantamento",
+                    "en": "01 · Survey",
+                    "fr": "01 · Relevé"
+                  },
+                  "text": {
+                    "pt": "Medição e moldagem dos elementos decorativos originais.",
+                    "en": "Measurement and moulding of the original decorative elements.",
+                    "fr": "Relevé et moulage des éléments décoratifs d'origine."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "02 · Produção",
+                    "en": "02 · Production",
+                    "fr": "02 · Production"
+                  },
+                  "text": {
+                    "pt": "Corte CNC das réplicas em EPS de alta densidade.",
+                    "en": "CNC cutting of the replicas in high-density EPS.",
+                    "fr": "Découpe CNC des répliques en EPS haute densité."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "03 · Montagem",
+                    "en": "03 · Assembly",
+                    "fr": "03 · Montage"
+                  },
+                  "text": {
+                    "pt": "Aplicação cuidada respeitando a composição histórica.",
+                    "en": "Careful installation respecting the historic composition.",
+                    "fr": "Pose soignée dans le respect de la composition historique."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "04 · Patine",
+                    "en": "04 · Patina",
+                    "fr": "04 · Patine"
+                  },
+                  "text": {
+                    "pt": "Acabamento texturado a imitar a pedra envelhecida.",
+                    "en": "Textured finish imitating aged stone.",
+                    "fr": "Finition texturée imitant la pierre vieillie."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:restauro-solar-barcelos-materiais",
+        "name": "Restauro de Solar · Materiais",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Soluções aplicadas",
+                "en": "Solutions applied",
+                "fr": "Solutions appliquées"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Materiais Winterplateau nesta obra",
+                "en": "Winterplateau materials in this project",
+                "fr": "Matériaux Winterplateau sur ce chantier"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "lista",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "text": {
+                    "pt": "Molduras à medida",
+                    "en": "Custom mouldings",
+                    "fr": "Moulures sur mesure"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Cornijas",
+                    "en": "Cornices",
+                    "fr": "Corniches"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Pilastras",
+                    "en": "Pilasters",
+                    "fr": "Pilastres"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:restauro-solar-barcelos-outras",
+        "name": "Restauro de Solar · Outras obras",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Outras obras",
+                "en": "Other projects",
+                "fr": "Autres chantiers"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "paginas",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "pick": [
+                "@page:reabilitacao-fachada-braga",
+                "@page:moradia-ponte-de-lima",
+                "@page:edificio-comercial-guimaraes"
+              ]
+            }
+          },
+          {
+            "type": "botao",
+            "style": "contorno",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Ver todas",
+                "en": "View all",
+                "fr": "Voir tout"
+              },
+              "dest": {
+                "kind": "page",
+                "pageId": "@page:obras"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:clinica-famalicao-cabecalho",
+        "name": "Clínica Privada · Cabeçalho",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Construção Nova · V. N. Famalicão · 2024",
+                "en": "New Build · V. N. Famalicão · 2024",
+                "fr": "Construction neuve · V. N. Famalicão · 2024"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "destaque",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Clínica Privada",
+                "en": "Private Clinic",
+                "fr": "Clinique privée"
+              },
+              "align": "left",
+              "level": "h1"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "\"Fachada limpa e contemporânea para um edifício de saúde. Linhas horizontais em banda de EPS marcam os pisos e integram a sinalética exterior.\"",
+                "en": "\"A clean, contemporary façade for a healthcare building. Horizontal EPS bands mark the floors and integrate the exterior signage.\"",
+                "fr": "Façade épurée et contemporaine pour un bâtiment de santé. Des bandeaux horizontaux en EPS marquent les étages et intègrent la signalétique extérieure."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:clinica-famalicao-numeros",
+        "name": "Clínica Privada · Números",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "numeros",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "value": "540",
+                  "label": {
+                    "pt": "Fachada",
+                    "en": "Façade",
+                    "fr": "Façade"
+                  },
+                  "sub": {
+                    "pt": "m²",
+                    "en": "m²",
+                    "fr": "m²"
+                  }
+                },
+                {
+                  "value": "7",
+                  "label": {
+                    "pt": "Duração",
+                    "en": "Duration",
+                    "fr": "Durée"
+                  },
+                  "sub": {
+                    "pt": "sem",
+                    "en": "wks",
+                    "fr": "sem."
+                  }
+                },
+                {
+                  "value": "A+",
+                  "label": {
+                    "pt": "Eficiência",
+                    "en": "Efficiency",
+                    "fr": "Efficacité"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:clinica-famalicao-processo",
+        "name": "Clínica Privada · Processo",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "O Processo",
+                "en": "The Process",
+                "fr": "Le processus"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Durante a obra",
+                "en": "During the works",
+                "fr": "Pendant les travaux"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "iconetexto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "title": {
+                    "pt": "01 · Conceito",
+                    "en": "01 · Concept",
+                    "fr": "01 · Concept"
+                  },
+                  "text": {
+                    "pt": "Definição da linguagem de fachada com o gabinete de arquitetura.",
+                    "en": "Façade language defined with the architecture studio.",
+                    "fr": "Langage de façade défini avec le cabinet d'architecture."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "02 · Isolamento",
+                    "en": "02 · Insulation",
+                    "fr": "02 · Isolation"
+                  },
+                  "text": {
+                    "pt": "Capoto contínuo para máximo desempenho térmico.",
+                    "en": "Continuous ETICS for maximum thermal performance.",
+                    "fr": "ITE continue pour une performance thermique maximale."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "03 · Bandas",
+                    "en": "03 · Bands",
+                    "fr": "03 · Bandeaux"
+                  },
+                  "text": {
+                    "pt": "Montagem das bandas horizontais que ritmam os pisos.",
+                    "en": "Installation of the horizontal bands that rhythm the floors.",
+                    "fr": "Pose des bandeaux horizontaux qui rythment les étages."
+                  }
+                },
+                {
+                  "title": {
+                    "pt": "04 · Entrega",
+                    "en": "04 · Handover",
+                    "fr": "04 · Livraison"
+                  },
+                  "text": {
+                    "pt": "Acabamento branco e integração da sinalética.",
+                    "en": "White finish and signage integration.",
+                    "fr": "Finition blanche et intégration de la signalétique."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:clinica-famalicao-materiais",
+        "name": "Clínica Privada · Materiais",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "etiqueta",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Soluções aplicadas",
+                "en": "Solutions applied",
+                "fr": "Solutions appliquées"
+              }
+            }
+          },
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Materiais Winterplateau nesta obra",
+                "en": "Winterplateau materials in this project",
+                "fr": "Matériaux Winterplateau sur ce chantier"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "lista",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "items": [
+                {
+                  "text": {
+                    "pt": "Bandas",
+                    "en": "Bands",
+                    "fr": "Bandeaux"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Cornija",
+                    "en": "Cornice",
+                    "fr": "Corniche"
+                  }
+                },
+                {
+                  "text": {
+                    "pt": "Capoto / ETICS",
+                    "en": "ETICS / External Insulation",
+                    "fr": "ITE (Capoto)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:clinica-famalicao-outras",
+        "name": "Clínica Privada · Outras obras",
+        "folderId": "@folder:obras",
+        "layout": 1,
+        "bg": "escuro",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "seccao",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Outras obras",
+                "en": "Other projects",
+                "fr": "Autres chantiers"
+              },
+              "align": "left",
+              "level": "h2"
+            }
+          },
+          {
+            "type": "paginas",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "pick": [
+                "@page:reabilitacao-fachada-braga",
+                "@page:moradia-ponte-de-lima",
+                "@page:edificio-comercial-guimaraes"
+              ]
+            }
+          },
+          {
+            "type": "botao",
+            "style": "contorno",
+            "col": "all",
+            "v": {
+              "label": {
+                "pt": "Ver todas",
+                "en": "View all",
+                "fr": "Voir tout"
+              },
+              "dest": {
+                "kind": "page",
+                "pageId": "@page:obras"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "@block:privacidade",
+        "name": "Política de Privacidade",
+        "folderId": "@folder:legal",
+        "layout": 1,
+        "bg": "claro",
+        "comps": [
+          {
+            "type": "titulo",
+            "style": "destaque",
+            "col": "all",
+            "v": {
+              "text": {
+                "pt": "Política de Privacidade",
+                "en": "Privacy Policy",
+                "fr": "Politique de confidentialité"
+              },
+              "align": "left",
+              "level": "h1"
+            }
+          },
+          {
+            "type": "texto",
+            "style": "pequeno",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "Última atualização: junho de 2026",
+                "en": "Last updated: June 2026",
+                "fr": "Dernière mise à jour: juin 2026"
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "grande",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "A sua privacidade é importante para a Winterplateau. Esta política explica que dados pessoais recolhemos através deste site, para que os usamos e quais os seus direitos ao abrigo do Regulamento Geral sobre a Proteção de Dados (RGPD).",
+                "en": "Your privacy matters to Winterplateau. This policy explains what personal data we collect through this website, what we use it for and what your rights are under the General Data Protection Regulation (GDPR).",
+                "fr": "Votre vie privée est importante pour Winterplateau. Cette politique explique quelles données personnelles nous collectons via ce site, à quelles fins nous les utilisons et quels sont vos droits au titre du Règlement général sur la protection des données (RGPD)."
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "**1. Responsável pelo tratamento**",
+                "en": "**1. Data controller**",
+                "fr": "**1. Responsable du traitement**"
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "A Winterplateau é a responsável pelo tratamento dos seus dados. Para qualquer questão de privacidade, contacte-nos através de [geral@winterplateau.pt](mailto:geral@winterplateau.pt).",
+                "en": "Winterplateau is the controller of your personal data. For any privacy question, please contact us at [geral@winterplateau.pt](mailto:geral@winterplateau.pt).",
+                "fr": "Winterplateau est responsable du traitement de vos données. Pour toute question relative à la vie privée, contactez-nous à [geral@winterplateau.pt](mailto:geral@winterplateau.pt)."
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "**2. Que dados recolhemos**",
+                "en": "**2. What data we collect**",
+                "fr": "**2. Données que nous collectons**"
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "- **Pedidos de orçamento e contacto:** nome, email, telefone e a mensagem/descrição que nos envia.\n- **Estatísticas de utilização:** dados agregados e anónimos sobre as visitas ao site (ver secção Cookies).",
+                "en": "- **Quote and contact requests:** name, email, phone number and the message/description you send us.\n- **Usage statistics:** aggregated, anonymous data about visits to the website (see the Cookies section).",
+                "fr": "- **Demandes de devis et de contact :** nom, e-mail, téléphone et le message/la description que vous nous envoyez.\n- **Statistiques d’utilisation :** données agrégées et anonymes sur les visites du site (voir la section Cookies)."
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "**3. Para que usamos os dados**",
+                "en": "**3. How we use the data**",
+                "fr": "**3. Utilisation des données**"
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "- Responder a pedidos de orçamento e a mensagens de contacto;\n- Prestar apoio e dar seguimento comercial ao seu pedido;\n- Melhorar o site através de estatísticas agregadas.",
+                "en": "- To reply to quote requests and contact messages;\n- To provide support and commercial follow-up to your request;\n- To improve the website through aggregated statistics.",
+                "fr": "- Répondre aux demandes de devis et aux messages de contact ;\n- Assurer le suivi et l’accompagnement commercial de votre demande ;\n- Améliorer le site grâce à des statistiques agrégées."
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "**4. Base legal**",
+                "en": "**4. Legal basis**",
+                "fr": "**4. Base juridique**"
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "Tratamos os seus dados com base no seu **consentimento** e/ou em diligências **pré-contratuais** a seu pedido (resposta a orçamentos), e no nosso **interesse legítimo** em manter o site seguro e funcional.",
+                "en": "We process your data on the basis of your **consent** and/or **pre-contractual** steps taken at your request (replying to quotes), and our **legitimate interest** in keeping the website secure and working.",
+                "fr": "Nous traitons vos données sur la base de votre **consentement** et/ou de mesures **précontractuelles** prises à votre demande (réponse aux devis), ainsi que de notre **intérêt légitime** à maintenir le site sûr et fonctionnel."
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "**5. Cookies e estatísticas**",
+                "en": "**5. Cookies and statistics**",
+                "fr": "**5. Cookies et statistiques**"
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "Usamos apenas cookies **essenciais** ao funcionamento do site. Para estatísticas usamos uma ferramenta **sem cookies e anónima** (Umami, auto-hospedado), que **não** rastreia os visitantes entre sites nem cria perfis individuais.",
+                "en": "We only use cookies that are **essential** for the website to work. For statistics we use a **cookie-free, anonymous** tool (Umami, self-hosted), which does **not** track visitors across websites or build individual profiles.",
+                "fr": "Nous n’utilisons que des cookies **essentiels** au fonctionnement du site. Pour les statistiques, nous utilisons un outil **sans cookies et anonyme** (Umami, auto-hébergé), qui ne suit **pas** les visiteurs d’un site à l’autre et ne crée pas de profils individuels."
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "**6. Conservação dos dados**",
+                "en": "**6. Data retention**",
+                "fr": "**6. Conservation des données**"
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "Conservamos os dados de contacto apenas durante o tempo necessário para dar resposta ao seu pedido e cumprir obrigações legais aplicáveis.",
+                "en": "We keep contact data only for as long as necessary to reply to your request and to comply with applicable legal obligations.",
+                "fr": "Nous conservons les données de contact uniquement pendant la durée nécessaire pour répondre à votre demande et respecter les obligations légales applicables."
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "**7. Os seus direitos**",
+                "en": "**7. Your rights**",
+                "fr": "**7. Vos droits**"
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "Tem direito a aceder, retificar, eliminar e exportar (portabilidade) os seus dados, bem como a opor-se ou limitar o seu tratamento. Para exercer estes direitos, contacte-nos através de [geral@winterplateau.pt](mailto:geral@winterplateau.pt). Tem ainda o direito de apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD).",
+                "en": "You have the right to access, rectify, erase and export (portability) your data, and to object to or restrict its processing. To exercise these rights, contact us at [geral@winterplateau.pt](mailto:geral@winterplateau.pt). You also have the right to lodge a complaint with the Portuguese data protection authority (Comissão Nacional de Proteção de Dados — CNPD).",
+                "fr": "Vous avez le droit d’accéder à vos données, de les rectifier, de les effacer et de les exporter (portabilité), ainsi que de vous opposer à leur traitement ou de le limiter. Pour exercer ces droits, contactez-nous à [geral@winterplateau.pt](mailto:geral@winterplateau.pt). Vous avez également le droit d’introduire une réclamation auprès de l’autorité portugaise de protection des données (Comissão Nacional de Proteção de Dados — CNPD)."
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "**8. Subcontratantes**",
+                "en": "**8. Processors**",
+                "fr": "**8. Sous-traitants**"
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "Para prestar o serviço recorremos a fornecedores que tratam dados em nosso nome (alojamento e envio de emails), sujeitos a obrigações de confidencialidade e segurança. Os dados não são vendidos a terceiros.",
+                "en": "To provide the service we use suppliers that process data on our behalf (hosting and email delivery), bound by confidentiality and security obligations. Your data is never sold to third parties.",
+                "fr": "Pour fournir le service, nous faisons appel à des prestataires qui traitent des données pour notre compte (hébergement et envoi d’e-mails), soumis à des obligations de confidentialité et de sécurité. Les données ne sont jamais vendues à des tiers."
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "**9. Alterações a esta política**",
+                "en": "**9. Changes to this policy**",
+                "fr": "**9. Modifications de cette politique**"
+              }
+            }
+          },
+          {
+            "type": "texto",
+            "style": "normal",
+            "col": "all",
+            "v": {
+              "body": {
+                "pt": "Podemos atualizar esta política. A data da última atualização é indicada no topo desta página.",
+                "en": "We may update this policy. The date of the last update is shown at the top of this page.",
+                "fr": "Nous pouvons mettre à jour cette politique. La date de la dernière mise à jour est indiquée en haut de cette page."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "items": {
+    "@page:home": [
+      {
+        "kind": "special",
+        "specialType": "edificio3d",
+        "specialData": {
+          "eyebrow": {
+            "pt": "Vila Verde, Portugal · Desde 2016",
+            "en": "Vila Verde, Portugal · Since 2016",
+            "fr": "Vila Verde, Portugal · Depuis 2016"
+          }
+        }
+      },
+      {
+        "kind": "special",
+        "specialType": "faixa",
+        "specialData": {
+          "items": [
+            {
+              "name": {
+                "pt": "Bandas",
+                "en": "Bands",
+                "fr": "Bandeaux"
+              }
+            },
+            {
+              "name": {
+                "pt": "Cornijas",
+                "en": "Cornices",
+                "fr": "Corniches"
+              }
+            },
+            {
+              "name": {
+                "pt": "Colunas",
+                "en": "Columns",
+                "fr": "Colonnes"
+              }
+            },
+            {
+              "name": {
+                "pt": "Peitoris",
+                "en": "Window Sills",
+                "fr": "Appuis de fenêtre"
+              }
+            },
+            {
+              "name": {
+                "pt": "EPS Exterior",
+                "en": "EPS Exterior",
+                "fr": "EPS Exterior"
+              }
+            },
+            {
+              "name": {
+                "pt": "EPS Interior",
+                "en": "EPS Interior",
+                "fr": "EPS Interior"
+              }
+            },
+            {
+              "name": {
+                "pt": "Rodatetos",
+                "en": "Crown Mouldings",
+                "fr": "Corniches intérieures"
+              }
+            },
+            {
+              "name": {
+                "pt": "Tetos Falsos",
+                "en": "Suspended Ceilings",
+                "fr": "Faux plafonds"
+              }
+            },
+            {
+              "name": {
+                "pt": "Divisórias",
+                "en": "Partitions",
+                "fr": "Cloisons"
+              }
+            },
+            {
+              "name": {
+                "pt": "Perfil TC",
+                "en": "Perfil TC",
+                "fr": "Perfil TC"
+              }
+            },
+            {
+              "name": {
+                "pt": "Montante Stud",
+                "en": "Montante Stud",
+                "fr": "Montante Stud"
+              }
+            },
+            {
+              "name": {
+                "pt": "Canal Raia",
+                "en": "Canal Raia",
+                "fr": "Canal Raia"
+              }
+            },
+            {
+              "name": {
+                "pt": "Abobadilhas",
+                "en": "Infill Blocks",
+                "fr": "Hourdis"
+              }
+            },
+            {
+              "name": {
+                "pt": "Capoto",
+                "en": "ETICS",
+                "fr": "ITE"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:apresentacao"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:numeros"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:eps"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:interior"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:statement"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:metal"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:obras-home"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:empresa"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:downloads"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:cta"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:orcamento"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:contactos"
+      }
+    ],
+    "@page:obras": [
+      {
+        "kind": "block",
+        "blockId": "@block:obras-intro"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:obras-cta"
+      }
+    ],
+    "@page:reabilitacao-fachada-braga": [
+      {
+        "kind": "block",
+        "blockId": "@block:reabilitacao-fachada-braga-cabecalho"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:reabilitacao-fachada-braga-numeros"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:reabilitacao-fachada-braga-processo"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:reabilitacao-fachada-braga-materiais"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:reabilitacao-fachada-braga-outras"
+      }
+    ],
+    "@page:moradia-ponte-de-lima": [
+      {
+        "kind": "block",
+        "blockId": "@block:moradia-ponte-de-lima-cabecalho"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:moradia-ponte-de-lima-numeros"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:moradia-ponte-de-lima-processo"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:moradia-ponte-de-lima-materiais"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:moradia-ponte-de-lima-outras"
+      }
+    ],
+    "@page:edificio-comercial-guimaraes": [
+      {
+        "kind": "block",
+        "blockId": "@block:edificio-comercial-guimaraes-cabecalho"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:edificio-comercial-guimaraes-numeros"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:edificio-comercial-guimaraes-processo"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:edificio-comercial-guimaraes-materiais"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:edificio-comercial-guimaraes-outras"
+      }
+    ],
+    "@page:apartamentos-vila-verde": [
+      {
+        "kind": "block",
+        "blockId": "@block:apartamentos-vila-verde-cabecalho"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:apartamentos-vila-verde-numeros"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:apartamentos-vila-verde-processo"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:apartamentos-vila-verde-materiais"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:apartamentos-vila-verde-outras"
+      }
+    ],
+    "@page:restauro-solar-barcelos": [
+      {
+        "kind": "block",
+        "blockId": "@block:restauro-solar-barcelos-cabecalho"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:restauro-solar-barcelos-numeros"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:restauro-solar-barcelos-processo"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:restauro-solar-barcelos-materiais"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:restauro-solar-barcelos-outras"
+      }
+    ],
+    "@page:clinica-famalicao": [
+      {
+        "kind": "block",
+        "blockId": "@block:clinica-famalicao-cabecalho"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:clinica-famalicao-numeros"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:clinica-famalicao-processo"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:clinica-famalicao-materiais"
+      },
+      {
+        "kind": "block",
+        "blockId": "@block:clinica-famalicao-outras"
+      }
+    ],
+    "@page:privacidade": [
+      {
+        "kind": "block",
+        "blockId": "@block:privacidade"
+      }
+    ]
+  },
+  "parts": {
+    "topo": {
+      "comps": [
+        {
+          "type": "imagem",
+          "style": "normal",
+          "col": "all",
+          "v": {
+            "image": {
+              "same": true,
+              "values": {
+                "pt": "@media:favicon.svg"
+              }
+            },
+            "alt": {
+              "pt": "Winterplateau",
+              "en": "Winterplateau",
+              "fr": "Winterplateau"
+            }
+          }
+        },
+        {
+          "type": "menu",
+          "style": "normal",
+          "col": "all",
+          "v": {
+            "items": [
+              {
+                "label": {
+                  "pt": "EPS Exterior",
+                  "en": "EPS Exterior",
+                  "fr": "EPS Exterior"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:eps"
+                }
+              },
+              {
+                "label": {
+                  "pt": "EPS Interior",
+                  "en": "EPS Interior",
+                  "fr": "EPS Interior"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:interior"
+                }
+              },
+              {
+                "label": {
+                  "pt": "Perfis Metálicos",
+                  "en": "Metal Profiles",
+                  "fr": "Profilés métalliques"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:metal"
+                }
+              },
+              {
+                "label": {
+                  "pt": "Obras",
+                  "en": "Projects",
+                  "fr": "Chantiers"
+                },
+                "dest": {
+                  "kind": "page",
+                  "pageId": "@page:obras"
+                }
+              },
+              {
+                "label": {
+                  "pt": "Empresa",
+                  "en": "Company",
+                  "fr": "Entreprise"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:empresa"
+                }
+              },
+              {
+                "label": {
+                  "pt": "Downloads",
+                  "en": "Downloads",
+                  "fr": "Téléchargements"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:downloads"
+                }
+              },
+              {
+                "label": {
+                  "pt": "Contactos",
+                  "en": "Contacts",
+                  "fr": "Contacts"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:contactos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "botao",
+          "style": "cheio",
+          "col": "all",
+          "v": {
+            "label": {
+              "pt": "Solicitar Orçamento",
+              "en": "Request a Quote",
+              "fr": "Demander un devis"
+            },
+            "dest": {
+              "kind": "anchor",
+              "blockId": "@block:orcamento"
+            }
+          }
+        },
+        {
+          "type": "linguas",
+          "style": "normal",
+          "col": "all",
+          "v": {}
+        }
+      ]
+    },
+    "rodape": {
+      "layout": 3,
+      "bg": "escuro",
+      "comps": [
+        {
+          "type": "texto",
+          "style": "normal",
+          "col": 1,
+          "v": {
+            "body": {
+              "pt": "\"Soluções em EPS e Perfis Metálicos para construção e reabilitação. Fabricação nacional, qualidade europeia.\"",
+              "en": "\"EPS and metal profile solutions for construction and renovation. Made in Portugal, European quality.\"",
+              "fr": "\"Solutions en EPS et profilés métalliques pour la construction et la réhabilitation. Fabrication portugaise, qualité européenne.\""
+            }
+          }
+        },
+        {
+          "type": "redes",
+          "style": "normal",
+          "col": 1,
+          "v": {
+            "items": [
+              {
+                "network": "linkedin",
+                "url": "https://www.linkedin.com/company/winterplateau/"
+              },
+              {
+                "network": "facebook",
+                "url": "https://www.facebook.com/winterplateau/"
+              },
+              {
+                "network": "instagram",
+                "url": "https://www.instagram.com/winterplateau/"
+              }
+            ]
+          }
+        },
+        {
+          "type": "texto",
+          "style": "normal",
+          "col": 2,
+          "v": {
+            "body": {
+              "pt": "**Soluções**",
+              "en": "**Solutions**",
+              "fr": "**Solutions**"
+            }
+          }
+        },
+        {
+          "type": "menu",
+          "style": "normal",
+          "col": 2,
+          "v": {
+            "items": [
+              {
+                "label": {
+                  "pt": "EPS Exterior",
+                  "en": "EPS Exterior",
+                  "fr": "EPS Exterior"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:eps"
+                }
+              },
+              {
+                "label": {
+                  "pt": "EPS Interior",
+                  "en": "EPS Interior",
+                  "fr": "EPS Interior"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:interior"
+                }
+              },
+              {
+                "label": {
+                  "pt": "Perfis Metálicos",
+                  "en": "Metal Profiles",
+                  "fr": "Profilés métalliques"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:metal"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "texto",
+          "style": "normal",
+          "col": 3,
+          "v": {
+            "body": {
+              "pt": "**Empresa**",
+              "en": "**Company**",
+              "fr": "**Entreprise**"
+            }
+          }
+        },
+        {
+          "type": "menu",
+          "style": "normal",
+          "col": 3,
+          "v": {
+            "items": [
+              {
+                "label": {
+                  "pt": "Quem Somos",
+                  "en": "About Us",
+                  "fr": "Qui sommes-nous"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:empresa"
+                }
+              },
+              {
+                "label": {
+                  "pt": "Portefólio",
+                  "en": "Portfolio",
+                  "fr": "Portfolio"
+                },
+                "dest": {
+                  "kind": "page",
+                  "pageId": "@page:obras"
+                }
+              },
+              {
+                "label": {
+                  "pt": "Downloads",
+                  "en": "Downloads",
+                  "fr": "Téléchargements"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:downloads"
+                }
+              },
+              {
+                "label": {
+                  "pt": "Contactos",
+                  "en": "Contacts",
+                  "fr": "Contacts"
+                },
+                "dest": {
+                  "kind": "anchor",
+                  "blockId": "@block:contactos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "texto",
+          "style": "pequeno",
+          "col": "all",
+          "v": {
+            "body": {
+              "pt": "© 2026 Winterplateau. Todos os direitos reservados.",
+              "en": "© 2026 Winterplateau. All rights reserved.",
+              "fr": "© 2026 Winterplateau. Tous droits réservés."
+            }
+          }
+        },
+        {
+          "type": "menu",
+          "style": "normal",
+          "col": "all",
+          "v": {
+            "items": [
+              {
+                "label": {
+                  "pt": "Política de Privacidade",
+                  "en": "Privacy Policy",
+                  "fr": "Politique de confidentialité"
+                },
+                "dest": {
+                  "kind": "page",
+                  "pageId": "@page:privacidade"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

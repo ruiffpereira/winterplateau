@@ -1,0 +1,2450 @@
+{
+ "revision": 1,
+ "siteName": "Winterplateau",
+ "locale": "pt",
+ "defaultLanguage": "pt",
+ "languages": [
+  "pt",
+  "en",
+  "fr"
+ ],
+ "topo": {
+  "comps": [
+   {
+    "type": "imagem",
+    "style": "normal",
+    "col": "all",
+    "image": "/favicon.svg",
+    "alt": "Winterplateau"
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": "all",
+    "items": [
+     {
+      "label": "EPS Exterior",
+      "href": "/#eps"
+     },
+     {
+      "label": "EPS Interior",
+      "href": "/#interior"
+     },
+     {
+      "label": "Perfis Metálicos",
+      "href": "/#metal"
+     },
+     {
+      "label": "Obras",
+      "href": "/obras"
+     },
+     {
+      "label": "Empresa",
+      "href": "/#about"
+     },
+     {
+      "label": "Downloads",
+      "href": "/#downloads"
+     },
+     {
+      "label": "Contactos",
+      "href": "/#contact"
+     }
+    ]
+   },
+   {
+    "type": "botao",
+    "style": "cheio",
+    "col": "all",
+    "label": "Solicitar Orçamento",
+    "href": "/#orcamento"
+   },
+   {
+    "type": "linguas",
+    "style": "normal",
+    "col": "all"
+   }
+  ]
+ },
+ "rodape": {
+  "layout": 3,
+  "bg": "escuro",
+  "comps": [
+   {
+    "type": "texto",
+    "style": "normal",
+    "col": 1,
+    "body": "\"Soluções em EPS e Perfis Metálicos para construção e reabilitação. Fabricação nacional, qualidade europeia.\""
+   },
+   {
+    "type": "redes",
+    "style": "normal",
+    "col": 1,
+    "items": [
+     {
+      "network": "linkedin",
+      "url": "https://www.linkedin.com/company/winterplateau/"
+     },
+     {
+      "network": "facebook",
+      "url": "https://www.facebook.com/winterplateau/"
+     },
+     {
+      "network": "instagram",
+      "url": "https://www.instagram.com/winterplateau/"
+     }
+    ]
+   },
+   {
+    "type": "texto",
+    "style": "normal",
+    "col": 2,
+    "body": "**Soluções**"
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": 2,
+    "items": [
+     {
+      "label": "EPS Exterior",
+      "href": "/#eps"
+     },
+     {
+      "label": "EPS Interior",
+      "href": "/#interior"
+     },
+     {
+      "label": "Perfis Metálicos",
+      "href": "/#metal"
+     }
+    ]
+   },
+   {
+    "type": "texto",
+    "style": "normal",
+    "col": 3,
+    "body": "**Empresa**"
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": 3,
+    "items": [
+     {
+      "label": "Quem Somos",
+      "href": "/#about"
+     },
+     {
+      "label": "Portefólio",
+      "href": "/obras"
+     },
+     {
+      "label": "Downloads",
+      "href": "/#downloads"
+     },
+     {
+      "label": "Contactos",
+      "href": "/#contact"
+     }
+    ]
+   },
+   {
+    "type": "texto",
+    "style": "pequeno",
+    "col": "all",
+    "body": "© 2026 Winterplateau. Todos os direitos reservados."
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": "all",
+    "items": [
+     {
+      "label": "Política de Privacidade",
+      "href": "/privacidade"
+     }
+    ]
+   }
+  ]
+ },
+ "pages": [
+  {
+   "path": "/",
+   "alternates": {
+    "pt": "/",
+    "en": "/en",
+    "fr": "/fr"
+   },
+   "title": "Início",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Soluções em EPS e Perfis Metálicos",
+    "description": "\"Molduras em EPS e perfis metálicos para construção nova e reabilitação de fachadas. Fabricação nacional desde 2016, certificação CE. Vila Verde, Braga.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Início",
+     "path": "/"
+    }
+   ],
+   "items": [
+    {
+     "kind": "special",
+     "type": "edificio3d",
+     "fields": {
+      "eyebrow": "Vila Verde, Portugal · Desde 2016"
+     }
+    },
+    {
+     "kind": "special",
+     "type": "faixa",
+     "fields": {
+      "items": [
+       {
+        "name": "Bandas"
+       },
+       {
+        "name": "Cornijas"
+       },
+       {
+        "name": "Colunas"
+       },
+       {
+        "name": "Peitoris"
+       },
+       {
+        "name": "EPS Exterior"
+       },
+       {
+        "name": "EPS Interior"
+       },
+       {
+        "name": "Rodatetos"
+       },
+       {
+        "name": "Tetos Falsos"
+       },
+       {
+        "name": "Divisórias"
+       },
+       {
+        "name": "Perfil TC"
+       },
+       {
+        "name": "Montante Stud"
+       },
+       {
+        "name": "Canal Raia"
+       },
+       {
+        "name": "Abobadilhas"
+       },
+       {
+        "name": "Capoto"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Winter*plateau*",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Soluções em EPS e Perfis Metálicos para construção nova e reabilitação de edifícios. Fabricação nacional, certificação europeia.\""
+      },
+      {
+       "type": "botao",
+       "style": "cheio",
+       "col": "all",
+       "label": "Ver Soluções",
+       "href": "#eps"
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Catálogo PDF",
+       "href": "#downloads"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "2016",
+         "label": "Fundação",
+         "sub": "Vila Verde, Braga"
+        },
+        {
+         "value": "18+",
+         "label": "Produtos EPS",
+         "sub": "Exterior & Interior"
+        },
+        {
+         "value": "500+",
+         "label": "Projetos",
+         "sub": "Portugal · Espanha · França"
+        },
+        {
+         "value": "CE",
+         "label": "Certificação",
+         "sub": "Declaração de Desempenho"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "eps",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Linha de Produto"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "EPS Exterior",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 1,
+       "body": "\"Fachadas inovadoras com molduras leves de poliestireno expandido. Fácil aplicação, elevada durabilidade e versatilidade decorativa para qualquer obra.\""
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 2,
+       "items": [
+        {
+         "text": "Bandas decorativas"
+        },
+        {
+         "text": "Cornijas e entablamentos"
+        },
+        {
+         "text": "Colunas e pilastras"
+        },
+        {
+         "text": "Peitoris de janela"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "interior",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Linha de Produto"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "EPS Interior",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 1,
+       "body": "\"Molduras interiores que transformam espaços residenciais e comerciais com elegância. Instalação simples, acabamento refinado, sem obras disruptivas.\""
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 2,
+       "items": [
+        {
+         "text": "Rodatetos e molduras de teto"
+        },
+        {
+         "text": "Molduras de parede e painéis"
+        },
+        {
+         "text": "Rodapés decorativos"
+        },
+        {
+         "text": "Perfis de canto e remate"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "marca",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Fabricação Nacional · Desde 2016"
+      },
+      {
+       "type": "titulo",
+       "style": "frase",
+       "col": "all",
+       "text": "Mais de 500 projetos construídos com *rigor e inovação.*",
+       "align": "center",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Certificação CE · Declaração de Desempenho · Exportação para PT, ES e FR\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "metal",
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Linha de Produto"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Perfis Metálicos",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "Tetos Falsos",
+         "text": "Sistema de suspensão para tetos rebaixados. Maior controlo acústico e térmico.\n\n- Perfil TC\n- Perfil U / Raia"
+        },
+        {
+         "title": "Divisórias",
+         "text": "Partições leves e versáteis para escritórios e espaços comerciais.\n\n- Montante Stud\n- Canal Raia"
+        },
+        {
+         "title": "Complementos",
+         "text": "\"Alhetas, cantoneiras e perfis de acabamento para soluções completas.\"\n\n- Alheta Lacada\n- Cantoneira L\n- Cantoneira L Perf."
+        },
+        {
+         "title": "Acessórios",
+         "text": "\"Sistema completo de fixação, suspensão e conectividade para qualquer solução.\"\n\n- Alçapão\n- Cruzeta / Emenda\n- Perfil Omega · Pivot"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "obras",
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Portefólio · Obras"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Projetos que falam por nós",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Cada obra mostra o antes e o depois — arraste para ver a transformação que as nossas soluções trazem à fachada."
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Reabilitação de Fachada",
+         "href": "/obras/reabilitacao-fachada-braga",
+         "description": "\"Recuperação integral da fachada de um edifício dos anos 80 em Braga. Sistema ETICS com molduras decorativas em EPS — cornijas, bandas e peitoris.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Moradia Unifamiliar",
+         "href": "/obras/moradia-ponte-de-lima",
+         "description": "\"Construção nova de moradia contemporânea em Ponte de Lima. Molduras de vão e cornija em EPS que conferem profundidade à fachada sem o custo da pedra natural.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Edifício Comercial",
+         "href": "/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernização da fachada de edifício comercial no centro histórico de Guimarães. Bandas e pilastras em EPS com sistema ETICS nos 3 pisos.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Ver todas as obras",
+       "href": "/obras"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "about",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": 1,
+       "text": "2016",
+       "align": "left",
+       "level": "h3"
+      },
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 2,
+       "text": "Quem Somos"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 2,
+       "text": "\"Criados para responder a uma *necessidade real* da construção moderna.\"",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 2,
+       "body": "\"A Winterplateau foi fundada em Janeiro de 2016 em Vila Verde, Braga, com o propósito de desenvolver e colmatar uma necessidade detectada no mercado da construção civil e reabilitação — produtos inovadores em EPS multifuncionais assentes nas melhores práticas e tecnologias. Uma busca incansável por qualidade que resulta em vantagens competitivas concretas para os nossos clientes.\""
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 2,
+       "items": [
+        {
+         "text": "Certificação CE"
+        },
+        {
+         "text": "Decl. de Desempenho"
+        },
+        {
+         "text": "Co-financiado UE"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "downloads",
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Documentação Técnica"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Downloads",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "documentos",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "name": "Declaração de Desempenho",
+         "file": "/downloads/DECLARACAO_DESEMPENHO.pdf"
+        },
+        {
+         "name": "Declaração de Conformidade",
+         "file": "/downloads/declaracao-conformidade.pdf"
+        },
+        {
+         "name": "DOP — Declaration of Performance",
+         "file": "/downloads/dop.pdf"
+        },
+        {
+         "name": "Modo de Aplicação Molduras",
+         "file": "/downloads/modo-de-aplicacao-molduras.pdf"
+        },
+        {
+         "name": "Catálogo Winterplateau",
+         "file": "/downloads/WINTERPLATEAU_Catalogo-XS_AF.pdf"
+        },
+        {
+         "name": "Catálogo Rodatetos",
+         "file": "/downloads/catalogo-rodatetos-winterplateau_Versao-1.pdf"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "marca",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "frase",
+       "col": "all",
+       "text": "Pronto para o *próximo projecto?*",
+       "align": "center",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Peça um orçamento personalizado ou fale com a nossa equipa técnica."
+      },
+      {
+       "type": "botao",
+       "style": "cheio",
+       "col": "all",
+       "label": "Solicitar Orçamento",
+       "href": "#orcamento"
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Descarregar Catálogo",
+       "href": "#downloads"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "orcamento",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Pedido de Orçamento"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "Peça o seu orçamento",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 1,
+       "body": "Envie os detalhes da sua obra — respondemos com uma proposta personalizada em 1–2 dias úteis."
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 1,
+       "items": [
+        {
+         "text": "Resposta até 48 horas"
+        },
+        {
+         "text": "Aconselhamento técnico incluído"
+        },
+        {
+         "text": "Sem compromisso"
+        }
+       ]
+      },
+      {
+       "type": "formulario",
+       "style": "normal",
+       "col": 2,
+       "types": [
+        {
+         "name": "Reabilitação de fachada"
+        },
+        {
+         "name": "Construção nova"
+        },
+        {
+         "name": "EPS interior"
+        },
+        {
+         "name": "Perfis metálicos"
+        },
+        {
+         "name": "Outro"
+        }
+       ]
+      },
+      {
+       "type": "texto",
+       "style": "pequeno",
+       "col": 2,
+       "body": "Os pedidos seguem diretamente para geral@winterplateau.pt"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "contact",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Contactos"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "Fale Connosco",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "contacto",
+       "style": "normal",
+       "col": 1,
+       "address": "Avenida Principal, Nº 202\n\"4730-041 Atiães, Vila Verde\"\n\"Braga, Portugal\"",
+       "phone": "+351 253 193 667",
+       "email": "geral@winterplateau.pt"
+      },
+      {
+       "type": "redes",
+       "style": "normal",
+       "col": 1,
+       "items": [
+        {
+         "network": "linkedin",
+         "url": "https://www.linkedin.com/company/winterplateau/"
+        },
+        {
+         "network": "facebook",
+         "url": "https://www.facebook.com/winterplateau/"
+        },
+        {
+         "network": "instagram",
+         "url": "https://www.instagram.com/winterplateau/"
+        }
+       ]
+      },
+      {
+       "type": "mapa",
+       "style": "normal",
+       "col": 2,
+       "address": "Avenida Principal 202, 4730-041 Atiães, Vila Verde, Braga, Portugal",
+       "zoom": "rua",
+       "title": "Winterplateau"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/obras",
+   "alternates": {
+    "pt": "/obras",
+    "en": "/en/obras",
+    "fr": "/fr/obras"
+   },
+   "title": "Obras",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Obras — Portefólio de Projetos",
+    "description": "\"Portefólio de obras de reabilitação de fachadas e construção nova com molduras EPS e sistemas ETICS no norte de Portugal.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Início",
+     "path": "/"
+    },
+    {
+     "title": "Obras",
+     "path": "/obras"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "As nossas Obras",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Reabilitação de fachadas e construção nova por todo o norte de Portugal. Em cada projeto, arraste a comparação para ver a transformação que as molduras e o isolamento Winterplateau trazem ao edifício.\""
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Reabilitação de Fachada",
+         "href": "/obras/reabilitacao-fachada-braga",
+         "description": "\"Recuperação integral da fachada de um edifício dos anos 80 em Braga. Sistema ETICS com molduras decorativas em EPS — cornijas, bandas e peitoris.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Moradia Unifamiliar",
+         "href": "/obras/moradia-ponte-de-lima",
+         "description": "\"Construção nova de moradia contemporânea em Ponte de Lima. Molduras de vão e cornija em EPS que conferem profundidade à fachada sem o custo da pedra natural.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Edifício Comercial",
+         "href": "/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernização da fachada de edifício comercial no centro histórico de Guimarães. Bandas e pilastras em EPS com sistema ETICS nos 3 pisos.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Bloco de Apartamentos",
+         "href": "/obras/apartamentos-vila-verde",
+         "description": "\"Construção nova de bloco de 20 apartamentos em Vila Verde. Fachada com cornijas, bandas e peitoris em EPS sobre sistema ETICS — 1.240 m².\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Restauro de Solar",
+         "href": "/obras/restauro-solar-barcelos",
+         "description": "\"Recuperação dos elementos decorativos de um solar do século XIX em Barcelos. Réplicas das molduras originais em EPS de alta densidade, cortadas a CNC.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Clínica Privada",
+         "href": "/obras/clinica-famalicao",
+         "description": "\"Fachada contemporânea para clínica privada em Famalicão. Bandeaux horizontais em EPS com sistema ETICS — 540 m², eficiência A+.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "marca",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "frase",
+       "col": "all",
+       "text": "Tem um projeto em mente?",
+       "align": "center",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Fale com a nossa equipa técnica e descubra a solução certa para a sua obra."
+      },
+      {
+       "type": "botao",
+       "style": "cheio",
+       "col": "all",
+       "label": "Solicitar Orçamento",
+       "href": "/#orcamento"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/obras/reabilitacao-fachada-braga",
+   "alternates": {
+    "pt": "/obras/reabilitacao-fachada-braga",
+    "en": "/en/obras/reabilitacao-fachada-braga",
+    "fr": "/fr/obras/reabilitacao-fachada-braga"
+   },
+   "title": "Reabilitação de Fachada",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Reabilitação de Fachada em Braga",
+    "description": "\"Recuperação integral da fachada de um edifício dos anos 80 em Braga. Sistema ETICS com molduras decorativas em EPS — cornijas, bandas e peitoris.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Início",
+     "path": "/"
+    },
+    {
+     "title": "Obras",
+     "path": "/obras"
+    },
+    {
+     "title": "Reabilitação de Fachada",
+     "path": "/obras/reabilitacao-fachada-braga"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Reabilitação · Braga · 2023"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Reabilitação de Fachada",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Recuperação integral da envolvente de um edifício de habitação dos anos 80. Aplicação de sistema ETICS (capoto) com molduras decorativas em EPS — cornijas, bandas e peitoris — devolvendo carácter e eficiência térmica ao imóvel.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "420",
+         "label": "Fachada",
+         "sub": "m²"
+        },
+        {
+         "value": "6",
+         "label": "Duração",
+         "sub": "sem"
+        },
+        {
+         "value": "B→A+",
+         "label": "Eficiência"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "O Processo"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Durante a obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Diagnóstico",
+         "text": "Levantamento de patologias, fissuras e pontes térmicas da fachada existente."
+        },
+        {
+         "title": "02 · Preparação",
+         "text": "Limpeza, reparação do reboco e aplicação do sistema de isolamento ETICS."
+        },
+        {
+         "title": "03 · Molduras EPS",
+         "text": "Colagem e fixação das cornijas, bandas e peitoris Winterplateau."
+        },
+        {
+         "title": "04 · Acabamento",
+         "text": "\"Barramento armado, primário e revestimento final na cor escolhida.\""
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Soluções aplicadas"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Materiais Winterplateau nesta obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Capoto / ETICS"
+        },
+        {
+         "text": "Cornijas"
+        },
+        {
+         "text": "Bandas"
+        },
+        {
+         "text": "Peitoris"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Outras obras",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Moradia Unifamiliar",
+         "href": "/obras/moradia-ponte-de-lima",
+         "description": "\"Construção nova de moradia contemporânea em Ponte de Lima. Molduras de vão e cornija em EPS que conferem profundidade à fachada sem o custo da pedra natural.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Edifício Comercial",
+         "href": "/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernização da fachada de edifício comercial no centro histórico de Guimarães. Bandas e pilastras em EPS com sistema ETICS nos 3 pisos.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Bloco de Apartamentos",
+         "href": "/obras/apartamentos-vila-verde",
+         "description": "\"Construção nova de bloco de 20 apartamentos em Vila Verde. Fachada com cornijas, bandas e peitoris em EPS sobre sistema ETICS — 1.240 m².\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Ver todas",
+       "href": "/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/obras/moradia-ponte-de-lima",
+   "alternates": {
+    "pt": "/obras/moradia-ponte-de-lima",
+    "en": "/en/obras/moradia-ponte-de-lima",
+    "fr": "/fr/obras/moradia-ponte-de-lima"
+   },
+   "title": "Moradia Unifamiliar",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Moradia Unifamiliar em Ponte de Lima",
+    "description": "\"Construção nova de moradia contemporânea em Ponte de Lima. Molduras de vão e cornija em EPS que conferem profundidade à fachada sem o custo da pedra natural.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Início",
+     "path": "/"
+    },
+    {
+     "title": "Obras",
+     "path": "/obras"
+    },
+    {
+     "title": "Moradia Unifamiliar",
+     "path": "/obras/moradia-ponte-de-lima"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Construção Nova · Ponte de Lima · 2022"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Moradia Unifamiliar",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Construção de raiz de moradia contemporânea. As molduras de vão e a cornija de remate em EPS conferem profundidade à fachada sem o peso e o custo da pedra natural.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "260",
+         "label": "Área",
+         "sub": "m²"
+        },
+        {
+         "value": "4",
+         "label": "Duração",
+         "sub": "sem"
+        },
+        {
+         "value": "12",
+         "label": "Molduras",
+         "sub": "vãos"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "O Processo"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Durante a obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Projeto",
+         "text": "Definição do desenho de fachada e seleção dos perfis de moldura."
+        },
+        {
+         "title": "02 · Estrutura",
+         "text": "Alvenaria concluída e fachada preparada para receber as molduras."
+        },
+        {
+         "title": "03 · Aplicação",
+         "text": "\"Montagem das molduras de vão, pilastras e cornija de remate.\""
+        },
+        {
+         "title": "04 · Pintura",
+         "text": "Acabamento final e tratamento hidrófugo das superfícies."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Soluções aplicadas"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Materiais Winterplateau nesta obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Molduras de Vão"
+        },
+        {
+         "text": "Cornija"
+        },
+        {
+         "text": "Pilastras"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Outras obras",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Reabilitação de Fachada",
+         "href": "/obras/reabilitacao-fachada-braga",
+         "description": "\"Recuperação integral da fachada de um edifício dos anos 80 em Braga. Sistema ETICS com molduras decorativas em EPS — cornijas, bandas e peitoris.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Edifício Comercial",
+         "href": "/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernização da fachada de edifício comercial no centro histórico de Guimarães. Bandas e pilastras em EPS com sistema ETICS nos 3 pisos.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Bloco de Apartamentos",
+         "href": "/obras/apartamentos-vila-verde",
+         "description": "\"Construção nova de bloco de 20 apartamentos em Vila Verde. Fachada com cornijas, bandas e peitoris em EPS sobre sistema ETICS — 1.240 m².\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Ver todas",
+       "href": "/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/obras/edificio-comercial-guimaraes",
+   "alternates": {
+    "pt": "/obras/edificio-comercial-guimaraes",
+    "en": "/en/obras/edificio-comercial-guimaraes",
+    "fr": "/fr/obras/edificio-comercial-guimaraes"
+   },
+   "title": "Edifício Comercial",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Edifício Comercial em Guimarães",
+    "description": "\"Modernização da fachada de edifício comercial no centro histórico de Guimarães. Bandas e pilastras em EPS com sistema ETICS nos 3 pisos.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Início",
+     "path": "/"
+    },
+    {
+     "title": "Obras",
+     "path": "/obras"
+    },
+    {
+     "title": "Edifício Comercial",
+     "path": "/obras/edificio-comercial-guimaraes"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Reabilitação · Guimarães · 2024"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Edifício Comercial",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Modernização da fachada de um edifício comercial no centro histórico. Bandas horizontais e pilastras verticais em EPS criam um ritmo elegante que valoriza as montras ao nível da rua.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "680",
+         "label": "Fachada",
+         "sub": "m²"
+        },
+        {
+         "value": "8",
+         "label": "Duração",
+         "sub": "sem"
+        },
+        {
+         "value": "3",
+         "label": "Intervenção",
+         "sub": "pisos"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "O Processo"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Durante a obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Estudo",
+         "text": "Compatibilização com as regras do centro histórico e licenciamento."
+        },
+        {
+         "title": "02 · Isolamento",
+         "text": "Aplicação de capoto em toda a envolvente exterior."
+        },
+        {
+         "title": "03 · Composição",
+         "text": "Montagem das bandas e pilastras segundo o desenho aprovado."
+        },
+        {
+         "title": "04 · Entrega",
+         "text": "\"Acabamento, limpeza e entrega da obra ao cliente.\""
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Soluções aplicadas"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Materiais Winterplateau nesta obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Bandas"
+        },
+        {
+         "text": "Pilastras"
+        },
+        {
+         "text": "Cornijas"
+        },
+        {
+         "text": "Capoto / ETICS"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Outras obras",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Reabilitação de Fachada",
+         "href": "/obras/reabilitacao-fachada-braga",
+         "description": "\"Recuperação integral da fachada de um edifício dos anos 80 em Braga. Sistema ETICS com molduras decorativas em EPS — cornijas, bandas e peitoris.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Moradia Unifamiliar",
+         "href": "/obras/moradia-ponte-de-lima",
+         "description": "\"Construção nova de moradia contemporânea em Ponte de Lima. Molduras de vão e cornija em EPS que conferem profundidade à fachada sem o custo da pedra natural.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Bloco de Apartamentos",
+         "href": "/obras/apartamentos-vila-verde",
+         "description": "\"Construção nova de bloco de 20 apartamentos em Vila Verde. Fachada com cornijas, bandas e peitoris em EPS sobre sistema ETICS — 1.240 m².\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Ver todas",
+       "href": "/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/obras/apartamentos-vila-verde",
+   "alternates": {
+    "pt": "/obras/apartamentos-vila-verde",
+    "en": "/en/obras/apartamentos-vila-verde",
+    "fr": "/fr/obras/apartamentos-vila-verde"
+   },
+   "title": "Bloco de Apartamentos",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Bloco de Apartamentos em Vila Verde",
+    "description": "\"Construção nova de bloco de 20 apartamentos em Vila Verde. Fachada com cornijas, bandas e peitoris em EPS sobre sistema ETICS — 1.240 m².\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Início",
+     "path": "/"
+    },
+    {
+     "title": "Obras",
+     "path": "/obras"
+    },
+    {
+     "title": "Bloco de Apartamentos",
+     "path": "/obras/apartamentos-vila-verde"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Construção Nova · Vila Verde · 2023"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Bloco de Apartamentos",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Empreendimento de habitação coletiva com fachada ventilada e remates em EPS. Solução leve que acelera a obra e garante uniformidade em todos os pisos.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "1.240",
+         "label": "Fachada",
+         "sub": "m²"
+        },
+        {
+         "value": "14",
+         "label": "Duração",
+         "sub": "sem"
+        },
+        {
+         "value": "20",
+         "label": "Habitação",
+         "sub": "frações"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "O Processo"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Durante a obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Planeamento",
+         "text": "Faseamento da obra por alçado e logística de estaleiro."
+        },
+        {
+         "title": "02 · Isolamento",
+         "text": "Sistema ETICS aplicado piso a piso."
+        },
+        {
+         "title": "03 · Molduras",
+         "text": "\"Bandas, cornijas e peitoris montados em série.\""
+        },
+        {
+         "title": "04 · Acabamento",
+         "text": "Revestimento final e ensaios de desempenho térmico."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Soluções aplicadas"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Materiais Winterplateau nesta obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Cornijas"
+        },
+        {
+         "text": "Bandas"
+        },
+        {
+         "text": "Peitoris"
+        },
+        {
+         "text": "Capoto / ETICS"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Outras obras",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Reabilitação de Fachada",
+         "href": "/obras/reabilitacao-fachada-braga",
+         "description": "\"Recuperação integral da fachada de um edifício dos anos 80 em Braga. Sistema ETICS com molduras decorativas em EPS — cornijas, bandas e peitoris.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Moradia Unifamiliar",
+         "href": "/obras/moradia-ponte-de-lima",
+         "description": "\"Construção nova de moradia contemporânea em Ponte de Lima. Molduras de vão e cornija em EPS que conferem profundidade à fachada sem o custo da pedra natural.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Edifício Comercial",
+         "href": "/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernização da fachada de edifício comercial no centro histórico de Guimarães. Bandas e pilastras em EPS com sistema ETICS nos 3 pisos.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Ver todas",
+       "href": "/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/obras/restauro-solar-barcelos",
+   "alternates": {
+    "pt": "/obras/restauro-solar-barcelos",
+    "en": "/en/obras/restauro-solar-barcelos",
+    "fr": "/fr/obras/restauro-solar-barcelos"
+   },
+   "title": "Restauro de Solar",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Restauro de Solar do Séc. XIX em Barcelos",
+    "description": "\"Recuperação dos elementos decorativos de um solar do século XIX em Barcelos. Réplicas das molduras originais em EPS de alta densidade, cortadas a CNC.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Início",
+     "path": "/"
+    },
+    {
+     "title": "Obras",
+     "path": "/obras"
+    },
+    {
+     "title": "Restauro de Solar",
+     "path": "/obras/restauro-solar-barcelos"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Reabilitação · Barcelos · 2021"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Restauro de Solar",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Recuperação de elementos decorativos de um solar do século XIX. Réplicas das molduras originais executadas em EPS de alta densidade, fiéis ao desenho histórico.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "310",
+         "label": "Fachada",
+         "sub": "m²"
+        },
+        {
+         "value": "10",
+         "label": "Duração",
+         "sub": "sem"
+        },
+        {
+         "value": "1850",
+         "label": "Época"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "O Processo"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Durante a obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Levantamento",
+         "text": "Medição e moldagem dos elementos decorativos originais."
+        },
+        {
+         "title": "02 · Produção",
+         "text": "Corte CNC das réplicas em EPS de alta densidade."
+        },
+        {
+         "title": "03 · Montagem",
+         "text": "Aplicação cuidada respeitando a composição histórica."
+        },
+        {
+         "title": "04 · Patine",
+         "text": "Acabamento texturado a imitar a pedra envelhecida."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Soluções aplicadas"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Materiais Winterplateau nesta obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Molduras à medida"
+        },
+        {
+         "text": "Cornijas"
+        },
+        {
+         "text": "Pilastras"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Outras obras",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Reabilitação de Fachada",
+         "href": "/obras/reabilitacao-fachada-braga",
+         "description": "\"Recuperação integral da fachada de um edifício dos anos 80 em Braga. Sistema ETICS com molduras decorativas em EPS — cornijas, bandas e peitoris.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Moradia Unifamiliar",
+         "href": "/obras/moradia-ponte-de-lima",
+         "description": "\"Construção nova de moradia contemporânea em Ponte de Lima. Molduras de vão e cornija em EPS que conferem profundidade à fachada sem o custo da pedra natural.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Edifício Comercial",
+         "href": "/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernização da fachada de edifício comercial no centro histórico de Guimarães. Bandas e pilastras em EPS com sistema ETICS nos 3 pisos.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Ver todas",
+       "href": "/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/obras/clinica-famalicao",
+   "alternates": {
+    "pt": "/obras/clinica-famalicao",
+    "en": "/en/obras/clinica-famalicao",
+    "fr": "/fr/obras/clinica-famalicao"
+   },
+   "title": "Clínica Privada",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Clínica Privada em V. N. Famalicão",
+    "description": "\"Fachada contemporânea para clínica privada em Famalicão. Bandeaux horizontais em EPS com sistema ETICS — 540 m², eficiência A+.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Início",
+     "path": "/"
+    },
+    {
+     "title": "Obras",
+     "path": "/obras"
+    },
+    {
+     "title": "Clínica Privada",
+     "path": "/obras/clinica-famalicao"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Construção Nova · V. N. Famalicão · 2024"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Clínica Privada",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Fachada limpa e contemporânea para um edifício de saúde. Linhas horizontais em banda de EPS marcam os pisos e integram a sinalética exterior.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "540",
+         "label": "Fachada",
+         "sub": "m²"
+        },
+        {
+         "value": "7",
+         "label": "Duração",
+         "sub": "sem"
+        },
+        {
+         "value": "A+",
+         "label": "Eficiência"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "O Processo"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Durante a obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Conceito",
+         "text": "Definição da linguagem de fachada com o gabinete de arquitetura."
+        },
+        {
+         "title": "02 · Isolamento",
+         "text": "Capoto contínuo para máximo desempenho térmico."
+        },
+        {
+         "title": "03 · Bandas",
+         "text": "Montagem das bandas horizontais que ritmam os pisos."
+        },
+        {
+         "title": "04 · Entrega",
+         "text": "Acabamento branco e integração da sinalética."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Soluções aplicadas"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Materiais Winterplateau nesta obra",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Bandas"
+        },
+        {
+         "text": "Cornija"
+        },
+        {
+         "text": "Capoto / ETICS"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Outras obras",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Reabilitação de Fachada",
+         "href": "/obras/reabilitacao-fachada-braga",
+         "description": "\"Recuperação integral da fachada de um edifício dos anos 80 em Braga. Sistema ETICS com molduras decorativas em EPS — cornijas, bandas e peitoris.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Moradia Unifamiliar",
+         "href": "/obras/moradia-ponte-de-lima",
+         "description": "\"Construção nova de moradia contemporânea em Ponte de Lima. Molduras de vão e cornija em EPS que conferem profundidade à fachada sem o custo da pedra natural.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Edifício Comercial",
+         "href": "/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernização da fachada de edifício comercial no centro histórico de Guimarães. Bandas e pilastras em EPS com sistema ETICS nos 3 pisos.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Ver todas",
+       "href": "/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/privacidade",
+   "alternates": {
+    "pt": "/privacidade",
+    "en": "/en/privacidade",
+    "fr": "/fr/privacidade"
+   },
+   "title": "Política de Privacidade",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Política de Privacidade",
+    "description": "",
+    "image": null,
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Início",
+     "path": "/"
+    },
+    {
+     "title": "Política de Privacidade",
+     "path": "/privacidade"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Política de Privacidade",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "pequeno",
+       "col": "all",
+       "body": "Última atualização: junho de 2026"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "A sua privacidade é importante para a Winterplateau. Esta política explica que dados pessoais recolhemos através deste site, para que os usamos e quais os seus direitos ao abrigo do Regulamento Geral sobre a Proteção de Dados (RGPD)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**1. Responsável pelo tratamento**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "A Winterplateau é a responsável pelo tratamento dos seus dados. Para qualquer questão de privacidade, contacte-nos através de [geral@winterplateau.pt](mailto:geral@winterplateau.pt)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**2. Que dados recolhemos**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "- **Pedidos de orçamento e contacto:** nome, email, telefone e a mensagem/descrição que nos envia.\n- **Estatísticas de utilização:** dados agregados e anónimos sobre as visitas ao site (ver secção Cookies)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**3. Para que usamos os dados**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "- Responder a pedidos de orçamento e a mensagens de contacto;\n- Prestar apoio e dar seguimento comercial ao seu pedido;\n- Melhorar o site através de estatísticas agregadas."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**4. Base legal**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Tratamos os seus dados com base no seu **consentimento** e/ou em diligências **pré-contratuais** a seu pedido (resposta a orçamentos), e no nosso **interesse legítimo** em manter o site seguro e funcional."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**5. Cookies e estatísticas**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Usamos apenas cookies **essenciais** ao funcionamento do site. Para estatísticas usamos uma ferramenta **sem cookies e anónima** (Umami, auto-hospedado), que **não** rastreia os visitantes entre sites nem cria perfis individuais."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**6. Conservação dos dados**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Conservamos os dados de contacto apenas durante o tempo necessário para dar resposta ao seu pedido e cumprir obrigações legais aplicáveis."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**7. Os seus direitos**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Tem direito a aceder, retificar, eliminar e exportar (portabilidade) os seus dados, bem como a opor-se ou limitar o seu tratamento. Para exercer estes direitos, contacte-nos através de [geral@winterplateau.pt](mailto:geral@winterplateau.pt). Tem ainda o direito de apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**8. Subcontratantes**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Para prestar o serviço recorremos a fornecedores que tratam dados em nosso nome (alojamento e envio de emails), sujeitos a obrigações de confidencialidade e segurança. Os dados não são vendidos a terceiros."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**9. Alterações a esta política**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Podemos atualizar esta política. A data da última atualização é indicada no topo desta página."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "redirects": []
+}

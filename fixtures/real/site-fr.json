@@ -1,0 +1,2450 @@
+{
+ "revision": 1,
+ "siteName": "Winterplateau",
+ "locale": "fr",
+ "defaultLanguage": "pt",
+ "languages": [
+  "pt",
+  "en",
+  "fr"
+ ],
+ "topo": {
+  "comps": [
+   {
+    "type": "imagem",
+    "style": "normal",
+    "col": "all",
+    "image": "/favicon.svg",
+    "alt": "Winterplateau"
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": "all",
+    "items": [
+     {
+      "label": "EPS Exterior",
+      "href": "/fr#eps"
+     },
+     {
+      "label": "EPS Interior",
+      "href": "/fr#interior"
+     },
+     {
+      "label": "Profilés métalliques",
+      "href": "/fr#metal"
+     },
+     {
+      "label": "Chantiers",
+      "href": "/fr/obras"
+     },
+     {
+      "label": "Entreprise",
+      "href": "/fr#about"
+     },
+     {
+      "label": "Téléchargements",
+      "href": "/fr#downloads"
+     },
+     {
+      "label": "Contacts",
+      "href": "/fr#contact"
+     }
+    ]
+   },
+   {
+    "type": "botao",
+    "style": "cheio",
+    "col": "all",
+    "label": "Demander un devis",
+    "href": "/fr#orcamento"
+   },
+   {
+    "type": "linguas",
+    "style": "normal",
+    "col": "all"
+   }
+  ]
+ },
+ "rodape": {
+  "layout": 3,
+  "bg": "escuro",
+  "comps": [
+   {
+    "type": "texto",
+    "style": "normal",
+    "col": 1,
+    "body": "\"Solutions en EPS et profilés métalliques pour la construction et la réhabilitation. Fabrication portugaise, qualité européenne.\""
+   },
+   {
+    "type": "redes",
+    "style": "normal",
+    "col": 1,
+    "items": [
+     {
+      "network": "linkedin",
+      "url": "https://www.linkedin.com/company/winterplateau/"
+     },
+     {
+      "network": "facebook",
+      "url": "https://www.facebook.com/winterplateau/"
+     },
+     {
+      "network": "instagram",
+      "url": "https://www.instagram.com/winterplateau/"
+     }
+    ]
+   },
+   {
+    "type": "texto",
+    "style": "normal",
+    "col": 2,
+    "body": "**Solutions**"
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": 2,
+    "items": [
+     {
+      "label": "EPS Exterior",
+      "href": "/fr#eps"
+     },
+     {
+      "label": "EPS Interior",
+      "href": "/fr#interior"
+     },
+     {
+      "label": "Profilés métalliques",
+      "href": "/fr#metal"
+     }
+    ]
+   },
+   {
+    "type": "texto",
+    "style": "normal",
+    "col": 3,
+    "body": "**Entreprise**"
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": 3,
+    "items": [
+     {
+      "label": "Qui sommes-nous",
+      "href": "/fr#about"
+     },
+     {
+      "label": "Portfolio",
+      "href": "/fr/obras"
+     },
+     {
+      "label": "Téléchargements",
+      "href": "/fr#downloads"
+     },
+     {
+      "label": "Contacts",
+      "href": "/fr#contact"
+     }
+    ]
+   },
+   {
+    "type": "texto",
+    "style": "pequeno",
+    "col": "all",
+    "body": "© 2026 Winterplateau. Tous droits réservés."
+   },
+   {
+    "type": "menu",
+    "style": "normal",
+    "col": "all",
+    "items": [
+     {
+      "label": "Politique de confidentialité",
+      "href": "/fr/privacidade"
+     }
+    ]
+   }
+  ]
+ },
+ "pages": [
+  {
+   "path": "/fr",
+   "alternates": {
+    "pt": "/",
+    "en": "/en",
+    "fr": "/fr"
+   },
+   "title": "Accueil",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Solutions EPS et Profilés métalliques",
+    "description": "\"Moulures EPS et profilés métalliques pour la construction neuve et la réhabilitation de façades. Fabrication portugaise depuis 2016, certifié CE.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Accueil",
+     "path": "/fr"
+    }
+   ],
+   "items": [
+    {
+     "kind": "special",
+     "type": "edificio3d",
+     "fields": {
+      "eyebrow": "Vila Verde, Portugal · Depuis 2016"
+     }
+    },
+    {
+     "kind": "special",
+     "type": "faixa",
+     "fields": {
+      "items": [
+       {
+        "name": "Bandeaux"
+       },
+       {
+        "name": "Corniches"
+       },
+       {
+        "name": "Colonnes"
+       },
+       {
+        "name": "Appuis de fenêtre"
+       },
+       {
+        "name": "EPS Exterior"
+       },
+       {
+        "name": "EPS Interior"
+       },
+       {
+        "name": "Corniches intérieures"
+       },
+       {
+        "name": "Faux plafonds"
+       },
+       {
+        "name": "Cloisons"
+       },
+       {
+        "name": "Perfil TC"
+       },
+       {
+        "name": "Montante Stud"
+       },
+       {
+        "name": "Canal Raia"
+       },
+       {
+        "name": "Hourdis"
+       },
+       {
+        "name": "ITE"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Winter*plateau*",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Solutions en EPS et profilés métalliques pour la construction neuve et la réhabilitation. Fabrication portugaise, certification européenne.\""
+      },
+      {
+       "type": "botao",
+       "style": "cheio",
+       "col": "all",
+       "label": "Voir les solutions",
+       "href": "#eps"
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Catalogue PDF",
+       "href": "#downloads"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "2016",
+         "label": "Fondation",
+         "sub": "Vila Verde, Braga"
+        },
+        {
+         "value": "18+",
+         "label": "Produits EPS",
+         "sub": "Extérieur & Intérieur"
+        },
+        {
+         "value": "500+",
+         "label": "Projets",
+         "sub": "Portugal · Espagne · France"
+        },
+        {
+         "value": "CE",
+         "label": "Certification",
+         "sub": "Déclaration de performance"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "eps",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Gamme de produits"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "EPS Exterior",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 1,
+       "body": "\"Des façades innovantes avec des moulures légères en polystyrène expansé. Pose facile, grande durabilité et polyvalence décorative pour tout chantier.\""
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 2,
+       "items": [
+        {
+         "text": "Bandeaux décoratifs"
+        },
+        {
+         "text": "Corniches et entablements"
+        },
+        {
+         "text": "Colonnes et pilastres"
+        },
+        {
+         "text": "Appuis de fenêtre"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "interior",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Gamme de produits"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "EPS Interior",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 1,
+       "body": "\"Des moulures intérieures qui transforment avec élégance les espaces résidentiels et commerciaux. Pose simple, finition raffinée, sans travaux lourds.\""
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 2,
+       "items": [
+        {
+         "text": "Corniches et moulures de plafond"
+        },
+        {
+         "text": "Moulures murales et panneaux"
+        },
+        {
+         "text": "Plinthes décoratives"
+        },
+        {
+         "text": "Profils d'angle et de finition"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "marca",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Fabrication portugaise · Depuis 2016"
+      },
+      {
+       "type": "titulo",
+       "style": "frase",
+       "col": "all",
+       "text": "Plus de 500 chantiers réalisés avec *rigueur et innovation.*",
+       "align": "center",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Certification CE · Déclaration de performance · Export PT, ES & FR"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "metal",
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Gamme de produits"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Profilés métalliques",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "Faux plafonds",
+         "text": "Système de suspension pour plafonds abaissés. Meilleur contrôle acoustique et thermique.\n\n- Perfil TC\n- Perfil U / Raia"
+        },
+        {
+         "title": "Cloisons",
+         "text": "Cloisons légères et polyvalentes pour bureaux et espaces commerciaux.\n\n- Montante Stud\n- Canal Raia"
+        },
+        {
+         "title": "Compléments",
+         "text": "\"Joints creux, cornières et profils de finition pour des solutions complètes.\"\n\n- Alheta Lacada\n- Cantoneira L\n- Cantoneira L Perf."
+        },
+        {
+         "title": "Accessoires",
+         "text": "Système complet de fixation, suspension et connexion pour toute solution.\n\n- Alçapão\n- Cruzeta / Emenda\n- Perfil Omega · Pivot"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "obras",
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Portfolio · Chantiers"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Des chantiers qui parlent pour nous",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Chaque chantier montre l'avant et l'après — faites glisser pour voir la transformation que nos solutions apportent à la façade."
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Réhabilitation de façade",
+         "href": "/fr/obras/reabilitacao-fachada-braga",
+         "description": "\"Rénovation complète d'une façade des années 80 à Braga. Système ITE avec moulures décoratives EPS — corniches, bandeaux et appuis.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Maison individuelle",
+         "href": "/fr/obras/moradia-ponte-de-lima",
+         "description": "\"Construction neuve d'une maison contemporaine à Ponte de Lima. Encadrements et corniche en EPS apportant de la profondeur à la façade sans le coût de la pierre.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble commercial",
+         "href": "/fr/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernisation de la façade d'un immeuble commercial du centre historique de Guimarães. Bandeaux et pilastres EPS avec ITE sur 3 étages.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Voir tous les chantiers",
+       "href": "/fr/obras"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "about",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": 1,
+       "text": "2016",
+       "align": "left",
+       "level": "h3"
+      },
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 2,
+       "text": "Qui sommes-nous"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 2,
+       "text": "\"Créés pour répondre à un *besoin réel* de la construction moderne.\"",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 2,
+       "body": "\"Winterplateau a été fondée en janvier 2016 à Vila Verde, Braga, pour développer et répondre à un besoin identifié sur le marché de la construction et de la réhabilitation — des produits EPS innovants et multifonctionnels fondés sur les meilleures pratiques et technologies. Une recherche incessante de qualité qui se traduit par des avantages compétitifs concrets pour nos clients.\""
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 2,
+       "items": [
+        {
+         "text": "Certification CE"
+        },
+        {
+         "text": "Décl. de performance"
+        },
+        {
+         "text": "Cofinancé UE"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "downloads",
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Documentation technique"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Téléchargements",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "documentos",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "name": "Déclaration de performance",
+         "file": "/downloads/DECLARACAO_DESEMPENHO.pdf"
+        },
+        {
+         "name": "Déclaration de conformité",
+         "file": "/downloads/declaracao-conformidade.pdf"
+        },
+        {
+         "name": "DOP — Déclaration de performance",
+         "file": "/downloads/dop.pdf"
+        },
+        {
+         "name": "Guide d'application des moulures",
+         "file": "/downloads/modo-de-aplicacao-molduras.pdf"
+        },
+        {
+         "name": "Catalogue Winterplateau",
+         "file": "/downloads/WINTERPLATEAU_Catalogo-XS_AF.pdf"
+        },
+        {
+         "name": "Catalogue Corniches intérieures",
+         "file": "/downloads/catalogo-rodatetos-winterplateau_Versao-1.pdf"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "marca",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "frase",
+       "col": "all",
+       "text": "Prêt pour votre *prochain chantier ?*",
+       "align": "center",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Demandez un devis personnalisé ou parlez à notre équipe technique."
+      },
+      {
+       "type": "botao",
+       "style": "cheio",
+       "col": "all",
+       "label": "Demander un devis",
+       "href": "#orcamento"
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Télécharger le catalogue",
+       "href": "#downloads"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "orcamento",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Demande de devis"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "Demandez votre devis",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": 1,
+       "body": "Envoyez-nous les détails de votre chantier — nous répondons avec une proposition personnalisée sous 1 à 2 jours ouvrés."
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": 1,
+       "items": [
+        {
+         "text": "Réponse sous 48 heures"
+        },
+        {
+         "text": "Conseil technique inclus"
+        },
+        {
+         "text": "Sans engagement"
+        }
+       ]
+      },
+      {
+       "type": "formulario",
+       "style": "normal",
+       "col": 2,
+       "types": [
+        {
+         "name": "Réhabilitation de façade"
+        },
+        {
+         "name": "Construction neuve"
+        },
+        {
+         "name": "EPS intérieur"
+        },
+        {
+         "name": "Profilés métalliques"
+        },
+        {
+         "name": "Autre"
+        }
+       ]
+      },
+      {
+       "type": "texto",
+       "style": "pequeno",
+       "col": 2,
+       "body": "Les demandes sont envoyées directement à geral@winterplateau.pt"
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": "contact",
+     "layout": 2,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": 1,
+       "text": "Contacts"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": 1,
+       "text": "Contactez-nous",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "contacto",
+       "style": "normal",
+       "col": 1,
+       "address": "Avenida Principal, Nº 202\n\"4730-041 Atiães, Vila Verde\"\n\"Braga, Portugal\"",
+       "phone": "+351 253 193 667",
+       "email": "geral@winterplateau.pt"
+      },
+      {
+       "type": "redes",
+       "style": "normal",
+       "col": 1,
+       "items": [
+        {
+         "network": "linkedin",
+         "url": "https://www.linkedin.com/company/winterplateau/"
+        },
+        {
+         "network": "facebook",
+         "url": "https://www.facebook.com/winterplateau/"
+        },
+        {
+         "network": "instagram",
+         "url": "https://www.instagram.com/winterplateau/"
+        }
+       ]
+      },
+      {
+       "type": "mapa",
+       "style": "normal",
+       "col": 2,
+       "address": "Avenida Principal 202, 4730-041 Atiães, Vila Verde, Braga, Portugal",
+       "zoom": "rua",
+       "title": "Winterplateau"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/fr/obras",
+   "alternates": {
+    "pt": "/obras",
+    "en": "/en/obras",
+    "fr": "/fr/obras"
+   },
+   "title": "Chantiers",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Chantiers — Portfolio",
+    "description": "\"Portfolio de chantiers de réhabilitation de façades et de construction neuve avec moulures EPS et systèmes ITE dans le nord du Portugal.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Accueil",
+     "path": "/fr"
+    },
+    {
+     "title": "Chantiers",
+     "path": "/fr/obras"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Nos Chantiers",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Réhabilitation de façades et construction neuve dans tout le nord du Portugal. Sur chaque chantier, faites glisser la comparaison pour voir la transformation apportée par les moulures et l'isolation Winterplateau.\""
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Réhabilitation de façade",
+         "href": "/fr/obras/reabilitacao-fachada-braga",
+         "description": "\"Rénovation complète d'une façade des années 80 à Braga. Système ITE avec moulures décoratives EPS — corniches, bandeaux et appuis.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Maison individuelle",
+         "href": "/fr/obras/moradia-ponte-de-lima",
+         "description": "\"Construction neuve d'une maison contemporaine à Ponte de Lima. Encadrements et corniche en EPS apportant de la profondeur à la façade sans le coût de la pierre.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble commercial",
+         "href": "/fr/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernisation de la façade d'un immeuble commercial du centre historique de Guimarães. Bandeaux et pilastres EPS avec ITE sur 3 étages.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble résidentiel",
+         "href": "/fr/obras/apartamentos-vila-verde",
+         "description": "\"Construction neuve d'un immeuble de 20 logements à Vila Verde. Façade avec corniches, bandeaux et appuis EPS sur système ITE — 1 240 m².\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Restauration d'un manoir",
+         "href": "/fr/obras/restauro-solar-barcelos",
+         "description": "\"Restauration des éléments décoratifs d'un manoir du XIXe siècle à Barcelos. Répliques des moulures d'origine en EPS haute densité, découpées au CNC.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Clinique privée",
+         "href": "/fr/obras/clinica-famalicao",
+         "description": "\"Façade contemporaine pour une clinique privée à Famalicão. Bandeaux horizontaux EPS avec ITE — 540 m², performance A+.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "marca",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "frase",
+       "col": "all",
+       "text": "Un projet en tête ?",
+       "align": "center",
+       "level": "h2"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Parlez à notre équipe technique et trouvez la solution adaptée à votre chantier."
+      },
+      {
+       "type": "botao",
+       "style": "cheio",
+       "col": "all",
+       "label": "Demander un devis",
+       "href": "/fr#orcamento"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/fr/obras/reabilitacao-fachada-braga",
+   "alternates": {
+    "pt": "/obras/reabilitacao-fachada-braga",
+    "en": "/en/obras/reabilitacao-fachada-braga",
+    "fr": "/fr/obras/reabilitacao-fachada-braga"
+   },
+   "title": "Réhabilitation de façade",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Réhabilitation de façade à Braga",
+    "description": "\"Rénovation complète d'une façade des années 80 à Braga. Système ITE avec moulures décoratives EPS — corniches, bandeaux et appuis.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Accueil",
+     "path": "/fr"
+    },
+    {
+     "title": "Chantiers",
+     "path": "/fr/obras"
+    },
+    {
+     "title": "Réhabilitation de façade",
+     "path": "/fr/obras/reabilitacao-fachada-braga"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Réhabilitation · Braga · 2023"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Réhabilitation de façade",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Récupération intégrale de l'enveloppe d'un immeuble d'habitation des années 80. Système ITE avec moulures décoratives en EPS — corniches, bandeaux et appuis — redonnant caractère et efficacité thermique au bâtiment.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "420",
+         "label": "Façade",
+         "sub": "m²"
+        },
+        {
+         "value": "6",
+         "label": "Durée",
+         "sub": "sem."
+        },
+        {
+         "value": "B→A+",
+         "label": "Efficacité"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Le processus"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Pendant les travaux",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Diagnostic",
+         "text": "Relevé des pathologies, fissures et ponts thermiques de la façade existante."
+        },
+        {
+         "title": "02 · Préparation",
+         "text": "Nettoyage, réparation de l'enduit et pose du système d'isolation ITE."
+        },
+        {
+         "title": "03 · Moulures EPS",
+         "text": "Collage et fixation des corniches, bandeaux et appuis Winterplateau."
+        },
+        {
+         "title": "04 · Finitions",
+         "text": "Sous-enduit armé, primaire et revêtement final dans la couleur choisie."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions appliquées"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Matériaux Winterplateau sur ce chantier",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "ITE (Capoto)"
+        },
+        {
+         "text": "Corniches"
+        },
+        {
+         "text": "Bandeaux"
+        },
+        {
+         "text": "Appuis de fenêtre"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Autres chantiers",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Maison individuelle",
+         "href": "/fr/obras/moradia-ponte-de-lima",
+         "description": "\"Construction neuve d'une maison contemporaine à Ponte de Lima. Encadrements et corniche en EPS apportant de la profondeur à la façade sans le coût de la pierre.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble commercial",
+         "href": "/fr/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernisation de la façade d'un immeuble commercial du centre historique de Guimarães. Bandeaux et pilastres EPS avec ITE sur 3 étages.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble résidentiel",
+         "href": "/fr/obras/apartamentos-vila-verde",
+         "description": "\"Construction neuve d'un immeuble de 20 logements à Vila Verde. Façade avec corniches, bandeaux et appuis EPS sur système ITE — 1 240 m².\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Voir tout",
+       "href": "/fr/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/fr/obras/moradia-ponte-de-lima",
+   "alternates": {
+    "pt": "/obras/moradia-ponte-de-lima",
+    "en": "/en/obras/moradia-ponte-de-lima",
+    "fr": "/fr/obras/moradia-ponte-de-lima"
+   },
+   "title": "Maison individuelle",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Maison individuelle à Ponte de Lima",
+    "description": "\"Construction neuve d'une maison contemporaine à Ponte de Lima. Encadrements et corniche en EPS apportant de la profondeur à la façade sans le coût de la pierre.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Accueil",
+     "path": "/fr"
+    },
+    {
+     "title": "Chantiers",
+     "path": "/fr/obras"
+    },
+    {
+     "title": "Maison individuelle",
+     "path": "/fr/obras/moradia-ponte-de-lima"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Construction neuve · Ponte de Lima · 2022"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Maison individuelle",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Construction neuve d'une maison contemporaine. Les encadrements et la corniche en EPS donnent de la profondeur à la façade sans le poids ni le coût de la pierre naturelle.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "260",
+         "label": "Surface",
+         "sub": "m²"
+        },
+        {
+         "value": "4",
+         "label": "Durée",
+         "sub": "sem."
+        },
+        {
+         "value": "12",
+         "label": "Moulures",
+         "sub": "baies"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Le processus"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Pendant les travaux",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Conception",
+         "text": "Définition du dessin de façade et sélection des profils de moulures."
+        },
+        {
+         "title": "02 · Structure",
+         "text": "Maçonnerie achevée et façade préparée pour recevoir les moulures."
+        },
+        {
+         "title": "03 · Pose",
+         "text": "\"Pose des encadrements, pilastres et corniche de couronnement.\""
+        },
+        {
+         "title": "04 · Peinture",
+         "text": "Finitions et traitement hydrofuge des surfaces."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions appliquées"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Matériaux Winterplateau sur ce chantier",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Encadrements de baies"
+        },
+        {
+         "text": "Corniche"
+        },
+        {
+         "text": "Pilastres"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Autres chantiers",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Réhabilitation de façade",
+         "href": "/fr/obras/reabilitacao-fachada-braga",
+         "description": "\"Rénovation complète d'une façade des années 80 à Braga. Système ITE avec moulures décoratives EPS — corniches, bandeaux et appuis.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble commercial",
+         "href": "/fr/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernisation de la façade d'un immeuble commercial du centre historique de Guimarães. Bandeaux et pilastres EPS avec ITE sur 3 étages.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble résidentiel",
+         "href": "/fr/obras/apartamentos-vila-verde",
+         "description": "\"Construction neuve d'un immeuble de 20 logements à Vila Verde. Façade avec corniches, bandeaux et appuis EPS sur système ITE — 1 240 m².\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Voir tout",
+       "href": "/fr/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/fr/obras/edificio-comercial-guimaraes",
+   "alternates": {
+    "pt": "/obras/edificio-comercial-guimaraes",
+    "en": "/en/obras/edificio-comercial-guimaraes",
+    "fr": "/fr/obras/edificio-comercial-guimaraes"
+   },
+   "title": "Immeuble commercial",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Immeuble commercial à Guimarães",
+    "description": "\"Modernisation de la façade d'un immeuble commercial du centre historique de Guimarães. Bandeaux et pilastres EPS avec ITE sur 3 étages.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Accueil",
+     "path": "/fr"
+    },
+    {
+     "title": "Chantiers",
+     "path": "/fr/obras"
+    },
+    {
+     "title": "Immeuble commercial",
+     "path": "/fr/obras/edificio-comercial-guimaraes"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Réhabilitation · Guimarães · 2024"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Immeuble commercial",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Modernisation de la façade d'un immeuble commercial du centre historique. Bandeaux horizontaux et pilastres en EPS créent un rythme élégant qui met en valeur les vitrines.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "680",
+         "label": "Façade",
+         "sub": "m²"
+        },
+        {
+         "value": "8",
+         "label": "Durée",
+         "sub": "sem."
+        },
+        {
+         "value": "3",
+         "label": "Intervention",
+         "sub": "étages"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Le processus"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Pendant les travaux",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Étude",
+         "text": "Mise en conformité avec les règles du centre historique et permis."
+        },
+        {
+         "title": "02 · Isolation",
+         "text": "ITE appliquée sur toute l'enveloppe extérieure."
+        },
+        {
+         "title": "03 · Composition",
+         "text": "Pose des bandeaux et pilastres selon le dessin approuvé."
+        },
+        {
+         "title": "04 · Livraison",
+         "text": "Finitions, nettoyage et livraison au client."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions appliquées"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Matériaux Winterplateau sur ce chantier",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Bandeaux"
+        },
+        {
+         "text": "Pilastres"
+        },
+        {
+         "text": "Corniches"
+        },
+        {
+         "text": "ITE (Capoto)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Autres chantiers",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Réhabilitation de façade",
+         "href": "/fr/obras/reabilitacao-fachada-braga",
+         "description": "\"Rénovation complète d'une façade des années 80 à Braga. Système ITE avec moulures décoratives EPS — corniches, bandeaux et appuis.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Maison individuelle",
+         "href": "/fr/obras/moradia-ponte-de-lima",
+         "description": "\"Construction neuve d'une maison contemporaine à Ponte de Lima. Encadrements et corniche en EPS apportant de la profondeur à la façade sans le coût de la pierre.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble résidentiel",
+         "href": "/fr/obras/apartamentos-vila-verde",
+         "description": "\"Construction neuve d'un immeuble de 20 logements à Vila Verde. Façade avec corniches, bandeaux et appuis EPS sur système ITE — 1 240 m².\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Voir tout",
+       "href": "/fr/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/fr/obras/apartamentos-vila-verde",
+   "alternates": {
+    "pt": "/obras/apartamentos-vila-verde",
+    "en": "/en/obras/apartamentos-vila-verde",
+    "fr": "/fr/obras/apartamentos-vila-verde"
+   },
+   "title": "Immeuble résidentiel",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Immeuble résidentiel à Vila Verde",
+    "description": "\"Construction neuve d'un immeuble de 20 logements à Vila Verde. Façade avec corniches, bandeaux et appuis EPS sur système ITE — 1 240 m².\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Accueil",
+     "path": "/fr"
+    },
+    {
+     "title": "Chantiers",
+     "path": "/fr/obras"
+    },
+    {
+     "title": "Immeuble résidentiel",
+     "path": "/fr/obras/apartamentos-vila-verde"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Construction neuve · Vila Verde · 2023"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Immeuble résidentiel",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Programme de logements collectifs avec façade ventilée et finitions en EPS. Une solution légère qui accélère le chantier et garantit l'uniformité à tous les étages.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "1.240",
+         "label": "Façade",
+         "sub": "m²"
+        },
+        {
+         "value": "14",
+         "label": "Durée",
+         "sub": "sem."
+        },
+        {
+         "value": "20",
+         "label": "Logements",
+         "sub": "logements"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Le processus"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Pendant les travaux",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Planification",
+         "text": "Phasage des travaux par façade et logistique de chantier."
+        },
+        {
+         "title": "02 · Isolation",
+         "text": "Système ITE appliqué étage par étage."
+        },
+        {
+         "title": "03 · Moulures",
+         "text": "\"Bandeaux, corniches et appuis posés en série.\""
+        },
+        {
+         "title": "04 · Finitions",
+         "text": "Revêtement final et essais de performance thermique."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions appliquées"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Matériaux Winterplateau sur ce chantier",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Corniches"
+        },
+        {
+         "text": "Bandeaux"
+        },
+        {
+         "text": "Appuis de fenêtre"
+        },
+        {
+         "text": "ITE (Capoto)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Autres chantiers",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Réhabilitation de façade",
+         "href": "/fr/obras/reabilitacao-fachada-braga",
+         "description": "\"Rénovation complète d'une façade des années 80 à Braga. Système ITE avec moulures décoratives EPS — corniches, bandeaux et appuis.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Maison individuelle",
+         "href": "/fr/obras/moradia-ponte-de-lima",
+         "description": "\"Construction neuve d'une maison contemporaine à Ponte de Lima. Encadrements et corniche en EPS apportant de la profondeur à la façade sans le coût de la pierre.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble commercial",
+         "href": "/fr/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernisation de la façade d'un immeuble commercial du centre historique de Guimarães. Bandeaux et pilastres EPS avec ITE sur 3 étages.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Voir tout",
+       "href": "/fr/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/fr/obras/restauro-solar-barcelos",
+   "alternates": {
+    "pt": "/obras/restauro-solar-barcelos",
+    "en": "/en/obras/restauro-solar-barcelos",
+    "fr": "/fr/obras/restauro-solar-barcelos"
+   },
+   "title": "Restauration d'un manoir",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Restauration d'un manoir du XIXe siècle à Barcelos",
+    "description": "\"Restauration des éléments décoratifs d'un manoir du XIXe siècle à Barcelos. Répliques des moulures d'origine en EPS haute densité, découpées au CNC.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Accueil",
+     "path": "/fr"
+    },
+    {
+     "title": "Chantiers",
+     "path": "/fr/obras"
+    },
+    {
+     "title": "Restauration d'un manoir",
+     "path": "/fr/obras/restauro-solar-barcelos"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Réhabilitation · Barcelos · 2021"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Restauration d'un manoir",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "\"Restauration des éléments décoratifs d'un manoir du XIXe siècle. Répliques des moulures d'origine en EPS haute densité, fidèles au dessin historique.\""
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "310",
+         "label": "Façade",
+         "sub": "m²"
+        },
+        {
+         "value": "10",
+         "label": "Durée",
+         "sub": "sem."
+        },
+        {
+         "value": "1850",
+         "label": "Époque"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Le processus"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Pendant les travaux",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Relevé",
+         "text": "Relevé et moulage des éléments décoratifs d'origine."
+        },
+        {
+         "title": "02 · Production",
+         "text": "Découpe CNC des répliques en EPS haute densité."
+        },
+        {
+         "title": "03 · Montage",
+         "text": "Pose soignée dans le respect de la composition historique."
+        },
+        {
+         "title": "04 · Patine",
+         "text": "Finition texturée imitant la pierre vieillie."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions appliquées"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Matériaux Winterplateau sur ce chantier",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Moulures sur mesure"
+        },
+        {
+         "text": "Corniches"
+        },
+        {
+         "text": "Pilastres"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Autres chantiers",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Réhabilitation de façade",
+         "href": "/fr/obras/reabilitacao-fachada-braga",
+         "description": "\"Rénovation complète d'une façade des années 80 à Braga. Système ITE avec moulures décoratives EPS — corniches, bandeaux et appuis.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Maison individuelle",
+         "href": "/fr/obras/moradia-ponte-de-lima",
+         "description": "\"Construction neuve d'une maison contemporaine à Ponte de Lima. Encadrements et corniche en EPS apportant de la profondeur à la façade sans le coût de la pierre.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble commercial",
+         "href": "/fr/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernisation de la façade d'un immeuble commercial du centre historique de Guimarães. Bandeaux et pilastres EPS avec ITE sur 3 étages.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Voir tout",
+       "href": "/fr/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/fr/obras/clinica-famalicao",
+   "alternates": {
+    "pt": "/obras/clinica-famalicao",
+    "en": "/en/obras/clinica-famalicao",
+    "fr": "/fr/obras/clinica-famalicao"
+   },
+   "title": "Clinique privée",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Clinique privée à V. N. Famalicão",
+    "description": "\"Façade contemporaine pour une clinique privée à Famalicão. Bandeaux horizontaux EPS avec ITE — 540 m², performance A+.\"",
+    "image": "/assets/og-image.png",
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Accueil",
+     "path": "/fr"
+    },
+    {
+     "title": "Chantiers",
+     "path": "/fr/obras"
+    },
+    {
+     "title": "Clinique privée",
+     "path": "/fr/obras/clinica-famalicao"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Construction neuve · V. N. Famalicão · 2024"
+      },
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Clinique privée",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "Façade épurée et contemporaine pour un bâtiment de santé. Des bandeaux horizontaux en EPS marquent les étages et intègrent la signalétique extérieure."
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "numeros",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "value": "540",
+         "label": "Façade",
+         "sub": "m²"
+        },
+        {
+         "value": "7",
+         "label": "Durée",
+         "sub": "sem."
+        },
+        {
+         "value": "A+",
+         "label": "Efficacité"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Le processus"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Pendant les travaux",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "iconetexto",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "title": "01 · Concept",
+         "text": "Langage de façade défini avec le cabinet d'architecture."
+        },
+        {
+         "title": "02 · Isolation",
+         "text": "ITE continue pour une performance thermique maximale."
+        },
+        {
+         "title": "03 · Bandeaux",
+         "text": "Pose des bandeaux horizontaux qui rythment les étages."
+        },
+        {
+         "title": "04 · Livraison",
+         "text": "Finition blanche et intégration de la signalétique."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "etiqueta",
+       "style": "normal",
+       "col": "all",
+       "text": "Solutions appliquées"
+      },
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Matériaux Winterplateau sur ce chantier",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "lista",
+       "style": "normal",
+       "col": "all",
+       "items": [
+        {
+         "text": "Bandeaux"
+        },
+        {
+         "text": "Corniche"
+        },
+        {
+         "text": "ITE (Capoto)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "escuro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "seccao",
+       "col": "all",
+       "text": "Autres chantiers",
+       "align": "left",
+       "level": "h2"
+      },
+      {
+       "type": "paginas",
+       "style": "normal",
+       "col": "all",
+       "pick": [
+        {
+         "title": "Réhabilitation de façade",
+         "href": "/fr/obras/reabilitacao-fachada-braga",
+         "description": "\"Rénovation complète d'une façade des années 80 à Braga. Système ITE avec moulures décoratives EPS — corniches, bandeaux et appuis.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Maison individuelle",
+         "href": "/fr/obras/moradia-ponte-de-lima",
+         "description": "\"Construction neuve d'une maison contemporaine à Ponte de Lima. Encadrements et corniche en EPS apportant de la profondeur à la façade sans le coût de la pierre.\"",
+         "image": "/assets/og-image.png"
+        },
+        {
+         "title": "Immeuble commercial",
+         "href": "/fr/obras/edificio-comercial-guimaraes",
+         "description": "\"Modernisation de la façade d'un immeuble commercial du centre historique de Guimarães. Bandeaux et pilastres EPS avec ITE sur 3 étages.\"",
+         "image": "/assets/og-image.png"
+        }
+       ]
+      },
+      {
+       "type": "botao",
+       "style": "contorno",
+       "col": "all",
+       "label": "Voir tout",
+       "href": "/fr/obras"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "/fr/privacidade",
+   "alternates": {
+    "pt": "/privacidade",
+    "en": "/en/privacidade",
+    "fr": "/fr/privacidade"
+   },
+   "title": "Politique de confidentialité",
+   "updatedAt": "2026-10-15T14:55:19.000Z",
+   "seo": {
+    "title": "Politique de confidentialité",
+    "description": "",
+    "image": null,
+    "noindex": false,
+    "canonical": null
+   },
+   "breadcrumb": [
+    {
+     "title": "Accueil",
+     "path": "/fr"
+    },
+    {
+     "title": "Politique de confidentialité",
+     "path": "/fr/privacidade"
+    }
+   ],
+   "items": [
+    {
+     "kind": "block",
+     "anchor": null,
+     "layout": 1,
+     "bg": "claro",
+     "comps": [
+      {
+       "type": "titulo",
+       "style": "destaque",
+       "col": "all",
+       "text": "Politique de confidentialité",
+       "align": "left",
+       "level": "h1"
+      },
+      {
+       "type": "texto",
+       "style": "pequeno",
+       "col": "all",
+       "body": "Última atualização: junho de 2026"
+      },
+      {
+       "type": "texto",
+       "style": "grande",
+       "col": "all",
+       "body": "A sua privacidade é importante para a Winterplateau. Esta política explica que dados pessoais recolhemos através deste site, para que os usamos e quais os seus direitos ao abrigo do Regulamento Geral sobre a Proteção de Dados (RGPD)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**1. Responsável pelo tratamento**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "A Winterplateau é a responsável pelo tratamento dos seus dados. Para qualquer questão de privacidade, contacte-nos através de [geral@winterplateau.pt](mailto:geral@winterplateau.pt)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**2. Que dados recolhemos**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "- **Pedidos de orçamento e contacto:** nome, email, telefone e a mensagem/descrição que nos envia.\n- **Estatísticas de utilização:** dados agregados e anónimos sobre as visitas ao site (ver secção Cookies)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**3. Para que usamos os dados**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "- Responder a pedidos de orçamento e a mensagens de contacto;\n- Prestar apoio e dar seguimento comercial ao seu pedido;\n- Melhorar o site através de estatísticas agregadas."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**4. Base legal**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Tratamos os seus dados com base no seu **consentimento** e/ou em diligências **pré-contratuais** a seu pedido (resposta a orçamentos), e no nosso **interesse legítimo** em manter o site seguro e funcional."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**5. Cookies e estatísticas**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Usamos apenas cookies **essenciais** ao funcionamento do site. Para estatísticas usamos uma ferramenta **sem cookies e anónima** (Umami, auto-hospedado), que **não** rastreia os visitantes entre sites nem cria perfis individuais."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**6. Conservação dos dados**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Conservamos os dados de contacto apenas durante o tempo necessário para dar resposta ao seu pedido e cumprir obrigações legais aplicáveis."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**7. Os seus direitos**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Tem direito a aceder, retificar, eliminar e exportar (portabilidade) os seus dados, bem como a opor-se ou limitar o seu tratamento. Para exercer estes direitos, contacte-nos através de [geral@winterplateau.pt](mailto:geral@winterplateau.pt). Tem ainda o direito de apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD)."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**8. Subcontratantes**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Para prestar o serviço recorremos a fornecedores que tratam dados em nosso nome (alojamento e envio de emails), sujeitos a obrigações de confidencialidade e segurança. Os dados não são vendidos a terceiros."
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "**9. Alterações a esta política**"
+      },
+      {
+       "type": "texto",
+       "style": "normal",
+       "col": "all",
+       "body": "Podemos atualizar esta política. A data da última atualização é indicada no topo desta página."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "redirects": []
+}
