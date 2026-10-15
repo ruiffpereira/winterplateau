@@ -48,6 +48,8 @@ export interface Page {
 
 export interface Site {
   revision: number;
+  /** Nome do site (Admin), igual em todas as línguas; `null` se o dono ainda não o definiu. */
+  siteName?: string | null;
   locale: string;
   defaultLanguage: string;
   languages: string[];

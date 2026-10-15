@@ -28,6 +28,11 @@ export type GetWebsitesSite200 = {
     */
     revision?: number;
     /**
+     * @description Nome do site (definido pelo dono da plataforma), igual em todas as línguas
+     * @type string
+    */
+    siteName?: string | null;
+    /**
      * @type string | undefined
     */
     locale?: string;

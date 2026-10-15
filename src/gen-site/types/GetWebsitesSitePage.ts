@@ -12,9 +12,18 @@ export type GetWebsitesSitePageQueryParams = {
 };
 
 /**
- * @description `{revision, locale, defaultLanguage, languages, topo, rodape, page}` ou `{redirect}`
+ * @description `{revision, siteName, locale, defaultLanguage, languages, topo, rodape, page}` ou `{redirect}`
 */
 export type GetWebsitesSitePage200 = {
+    /**
+     * @type integer | undefined
+    */
+    revision?: number;
+    /**
+     * @description Nome do site (definido pelo dono da plataforma), igual em todas as línguas
+     * @type string
+    */
+    siteName?: string | null;
     /**
      * @description Mesma forma de um elemento de `pages` em /websites/site
      * @type object | undefined

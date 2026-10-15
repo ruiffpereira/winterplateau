@@ -5,7 +5,7 @@ import '../cms/styles/kit.css';
 import '../cms/styles/components.css';
 import '../cms/styles/specials.css';
 import UmamiScript from '../components/UmamiScript.astro';
-import { absUrl, hreflangs, jsonLd, ogLocale, SITE_NAME, titleOf } from '../cms/seo';
+import { absUrl, hreflangs, jsonLd, ogLocale, siteNameOf, titleOf } from '../cms/seo';
 import { json, plain, safeSrc } from '../cms/text';
 import type { Ctx } from '../cms/types';
 
@@ -15,7 +15,7 @@ export interface Props {
 const { ctx } = Astro.props;
 const { page, site } = ctx;
 const origin = Astro.site ?? 'https://www.winterplateau.pt';
-const title = titleOf(page);
+const title = titleOf(page, site);
 const description = plain(page.seo.description);
 const canonical = absUrl(page.seo.canonical ?? page.path, origin);
 const image = safeSrc(page.seo.image);
@@ -34,7 +34,7 @@ const alternates = hreflangs(ctx, origin);
     {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:site_name" content={siteNameOf(site)} />
     <meta property="og:title" content={title} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:url" content={canonical} />

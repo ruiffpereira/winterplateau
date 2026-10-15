@@ -48,7 +48,9 @@ for (const site of sites) {
       ok(html.includes(`<link rel="alternate" hreflang="${lang}" href="${abs(path)}">`), `${page.path}: hreflang ${lang} em falta`);
     }
     ok(html.includes(`hreflang="x-default" href="${abs(page.alternates[site.defaultLanguage])}"`), `${page.path}: x-default em falta`);
-    ok(/<title>[^<]+ · Winterplateau<\/title>/.test(html), `${page.path}: <title> sem o nome do site`);
+    // O nome vem do `siteName` do objecto da API; sem ele o kit usa "Winterplateau".
+    const title = attr(html, /<title>([^<]*)<\/title>/) ?? '';
+    ok(title.endsWith(` · ${site.siteName || 'Winterplateau'}`), `${page.path}: <title> sem o nome do site`);
     ok(html.includes('property="og:title"') && html.includes('property="og:url"'), `${page.path}: Open Graph em falta`);
     const hasTopo = base.topo.comps.length > 0;
     ok(html.includes('<header class="topo">') === hasTopo, `${page.path}: topo ${hasTopo ? 'em falta' : 'indevido (o site não tem topo)'}`);

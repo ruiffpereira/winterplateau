@@ -68,6 +68,11 @@
                     "revision": {
                       "type": "integer"
                     },
+                    "siteName": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Nome do site (definido pelo dono da plataforma), igual em todas as línguas"
+                    },
                     "locale": {
                       "type": "string"
                     },
@@ -224,7 +229,7 @@
     "/websites/site/page": {
       "get": {
         "summary": "Uma página pelo endereço (para sites em runtime)",
-        "description": "Site token OBRIGATÓRIO. A língua sai do prefixo do `path` (`/en/…` → en; sem prefixo → base). Resposta igual à de `/websites/site` (cabeçalho + `topo`/`rodape`) com `page` em vez de `pages` e sem `redirects`. Endereço antigo de uma página publicada → `200 {redirect}`; inexistente ou rascunho → `404`. `Cache-Control: no-cache` + `ETag`. Sem `publicRateLimit` (fica o limite global).\n",
+        "description": "Site token OBRIGATÓRIO. A língua sai do prefixo do `path` (`/en/…` → en; sem prefixo → base). Resposta igual à de `/websites/site` (cabeçalho — `revision`, `siteName`, línguas — + `topo`/`rodape`) com `page` em vez de `pages` e sem `redirects`. Endereço antigo de uma página publicada → `200 {redirect}`; inexistente ou rascunho → `404`. `Cache-Control: no-cache` + `ETag`. Sem `publicRateLimit` (fica o limite global).\n",
         "tags": [
           "Site"
         ],
@@ -249,12 +254,20 @@
         ],
         "responses": {
           "200": {
-            "description": "`{revision, locale, defaultLanguage, languages, topo, rodape, page}` ou `{redirect}`",
+            "description": "`{revision, siteName, locale, defaultLanguage, languages, topo, rodape, page}` ou `{redirect}`",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
                   "properties": {
+                    "revision": {
+                      "type": "integer"
+                    },
+                    "siteName": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Nome do site (definido pelo dono da plataforma), igual em todas as línguas"
+                    },
                     "page": {
                       "type": "object",
                       "description": "Mesma forma de um elemento de `pages` em /websites/site"

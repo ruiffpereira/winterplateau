@@ -1,8 +1,10 @@
 /** SEO que é do kit (CONTRATO §9): título, URLs absolutas, hreflang e JSON-LD. Texto passa por `plain()`. */
 import { plain, safeSrc } from './text.js';
-import type { Comp, Ctx, Item, Page } from './types.js';
+import type { Comp, Ctx, Item, Page, Site } from './types.js';
 
-export const SITE_NAME = 'Winterplateau';
+/** Nome do site: o `siteName` que o dono define no Admin (sai no objecto da API); sem ele, o nome de sempre. */
+const FALLBACK_NAME = 'Winterplateau';
+export const siteNameOf = (site: Site): string => site.siteName?.trim() || FALLBACK_NAME;
 
 const OG_LOCALE: Record<string, string> = { pt: 'pt_PT', en: 'en_GB', fr: 'fr_FR', es: 'es_ES', de: 'de_DE' };
 export const ogLocale = (l: string): string => OG_LOCALE[l] ?? l;
@@ -14,7 +16,7 @@ export function absUrl(path: string, site: URL | string): string {
   return u.toString();
 }
 
-export const titleOf = (page: Page): string => `${plain(page.seo.title || page.title)} · ${SITE_NAME}`;
+export const titleOf = (page: Page, site: Site): string => `${plain(page.seo.title || page.title)} · ${siteNameOf(site)}`;
 
 export const compsOf = (items: Item[]): Comp[] => items.flatMap((it) => (it.kind === 'block' ? it.comps : []));
 
@@ -33,7 +35,7 @@ export function jsonLd(ctx: Ctx, site: URL | string): object[] {
   const pageComps = compsOf(page.items);
   const logo = safeSrc(all.find((c) => c.type === 'imagem')?.image);
   const sameAs = all.filter((c) => c.type === 'redes').flatMap((c) => (c.items ?? []).map((i: { url?: string }) => i.url).filter((u: unknown): u is string => typeof u === 'string' && /^https?:/i.test(u)));
-  const org = { '@type': 'Organization', name: SITE_NAME, url: absUrl('/', site), ...(logo ? { logo: new URL(logo, site).toString() } : {}), ...(sameAs.length ? { sameAs } : {}) };
+  const org = { '@type': 'Organization', name: siteNameOf(ctx.site), url: absUrl('/', site), ...(logo ? { logo: new URL(logo, site).toString() } : {}), ...(sameAs.length ? { sameAs } : {}) };
   const out: object[] = [
     { '@context': 'https://schema.org', ...org },
     {
