@@ -4,8 +4,8 @@ import '../cms/styles/kit.css';
 import '../cms/styles/components.css';
 import '../cms/styles/specials.css';
 import UmamiScript from '../components/UmamiScript.astro';
-import { absUrl, hreflangs, jsonLd, ogLocale, siteNameOf, titleOf } from '../cms/seo';
-import { json, plain, safeSrc } from '../cms/text';
+import { absUrl, hreflangs, jsonLd, ogLocale, shareImageOf, siteNameOf, titleOf } from '../cms/seo';
+import { json, plain } from '../cms/text';
 import type { Ctx } from '../cms/types';
 
 export interface Props {
@@ -17,7 +17,7 @@ const origin = Astro.site ?? 'https://www.winterplateau.pt';
 const title = titleOf(page, site);
 const description = plain(page.seo.description);
 const canonical = absUrl(page.seo.canonical ?? page.path, origin);
-const image = safeSrc(page.seo.image);
+const share = shareImageOf(ctx, origin);
 const alternates = hreflangs(ctx, origin);
 ---
 
@@ -39,8 +39,11 @@ const alternates = hreflangs(ctx, origin);
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={ogLocale(site.locale)} />
     {site.languages.filter((l) => l !== site.locale).map((l) => <meta property="og:locale:alternate" content={ogLocale(l)} />)}
-    {image && <meta property="og:image" content={new URL(image, origin).toString()} />}
-    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    {share && <meta property="og:image" content={share.url} />}
+    {share?.alt && <meta property="og:image:alt" content={share.alt} />}
+    <meta name="twitter:card" content={share ? 'summary_large_image' : 'summary'} />
+    {share && <meta name="twitter:image" content={share.url} />}
+    {share?.alt && <meta name="twitter:image:alt" content={share.alt} />}
     {jsonLd(ctx, origin).map((ld) => <script type="application/ld+json" set:html={json(ld)} />)}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

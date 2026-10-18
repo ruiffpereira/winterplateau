@@ -5,7 +5,7 @@
 
 import fetch from "@kubb/plugin-client/clients/axios";
 import type { RequestConfig, ResponseErrorConfig } from "@kubb/plugin-client/clients/axios";
-import type { GetBookingServicesQueryResponse, GetBookingServicesQueryParams, GetBookingServices400, GetBookingServices500 } from "../types/GetBookingServices.js";
+import type { GetBookingServicesQueryResponse, GetBookingServices401, GetBookingServices403, GetBookingServices500 } from "../types/GetBookingServices.js";
 
 function getGetBookingServicesUrl() {
   const res = { method: 'GET', url: `http://localhost:3001/api/websites/booking/services` as const }  
@@ -16,9 +16,9 @@ function getGetBookingServicesUrl() {
  * @summary Listar serviços activos do prestador
  * {@link /websites/booking/services}
  */
-export async function getBookingServices(params?: GetBookingServicesQueryParams, config: Partial<RequestConfig> & { client?: typeof fetch } = {}) {
+export async function getBookingServices(config: Partial<RequestConfig> & { client?: typeof fetch } = {}) {
   const { client: request = fetch, ...requestConfig } = config  
   
-  const res = await request<GetBookingServicesQueryResponse, ResponseErrorConfig<GetBookingServices400 | GetBookingServices500>, unknown>({ method : "GET", url : getGetBookingServicesUrl().url.toString(), params, ... requestConfig })  
+  const res = await request<GetBookingServicesQueryResponse, ResponseErrorConfig<GetBookingServices401 | GetBookingServices403 | GetBookingServices500>, unknown>({ method : "GET", url : getGetBookingServicesUrl().url.toString(), ... requestConfig })  
   return res.data
 }

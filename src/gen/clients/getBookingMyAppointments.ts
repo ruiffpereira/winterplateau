@@ -16,7 +16,7 @@ function getGetBookingMyAppointmentsUrl() {
  * @summary Marcações do cliente autenticado neste prestador
  * {@link /websites/booking/my-appointments}
  */
-export async function getBookingMyAppointments(params?: GetBookingMyAppointmentsQueryParams, config: Partial<RequestConfig> & { client?: typeof fetch } = {}) {
+export async function getBookingMyAppointments(params: GetBookingMyAppointmentsQueryParams, config: Partial<RequestConfig> & { client?: typeof fetch } = {}) {
   const { client: request = fetch, ...requestConfig } = config  
   
   const res = await request<GetBookingMyAppointmentsQueryResponse, ResponseErrorConfig<GetBookingMyAppointments401 | GetBookingMyAppointments403 | GetBookingMyAppointments404 | GetBookingMyAppointments500>, unknown>({ method : "GET", url : getGetBookingMyAppointmentsUrl().url.toString(), params, ... requestConfig })  

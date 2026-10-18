@@ -4,12 +4,10 @@
 */
 
 
+/**
+ * @description O tenant NUNCA vem do body: é resolvido do header x-site-token ou, na sua ausência, do tenant do customer autenticado. Um campo userId no body é ignorado.
+*/
 export type CreateAppointmentRequest = {
-    /**
-     * @description ID do prestador de serviço
-     * @type string | undefined, uuid
-    */
-    userId?: string;
     /**
      * @type string, uuid
     */

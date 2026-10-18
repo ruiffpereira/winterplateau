@@ -5,23 +5,20 @@
 
 import type { Service } from "./Service.js";
 
-export type GetBookingServicesQueryParams = {
-    /**
-     * @description ID do prestador de serviço. Opcional se o header X-Site-Token for enviado.
-     * @type string | undefined, uuid
-    */
-    userId?: string;
-};
-
 /**
  * @description Lista de serviços activos
 */
 export type GetBookingServices200 = Service[];
 
 /**
- * @description userId obrigatório
+ * @description Site token ausente
 */
-export type GetBookingServices400 = any;
+export type GetBookingServices401 = any;
+
+/**
+ * @description Site token inválido ou revogado
+*/
+export type GetBookingServices403 = any;
 
 /**
  * @description Erro interno
@@ -32,6 +29,5 @@ export type GetBookingServicesQueryResponse = GetBookingServices200;
 
 export type GetBookingServicesQuery = {
     Response: GetBookingServices200;
-    QueryParams: GetBookingServicesQueryParams;
-    Errors: GetBookingServices400 | GetBookingServices500;
+    Errors: GetBookingServices401 | GetBookingServices403 | GetBookingServices500;
 };

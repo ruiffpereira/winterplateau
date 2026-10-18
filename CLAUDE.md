@@ -10,16 +10,20 @@ Para o padrão geral de CSV de conteúdo e como importar para o backoffice, ver 
 
 - **Astro 4** — SSG puro (`output: 'static'`, sem adapter)
 - **Kubb v3** com `pluginClient` — cliente fetch tipado, gerado de `booking.json`; **não** usa `pluginReactQuery` porque o Astro não usa React em SSG
-- **Coolify** — deploy pelo workflow `.github/workflows/deploy.yml` a cada push na `main` (o painel está na VPN; o webhook do GitHub não lhe chega)
+- **Coolify** — o deploy é pedido **pela API** ao gravar no Backoffice (Páginas → Guardar, ou "Publicar agora"): a API chama o Coolify pelo endereço interno com o seu token e confirma no `cms-build.json` do site. **Um push na `main` não faz deploy** — sai no próximo Guardar/"Publicar agora". Decisão em `../DECISOES.md` (2026-10-18, B38 · P2)
 
 ---
 
 ## Fluxo de deploy
 
 ```
-push na main → GitHub Actions (WireGuard) → Coolify → astro build → HTML estático
-                                                       └ pede o id do Umami a GET /api/websites/analytics/tracking
+Guardar no Backoffice → API (pede o deploy ao Coolify, sem espera) → Coolify → astro build → HTML estático
+                                                                                └ lê o conteúdo e o id do Umami da API
+API → https://<domínio>/cms-build.json  (confirma a revisão no ar → "Site actualizado" no Backoffice)
 ```
+
+No Coolify, a app do site precisa de `SITE_TOKEN`, `VITE_API_BASE_URL` e `CF_BYPASS_TOKEN` **na fase de build**. O
+webhook de deploy da app é colado no Backoffice (sessão de suporte → Páginas → Definições do site → Publicação).
 
 O `SITE_TOKEN` é passado como Bearer token em todas as chamadas ao endpoint público.
 

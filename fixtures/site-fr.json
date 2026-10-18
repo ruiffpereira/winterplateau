@@ -1,6 +1,10 @@
 {
   "revision": 42,
   "siteName": "Winterplateau",
+  "seo": {
+    "image": "https://cdn.example.com/winterplateau/og-site.webp",
+    "imageAlt": "Winterplateau — moulures et profilés"
+  },
   "locale": "fr",
   "defaultLanguage": "pt",
   "languages": [
@@ -120,6 +124,7 @@
         "title": "Accueil",
         "description": "Chantiers de réhabilitation de façades avec moulures EPS.",
         "image": "https://cdn.example.com/winterplateau/og-home.webp",
+        "imageAlt": "Façade rénovée avec moulures EPS",
         "noindex": false,
         "canonical": null
       },
@@ -355,7 +360,7 @@
       "seo": {
         "title": "Projets",
         "description": "Chantiers de réhabilitation de façades avec moulures EPS.",
-        "image": "https://cdn.example.com/winterplateau/og-projects.webp",
+        "image": null,
         "noindex": false,
         "canonical": null
       },

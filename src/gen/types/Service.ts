@@ -10,24 +10,40 @@ export type Service = {
     */
     serviceId: string;
     /**
+     * @description Nome resolvido do CMS na língua pedida (fallback: contentKey)
      * @type string
     */
     name: string;
     /**
-     * @type number
+     * @description Descrição resolvida do CMS; null se não houver descriptionKey/tradução
+     * @type string
     */
-    price: number;
+    description: string | null;
     /**
      * @description Duração em minutos
      * @type integer
     */
     duration: number;
     /**
+     * @type number
+    */
+    price: number;
+    /**
+     * @type integer
+    */
+    position: number;
+    /**
      * @type string
     */
-    description?: string | null;
+    color: string | null;
     /**
-     * @type integer | undefined
+     * @description Chave CMS do nome
+     * @type string
     */
-    position?: number;
+    contentKey: string;
+    /**
+     * @description Chave CMS da descrição (null se não existir)
+     * @type string
+    */
+    descriptionKey: string | null;
 };

@@ -29,3 +29,6 @@ spec*.json
 
 # capturas de ecrã das fixtures (F18) — locais, para rever o aspecto
 .capturas-f18/
+
+# Zip de "Migrar site" (gerado; tem PDFs do cliente) — não vai para o git
+cms/migracao.zip

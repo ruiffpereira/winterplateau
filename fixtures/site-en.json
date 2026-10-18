@@ -1,6 +1,10 @@
 {
   "revision": 42,
   "siteName": "Winterplateau",
+  "seo": {
+    "image": "https://cdn.example.com/winterplateau/og-site.webp",
+    "imageAlt": "Winterplateau — mouldings and profiles"
+  },
   "locale": "en",
   "defaultLanguage": "pt",
   "languages": [
@@ -120,6 +124,7 @@
         "title": "Home",
         "description": "Facade rehabilitation projects with EPS mouldings.",
         "image": "https://cdn.example.com/winterplateau/og-home.webp",
+        "imageAlt": "Facade restored with EPS mouldings",
         "noindex": false,
         "canonical": null
       },
@@ -355,7 +360,7 @@
       "seo": {
         "title": "Projects",
         "description": "Facade rehabilitation projects with EPS mouldings.",
-        "image": "https://cdn.example.com/winterplateau/og-projects.webp",
+        "image": null,
         "noindex": false,
         "canonical": null
       },

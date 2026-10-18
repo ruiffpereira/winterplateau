@@ -77,3 +77,17 @@ export function jsonLd(ctx: Ctx, site: URL | string): object[] {
   }
   return out;
 }
+
+/**
+ * Imagem de partilha (Open Graph / X) da página: a da página e o seu `alt`; sem imagem própria, cai na imagem por
+ * omissão do site (definições do site no Backoffice) com o `alt` desta. Sem nenhuma → `null` (cartão pequeno).
+ * O `alt` nunca vem de outra imagem: o da página só acompanha a imagem da página.
+ */
+export function shareImageOf(ctx: Ctx, site: URL | string): { url: string; alt: string } | null {
+  const own = safeSrc(ctx.page.seo.image);
+  const fallback = safeSrc(ctx.site.seo?.image);
+  const src = own ?? fallback;
+  if (!src) return null;
+  const alt = plain(own ? ctx.page.seo.imageAlt : ctx.site.seo?.imageAlt);
+  return { url: new URL(src, site).toString(), alt };
+}

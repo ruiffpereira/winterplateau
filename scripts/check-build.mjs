@@ -52,6 +52,13 @@ for (const site of sites) {
     const title = attr(html, /<title>([^<]*)<\/title>/) ?? '';
     ok(title.endsWith(` · ${site.siteName || 'Winterplateau'}`), `${page.path}: <title> sem o nome do site`);
     ok(html.includes('property="og:title"') && html.includes('property="og:url"'), `${page.path}: Open Graph em falta`);
+    // Imagem de partilha (B38 · P3): a da página, senão a do site; o alt acompanha a imagem que saiu.
+    const shareSrc = page.seo.image || site.seo?.image || null;
+    const shareAlt = (page.seo.image ? page.seo.imageAlt : site.seo?.imageAlt) || '';
+    ok(html.includes('property="og:image"') === !!shareSrc, `${page.path}: og:image ${shareSrc ? 'em falta' : 'indevida'}`);
+    ok(html.includes('name="twitter:image"') === !!shareSrc, `${page.path}: twitter:image ${shareSrc ? 'em falta' : 'indevida'}`);
+    if (shareSrc) ok(html.includes(`content="${new URL(shareSrc, ORIGIN).toString()}"`), `${page.path}: og:image não é ${shareSrc}`);
+    ok(html.includes('property="og:image:alt"') === !!(shareSrc && shareAlt), `${page.path}: og:image:alt ${shareAlt ? 'em falta' : 'indevido'}`);
     const hasTopo = base.topo.comps.length > 0;
     ok(html.includes('<header class="topo">') === hasTopo, `${page.path}: topo ${hasTopo ? 'em falta' : 'indevido (o site não tem topo)'}`);
     ok(html.includes('<footer class="rodape"') === base.rodape.comps.length > 0, `${page.path}: rodapé ${base.rodape.comps.length ? 'em falta' : 'indevido (o site não tem rodapé)'}`);

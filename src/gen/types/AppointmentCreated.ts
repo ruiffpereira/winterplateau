@@ -8,38 +8,59 @@ export const appointmentCreatedStatusEnum = {
     "pending": "pending",
     "confirmed": "confirmed",
     "completed": "completed",
-    "cancelled": "cancelled"
+    "cancelled": "cancelled",
+    "no_show": "no_show"
 } as const;
 
 export type AppointmentCreatedStatusEnum = (typeof appointmentCreatedStatusEnum)[keyof typeof appointmentCreatedStatusEnum];
 
+/**
+ * @description Resposta da criação. NÃO devolve cancelToken (o link de cancelamento segue apenas no email do cliente).
+*/
 export type AppointmentCreated = {
     /**
-     * @type string | undefined, uuid
+     * @type string, uuid
     */
-    appointmentId?: string;
+    appointmentId: string;
     /**
-     * @type string | undefined, date
+     * @type string, date
     */
-    date?: string;
+    date: string;
     /**
-     * @type string | undefined
+     * @type string
     */
-    time?: string;
+    time: string;
     /**
-     * @type string | undefined
+     * @description Nome do serviço resolvido do CMS (snapshot)
+     * @type string
     */
-    serviceName?: string;
+    serviceName: string;
     /**
-     * @type integer | undefined
+     * @description Duração em minutos
+     * @type integer
     */
-    duration?: number;
+    duration: number;
     /**
-     * @type number | undefined
+     * @type number
     */
-    price?: number;
+    price: number;
     /**
-     * @type string | undefined
+     * @description Na criação é sempre \'confirmed\'
+     * @type string
     */
-    status?: AppointmentCreatedStatusEnum;
+    status: AppointmentCreatedStatusEnum;
+    /**
+     * @description URLs do feed .ics pessoal do cliente (null se o token do feed não pôde ser gerado, ex.: sem customer)
+     * @type object
+    */
+    calendar: {
+        /**
+         * @type string
+        */
+        subscribeUrl: string;
+        /**
+         * @type string
+        */
+        webcalUrl: string;
+    } | null;
 };

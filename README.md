@@ -27,7 +27,7 @@ CMS_FIXTURE=fixtures/real/site-pt.json npm run check     # verifica o dist/ (SEO
 |---|---|
 | `src/cms/` | O kit: cliente da API, rotas por língua, SEO, componentes do núcleo, especiais, estilos |
 | `src/pages/` | Rotas (`[...path]`, `[lang]`), `sitemap.xml`, `robots.txt`, `cms-build.json` (prova da revisão no ar) e os endereços antigos (`/Projeto.html?obra=`) |
-| `cms/manifest.json` | Estilos, fundos, ícones e especiais que o site oferece — o dono carrega-o no Admin |
+| `cms/manifest.json` | Estilos, fundos, ícones e especiais que o site oferece — vai no zip de "Migrar site" |
 | `cms/import.json` | O site antigo como importação para o construtor (gerado por `cms/build-import.mjs`) |
 | `fixtures/` | Objectos públicos para builds sem API |
-| `.github/workflows/deploy.yml` | Deploy no Coolify a cada push na `main` (e pelo botão "Publicar" do Backoffice) |
+| `cms/migracao.zip` | O zip de "Migrar site" (manifest + conteúdo + ficheiros; gitignored) — carrega-se no Backoffice, sessão de suporte → Páginas → Definições do site |

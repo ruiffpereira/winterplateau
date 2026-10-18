@@ -15,9 +15,9 @@ export type GetBookingMyAppointmentsQueryParamsStatusEnum = (typeof getBookingMy
 export type GetBookingMyAppointmentsQueryParams = {
     /**
      * @description upcoming = pendentes/confirmadas futuras; past = concluídas/canceladas ou passadas
-     * @type string | undefined
+     * @type string
     */
-    status?: GetBookingMyAppointmentsQueryParamsStatusEnum;
+    status: GetBookingMyAppointmentsQueryParamsStatusEnum;
 };
 
 /**

@@ -33,6 +33,22 @@ export type GetWebsitesSite200 = {
     */
     siteName?: string | null;
     /**
+     * @description SEO por omissão do site, sem fallback na API (o site usa-o quando a página não tem imagem)
+     * @type object | undefined
+    */
+    seo?: {
+        /**
+         * @description Imagem de partilha por omissão (URL do tenant)
+         * @type string
+        */
+        image?: string | null;
+        /**
+         * @description Texto alternativo na língua do pedido (cai na base); null se vazio
+         * @type string
+        */
+        imageAlt?: string | null;
+    };
+    /**
      * @type string | undefined
     */
     locale?: string;
@@ -109,6 +125,11 @@ export type GetWebsitesSite200 = {
             */
             image?: string | null;
             /**
+             * @description Texto alternativo da imagem de partilha na língua (cai na base); \"\" se vazio
+             * @type string | undefined
+            */
+            imageAlt?: string;
+            /**
              * @type boolean | undefined
             */
             noindex?: boolean;
@@ -167,7 +188,7 @@ export type GetWebsitesSite401 = any;
 export type GetWebsitesSite403 = any;
 
 /**
- * @description Construtor de páginas desligado para o tenant
+ * @description Construtor inactivo para o tenant do site token (sem a permissão VIEW_SITE_PAGES, ou sem linha do construtor)
 */
 export type GetWebsitesSite404 = any;
 

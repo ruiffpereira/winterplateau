@@ -41,7 +41,15 @@ export interface Page {
   alternates: Record<string, string>;
   title: string;
   updatedAt: string;
-  seo: { title: string; description: string; image: string | null; noindex: boolean; canonical: string | null };
+  seo: {
+    title: string;
+    description: string;
+    image: string | null;
+    /** Texto alternativo da imagem de partilha da página (B38 · P3). */
+    imageAlt?: string | null;
+    noindex: boolean;
+    canonical: string | null;
+  };
   breadcrumb: { title: string; path: string }[];
   items: Item[];
 }
@@ -50,6 +58,8 @@ export interface Site {
   revision: number;
   /** Nome do site (Admin), igual em todas as línguas; `null` se o dono ainda não o definiu. */
   siteName?: string | null;
+  /** Imagem de partilha por omissão do site e o seu alt, na língua (B38 · P3); a página sem imagem própria usa esta. */
+  seo?: { image: string | null; imageAlt: string | null };
   locale: string;
   defaultLanguage: string;
   languages: string[];

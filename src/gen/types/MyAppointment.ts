@@ -8,55 +8,56 @@ export const myAppointmentStatusEnum = {
     "pending": "pending",
     "confirmed": "confirmed",
     "completed": "completed",
-    "cancelled": "cancelled"
+    "cancelled": "cancelled",
+    "no_show": "no_show"
 } as const;
 
 export type MyAppointmentStatusEnum = (typeof myAppointmentStatusEnum)[keyof typeof myAppointmentStatusEnum];
 
+/**
+ * @description Marcação do cliente autenticado — shape plano com snapshot do serviço (serviceName/servicePrice), sem objeto service aninhado.
+*/
 export type MyAppointment = {
     /**
-     * @type string | undefined, uuid
+     * @type string, uuid
     */
-    appointmentId?: string;
+    appointmentId: string;
     /**
-     * @type string | undefined, date
+     * @type string, date
     */
-    date?: string;
-    /**
-     * @type string | undefined
-    */
-    time?: string;
-    /**
-     * @type string | undefined
-    */
-    status?: MyAppointmentStatusEnum;
-    /**
-     * @type string | undefined, uuid
-    */
-    cancelToken?: string;
+    date: string;
     /**
      * @type string
     */
-    notes?: string | null;
+    time: string;
     /**
-     * @type string | undefined, uuid
+     * @type string
     */
-    serviceId?: string;
+    status: MyAppointmentStatusEnum;
     /**
-     * @type object | undefined
+     * @type string, uuid
     */
-    service?: {
-        /**
-         * @type string | undefined
-        */
-        name?: string;
-        /**
-         * @type integer | undefined
-        */
-        duration?: number;
-        /**
-         * @type number | undefined
-        */
-        price?: number;
-    };
+    cancelToken: string;
+    /**
+     * @type string
+    */
+    notes: string | null;
+    /**
+     * @type string, uuid
+    */
+    serviceId: string | null;
+    /**
+     * @type string
+    */
+    serviceName: string;
+    /**
+     * @description DECIMAL serializado como string
+     * @type string
+    */
+    servicePrice: string;
+    /**
+     * @description Duração em minutos
+     * @type integer
+    */
+    duration: number | null;
 };

@@ -5,7 +5,7 @@
 
 import fetch from "@kubb/plugin-client/clients/axios";
 import type { RequestConfig, ResponseErrorConfig } from "@kubb/plugin-client/clients/axios";
-import type { GetBookingSlotsQueryResponse, GetBookingSlotsQueryParams, GetBookingSlots400, GetBookingSlots404, GetBookingSlots500 } from "../types/GetBookingSlots.js";
+import type { GetBookingSlotsQueryResponse, GetBookingSlotsQueryParams, GetBookingSlots400, GetBookingSlots401, GetBookingSlots403, GetBookingSlots404, GetBookingSlots500 } from "../types/GetBookingSlots.js";
 
 function getGetBookingSlotsUrl() {
   const res = { method: 'GET', url: `http://localhost:3001/api/websites/booking/slots` as const }  
@@ -19,6 +19,6 @@ function getGetBookingSlotsUrl() {
 export async function getBookingSlots(params: GetBookingSlotsQueryParams, config: Partial<RequestConfig> & { client?: typeof fetch } = {}) {
   const { client: request = fetch, ...requestConfig } = config  
   
-  const res = await request<GetBookingSlotsQueryResponse, ResponseErrorConfig<GetBookingSlots400 | GetBookingSlots404 | GetBookingSlots500>, unknown>({ method : "GET", url : getGetBookingSlotsUrl().url.toString(), params, ... requestConfig })  
+  const res = await request<GetBookingSlotsQueryResponse, ResponseErrorConfig<GetBookingSlots400 | GetBookingSlots401 | GetBookingSlots403 | GetBookingSlots404 | GetBookingSlots500>, unknown>({ method : "GET", url : getGetBookingSlotsUrl().url.toString(), params, ... requestConfig })  
   return res.data
 }

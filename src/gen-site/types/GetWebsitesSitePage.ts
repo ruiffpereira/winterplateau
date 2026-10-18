@@ -25,6 +25,20 @@ export type GetWebsitesSitePage200 = {
     */
     siteName?: string | null;
     /**
+     * @description SEO por omissão do site (cabeçalho), sem fallback na API; o da página está em `page.seo`
+     * @type object | undefined
+    */
+    seo?: {
+        /**
+         * @type string
+        */
+        image?: string | null;
+        /**
+         * @type string
+        */
+        imageAlt?: string | null;
+    };
+    /**
      * @description Mesma forma de um elemento de `pages` em /websites/site
      * @type object | undefined
     */
@@ -56,7 +70,7 @@ export type GetWebsitesSitePage401 = any;
 export type GetWebsitesSitePage403 = any;
 
 /**
- * @description Construtor desligado, ou página inexistente / em rascunho
+ * @description Construtor inactivo (tenant sem a permissão VIEW_SITE_PAGES, ou sem linha), ou página inexistente / em rascunho
 */
 export type GetWebsitesSitePage404 = any;
 

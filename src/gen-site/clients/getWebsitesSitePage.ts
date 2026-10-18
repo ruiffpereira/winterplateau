@@ -13,7 +13,7 @@ function getGetWebsitesSitePageUrl() {
 }
 
 /**
- * @description Site token OBRIGATÓRIO. A língua sai do prefixo do `path` (`/en/…` → en; sem prefixo → base). Resposta igual à de `/websites/site` (cabeçalho — `revision`, `siteName`, línguas — + `topo`/`rodape`) com `page` em vez de `pages` e sem `redirects`. Endereço antigo de uma página publicada → `200 {redirect}`; inexistente ou rascunho → `404`. `Cache-Control: no-cache` + `ETag`. Sem `publicRateLimit` (fica o limite global).
+ * @description Site token OBRIGATÓRIO. A língua sai do prefixo do `path` (`/en/…` → en; sem prefixo → base). Resposta igual à de `/websites/site` (cabeçalho — `revision`, `siteName`, `seo` por omissão, línguas — + `topo`/`rodape`) com `page` em vez de `pages` e sem `redirects`. Endereço antigo de uma página publicada → `200 {redirect}`; inexistente ou rascunho → `404`. `Cache-Control: no-cache` + `ETag`. Sem `publicRateLimit` (fica o limite global).
  * @summary Uma página pelo endereço (para sites em runtime)
  * {@link /websites/site/page}
  */

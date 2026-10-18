@@ -1,4 +1,6 @@
 export { getBookingAppointmentByToken } from "./getBookingAppointmentByToken.js";
+export { getBookingAppointmentIcs } from "./getBookingAppointmentIcs.js";
+export { getBookingCustomerCalendarUrl } from "./getBookingCustomerCalendarUrl.js";
 export { getBookingMyAppointments } from "./getBookingMyAppointments.js";
 export { getBookingServices } from "./getBookingServices.js";
 export { getBookingSlots } from "./getBookingSlots.js";

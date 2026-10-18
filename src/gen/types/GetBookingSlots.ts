@@ -6,10 +6,6 @@
 
 export type GetBookingSlotsQueryParams = {
     /**
-     * @type string | undefined, uuid
-    */
-    userId?: string;
-    /**
      * @description Formato YYYY-MM-DD
      * @type string, date
     */
@@ -31,6 +27,16 @@ export type GetBookingSlots200 = string[];
 export type GetBookingSlots400 = any;
 
 /**
+ * @description Site token ausente
+*/
+export type GetBookingSlots401 = any;
+
+/**
+ * @description Site token inválido ou revogado
+*/
+export type GetBookingSlots403 = any;
+
+/**
  * @description Serviço não encontrado
 */
 export type GetBookingSlots404 = any;
@@ -45,5 +51,5 @@ export type GetBookingSlotsQueryResponse = GetBookingSlots200;
 export type GetBookingSlotsQuery = {
     Response: GetBookingSlots200;
     QueryParams: GetBookingSlotsQueryParams;
-    Errors: GetBookingSlots400 | GetBookingSlots404 | GetBookingSlots500;
+    Errors: GetBookingSlots400 | GetBookingSlots401 | GetBookingSlots403 | GetBookingSlots404 | GetBookingSlots500;
 };

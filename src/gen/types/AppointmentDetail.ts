@@ -8,47 +8,48 @@ export const appointmentDetailStatusEnum = {
     "pending": "pending",
     "confirmed": "confirmed",
     "completed": "completed",
-    "cancelled": "cancelled"
+    "cancelled": "cancelled",
+    "no_show": "no_show"
 } as const;
 
 export type AppointmentDetailStatusEnum = (typeof appointmentDetailStatusEnum)[keyof typeof appointmentDetailStatusEnum];
 
+/**
+ * @description Detalhe público (por cancelToken) — shape plano com snapshot do serviço, sem objeto service aninhado.
+*/
 export type AppointmentDetail = {
     /**
-     * @type string | undefined, uuid
+     * @type string, uuid
     */
-    appointmentId?: string;
+    appointmentId: string;
     /**
-     * @type string | undefined, date
+     * @type string, date
     */
-    date?: string;
+    date: string;
     /**
-     * @type string | undefined
+     * @type string
     */
-    time?: string;
+    time: string;
     /**
-     * @type string | undefined
+     * @type string
     */
-    status?: AppointmentDetailStatusEnum;
+    status: AppointmentDetailStatusEnum;
     /**
-     * @type string | undefined
+     * @type string
     */
-    clientName?: string;
+    clientName: string;
     /**
-     * @type object | undefined
+     * @type string
     */
-    service?: {
-        /**
-         * @type string | undefined
-        */
-        name?: string;
-        /**
-         * @type integer | undefined
-        */
-        duration?: number;
-        /**
-         * @type number | undefined
-        */
-        price?: number;
-    };
+    serviceName: string;
+    /**
+     * @description DECIMAL serializado como string
+     * @type string
+    */
+    servicePrice: string;
+    /**
+     * @description Duração em minutos
+     * @type integer
+    */
+    duration: number | null;
 };
