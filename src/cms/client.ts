@@ -9,7 +9,7 @@
  *
  * Fontes (por ordem):
  *   CMS_FIXTURE=<ficheiro.json>  — ficheiro da língua base; as outras são os irmãos `site-<lang>.json`
- *   API                          — VITE_API_BASE_URL + SITE_TOKEN (+ CF_BYPASS_TOKEN atrás da Cloudflare)
+ *   API                          — VITE_API_BASE_URL + VITE_SITE_TOKEN (+ CF_BYPASS_TOKEN atrás da Cloudflare)
  */
 import { existsSync, readFileSync } from 'node:fs';
 import { basename, dirname, join, resolve } from 'node:path';
@@ -29,9 +29,14 @@ function env(name: string): string {
   return line ? line.slice(line.indexOf('=') + 1).trim().replace(/^["']|["']$/g, '') : '';
 }
 
+/** `VITE_SITE_TOKEN`, o nome dos outros sites; `SITE_TOKEN` é o antigo, lido até o dono o apagar do Coolify. */
+export function siteToken(): string {
+  return env('VITE_SITE_TOKEN') || env('SITE_TOKEN');
+}
+
 /** O que o formulário de pedido precisa no browser: URL da API e site token. Vazios quando o build não tem API (fixture). */
 export function publicApi(): { baseURL: string; token: string } {
-  return { baseURL: env('VITE_API_BASE_URL').replace(/\/+$/, ''), token: env('SITE_TOKEN') };
+  return { baseURL: env('VITE_API_BASE_URL').replace(/\/+$/, ''), token: siteToken() };
 }
 
 /** Valida o mínimo de que o kit depende; o resto confia-se no contrato (a API já o validou). */
@@ -68,8 +73,8 @@ Object.assign(strictClient, fetch);
 
 async function fromApi(locale?: string): Promise<Site> {
   const baseURL = env('VITE_API_BASE_URL');
-  const token = env('SITE_TOKEN');
-  if (!baseURL || !token) throw new Error('CMS: faltam VITE_API_BASE_URL e/ou SITE_TOKEN (ou define CMS_FIXTURE para build sem API)');
+  const token = siteToken();
+  if (!baseURL || !token) throw new Error('CMS: faltam VITE_API_BASE_URL e/ou VITE_SITE_TOKEN (ou define CMS_FIXTURE para build sem API)');
   const bypass = env('CF_BYPASS_TOKEN');
   const origin = `${baseURL}/websites/site${locale ? `?locale=${locale}` : ''}`;
   try {

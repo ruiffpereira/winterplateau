@@ -10,7 +10,7 @@ Pormenor (stack, deploy, envs, manifest, importação): [CLAUDE.md](CLAUDE.md).
 
 ```bash
 npm install
-cp .env.example .env          # VITE_API_BASE_URL + SITE_TOKEN do tenant
+cp .env.example .env          # VITE_API_BASE_URL + VITE_SITE_TOKEN do tenant
 npm run dev
 ```
 

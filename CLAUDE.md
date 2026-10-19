@@ -22,10 +22,10 @@ Guardar no Backoffice → API (pede o deploy ao Coolify, sem espera) → Coolify
 API → https://<domínio>/cms-build.json  (confirma a revisão no ar → "Site actualizado" no Backoffice)
 ```
 
-No Coolify, a app do site precisa de `SITE_TOKEN`, `VITE_API_BASE_URL` e `CF_BYPASS_TOKEN` **na fase de build**. O
+No Coolify, a app do site precisa de `VITE_SITE_TOKEN` (o nome antigo `SITE_TOKEN` ainda é lido, até sair do Coolify), `VITE_API_BASE_URL` e `CF_BYPASS_TOKEN` **na fase de build**. O
 webhook de deploy da app é colado no Backoffice (sessão de suporte → Páginas → Definições do site → Publicação).
 
-O `SITE_TOKEN` é passado como Bearer token em todas as chamadas ao endpoint público.
+O `VITE_SITE_TOKEN` (mesmo nome dos outros sites; o Astro só expõe `PUBLIC_*` ao browser) é passado como Bearer token em todas as chamadas ao endpoint público.
 
 ---
 
@@ -35,7 +35,7 @@ Ver [.env.example](.env.example):
 
 ```
 VITE_API_BASE_URL=http://localhost:3001/api
-SITE_TOKEN=          # gerado no backoffice → Site Tokens
+VITE_SITE_TOKEN=     # gerado no backoffice → Site Tokens
 SWAGGER_ACCESS_TOKEN=
 ```
 
@@ -60,7 +60,7 @@ O site é gerado a partir do objecto `GET /websites/site?locale=xx` (CONTRATO §
 ```bash
 # sem API — fixtures/site-pt.json é a língua base; as outras são os irmãos site-en.json, site-fr.json
 CMS_FIXTURE=fixtures/site-pt.json npm run build && npm run check   # check = scripts/check-build.mjs sobre o dist/
-# com a API local — VITE_API_BASE_URL + SITE_TOKEN (e CF_BYPASS_TOKEN atrás da Cloudflare) no .env
+# com a API local — VITE_API_BASE_URL + VITE_SITE_TOKEN (e CF_BYPASS_TOKEN atrás da Cloudflare) no .env
 npm run build
 ```
 

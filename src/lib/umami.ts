@@ -2,7 +2,7 @@
  * Estatísticas (Umami) — o par {websiteId, src} do tenant deste site, pedido à
  * API UMA vez por build (todas as páginas partilham a mesma promessa).
  *
- * Corre só no build: o SITE_TOKEN nunca chega ao browser. Sem site no Umami a
+ * Corre só no build: o site token nunca chega ao browser. Sem site no Umami a
  * API devolve 204 → null → a página sai sem script. Se a API falhar, o build
  * continua (só sem estatísticas). Um domínio novo apanha-se no deploy seguinte.
  */
@@ -18,7 +18,7 @@ export function getUmamiTracking(): Promise<Tracking> {
 }
 
 async function load(): Promise<Tracking> {
-  const token = import.meta.env.SITE_TOKEN;
+  const token = import.meta.env.VITE_SITE_TOKEN || import.meta.env.SITE_TOKEN; // SITE_TOKEN: nome antigo, até sair do Coolify
   const baseURL = import.meta.env.VITE_API_BASE_URL;
   if (!token || !baseURL) return null;
   try {
