@@ -2,7 +2,7 @@
 
 Site público SSG em Astro para a Winterplateau (EPS e Perfis Metálicos, Vila Verde).
 
-Para o padrão geral de CSV de conteúdo e como importar para o backoffice, ver [../CLAUDE.md](../CLAUDE.md) → secção **Padrão: Importar Conteúdo para o CMS**.
+Para o padrão geral de CSV de conteúdo e como importar para o backoffice, ver [../Backoffice/REFERENCIA-PAGINAS.md](../Backoffice/REFERENCIA-PAGINAS.md) → *Importar conteúdo via CSV*.
 
 ---
 
@@ -39,6 +39,8 @@ VITE_SITE_TOKEN=     # gerado no backoffice → Site Tokens
 SWAGGER_ACCESS_TOKEN=
 ```
 
+`CF_BYPASS_TOKEN` (só build, nunca `VITE_`/`PUBLIC_`) passa o `X-CI-Bypass` ao buscar specs/conteúdo atrás da Cloudflare. Nenhuma env tem default silencioso: sem API nem `CMS_FIXTURE` o build não corre.
+
 ## Comandos
 
 ```bash
@@ -49,7 +51,7 @@ npm run dev     # servidor de desenvolvimento
 
 ---
 
-## Construtor de páginas (branch `cms`, F17)
+## Construtor de páginas (F17)
 
 O site é gerado a partir do objecto `GET /websites/site?locale=xx` (CONTRATO §7/§11 em
 `Backoffice/.design/page-builder/`): um pedido por língua, cliente tipado em `src/gen-site/` (Kubb, a partir do
