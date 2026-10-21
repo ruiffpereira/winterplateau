@@ -41,10 +41,22 @@
   },
   "specials": {
     "edificio3d": {
-      "label": "Edifício 3D",
-      "desc": "A ilustração animada do topo da página inicial",
+      "label": "Topo com edifício 3D",
+      "desc": "O topo da página inicial: texto de um lado e a ilustração 3D animada do outro",
       "fields": {
-        "eyebrow": { "type": "text", "i18n": true, "max": 80 }
+        "eyebrow": { "type": "text", "i18n": true, "max": 80 },
+        "titulo": { "type": "text", "i18n": true, "max": 80 },
+        "descricao": { "type": "md", "i18n": true, "max": 500 },
+        "botoes": {
+          "type": "list",
+          "max": 2,
+          "of": {
+            "label": { "type": "text", "i18n": true, "required": true, "max": 60 },
+            "dest": { "type": "dest", "required": true },
+            "estilo": { "type": "choice", "options": ["cheio", "contorno"], "default": "cheio" }
+          }
+        },
+        "lado": { "type": "choice", "options": ["direita", "esquerda"], "default": "direita" }
       }
     },
     "faixa": {

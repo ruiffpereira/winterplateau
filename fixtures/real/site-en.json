@@ -196,7 +196,22 @@
      "kind": "special",
      "type": "edificio3d",
      "fields": {
-      "eyebrow": "Vila Verde, Portugal · Since 2016"
+      "eyebrow": "Vila Verde, Portugal · Since 2016",
+      "titulo": "Winter*plateau*",
+      "descricao": "EPS and metal profile solutions for new construction and building renovation. Made in Portugal, European certification.",
+      "botoes": [
+       {
+        "label": "View Solutions",
+        "href": "#eps",
+        "estilo": "cheio"
+       },
+       {
+        "label": "PDF Catalogue",
+        "href": "#downloads",
+        "estilo": "contorno"
+       }
+      ],
+      "lado": "direita"
      }
     },
     {
@@ -248,42 +263,6 @@
        }
       ]
      }
-    },
-    {
-     "kind": "block",
-     "anchor": null,
-     "layout": 1,
-     "bg": "claro",
-     "comps": [
-      {
-       "type": "titulo",
-       "style": "destaque",
-       "col": "all",
-       "text": "Winter*plateau*",
-       "align": "left",
-       "level": "h1"
-      },
-      {
-       "type": "texto",
-       "style": "grande",
-       "col": "all",
-       "body": "\"EPS and metal profile solutions for new construction and building renovation. Made in Portugal, European certification.\""
-      },
-      {
-       "type": "botao",
-       "style": "cheio",
-       "col": "all",
-       "label": "View Solutions",
-       "href": "#eps"
-      },
-      {
-       "type": "botao",
-       "style": "contorno",
-       "col": "all",
-       "label": "PDF Catalogue",
-       "href": "#downloads"
-      }
-     ]
     },
     {
      "kind": "block",

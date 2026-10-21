@@ -30,4 +30,4 @@ CMS_FIXTURE=fixtures/real/site-pt.json npm run check     # verifica o dist/ (SEO
 | `cms/manifest.json` | Estilos, fundos, ícones e especiais que o site oferece — vai no zip de "Migrar site" |
 | `cms/import.json` | O site antigo como importação para o construtor (gerado por `cms/build-import.mjs`) |
 | `fixtures/` | Objectos públicos para builds sem API |
-| `cms/migracao.zip` | O zip de "Migrar site" (manifest + conteúdo + ficheiros; gitignored) — carrega-se no Backoffice, sessão de suporte → Páginas → Definições do site |
+| `cms/migracao.zip` | O zip de "Migrar site" (manifest + conteúdo + ficheiros; gitignored; gerado por `node cms/build-zip.mjs` depois de `node cms/build-import.mjs`) — carrega-se no Backoffice, sessão de suporte → Páginas → Definições do site |

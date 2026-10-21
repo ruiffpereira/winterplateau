@@ -35,6 +35,8 @@ function parseCsv(text) {
   return dict;
 }
 const csv = parseCsv(readFileSync(join(ROOT, 'content-import.csv'), 'utf8'));
+// O CSV traz esta descrição entre aspas (artefacto da exportação; o site de antes não as mostrava).
+for (const l of LANGS) if (csv['hero.description']?.[l]) csv['hero.description'][l] = csv['hero.description'][l].replace(/^"(.*)"$/, '$1');
 
 function loadDict() {
   const src = execFileSync('git', ['-c', 'safe.directory=*', 'show', `${SITE_REF}:public/assets/i18n.js`], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 24 }).split('\n');
@@ -102,17 +104,20 @@ const TECH = new Set(['EPS Exterior', 'EPS Interior', 'Perfil TC', 'Montante Stu
 const name = (pt) => (TECH.has(pt) ? N(pt) : tx(pt));
 
 const homeItems = [];
-homeItems.push(special('edificio3d', { eyebrow: T('hero.tagline') }));
-homeItems.push(special('faixa', { items: MARQUEE.map((m) => ({ name: name(m) })) }));
-
+// O topo é UM item (regra do dono, 2026-10-21): o especial leva o texto E o edifício; nunca se parte num bloco à parte.
 homeItems.push(
-  block('apresentacao', 'Início · Apresentação', 'inicio', 'claro', 1, [
-    titulo(N('Winter*plateau*'), 'destaque', 'h1'),
-    texto(T('hero.description'), 'grande'),
-    botao(T('hero.cta_primary'), toBlock('eps')),
-    botao(T('hero.cta_secondary'), toBlock('downloads'), 'contorno'),
-  ]),
+  special('edificio3d', {
+    eyebrow: T('hero.tagline'),
+    titulo: N('Winter*plateau*'),
+    descricao: T('hero.description'),
+    botoes: [
+      { label: T('hero.cta_primary'), dest: toBlock('eps'), estilo: 'cheio' },
+      { label: T('hero.cta_secondary'), dest: toBlock('downloads'), estilo: 'contorno' },
+    ],
+    lado: 'direita',
+  }),
 );
+homeItems.push(special('faixa', { items: MARQUEE.map((m) => ({ name: name(m) })) }));
 
 homeItems.push(
   block('numeros', 'Início · Números', 'inicio', 'escuro', 1, [

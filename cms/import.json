@@ -277,73 +277,6 @@
   "blocks": {
     "upsert": [
       {
-        "id": "@block:apresentacao",
-        "name": "Início · Apresentação",
-        "folderId": "@folder:inicio",
-        "layout": 1,
-        "bg": "claro",
-        "comps": [
-          {
-            "type": "titulo",
-            "style": "destaque",
-            "col": "all",
-            "v": {
-              "text": {
-                "pt": "Winter*plateau*",
-                "en": "Winter*plateau*",
-                "fr": "Winter*plateau*"
-              },
-              "align": "left",
-              "level": "h1"
-            }
-          },
-          {
-            "type": "texto",
-            "style": "grande",
-            "col": "all",
-            "v": {
-              "body": {
-                "pt": "\"Soluções em EPS e Perfis Metálicos para construção nova e reabilitação de edifícios. Fabricação nacional, certificação europeia.\"",
-                "en": "\"EPS and metal profile solutions for new construction and building renovation. Made in Portugal, European certification.\"",
-                "fr": "\"Solutions en EPS et profilés métalliques pour la construction neuve et la réhabilitation. Fabrication portugaise, certification européenne.\""
-              }
-            }
-          },
-          {
-            "type": "botao",
-            "style": "cheio",
-            "col": "all",
-            "v": {
-              "label": {
-                "pt": "Ver Soluções",
-                "en": "View Solutions",
-                "fr": "Voir les solutions"
-              },
-              "dest": {
-                "kind": "anchor",
-                "blockId": "@block:eps"
-              }
-            }
-          },
-          {
-            "type": "botao",
-            "style": "contorno",
-            "col": "all",
-            "v": {
-              "label": {
-                "pt": "Catálogo PDF",
-                "en": "PDF Catalogue",
-                "fr": "Catalogue PDF"
-              },
-              "dest": {
-                "kind": "anchor",
-                "blockId": "@block:downloads"
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "@block:numeros",
         "name": "Início · Números",
         "folderId": "@folder:inicio",
@@ -3550,7 +3483,44 @@
             "pt": "Vila Verde, Portugal · Desde 2016",
             "en": "Vila Verde, Portugal · Since 2016",
             "fr": "Vila Verde, Portugal · Depuis 2016"
-          }
+          },
+          "titulo": {
+            "pt": "Winter*plateau*",
+            "en": "Winter*plateau*",
+            "fr": "Winter*plateau*"
+          },
+          "descricao": {
+            "pt": "Soluções em EPS e Perfis Metálicos para construção nova e reabilitação de edifícios. Fabricação nacional, certificação europeia.",
+            "en": "EPS and metal profile solutions for new construction and building renovation. Made in Portugal, European certification.",
+            "fr": "Solutions en EPS et profilés métalliques pour la construction neuve et la réhabilitation. Fabrication portugaise, certification européenne."
+          },
+          "botoes": [
+            {
+              "label": {
+                "pt": "Ver Soluções",
+                "en": "View Solutions",
+                "fr": "Voir les solutions"
+              },
+              "dest": {
+                "kind": "anchor",
+                "blockId": "@block:eps"
+              },
+              "estilo": "cheio"
+            },
+            {
+              "label": {
+                "pt": "Catálogo PDF",
+                "en": "PDF Catalogue",
+                "fr": "Catalogue PDF"
+              },
+              "dest": {
+                "kind": "anchor",
+                "blockId": "@block:downloads"
+              },
+              "estilo": "contorno"
+            }
+          ],
+          "lado": "direita"
         }
       },
       {
@@ -3658,10 +3628,6 @@
             }
           ]
         }
-      },
-      {
-        "kind": "block",
-        "blockId": "@block:apresentacao"
       },
       {
         "kind": "block",

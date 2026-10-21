@@ -1,12 +1,34 @@
 /* ════ Especiais (manifest da Winterplateau): edifício 3D e faixa a passar ════ */
 .especial { position: relative; z-index: 1; }
 
-/* ── Edifício 3D (o antigo Hero: cena em camadas com profundidade e parallax; o JS só move as camadas) ── */
+/* ── Topo com edifício 3D (o antigo Hero: texto à esquerda, cena em camadas à direita; `data-lado` troca o lado do EDIFÍCIO) ── */
 .especial--edificio3d { background: var(--bg); overflow: hidden; min-height: min(calc(100svh - var(--nav)), 880px); display: flex; align-items: center; justify-content: center; padding: clamp(28px, 5vw, 56px) var(--g); }
-.e3d { width: 100%; max-width: var(--mw); display: flex; flex-direction: column; align-items: center; gap: clamp(14px, 2vw, 24px); }
-.e3d-eye { display: flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg3); }
+.e3d { width: 100%; max-width: var(--mw); display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(32px, 4vw, 64px); align-items: center; }
+.e3d[data-lado="esquerda"] { grid-template-columns: 0.95fr 1.05fr; }
+.e3d[data-lado="esquerda"] .e3d-l { order: 2; }
+.e3d-l { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+.e3d-r { display: flex; align-items: center; justify-content: flex-end; min-width: 0; }
+.e3d[data-lado="esquerda"] .e3d-r { order: 1; justify-content: flex-start; }
+.e3d-eye { display: flex; align-items: center; gap: 10px; font-size: 10.5px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg3); margin-bottom: 20px; }
 .e3d-eye::before { content: ""; width: 22px; height: 1px; background: var(--bl); flex-shrink: 0; }
 .e3d-eye em { font-style: normal; color: var(--bl); }
+/* título de marca: a 1.ª parte a azul, o trecho em *itálico* na linha de baixo a branco (WINTER / PLATEAU do original) */
+.e3d-titulo { font-family: var(--fd); font-weight: 300; font-size: clamp(80px, 11.5vw, 154px); line-height: 0.9; letter-spacing: -0.028em; text-transform: uppercase; color: var(--bl); overflow-wrap: anywhere; }
+.e3d-titulo em { display: block; font-style: normal; color: var(--title); }
+.e3d-rule { width: 100%; height: 1px; background: var(--line); margin: 30px 0 22px; }
+.e3d-desc { font-size: clamp(13px, 1.1vw, 15px); font-weight: 300; line-height: 1.82; color: var(--fg2); max-width: 380px; margin-bottom: 28px; overflow-wrap: anywhere; }
+.e3d-desc p + p { margin-top: 0.9em; }
+.e3d-desc a { color: var(--ac); text-decoration: underline; text-underline-offset: 3px; }
+.e3d-acts { display: flex; gap: 11px; flex-wrap: wrap; }
+.e3d-acts .c-botao { padding: 11px 22px; min-height: 44px; font-size: 12px; letter-spacing: 0.04em; }
+@media (max-width: 1024px) {
+  .especial--edificio3d { min-height: auto; padding-top: clamp(20px, 6vw, 40px); padding-bottom: 40px; }
+  .e3d, .e3d[data-lado="esquerda"] { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .e3d[data-lado="esquerda"] .e3d-l, .e3d[data-lado="esquerda"] .e3d-r { order: 0; }
+  .e3d-r, .e3d[data-lado="esquerda"] .e3d-r { justify-content: center; }
+  .e3d .scene { max-width: min(440px, 86vw); }
+}
+@media (max-width: 560px) { .e3d-titulo { font-size: clamp(58px, 17vw, 90px); } }
 .scene { position: relative; width: 100%; max-width: min(640px, 88vw, 78svh); aspect-ratio: 1 / 1; perspective: 1500px; perspective-origin: 50% 45%; }
 .scene .stage { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform; }
 .scene .lyr { position: absolute; inset: 0; transform: translateZ(var(--z, 0px)) translate3d(calc(var(--mx, 0px) * var(--pf, 0)), calc(var(--my, 0px) * var(--pf, 0)), 0); transition: transform 1.05s cubic-bezier(0.16, 0.84, 0.3, 1), opacity 0.85s ease; transition-delay: var(--d, 0s); }

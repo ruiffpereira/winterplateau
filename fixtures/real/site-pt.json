@@ -196,7 +196,22 @@
      "kind": "special",
      "type": "edificio3d",
      "fields": {
-      "eyebrow": "Vila Verde, Portugal · Desde 2016"
+      "eyebrow": "Vila Verde, Portugal · Desde 2016",
+      "titulo": "Winter*plateau*",
+      "descricao": "Soluções em EPS e Perfis Metálicos para construção nova e reabilitação de edifícios. Fabricação nacional, certificação europeia.",
+      "botoes": [
+       {
+        "label": "Ver Soluções",
+        "href": "#eps",
+        "estilo": "cheio"
+       },
+       {
+        "label": "Catálogo PDF",
+        "href": "#downloads",
+        "estilo": "contorno"
+       }
+      ],
+      "lado": "direita"
      }
     },
     {
@@ -248,42 +263,6 @@
        }
       ]
      }
-    },
-    {
-     "kind": "block",
-     "anchor": null,
-     "layout": 1,
-     "bg": "claro",
-     "comps": [
-      {
-       "type": "titulo",
-       "style": "destaque",
-       "col": "all",
-       "text": "Winter*plateau*",
-       "align": "left",
-       "level": "h1"
-      },
-      {
-       "type": "texto",
-       "style": "grande",
-       "col": "all",
-       "body": "\"Soluções em EPS e Perfis Metálicos para construção nova e reabilitação de edifícios. Fabricação nacional, certificação europeia.\""
-      },
-      {
-       "type": "botao",
-       "style": "cheio",
-       "col": "all",
-       "label": "Ver Soluções",
-       "href": "#eps"
-      },
-      {
-       "type": "botao",
-       "style": "contorno",
-       "col": "all",
-       "label": "Catálogo PDF",
-       "href": "#downloads"
-      }
-     ]
     },
     {
      "kind": "block",
