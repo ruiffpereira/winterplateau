@@ -3,6 +3,7 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 
 export type PatchBookingAppointmentCancelPathParams = {
     /**
@@ -16,30 +17,35 @@ export type PatchBookingAppointmentCancelPathParams = {
 */
 export type PatchBookingAppointmentCancel200 = {
     /**
-     * @type string | undefined
+     * @type string
     */
-    message?: string;
+    message: string;
 };
 
 /**
- * @description Marcação já cancelada ou concluída
+ * @description Marcação já cancelada ou concluída, ou que já ocorreu
 */
-export type PatchBookingAppointmentCancel400 = any;
+export type PatchBookingAppointmentCancel400 = ApiError;
 
 /**
  * @description Marcação não encontrada
 */
-export type PatchBookingAppointmentCancel404 = any;
+export type PatchBookingAppointmentCancel404 = ApiError;
+
+/**
+ * @description A marcação deixou de poder ser cancelada entre a leitura e a escrita (pedido concorrente) — code APPOINTMENT_NOT_CANCELLABLE
+*/
+export type PatchBookingAppointmentCancel409 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type PatchBookingAppointmentCancel500 = any;
+export type PatchBookingAppointmentCancel500 = ApiError;
 
 export type PatchBookingAppointmentCancelMutationResponse = PatchBookingAppointmentCancel200;
 
 export type PatchBookingAppointmentCancelMutation = {
     Response: PatchBookingAppointmentCancel200;
     PathParams: PatchBookingAppointmentCancelPathParams;
-    Errors: PatchBookingAppointmentCancel400 | PatchBookingAppointmentCancel404 | PatchBookingAppointmentCancel500;
+    Errors: PatchBookingAppointmentCancel400 | PatchBookingAppointmentCancel404 | PatchBookingAppointmentCancel409 | PatchBookingAppointmentCancel500;
 };

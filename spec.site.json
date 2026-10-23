@@ -16,6 +16,51 @@
     }
   ],
   "components": {
+    "schemas": {
+      "ApiError": {
+        "type": "object",
+        "description": "Resposta de erro (4xx/5xx). `error` é a mensagem em português para mostrar ao utilizador; `code` é o código estável para o código decidir. 5xx nunca leva detalhe interno.",
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Mensagem em português de Portugal",
+            "example": "Marcação não encontrada"
+          },
+          "code": {
+            "type": "string",
+            "description": "Código estável em MAIÚSCULAS (NOT_FOUND, VALIDATION, TEAM_FORBIDDEN, OUT_OF_STOCK…)",
+            "example": "NOT_FOUND"
+          },
+          "fields": {
+            "type": "array",
+            "description": "Só em `VALIDATION` (400): os campos inválidos (caminho + tipo de problema, sem eco de valores)",
+            "items": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "path",
+                "code"
+              ]
+            }
+          }
+        },
+        "required": [
+          "error",
+          "code"
+        ],
+        "additionalProperties": true
+      }
+    },
     "securitySchemes": {
       "siteTokenHeader": {
         "type": "apiKey",
@@ -229,18 +274,53 @@
             "description": "Sem alterações (ETag)"
           },
           "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "Site token em falta"
           },
           "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "Site token inválido ou revogado"
           },
           "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "Construtor inactivo para o tenant do site token (sem a permissão VIEW_SITE_PAGES, ou sem linha do construtor)"
           },
           "413": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "A resposta excederia o tamanho máximo (24 MB de componentes resolvidos)"
           },
           "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "Erro interno"
           }
         }
@@ -319,21 +399,63 @@
             "description": "Sem alterações (ETag)"
           },
           "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "`path` em falta ou inválido"
           },
           "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "Site token em falta"
           },
           "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "Site token inválido ou revogado"
           },
           "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "Construtor inactivo (tenant sem a permissão VIEW_SITE_PAGES, ou sem linha), ou página inexistente / em rascunho"
           },
           "413": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "A resposta excederia o tamanho máximo (24 MB de componentes resolvidos)"
           },
           "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            },
             "description": "Erro interno"
           }
         }

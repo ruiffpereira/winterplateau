@@ -3,6 +3,7 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 
 export type GetBookingSlotsQueryParams = {
     /**
@@ -14,6 +15,11 @@ export type GetBookingSlotsQueryParams = {
      * @type string, uuid
     */
     serviceId: string;
+    /**
+     * @description Horas livres DESSE profissional (horário próprio ou herdado, férias/folgas e as marcações dele). Omitido, num tenant com profissionais = \'Qualquer um\' (união das horas livres de quem faz o serviço). Um staffId que não é de um profissional visível no site (incluindo num tenant sem profissionais) → 404 STAFF_NOT_FOUND.
+     * @type string | undefined, uuid
+    */
+    staffId?: string;
 };
 
 /**
@@ -24,27 +30,27 @@ export type GetBookingSlots200 = string[];
 /**
  * @description Parâmetros obrigatórios em falta
 */
-export type GetBookingSlots400 = any;
+export type GetBookingSlots400 = ApiError;
 
 /**
  * @description Site token ausente
 */
-export type GetBookingSlots401 = any;
+export type GetBookingSlots401 = ApiError;
 
 /**
  * @description Site token inválido ou revogado
 */
-export type GetBookingSlots403 = any;
+export type GetBookingSlots403 = ApiError;
 
 /**
- * @description Serviço não encontrado
+ * @description Serviço não encontrado (ou não disponível no site), ou profissional não encontrado (STAFF_NOT_FOUND)
 */
-export type GetBookingSlots404 = any;
+export type GetBookingSlots404 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type GetBookingSlots500 = any;
+export type GetBookingSlots500 = ApiError;
 
 export type GetBookingSlotsQueryResponse = GetBookingSlots200;
 

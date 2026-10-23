@@ -3,6 +3,7 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 
 export type GetBookingAppointmentIcsPathParams = {
     /**
@@ -14,26 +15,26 @@ export type GetBookingAppointmentIcsPathParams = {
 
 export type GetBookingAppointmentIcsQueryParams = {
     /**
-     * @description Língua do SUMMARY/DESCRIPTION do evento (fallback: idioma do prestador, depois PT)
+     * @description Língua do SUMMARY/DESCRIPTION do evento (fallback o idioma do prestador, depois PT)
      * @type string | undefined
     */
     locale?: string;
 };
 
 /**
- * @description Ficheiro .ics de UMA marcação, como anexo (Content-Disposition: attachment)
+ * @description Ficheiro .ics de uma marcação, como anexo (Content-Disposition: attachment)
 */
 export type GetBookingAppointmentIcs200 = Blob;
 
 /**
  * @description Marcação não encontrada ou cancelada
 */
-export type GetBookingAppointmentIcs404 = any;
+export type GetBookingAppointmentIcs404 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type GetBookingAppointmentIcs500 = any;
+export type GetBookingAppointmentIcs500 = ApiError;
 
 export type GetBookingAppointmentIcsQueryResponse = GetBookingAppointmentIcs200;
 

@@ -3,6 +3,7 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 import type { CustomerCalendarUrl } from "./CustomerCalendarUrl.js";
 
 /**
@@ -13,22 +14,22 @@ export type GetBookingCustomerCalendarUrl200 = CustomerCalendarUrl;
 /**
  * @description Sem token
 */
-export type GetBookingCustomerCalendarUrl401 = any;
+export type GetBookingCustomerCalendarUrl401 = ApiError;
 
 /**
  * @description Token inválido
 */
-export type GetBookingCustomerCalendarUrl403 = any;
+export type GetBookingCustomerCalendarUrl403 = ApiError;
 
 /**
  * @description Cliente não encontrado
 */
-export type GetBookingCustomerCalendarUrl404 = any;
+export type GetBookingCustomerCalendarUrl404 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type GetBookingCustomerCalendarUrl500 = any;
+export type GetBookingCustomerCalendarUrl500 = ApiError;
 
 export type GetBookingCustomerCalendarUrlQueryResponse = GetBookingCustomerCalendarUrl200;
 

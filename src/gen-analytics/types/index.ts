@@ -1,1 +1,2 @@
+export type { ApiError } from "./ApiError.js";
 export type { GetWebsitesAnalyticsTracking200, GetWebsitesAnalyticsTracking204, GetWebsitesAnalyticsTracking401, GetWebsitesAnalyticsTracking403, GetWebsitesAnalyticsTracking429, GetWebsitesAnalyticsTracking500, GetWebsitesAnalyticsTrackingQueryResponse, GetWebsitesAnalyticsTrackingQuery } from "./GetWebsitesAnalyticsTracking.js";

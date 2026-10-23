@@ -5,7 +5,7 @@
 
 import fetch from "@kubb/plugin-client/clients/axios";
 import type { RequestConfig, ResponseErrorConfig } from "@kubb/plugin-client/clients/axios";
-import type { GetBookingMyAppointmentsQueryResponse, GetBookingMyAppointmentsQueryParams, GetBookingMyAppointments401, GetBookingMyAppointments403, GetBookingMyAppointments404, GetBookingMyAppointments500 } from "../types/GetBookingMyAppointments.js";
+import type { GetBookingMyAppointmentsQueryResponse, GetBookingMyAppointmentsQueryParams, GetBookingMyAppointments400, GetBookingMyAppointments401, GetBookingMyAppointments403, GetBookingMyAppointments404, GetBookingMyAppointments500 } from "../types/GetBookingMyAppointments.js";
 
 function getGetBookingMyAppointmentsUrl() {
   const res = { method: 'GET', url: `http://localhost:3001/api/websites/booking/my-appointments` as const }  
@@ -19,6 +19,6 @@ function getGetBookingMyAppointmentsUrl() {
 export async function getBookingMyAppointments(params: GetBookingMyAppointmentsQueryParams, config: Partial<RequestConfig> & { client?: typeof fetch } = {}) {
   const { client: request = fetch, ...requestConfig } = config  
   
-  const res = await request<GetBookingMyAppointmentsQueryResponse, ResponseErrorConfig<GetBookingMyAppointments401 | GetBookingMyAppointments403 | GetBookingMyAppointments404 | GetBookingMyAppointments500>, unknown>({ method : "GET", url : getGetBookingMyAppointmentsUrl().url.toString(), params, ... requestConfig })  
+  const res = await request<GetBookingMyAppointmentsQueryResponse, ResponseErrorConfig<GetBookingMyAppointments400 | GetBookingMyAppointments401 | GetBookingMyAppointments403 | GetBookingMyAppointments404 | GetBookingMyAppointments500>, unknown>({ method : "GET", url : getGetBookingMyAppointmentsUrl().url.toString(), params, ... requestConfig })  
   return res.data
 }

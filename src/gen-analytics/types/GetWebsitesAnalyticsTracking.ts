@@ -3,6 +3,7 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 
 /**
  * @description Par de tracking do tenant (cache privada de 5 minutos).
@@ -26,22 +27,22 @@ export type GetWebsitesAnalyticsTracking204 = any;
 /**
  * @description Site token em falta
 */
-export type GetWebsitesAnalyticsTracking401 = any;
+export type GetWebsitesAnalyticsTracking401 = ApiError;
 
 /**
  * @description Site token inválido ou revogado
 */
-export type GetWebsitesAnalyticsTracking403 = any;
+export type GetWebsitesAnalyticsTracking403 = ApiError;
 
 /**
  * @description Demasiados pedidos
 */
-export type GetWebsitesAnalyticsTracking429 = any;
+export type GetWebsitesAnalyticsTracking429 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type GetWebsitesAnalyticsTracking500 = any;
+export type GetWebsitesAnalyticsTracking500 = ApiError;
 
 export type GetWebsitesAnalyticsTrackingQueryResponse = (GetWebsitesAnalyticsTracking200 | GetWebsitesAnalyticsTracking204);
 

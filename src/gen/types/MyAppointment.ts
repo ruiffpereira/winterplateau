@@ -60,4 +60,22 @@ export type MyAppointment = {
      * @type integer
     */
     duration: number | null;
+    /**
+     * @description Profissional da marcação (null = sem profissional)
+     * @type object
+    */
+    staff?: {
+        /**
+         * @type string, uuid
+        */
+        staffId: string;
+        /**
+         * @type string
+        */
+        name: string;
+        /**
+         * @type string
+        */
+        photo?: string | null;
+    } | null;
 };

@@ -36,4 +36,21 @@ export type CreateAppointmentRequest = {
      * @type string
     */
     notes?: string | null;
+    /**
+     * @description Caixa opcional \"Quero receber novidades\" (B42). Só tem efeito com o cliente autenticado: grava o consentimento (origem site, data, IP e texto) com o email da CONTA — nunca o clientEmail do corpo. Sem a caixa marcada nada se grava.
+     * @type boolean | undefined
+    */
+    newsletter?: boolean;
+    /**
+     * @description O texto exacto que o cliente viu junto da caixa. Obrigatório com newsletter=true (400 consent_text_required).
+     * @minLength 5
+     * @maxLength 1000
+     * @type string | undefined
+    */
+    newsletterConsentText?: string;
+    /**
+     * @description Profissional escolhido (de GET /websites/booking/staff). Omitido/null = \'Qualquer um\': a API atribui o primeiro livre dentro da mesma transacção. Só com profissionais no tenant; sem eles, um staffId → 404. O preço NUNCA vem do corpo (um price enviado é ignorado): é o do profissional, ou o do serviço.
+     * @type string, uuid
+    */
+    staffId?: string | null;
 };

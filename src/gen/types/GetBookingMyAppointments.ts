@@ -3,6 +3,7 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 import type { MyAppointment } from "./MyAppointment.js";
 
 export const getBookingMyAppointmentsQueryParamsStatusEnum = {
@@ -26,29 +27,34 @@ export type GetBookingMyAppointmentsQueryParams = {
 export type GetBookingMyAppointments200 = MyAppointment[];
 
 /**
+ * @description status em falta ou inválido
+*/
+export type GetBookingMyAppointments400 = ApiError;
+
+/**
  * @description Token em falta
 */
-export type GetBookingMyAppointments401 = any;
+export type GetBookingMyAppointments401 = ApiError;
 
 /**
  * @description Token inválido
 */
-export type GetBookingMyAppointments403 = any;
+export type GetBookingMyAppointments403 = ApiError;
 
 /**
  * @description Cliente não encontrado
 */
-export type GetBookingMyAppointments404 = any;
+export type GetBookingMyAppointments404 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type GetBookingMyAppointments500 = any;
+export type GetBookingMyAppointments500 = ApiError;
 
 export type GetBookingMyAppointmentsQueryResponse = GetBookingMyAppointments200;
 
 export type GetBookingMyAppointmentsQuery = {
     Response: GetBookingMyAppointments200;
     QueryParams: GetBookingMyAppointmentsQueryParams;
-    Errors: GetBookingMyAppointments401 | GetBookingMyAppointments403 | GetBookingMyAppointments404 | GetBookingMyAppointments500;
+    Errors: GetBookingMyAppointments400 | GetBookingMyAppointments401 | GetBookingMyAppointments403 | GetBookingMyAppointments404 | GetBookingMyAppointments500;
 };

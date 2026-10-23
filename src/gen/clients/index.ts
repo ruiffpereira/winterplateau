@@ -1,9 +1,11 @@
 export { getBookingAppointmentByToken } from "./getBookingAppointmentByToken.js";
 export { getBookingAppointmentIcs } from "./getBookingAppointmentIcs.js";
+export { getBookingAppointmentIcsDeprecated } from "./getBookingAppointmentIcsDeprecated.js";
 export { getBookingCustomerCalendarUrl } from "./getBookingCustomerCalendarUrl.js";
 export { getBookingMyAppointments } from "./getBookingMyAppointments.js";
 export { getBookingServices } from "./getBookingServices.js";
 export { getBookingSlots } from "./getBookingSlots.js";
+export { getBookingStaff } from "./getBookingStaff.js";
 export { getContent } from "./getContent.js";
 export { getCsrfToken } from "./getCsrfToken.js";
 export { patchBookingAppointmentCancel } from "./patchBookingAppointmentCancel.js";

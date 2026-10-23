@@ -9,9 +9,9 @@
 */
 export type GetCsrfToken200 = {
     /**
-     * @type string | undefined
+     * @type string
     */
-    csrfToken?: string;
+    csrfToken: string;
 };
 
 export type GetCsrfTokenQueryResponse = GetCsrfToken200;

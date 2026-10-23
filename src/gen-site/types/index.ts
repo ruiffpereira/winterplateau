@@ -1,3 +1,4 @@
+export type { ApiError } from "./ApiError.js";
 export type { GetWebsitesSiteQueryParams, RodapeLayoutEnum, GetWebsitesSite200, GetWebsitesSite304, GetWebsitesSite401, GetWebsitesSite403, GetWebsitesSite404, GetWebsitesSite413, GetWebsitesSite500, GetWebsitesSiteQueryResponse, GetWebsitesSiteQuery } from "./GetWebsitesSite.js";
 export type { GetWebsitesSitePageQueryParams, GetWebsitesSitePage200, GetWebsitesSitePage304, GetWebsitesSitePage400, GetWebsitesSitePage401, GetWebsitesSitePage403, GetWebsitesSitePage404, GetWebsitesSitePage413, GetWebsitesSitePage500, GetWebsitesSitePageQueryResponse, GetWebsitesSitePageQuery } from "./GetWebsitesSitePage.js";
 export { rodapeLayoutEnum } from "./GetWebsitesSite.js";

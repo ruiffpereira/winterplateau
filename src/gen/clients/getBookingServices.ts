@@ -13,7 +13,7 @@ function getGetBookingServicesUrl() {
 }
 
 /**
- * @summary Listar serviços activos do prestador
+ * @summary Listar serviços activos do prestador (só os 'Disponível no site')
  * {@link /websites/booking/services}
  */
 export async function getBookingServices(config: Partial<RequestConfig> & { client?: typeof fetch } = {}) {

@@ -5,7 +5,7 @@
 
 import fetch from "@kubb/plugin-client/clients/axios";
 import type { RequestConfig, ResponseErrorConfig } from "@kubb/plugin-client/clients/axios";
-import type { PatchBookingAppointmentCancelMutationResponse, PatchBookingAppointmentCancelPathParams, PatchBookingAppointmentCancel400, PatchBookingAppointmentCancel404, PatchBookingAppointmentCancel500 } from "../types/PatchBookingAppointmentCancel.js";
+import type { PatchBookingAppointmentCancelMutationResponse, PatchBookingAppointmentCancelPathParams, PatchBookingAppointmentCancel400, PatchBookingAppointmentCancel404, PatchBookingAppointmentCancel409, PatchBookingAppointmentCancel500 } from "../types/PatchBookingAppointmentCancel.js";
 
 function getPatchBookingAppointmentCancelUrl(cancelToken: PatchBookingAppointmentCancelPathParams["cancelToken"]) {
   const res = { method: 'PATCH', url: `http://localhost:3001/api/websites/booking/appointments/${cancelToken}/cancel` as const }  
@@ -19,6 +19,6 @@ function getPatchBookingAppointmentCancelUrl(cancelToken: PatchBookingAppointmen
 export async function patchBookingAppointmentCancel(cancelToken: PatchBookingAppointmentCancelPathParams["cancelToken"], config: Partial<RequestConfig> & { client?: typeof fetch } = {}) {
   const { client: request = fetch, ...requestConfig } = config  
   
-  const res = await request<PatchBookingAppointmentCancelMutationResponse, ResponseErrorConfig<PatchBookingAppointmentCancel400 | PatchBookingAppointmentCancel404 | PatchBookingAppointmentCancel500>, unknown>({ method : "PATCH", url : getPatchBookingAppointmentCancelUrl(cancelToken).url.toString(), ... requestConfig })  
+  const res = await request<PatchBookingAppointmentCancelMutationResponse, ResponseErrorConfig<PatchBookingAppointmentCancel400 | PatchBookingAppointmentCancel404 | PatchBookingAppointmentCancel409 | PatchBookingAppointmentCancel500>, unknown>({ method : "PATCH", url : getPatchBookingAppointmentCancelUrl(cancelToken).url.toString(), ... requestConfig })  
   return res.data
 }

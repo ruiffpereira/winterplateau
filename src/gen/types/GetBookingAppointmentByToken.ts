@@ -3,6 +3,7 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 import type { AppointmentDetail } from "./AppointmentDetail.js";
 
 export type GetBookingAppointmentByTokenPathParams = {
@@ -21,12 +22,12 @@ export type GetBookingAppointmentByToken200 = AppointmentDetail;
 /**
  * @description Marcação não encontrada
 */
-export type GetBookingAppointmentByToken404 = any;
+export type GetBookingAppointmentByToken404 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type GetBookingAppointmentByToken500 = any;
+export type GetBookingAppointmentByToken500 = ApiError;
 
 export type GetBookingAppointmentByTokenQueryResponse = GetBookingAppointmentByToken200;
 

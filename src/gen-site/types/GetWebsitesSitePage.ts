@@ -3,6 +3,7 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 
 export type GetWebsitesSitePageQueryParams = {
     /**
@@ -57,32 +58,32 @@ export type GetWebsitesSitePage304 = any;
 /**
  * @description `path` em falta ou inválido
 */
-export type GetWebsitesSitePage400 = any;
+export type GetWebsitesSitePage400 = ApiError;
 
 /**
  * @description Site token em falta
 */
-export type GetWebsitesSitePage401 = any;
+export type GetWebsitesSitePage401 = ApiError;
 
 /**
  * @description Site token inválido ou revogado
 */
-export type GetWebsitesSitePage403 = any;
+export type GetWebsitesSitePage403 = ApiError;
 
 /**
  * @description Construtor inactivo (tenant sem a permissão VIEW_SITE_PAGES, ou sem linha), ou página inexistente / em rascunho
 */
-export type GetWebsitesSitePage404 = any;
+export type GetWebsitesSitePage404 = ApiError;
 
 /**
  * @description A resposta excederia o tamanho máximo (24 MB de componentes resolvidos)
 */
-export type GetWebsitesSitePage413 = any;
+export type GetWebsitesSitePage413 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type GetWebsitesSitePage500 = any;
+export type GetWebsitesSitePage500 = ApiError;
 
 export type GetWebsitesSitePageQueryResponse = GetWebsitesSitePage200;
 

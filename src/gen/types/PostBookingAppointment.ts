@@ -3,33 +3,34 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 import type { AppointmentCreated } from "./AppointmentCreated.js";
 import type { CreateAppointmentRequest } from "./CreateAppointmentRequest.js";
 
 /**
- * @description Marcação criada. Um email de confirmação com link de cancelamento é enviado ao cliente.
+ * @description Marcação criada. Um email de confirmação com link de cancelamento é enviado SÓ para o email da conta do cliente (nunca para o `clientEmail` do corpo, que fica sem efeito no destino).
 */
 export type PostBookingAppointment201 = AppointmentCreated;
 
 /**
- * @description Campos obrigatórios em falta
+ * @description Campos obrigatórios em falta, staffId inválido (STAFF_INVALID) ou profissional que não faz o serviço (STAFF_SERVICE_UNAVAILABLE)
 */
-export type PostBookingAppointment400 = any;
+export type PostBookingAppointment400 = ApiError;
 
 /**
- * @description Serviço não encontrado
+ * @description Serviço não encontrado (ou não disponível no site), ou profissional não encontrado (STAFF_NOT_FOUND)
 */
-export type PostBookingAppointment404 = any;
+export type PostBookingAppointment404 = ApiError;
 
 /**
- * @description Horário já não está disponível
+ * @description Horário já não está disponível (para esse profissional; em \'Qualquer um\', para todos) — code SLOT_TAKEN; ou o cliente já tem 25 marcações futuras activas (pending/confirmed, data >= hoje) neste negócio — code TOO_MANY_APPOINTMENTS (cancelar uma liberta a vaga; o Backoffice não tem este tecto)
 */
-export type PostBookingAppointment409 = any;
+export type PostBookingAppointment409 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type PostBookingAppointment500 = any;
+export type PostBookingAppointment500 = ApiError;
 
 export type PostBookingAppointmentMutationRequest = CreateAppointmentRequest;
 

@@ -3,6 +3,7 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 import type { Service } from "./Service.js";
 
 /**
@@ -13,17 +14,17 @@ export type GetBookingServices200 = Service[];
 /**
  * @description Site token ausente
 */
-export type GetBookingServices401 = any;
+export type GetBookingServices401 = ApiError;
 
 /**
  * @description Site token inválido ou revogado
 */
-export type GetBookingServices403 = any;
+export type GetBookingServices403 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type GetBookingServices500 = any;
+export type GetBookingServices500 = ApiError;
 
 export type GetBookingServicesQueryResponse = GetBookingServices200;
 

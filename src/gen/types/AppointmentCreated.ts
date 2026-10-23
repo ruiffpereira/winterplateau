@@ -41,9 +41,28 @@ export type AppointmentCreated = {
     */
     duration: number;
     /**
+     * @description Preço gravado: o do profissional (se tiver preço próprio nesse serviço) ou o do serviço
      * @type number
     */
     price: number;
+    /**
+     * @description Profissional atribuído (null se o tenant não usa profissionais)
+     * @type object
+    */
+    staff?: {
+        /**
+         * @type string | undefined, uuid
+        */
+        staffId?: string;
+        /**
+         * @type string | undefined
+        */
+        name?: string;
+        /**
+         * @type string
+        */
+        photo?: string | null;
+    } | null;
     /**
      * @description Na criação é sempre \'confirmed\'
      * @type string

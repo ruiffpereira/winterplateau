@@ -8,14 +8,14 @@ import type { RequestConfig, ResponseErrorConfig } from "@kubb/plugin-client/cli
 import type { GetBookingAppointmentIcsQueryResponse, GetBookingAppointmentIcsPathParams, GetBookingAppointmentIcsQueryParams, GetBookingAppointmentIcs404, GetBookingAppointmentIcs500 } from "../types/GetBookingAppointmentIcs.js";
 
 function getGetBookingAppointmentIcsUrl(cancelToken: GetBookingAppointmentIcsPathParams["cancelToken"]) {
-  const res = { method: 'GET', url: `http://localhost:3001/api/websites/booking/appointment/${cancelToken}/calendar.ics` as const }  
+  const res = { method: 'GET', url: `http://localhost:3001/api/websites/booking/appointments/${cancelToken}/calendar.ics` as const }  
   return res
 }
 
 /**
  * @description Sem autenticação — o cancelToken (o mesmo enviado no email de confirmação) É o credencial. Mesmo padrão público das outras rotas por token.
  * @summary Descarregar UMA marcação como ficheiro .ics, identificada pelo cancelToken
- * {@link /websites/booking/appointment/:cancelToken/calendar.ics}
+ * {@link /websites/booking/appointments/:cancelToken/calendar.ics}
  */
 export async function getBookingAppointmentIcs(cancelToken: GetBookingAppointmentIcsPathParams["cancelToken"], params?: GetBookingAppointmentIcsQueryParams, config: Partial<RequestConfig> & { client?: typeof fetch } = {}) {
   const { client: request = fetch, ...requestConfig } = config  

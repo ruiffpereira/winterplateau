@@ -3,6 +3,7 @@
 * Do not edit manually.
 */
 
+import type { ApiError } from "./ApiError.js";
 
 export type GetContentQueryParams = {
     /**
@@ -31,17 +32,17 @@ export type GetContent200 = {
 /**
  * @description Site token ausente
 */
-export type GetContent401 = any;
+export type GetContent401 = ApiError;
 
 /**
  * @description Site token inválido ou revogado
 */
-export type GetContent403 = any;
+export type GetContent403 = ApiError;
 
 /**
  * @description Erro interno
 */
-export type GetContent500 = any;
+export type GetContent500 = ApiError;
 
 export type GetContentQueryResponse = GetContent200;
 
