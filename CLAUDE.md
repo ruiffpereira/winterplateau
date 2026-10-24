@@ -1,4 +1,5 @@
 # CLAUDE.md — winterplateau
+> **Lê-se:** as sessões e agentes que trabalham nesse repo · **Verdadeiro por:** `coerencia.test.mjs` (caminhos)
 
 Site público SSG em Astro para a Winterplateau (EPS e Perfis Metálicos, Vila Verde).
 

@@ -1,4 +1,5 @@
 # Winterplateau — site público
+> **Lê-se:** quem instala ou corre o repo · **Verdadeiro por:** `coerencia.test.mjs` (caminhos)
 
 Site estático (Astro) da Winterplateau. **O conteúdo não está neste repo**: a cliente monta as páginas no
 Backoffice (menu **Páginas**, o construtor de páginas) e o build lê-o da API (`GET /api/websites/site`, uma vez
