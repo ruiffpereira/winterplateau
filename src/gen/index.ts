@@ -13,6 +13,7 @@ export type { GetBookingSlotsQueryParams, GetBookingSlots200, GetBookingSlots400
 export type { GetBookingStaffQueryParams, GetBookingStaff200, GetBookingStaff401, GetBookingStaff403, GetBookingStaff404, GetBookingStaff500, GetBookingStaffQueryResponse, GetBookingStaffQuery } from "./types/GetBookingStaff.js";
 export type { GetContentQueryParams, GetContentHeaderParams, GetContent200, GetContent401, GetContent403, GetContent500, GetContentQueryResponse, GetContentQuery } from "./types/GetContent.js";
 export type { GetCsrfToken200, GetCsrfTokenQueryResponse, GetCsrfTokenQuery } from "./types/GetCsrfToken.js";
+export type { GetWebsitesBookingCustomerCalendarTokenIcsPathParams, GetWebsitesBookingCustomerCalendarTokenIcs200, GetWebsitesBookingCustomerCalendarTokenIcs404, GetWebsitesBookingCustomerCalendarTokenIcsQueryResponse, GetWebsitesBookingCustomerCalendarTokenIcsQuery } from "./types/GetWebsitesBookingCustomerCalendarTokenIcs.js";
 export type { MyAppointmentStatusEnum, MyAppointment } from "./types/MyAppointment.js";
 export type { PatchBookingAppointmentCancelPathParams, PatchBookingAppointmentCancel200, PatchBookingAppointmentCancel400, PatchBookingAppointmentCancel404, PatchBookingAppointmentCancel409, PatchBookingAppointmentCancel500, PatchBookingAppointmentCancelMutationResponse, PatchBookingAppointmentCancelMutation } from "./types/PatchBookingAppointmentCancel.js";
 export type { PostBookingAppointment201, PostBookingAppointment400, PostBookingAppointment404, PostBookingAppointment409, PostBookingAppointment500, PostBookingAppointmentMutationRequest, PostBookingAppointmentMutationResponse, PostBookingAppointmentMutation } from "./types/PostBookingAppointment.js";
@@ -28,6 +29,7 @@ export { getBookingSlots } from "./clients/getBookingSlots.js";
 export { getBookingStaff } from "./clients/getBookingStaff.js";
 export { getContent } from "./clients/getContent.js";
 export { getCsrfToken } from "./clients/getCsrfToken.js";
+export { getWebsitesBookingCustomerCalendarTokenIcs } from "./clients/getWebsitesBookingCustomerCalendarTokenIcs.js";
 export { patchBookingAppointmentCancel } from "./clients/patchBookingAppointmentCancel.js";
 export { postBookingAppointment } from "./clients/postBookingAppointment.js";
 export { appointmentCreatedStatusEnum } from "./types/AppointmentCreated.js";

@@ -8,5 +8,6 @@ export { getBookingSlots } from "./getBookingSlots.js";
 export { getBookingStaff } from "./getBookingStaff.js";
 export { getContent } from "./getContent.js";
 export { getCsrfToken } from "./getCsrfToken.js";
+export { getWebsitesBookingCustomerCalendarTokenIcs } from "./getWebsitesBookingCustomerCalendarTokenIcs.js";
 export { patchBookingAppointmentCancel } from "./patchBookingAppointmentCancel.js";
 export { postBookingAppointment } from "./postBookingAppointment.js";

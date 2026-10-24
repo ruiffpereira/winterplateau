@@ -78,6 +78,7 @@
   "paths": {
     "/websites/site": {
       "get": {
+        "x-codigo": "E08-38",
         "summary": "O site inteiro numa língua (um pedido por língua num build)",
         "description": "Site token OBRIGATÓRIO (`x-site-token` ou `Authorization: Bearer`). Só páginas publicadas; itens escondidos, rascunhos, manifest, pastas, nomes de blocos e ids internos nunca saem (só a âncora do bloco). `locale` inválido, ausente ou não activo no tenant → língua base. Texto `I18n` cai na base; `media` → URL; ligações para rascunhos → `href: null`. `Cache-Control: no-cache` + `ETag` (com `If-None-Match` → `304`). Sem `publicRateLimit` de propósito (um build faz dezenas de pedidos); fica o limite global.\n",
         "tags": [
@@ -328,6 +329,7 @@
     },
     "/websites/site/page": {
       "get": {
+        "x-codigo": "E08-39",
         "summary": "Uma página pelo endereço (para sites em runtime)",
         "description": "Site token OBRIGATÓRIO. A língua sai do prefixo do `path` (`/en/…` → en; sem prefixo → base). Resposta igual à de `/websites/site` (cabeçalho — `revision`, `siteName`, `seo` por omissão, línguas — + `topo`/`rodape`) com `page` em vez de `pages` e sem `redirects`. Endereço antigo de uma página publicada → `200 {redirect}`; inexistente ou rascunho → `404`. `Cache-Control: no-cache` + `ETag`. Sem `publicRateLimit` (fica o limite global).\n",
         "tags": [
