@@ -54,7 +54,7 @@ npm run dev     # servidor de desenvolvimento
 ## Construtor de páginas (F17)
 
 O site é gerado a partir do objecto `GET /websites/site?locale=xx` (CONTRATO §7/§11 em
-`Backoffice/.design/page-builder/`): um pedido por língua, cliente tipado em `src/gen-site/` (Kubb, a partir do
+`docs/6 - Planos/B38 - construtor de paginas/` (raiz)): um pedido por língua, cliente tipado em `src/gen-site/` (Kubb, a partir do
 `spec.site.json` **committado** — gerado do código da API com `dumpSpec.ts site`, sem fetch). Código em `src/cms/`
 (`client.ts`, `Renderer.astro`, `components/<Type>.astro`, `specials/<tipo>.astro`, `seo.ts`, `routes.ts`,
 `text.ts`); layout `src/layouts/Base.astro`; rotas `[...path]` (língua base) e `[lang]/[...path]`.
